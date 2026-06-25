@@ -1,0 +1,59 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_b93b53e70d327fda",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_aed72cd006ec0c6d"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-24T06:38:30.899393+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:7162ed12237d0becf083f0dbc714d51b5a69e7d3377eec164ea9232581aa9fff",
+      "created": "2026-06-24T06:38:30.670387+00:00",
+      "id": "va_aed72cd006ec0c6d",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/7162ed12237d0becf083f0dbc714d51b5a69e7d3377eec164ea9232581aa9fff",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::powerful_triples_none",
+        "witness_file": "erdos364-powerful-triples.witness.json",
+        "witness_kind": "powerful_triples_none"
+      },
+      "name": "Frozen-verifier witness: erdos364-powerful-triples (powerful_triples_none)",
+      "provenance": {
+        "authors": [],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "license": "CC-BY-4.0",
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos364-powerful-triples (powerful_triples_none)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 87,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_15e987c69ec8a2d4"
+      ]
+    },
+    "proposal_id": "vpr_d2112d322b6671ee"
+  },
+  "caveats": []
+}

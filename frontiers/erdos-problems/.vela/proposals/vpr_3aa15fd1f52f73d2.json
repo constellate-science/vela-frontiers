@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_3aa15fd1f52f73d2",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_66ff04a041674bcf"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:41.618524+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #234 (vf_1f3b08bef5e8ebc2) [related, confidence 0.6]: Both concern the fine distribution of prime gaps d_n relative to log n: 233 on the second moment sum of d_n, 234 on the distribution function of d_n/log n, governed by the same Cramér-type gap model. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #234 (vf_1f3b08bef5e8ebc2) [related, confidence 0.6]: Both concern the fine distribution of prime gaps d_n relative to log n: 233 on the second moment sum of d_n, 234 on the distribution function of d_n/log n, governed by the same Cramér-type gap model. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:26:51.612857+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

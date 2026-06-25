@@ -1,0 +1,66 @@
+{
+  "id": "vf_caaa525f7259eff1",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #12: machine-found Lean proof published by AlphaProof Nexus (DeepMind, arXiv 2605.22763, May 2026). Independently re-verified locally 2026-06-10: full lake build of google-deepmind/alphaproof-nexus-results@0647711a7118 under their pinned toolchain leanprover/lean4:v4.27.0 succeeded (8062 jobs); static scan clean (no sorry, no native_decide, no custom axioms). Artifacts: erdos_12.parts.i.lean sha256:c42238294d8d2d88; erdos_12.parts.ii.lean sha256:f155135c1e845cb3. AI involvement: machine-generated proof, machine-checked (Lean kernel is the referee); statement faithfulness NOT yet independently attested — see paper section 4 for DeepMind's own expert validation.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.9,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "preprint",
+    "doi": null,
+    "title": "AlphaProof Nexus results repo (Apache-2.0), arXiv:2605.22763",
+    "authors": [
+      {
+        "name": "agent:nexus-ingest-2026-06-10",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-06-10T18:37:54.051749+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-06-10T18:37:54.051771+00:00",
+  "updated": null
+}

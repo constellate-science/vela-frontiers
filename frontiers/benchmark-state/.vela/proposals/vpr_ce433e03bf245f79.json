@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_ce433e03bf245f79",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_cf89ac0f36e62089"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:50:55.819166+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "BENCHMARK META (MiniF2F). MiniF2F is ~488 olympiad/textbook formal-math problems (AMC/AIME/IMO + MATH), ported to Lean/Isabelle/HOL-Light/Metamath, split valid/test. KNOWN TRUST ISSUE: multiple incompatible versions exist (original 2021, miniF2F-v2, and the 'miniF2F Revisited' cleanup with corrected/changed statements), so pass-rates across papers are version-ambiguous unless the exact split is pinned. STATE: dataset-version hazard, not a model claim.",
+        "type": "computational"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.3
+      },
+      "created": "2026-06-10T06:50:55.819124+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": true,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_cf89ac0f36e62089",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "reviewer:will-blair",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:50:55.819111+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "expert_assertion",
+        "title": "manual finding",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T06:50:55.819740+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_6e70490ef96937ed",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

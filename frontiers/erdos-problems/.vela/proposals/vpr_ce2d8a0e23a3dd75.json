@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_ce2d8a0e23a3dd75",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_b0f3acbe2c674497"
+  },
+  "actor": {
+    "id": "agent:vela-curation-bot",
+    "type": "human"
+  },
+  "created_at": "2026-05-10T19:27:57.623998+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdos-Straus conjecture (1948, open): for every integer n >= 2, the equation 4/n = 1/x + 1/y + 1/z has a solution in positive integers x, y, z. Verified computationally for n up to 10^17.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Egyptian-fraction representations of 4/n. Open in general; computationally verified for very large bounded n."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.5
+      },
+      "created": "2026-05-10T19:27:57.623955+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_b0f3acbe2c674497",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-curation-bot",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-10T19:27:57.623942+00:00",
+          "extractor_version": "vela/0.110.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "Erdos, Straus 1948 conjecture",
+        "year": 1948
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:erdos-db-trust",
+  "reviewed_at": "2026-05-30T01:04:16.364154+00:00",
+  "decision_reason": "Spine status accepted on the authority of the maintained erdosproblems.com canonical database (T. Bloom, T. Tao + community); formal statements cross-checked against google-deepmind/formal-conjectures",
+  "applied_event_id": "vev_138a4079e5145817",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

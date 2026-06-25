@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_455114364d12c5b5",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_6f307ef73915ae96"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:20:35.252407+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #219 (vf_0cf052d918abf92d) [depends_on, confidence 0.6]: P3 (does divergent reciprocal sum force arbitrarily long APs) applied to the primes yields long prime APs (P219), the famous special case resolved by Green-Tao. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #219 (vf_0cf052d918abf92d) [depends_on, confidence 0.6]: P3 (does divergent reciprocal sum force arbitrarily long APs) applied to the primes yields long prime APs (P219), the famous special case resolved by Green-Tao. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:06.693652+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

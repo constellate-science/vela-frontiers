@@ -1,0 +1,58 @@
+{
+  "schema": "carina.artifact_packet.v0.1",
+  "packet_id": "cap_7a0d0ee2195e3fec",
+  "producer": {
+    "kind": "agent",
+    "id": "agent:canopus-lean-2026-06-14",
+    "name": "Canopus formal-math prover (Opus 4.8, parallel subagent)"
+  },
+  "topic": "Kernel-verified Lean proof closing an open sorry in Erd\u0151s Problem 828 (formal-conjectures)",
+  "created_at": "2026-06-14T00:00:00.000000+00:00",
+  "artifacts": [
+    {
+      "id": "va_742c51b3b65b701b",
+      "kind": "code",
+      "title": "Lean 4 proof of Erdos828 phi_dvd_self_iff_pow2_pow3 (\u03c6(n)\u2223n characterization), kernel-verified",
+      "locator": "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/828.lean",
+      "content_hash": "742c51b3b65b701b656866803ec4c9037a0d0ee2195e3fec2f398fe3e1a282d8",
+      "parents": [],
+      "metadata": {
+        "repo": "google-deepmind/formal-conjectures",
+        "file": "FormalConjectures/ErdosProblems/828.lean",
+        "declaration": "Erdos828.erdos_828.variants.phi_dvd_self_iff_pow2_pow3",
+        "toolchain": "leanprover/lean4:v4.27.0",
+        "verifier": "lean4 kernel (lake env lean)",
+        "axioms": "propext, Classical.choice, Quot.sound (no sorryAx)",
+        "method": "2-adic valuation: 2\u2223n (else \u03c6 even \u2224 odd n); n=2^a\u00b7m, \u03c6n=2^(a-1)\u00b7\u03c6m; v2(\u03c6m)\u22641 forces \u22641 odd prime of m (two would give 4\u2223\u03c6m); m=p^k with (p-1)\u22232p \u27f9 (p-1)\u22232 \u27f9 p=3",
+        "proof_lines": 157,
+        "exit_code": 0
+      }
+    }
+  ],
+  "candidate_claims": [
+    {
+      "id": "vc_656866803ec4c903",
+      "assertion": "The Lean 4 theorem `Erdos828.erdos_828.variants.phi_dvd_self_iff_pow2_pow3` is proven and kernel-verified (axioms: propext, Classical.choice, Quot.sound; no sorryAx): for n : \u2115, Euler's totient \u03c6(n) divides n if and only if n \u2264 1 or n = 2^a \u00b7 3^b for some a > 0 and b \u2265 0. Closes a previously-open `sorry` (category: textbook) in google-deepmind/formal-conjectures Erd\u0151s Problem 828.",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_742c51b3b65b701b"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/828",
+        "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/828.lean"
+      ],
+      "conditions": [
+        "domain:number_theory",
+        "verifier:lean4_kernel",
+        "category:textbook",
+        "result:totient_divides_characterization",
+        "open_sorry_closed:true"
+      ],
+      "confidence": 0.99,
+      "caveats": [
+        "The textbook \u03c6(n)\u2223n characterization, not the open Erd\u0151s 828 conjecture (infinitely-many-n for \u03c6(n)\u2223n+a) nor Lehmer's conjecture, both of which remain sorry.",
+        "Kernel-verified locally; upstream PR (hosted-fork route, 157 lines) requires the maintainer's action."
+      ]
+    }
+  ]
+}

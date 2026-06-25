@@ -1,0 +1,315 @@
+{
+  "schema": "vela.packet_source_debt.v0.1",
+  "generated_at": "2026-06-17T14:43:12.242583+00:00",
+  "summary": {
+    "total": 17,
+    "critical": 17,
+    "high": 0,
+    "medium": 0,
+    "review": 0,
+    "missing_locator_rows": 17,
+    "missing_content_hash_rows": 17
+  },
+  "claim_boundary": {
+    "claims_source_truth": false,
+    "claims_clinical_validity": false,
+    "claims_scientific_discovery": false,
+    "claims_treatment_advice": false
+  },
+  "items": [
+    {
+      "source_id": "vs_066123dd29a9c5b4",
+      "finding_ids": [
+        "vf_0bdc86f4d9f9ea18",
+        "vf_0d4ac181db98ceaa",
+        "vf_279e997d3b3da2ee",
+        "vf_2b1d432fcb715fd3",
+        "vf_2d4edfce58578092",
+        "vf_2db3437d1512c222",
+        "vf_523a610fc3947249",
+        "vf_7cb1a5b07207120e",
+        "vf_7eba52ea8a9bc742",
+        "vf_a9a5b1e0dbdc9da4",
+        "vf_ac4c84ea5e608bb7",
+        "vf_ae08f178d51bb99e",
+        "vf_ba50ac1f1f60aa27",
+        "vf_cd5fe218ed92cc31",
+        "vf_da8d51a6cae5ec11",
+        "vf_eb741f9becc60879",
+        "vf_ef7066987d658f0e"
+      ],
+      "priority": "critical",
+      "priority_score": 134,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:manual finding",
+      "content_hash_present": false,
+      "missing_locator_count": 17,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_974edbe83fb562d4",
+      "finding_ids": [
+        "vf_16db6f3dba299e5f",
+        "vf_20dd984366cd93dd",
+        "vf_63cf7f09150f3200",
+        "vf_748cf8097c3816cf",
+        "vf_9e571c292bedde14",
+        "vf_b4ecf5ea9e1f317b",
+        "vf_caaa525f7259eff1"
+      ],
+      "priority": "critical",
+      "priority_score": 114,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:AlphaProof Nexus results repo (Apache-2.0), arXiv:2605.22763",
+      "content_hash_present": false,
+      "missing_locator_count": 7,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_0460ed79bea681a0",
+      "finding_ids": [
+        "vf_88e9c72c825c6e93"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Guth, Katz 2015, Annals of Mathematics",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_1c18c0ae0a0aac06",
+      "finding_ids": [
+        "vf_25ef36d5afd13aa7"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Dias da Silva, Hamidoune 1994, Bull. London Math. Soc.",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_27bc8a8281231b5e",
+      "finding_ids": [
+        "vf_db51f8a305cbaaf0"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Kang, Kelly, Kuhn, Methuku, Osthus 2023, Annals of Mathematics",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_339e4e1c005876f0",
+      "finding_ids": [
+        "vf_bd97c81be984423e"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Moreira, Richter, Robertson 2019, Annals of Mathematics",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_44d952874922ee86",
+      "finding_ids": [
+        "vf_02969d7f9dcc0e53"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos, Turan 1941, J. London Math. Soc.",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_5be2183c0d93c56b",
+      "finding_ids": [
+        "vf_5f91b9804d33b469"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos 1955 problem; later improvements by Swinnerton-Dyer 1959 and others",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_6e7b53c1025b1605",
+      "finding_ids": [
+        "vf_c75c23c904515038"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos 1936 conjecture; Green, Tao 2008 prime case in Annals of Mathematics",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_9324a9c5bd493a09",
+      "finding_ids": [
+        "vf_e9e8b34f2a6a7b1d"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos, Ginzburg, Ziv 1961, Bull. Research Council Israel",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_a2d465f2b1390512",
+      "finding_ids": [
+        "vf_b0f3acbe2c674497"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos, Straus 1948 conjecture",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_a739c339383c5ff6",
+      "finding_ids": [
+        "vf_2bd0397eda13ccde"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Alweiss, Lovett, Wu, Zhang 2020, STOC",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_acd26fe21f2593b1",
+      "finding_ids": [
+        "vf_bb06a4c06188a214"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos 1946; Spencer, Szemeredi, Trotter 1984 upper bound",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_b741b3b2310716c3",
+      "finding_ids": [
+        "vf_ac5f19ba93429d33"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos, Szekeres 1935, Compositio Math.",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_cfaf8b7f58398e02",
+      "finding_ids": [
+        "vf_d60a12f70bf04aa8"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Tao 2016, Discrete Analysis (after Erdos 1932)",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_d2618ca3fa60838b",
+      "finding_ids": [
+        "vf_98478e05babb8fb3"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos, Posa 1965, Canadian J. Math.",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    },
+    {
+      "source_id": "vs_def599cc44059c78",
+      "finding_ids": [
+        "vf_964e07212f5d6b57"
+      ],
+      "priority": "critical",
+      "priority_score": 102,
+      "reasons": [
+        "evidence atom locator missing",
+        "source content hash missing"
+      ],
+      "locator": "title:Erdos, Ko, Rado 1961, Quart. J. Math.",
+      "content_hash_present": false,
+      "missing_locator_count": 1,
+      "caveats": []
+    }
+  ]
+}

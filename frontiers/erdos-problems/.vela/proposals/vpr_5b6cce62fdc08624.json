@@ -1,0 +1,132 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_5b6cce62fdc08624",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_983ec18ab2e103dc"
+  },
+  "actor": {
+    "id": "agent:erdos-deep-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-06-04T00:33:31.252583+00:00",
+  "reason": "Candidate claim vc_c33dab4d68213a71 imported from artifact packet cap_f4e8bcd294c97ba7",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-03T00:00:00Z",
+      "packet_id": "cap_f4e8bcd294c97ba7",
+      "producer": {
+        "id": "agent:erdos-deep-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős deep-ingest (problem anatomy)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    },
+    "candidate_claim_id": "vc_c33dab4d68213a71",
+    "evidence_artifact_ids": [
+      "va_b43a0cf74f438df6"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #326 (?, AMS 5 11). STATEMENT: Let $A \\subset \\mathbb{N}$ be an additive basis of order 2. Must there exist $B = \\{b_1 < b_2 < \\dots\\} \\subseteq A$ which is also a basis such that $\\lim_{k\\to\\infty} \\frac{b_k}{k^2}$ does not exist? FORMAL: erdos_326: answer(sorry) ↔ ∀ (A : Set ℕ), A.IsAddBasisOfOrder 2 → ∃ (b : ℕ → ℕ), StrictMono b ∧ ∀ n, b n ∈ A ∧ (Set.range b).IsAddBasis ∧ ∀ (x : ℝ), ¬ Tendsto (fun n ↦ (b n : ℝ) / n ^ 2) atTop (𝓝 x); erdos_326: ∃ (a : ℕ → ℕ) (_ : StrictMono a) (_ : Set.range a |>.IsAddBasisOfOrder 2) (x : ℝ) (_ : 0  KNOWN/REMARKS: # Erdős Problem 326 *Reference:* erdosproblems.com/326 | Erdős originally asked whether this was true with `A = B`, but this was disproved by Cassels. RELATED: [] OEIS: []",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.95
+      },
+      "created": "2026-06-03T00:00:00Z",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_b43a0cf74f438df6",
+            "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+            "candidate_claim_id": "vc_c33dab4d68213a71"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_983ec18ab2e103dc",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős deep-ingest (problem anatomy)",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T00:00:00Z",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-deep-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_f4e8bcd294c97ba7 · vc_c33dab4d68213a71",
+        "url": "https://www.erdosproblems.com/326",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_f4e8bcd294c97ba7",
+    "https://www.apache.org/licenses/LICENSE-2.0",
+    "https://www.erdosproblems.com/326",
+    "https://www.erdosproblems.com/326)",
+    "packet_artifact:va_b43a0cf74f438df6"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:39.776508+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-deep-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_f4e8bcd294c97ba7",
+    "started_at": "2026-06-03T00:00:00Z",
+    "context": {
+      "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+      "producer_name": "Erdős deep-ingest (problem anatomy)",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    }
+  }
+}

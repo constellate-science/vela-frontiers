@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_069f845073830dc9",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_db6cc07678873270"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:23.407386+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #1199 (vf_5af54bfa527481ff) [related, confidence 0.7]: 1199 asks for an infinite monochromatic A+A under 2-colouring; 172 asks for arbitrarily large A with all sums and products monochromatic under finite colouring, the same Hindman-type monochromatic-sumset Ramsey question with products added. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #1199 (vf_5af54bfa527481ff) [related, confidence 0.7]: 1199 asks for an infinite monochromatic A+A under 2-colouring; 172 asks for arbitrarily large A with all sums and products monochromatic under finite colouring, the same Hindman-type monochromatic-sumset Ramsey question with products added. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:24:43.707614+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if ever needed.",
+  "caveats": []
+}

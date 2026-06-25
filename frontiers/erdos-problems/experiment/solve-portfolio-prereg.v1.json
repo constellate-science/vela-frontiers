@@ -1,0 +1,60 @@
+{
+ "experiment_id": "vex_996a8d81d7a20bf5",
+ "schema": "vela.experiment.v0.1",
+ "title": "Erd\u0151s solve portfolio: verifier-gated counterexample/witness search on finite-closure problems",
+ "doctrine": "A 'solve' here = a finite object that closes a finite-closure Erd\u0151s problem (counterexample to a falsifiable claim, or witness to a verifiable existence claim), certified by a FROZEN cheap verifier and the Canopus gate, then submitted to erdosproblems.com. Record-movement is explicitly NOT a solve.",
+ "arms": [
+  {
+   "problem": 993,
+   "closure_type": "falsifiable",
+   "claim": "Alavi-Erdos-Malde-Schwenk 1987: the independence polynomial of every forest is unimodal.",
+   "solve_event": "a single tree/forest whose independence-polynomial coefficient sequence has a strict interior valley (DISPROVES).",
+   "search": "scripts/search_993_v3.py \u2014 exhaustive small trees + caterpillars + spiders + millions of random uniform trees.",
+   "verifier": "scripts/verify_993_kernel.py",
+   "verifier_sha256": "sha256:665a5164c9a99293adb9dbf15f6ad69b95eb5934df017f5769b32b25f75435d0"
+  },
+  {
+   "problem": 672,
+   "closure_type": "verifiable",
+   "claim": "No length-k>=4 coprime arithmetic progression has a perfect-power product (Erdos; d=1 is Erdos-Selfridge 1975).",
+   "solve_event": "a single (n,d,k) with gcd(n,d)=1, k>=4 whose product n(n+d)...(n+(k-1)d) is a perfect power (RESOLVES).",
+   "search": "scripts/verify_erdos672.py \u2014 bounded (n,d,k) sweep with exact integer perfect-power test.",
+   "verifier": "scripts/verify_erdos672.py",
+   "verifier_sha256": "sha256:929d056210b672a65bc47f7baa2fa70e5debb5a6dbce33838ab81ffdd6525df2"
+  },
+  {
+   "problem": 835,
+   "closure_type": "verifiable",
+   "claim": "Exists k>2 s.t. the k-subsets of {1..2k} are (k+1)-colourable with every (k+1)-set rainbow (equiv. chi(J(2k,k))<=k+1).",
+   "solve_event": "an explicit (k+1)-colouring for some k>2 (RESOLVES, YES). Small-k non-colourability is bounded evidence, not a solve.",
+   "search": "scripts/verify_erdos835.py \u2014 exact backtracking (k+1)-colouring of the Johnson graph J(2k,k).",
+   "verifier": "scripts/verify_erdos835.py",
+   "verifier_sha256": "sha256:bce6119bfe362de97e38273fd1b44df9d421bde90af5284e78b4f8dce308d99c"
+  },
+  {
+   "problem": 475,
+   "closure_type": "decidable",
+   "claim": "For every prime p and finite A \u2286 F_p\\{0}, some ordering of A has all partial sums distinct mod p.",
+   "solve_event": "a single (p,A) for which an EXHAUSTED backtracking search finds no valid ordering (RESOLVES: not always).",
+   "search": "scripts/verify_erdos475.py \u2014 exact backtracking sequenceability decision; full F_p*, exhaustive small-p subsets, random subsets.",
+   "verifier": "scripts/verify_erdos475.py",
+   "verifier_sha256": "sha256:cfd0949da24fd97c3bfde2892abcb8b0d95decfb5171ce1c7d4d91aa71317b93"
+  },
+  {
+   "problem": 375,
+   "closure_type": "falsifiable",
+   "claim": "Every run of consecutive composites n+1..n+k has distinct primes p_i | n+i (a prime SDR).",
+   "solve_event": "a maximal composite run whose prime-divisor bipartite graph has no SDR \u2014 a Hall-violating set (RESOLVES: not always).",
+   "search": "scripts/verify_erdos375.py \u2014 exact bipartite matching + Hall-violation certificate over maximal composite runs (SDR is hereditary, so maximal runs suffice).",
+   "verifier": "scripts/verify_erdos375.py",
+   "verifier_sha256": "sha256:3098513965ac8f89e1e3449bf4a27606e93da274c4a3103b73ce2ca3e3fe2345"
+  }
+ ],
+ "proposer_model_id": "claude-opus-4-8",
+ "registrar_actor": "agent:claude-proxy",
+ "decision_rule": "For each arm, accept a SOLVE iff the frozen verifier validates the object AND the Canopus gate passes (>=2 independent verifications + surviving adversarial probe). No witness in the searched bound is banked as an honest null (bounded confirmation), never as a solve.",
+ "status": "preregistered",
+ "registered_at": "2026-06-08T00:00:00Z",
+ "signature": "e4606a7dc930af155fe01365cdbec23c7c9449674cf5cf2cf436863a5fce64a603903bc47051c6d28376175d26e023b13f7d68383a1a7082694107552198f401",
+ "signer_pubkey_hex": "ff787021bee8ab86851b0469678cbe50e5c1c2cbbcdfed1e3e99e214c19c706b"
+}

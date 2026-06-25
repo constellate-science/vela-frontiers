@@ -1,0 +1,35 @@
+{
+  "schema": "canopus.held-out-bounds.v2",
+  "purpose": "Held-out SOLVE thresholds for the exact_recompute stratum of the M7 connection-thesis experiment. The proposer never sees this file; only the frozen gate (scripts/canopus_stratum_verifiers.py) reads it. A valid construction is necessary but NOT sufficient: the witness must clear the threshold, so trivial/empty/sub-threshold witnesses REJECT. An instance with no entry cannot be solved (conservative). Every value is cited; see docs note below.",
+  "modes": {
+    "calibration": "size >= target (recover a PROVEN optimum; a positive control, not a discovery claim)",
+    "discovery": "size > target (strictly beat a best-known lower bound; a genuine new result)"
+  },
+  "provenance": {
+    "method": "Verified via a cited deep-research pass (OEIS pages, adversarial 3-vote) on 2026-06-09. Construction families confirmed: A309370 = max Sidon subset of the hypercube {0,1}^n (verify_sidon); A143824 = max Sidon subset of [1,n] (verify_sidon_interval). The earlier sidon:4=6 was a brute-force-cap bug; the proven value is A309370 a(4)=7.",
+    "caveats": "A309370 frontier lower bounds (n>=7) are author-contributed and time-sensitive (strengthened between Jun 02 and Jun 05 2026); re-fetch oeis.org/A309370 before any confirmatory freeze. Only A309370 a(0..6) are proven-optimal."
+  },
+  "bounds": {
+    "sidon:0":  {"target": 1,  "mode": "calibration", "source": "OEIS A309370 a(0)=1 (proven)"},
+    "sidon:1":  {"target": 2,  "mode": "calibration", "source": "OEIS A309370 a(1)=2 (proven)"},
+    "sidon:2":  {"target": 3,  "mode": "calibration", "source": "OEIS A309370 a(2)=3 (proven)"},
+    "sidon:3":  {"target": 5,  "mode": "calibration", "source": "OEIS A309370 a(3)=5 (proven; re-verified exhaustively against verify_sidon)"},
+    "sidon:4":  {"target": 7,  "mode": "calibration", "source": "OEIS A309370 a(4)=7 (proven; re-verified exhaustively against verify_sidon). Corrects the prior buggy 6."},
+    "sidon:5":  {"target": 12, "mode": "calibration", "source": "OEIS A309370 a(5)=12 (proven)"},
+    "sidon:6":  {"target": 15, "mode": "calibration", "source": "OEIS A309370 a(6)=15 (proven; witness of size 15 constructed + verified)"},
+    "sidon:16": {"target": 505,  "mode": "discovery", "source": "OEIS A309370 a(16)>=505 (Blair, Jun 05 2026; best-known LOWER bound, beat to discover)"},
+    "sidon:18": {"target": 1010, "mode": "discovery", "source": "OEIS A309370 a(18)>=1010 (Blair, Jun 02 2026; best-known lower bound)"},
+    "sidon:19": {"target": 1435, "mode": "discovery", "source": "OEIS A309370 a(19)>=1435 (Blair, Jun 05 2026; best-known lower bound)"},
+    "sidon:20": {"target": 1989, "mode": "discovery", "source": "OEIS A309370 a(20)>=1989 (Blair, Jun 05 2026; best-known lower bound)"},
+    "sidon:21": {"target": 2694, "mode": "discovery", "source": "OEIS A309370 a(21)>=2694 (Blair, Jun 02 2026; best-known lower bound)"},
+    "sidon:22": {"target": 3770, "mode": "discovery", "source": "OEIS A309370 a(22)>=3770 (Blair, Jun 02 2026; best-known lower bound)"},
+    "sidon_interval:100": {"target": 12, "mode": "calibration", "source": "OEIS A143824 a(100)=12 (proven, b-file). Achievability confirmed: 12-element Sidon set in [1,100] constructed + verified (achievability-witnesses.v1.json)."},
+    "sidon_interval:500": {"target": 26, "mode": "calibration", "source": "OEIS A143824 a(500)=26 (proven, b-file). Harder rung; optimum proven by OEIS, local DFS reached 21 in budget."},
+    "cap:1": {"target": 2,   "mode": "calibration", "source": "Max cap in F_3^1 (OEIS A090245 a(1)=2, proven). Trivial control."},
+    "cap:2": {"target": 4,   "mode": "calibration", "source": "Max cap in F_3^2 (OEIS A090245 a(2)=4, proven; greedy reaches it)."},
+    "cap:3": {"target": 9,   "mode": "calibration", "source": "Max cap in F_3^3 (OEIS A090245 a(3)=9, proven). NON-TRIVIAL: a greedy lexicographic cap reaches only 8, so the gate rejects naive sub-threshold witnesses; the optimal 9 must be found."},
+    "cap:4": {"target": 20,  "mode": "calibration", "source": "Max cap in F_3^4 (OEIS A090245 a(4)=20, proven). Greedy reaches only 16."},
+    "cap:5": {"target": 45,  "mode": "calibration", "source": "Max cap in F_3^5 (OEIS A090245 a(5)=45, proven)."},
+    "cap:6": {"target": 112, "mode": "calibration", "source": "Max cap in F_3^6 (OEIS A090245 a(6)=112, proven). Hardest rung."}
+  }
+}

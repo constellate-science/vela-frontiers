@@ -1,0 +1,1418 @@
+{
+  "id": "erdos-experiment-dataset.v1",
+  "schema": "vela.experiment_dataset.v0.1",
+  "object": "ExperimentDataset",
+  "lane": "Canopus four-arm proposer experiment: held-out cheap-verifier instances",
+  "purpose": "Fixed instance pool for arms A/B/C/D (none / random-neighbor / flat top-k / constellation). Each item is a cheap-verifier OPEN or RESOLVED instance; the proposer is handed only the problem reference + verifier kind, never an answer.",
+  "built_by": "scripts/build-erdos-experiment-dataset-v1.py",
+  "sources": [
+    "examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json",
+    "examples/sidon-sets/discoveries/certificates.json"
+  ],
+  "verifier_kinds": [
+    "exact_recompute",
+    "oeis_match",
+    "lean"
+  ],
+  "strata": [
+    "coding_theory",
+    "oeis_extension",
+    "sidon_additive"
+  ],
+  "summary": {
+    "n_total": 103,
+    "n_open": 74,
+    "n_resolved": 29,
+    "per_stratum": {
+      "coding_theory": 18,
+      "oeis_extension": 58,
+      "sidon_additive": 27
+    },
+    "per_verifier_kind": {
+      "oeis_match": 76,
+      "exact_recompute": 27
+    }
+  },
+  "contamination_control": "No item embeds a solution value. statement_origin_note per item names the exact provenance and confirms the answer key is held out. RESOLVED items are positive controls (the verifier must fire on a known answer), NOT discovery targets \u2014 scoring must exclude them from the discovery rate.",
+  "non_claims": [
+    "Dataset asserts NO new mathematics; it only references problems and names the cheap verifier that would adjudicate a proposed answer.",
+    "is_open reflects published status at snapshot time; it is not an independent re-verification of openness."
+  ],
+  "items": [
+    {
+      "id": "erdos-1013",
+      "stratum": "coding_theory",
+      "erdos_number": "1013",
+      "oeis": [
+        "A292528"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1013",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1029",
+      "stratum": "coding_theory",
+      "erdos_number": "1029",
+      "oeis": [
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1029",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1030",
+      "stratum": "coding_theory",
+      "erdos_number": "1030",
+      "oeis": [
+        "A000791",
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1030",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1104",
+      "stratum": "coding_theory",
+      "erdos_number": "1104",
+      "oeis": [
+        "A292528"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1104",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-165",
+      "stratum": "coding_theory",
+      "erdos_number": "165",
+      "oeis": [
+        "A000791"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/165",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-166",
+      "stratum": "coding_theory",
+      "erdos_number": "166",
+      "oeis": [
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/166",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-544",
+      "stratum": "coding_theory",
+      "erdos_number": "544",
+      "oeis": [
+        "A000791"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/544",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-545",
+      "stratum": "coding_theory",
+      "erdos_number": "545",
+      "oeis": [
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/545",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-552",
+      "stratum": "coding_theory",
+      "erdos_number": "552",
+      "oeis": [
+        "A006672"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/552",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-553",
+      "stratum": "coding_theory",
+      "erdos_number": "553",
+      "oeis": [
+        "A000791"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/553",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-60",
+      "stratum": "coding_theory",
+      "erdos_number": "60",
+      "oeis": [
+        "A006855"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/60",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-765",
+      "stratum": "coding_theory",
+      "erdos_number": "765",
+      "oeis": [
+        "A006855"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/765",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-77",
+      "stratum": "coding_theory",
+      "erdos_number": "77",
+      "oeis": [
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/77",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-78",
+      "stratum": "coding_theory",
+      "erdos_number": "78",
+      "oeis": [
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/78",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-812",
+      "stratum": "coding_theory",
+      "erdos_number": "812",
+      "oeis": [
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/812",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-85",
+      "stratum": "coding_theory",
+      "erdos_number": "85",
+      "oeis": [
+        "A006672"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/85",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-87",
+      "stratum": "coding_theory",
+      "erdos_number": "87",
+      "oeis": [
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/87",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-986",
+      "stratum": "coding_theory",
+      "erdos_number": "986",
+      "oeis": [
+        "A000791",
+        "A059442"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/986",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-101",
+      "stratum": "oeis_extension",
+      "erdos_number": "101",
+      "oeis": [
+        "A006065"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/101",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1054",
+      "stratum": "oeis_extension",
+      "erdos_number": "1054",
+      "oeis": [
+        "A167485"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1054",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1083",
+      "stratum": "oeis_extension",
+      "erdos_number": "1083",
+      "oeis": [
+        "A186704"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1083",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1085",
+      "stratum": "oeis_extension",
+      "erdos_number": "1085",
+      "oeis": [
+        "A186705"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1085",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1103",
+      "stratum": "oeis_extension",
+      "erdos_number": "1103",
+      "oeis": [
+        "A392164"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1103",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1107",
+      "stratum": "oeis_extension",
+      "erdos_number": "1107",
+      "oeis": [
+        "A056828"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1107",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1109",
+      "stratum": "oeis_extension",
+      "erdos_number": "1109",
+      "oeis": [
+        "A392164"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1109",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1142",
+      "stratum": "oeis_extension",
+      "erdos_number": "1142",
+      "oeis": [
+        "A039669"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1142",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-1204",
+      "stratum": "oeis_extension",
+      "erdos_number": "1204",
+      "oeis": [
+        "A023193"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/1204",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-121",
+      "stratum": "oeis_extension",
+      "erdos_number": "121",
+      "oeis": [
+        "A013928",
+        "A143301"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/121",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-145",
+      "stratum": "oeis_extension",
+      "erdos_number": "145",
+      "oeis": [
+        "A005117"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/145",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-148",
+      "stratum": "oeis_extension",
+      "erdos_number": "148",
+      "oeis": [
+        "A076393"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/148",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-208",
+      "stratum": "oeis_extension",
+      "erdos_number": "208",
+      "oeis": [
+        "A005117"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/208",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-236",
+      "stratum": "oeis_extension",
+      "erdos_number": "236",
+      "oeis": [
+        "A039669"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/236",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-243",
+      "stratum": "oeis_extension",
+      "erdos_number": "243",
+      "oeis": [
+        "A000058"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/243",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-251",
+      "stratum": "oeis_extension",
+      "erdos_number": "251",
+      "oeis": [
+        "A098990"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/251",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-315",
+      "stratum": "oeis_extension",
+      "erdos_number": "315",
+      "oeis": [
+        "A000058",
+        "A076393"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/315",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-321",
+      "stratum": "oeis_extension",
+      "erdos_number": "321",
+      "oeis": [
+        "A384927"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/321",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-327",
+      "stratum": "oeis_extension",
+      "erdos_number": "327",
+      "oeis": [
+        "A384927"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/327",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-364",
+      "stratum": "oeis_extension",
+      "erdos_number": "364",
+      "oeis": [
+        "A060355"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/364",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-365",
+      "stratum": "oeis_extension",
+      "erdos_number": "365",
+      "oeis": [
+        "A060355"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/365",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-366",
+      "stratum": "oeis_extension",
+      "erdos_number": "366",
+      "oeis": [
+        "A060355"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/366",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-367",
+      "stratum": "oeis_extension",
+      "erdos_number": "367",
+      "oeis": [
+        "A057521"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/367",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-368",
+      "stratum": "oeis_extension",
+      "erdos_number": "368",
+      "oeis": [
+        "A074399"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/368",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-398",
+      "stratum": "oeis_extension",
+      "erdos_number": "398",
+      "oeis": [
+        "A146968"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/398",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-410",
+      "stratum": "oeis_extension",
+      "erdos_number": "410",
+      "oeis": [
+        "A007497"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/410",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-412",
+      "stratum": "oeis_extension",
+      "erdos_number": "412",
+      "oeis": [
+        "A007497"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/412",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-416",
+      "stratum": "oeis_extension",
+      "erdos_number": "416",
+      "oeis": [
+        "A264810"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/416",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-417",
+      "stratum": "oeis_extension",
+      "erdos_number": "417",
+      "oeis": [
+        "A264810"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/417",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-457",
+      "stratum": "oeis_extension",
+      "erdos_number": "457",
+      "oeis": [
+        "A391668"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/457",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-468",
+      "stratum": "oeis_extension",
+      "erdos_number": "468",
+      "oeis": [
+        "A167485"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/468",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-470",
+      "stratum": "oeis_extension",
+      "erdos_number": "470",
+      "oeis": [
+        "A006037"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/470",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-5",
+      "stratum": "oeis_extension",
+      "erdos_number": "5",
+      "oeis": [
+        "A001223"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/5",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-51",
+      "stratum": "oeis_extension",
+      "erdos_number": "51",
+      "oeis": [
+        "A014197"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/51",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-588",
+      "stratum": "oeis_extension",
+      "erdos_number": "588",
+      "oeis": [
+        "A006065",
+        "A008997"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/588",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-663",
+      "stratum": "oeis_extension",
+      "erdos_number": "663",
+      "oeis": [
+        "A391668"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/663",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-669",
+      "stratum": "oeis_extension",
+      "erdos_number": "669",
+      "oeis": [
+        "A006065",
+        "A008997"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/669",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-683",
+      "stratum": "oeis_extension",
+      "erdos_number": "683",
+      "oeis": [
+        "A006530",
+        "A074399"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/683",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-687",
+      "stratum": "oeis_extension",
+      "erdos_number": "687",
+      "oeis": [
+        "A048670",
+        "A058989"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/687",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-770",
+      "stratum": "oeis_extension",
+      "erdos_number": "770",
+      "oeis": [
+        "A263647"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/770",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-786",
+      "stratum": "oeis_extension",
+      "erdos_number": "786",
+      "oeis": [
+        "A143301"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/786",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-820",
+      "stratum": "oeis_extension",
+      "erdos_number": "820",
+      "oeis": [
+        "A263647"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/820",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-821",
+      "stratum": "oeis_extension",
+      "erdos_number": "821",
+      "oeis": [
+        "A014197"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/821",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-825",
+      "stratum": "oeis_extension",
+      "erdos_number": "825",
+      "oeis": [
+        "A006037"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/825",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-852",
+      "stratum": "oeis_extension",
+      "erdos_number": "852",
+      "oeis": [
+        "A001223"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/852",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-853",
+      "stratum": "oeis_extension",
+      "erdos_number": "853",
+      "oeis": [
+        "A001223"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/853",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-854",
+      "stratum": "oeis_extension",
+      "erdos_number": "854",
+      "oeis": [
+        "A048670"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/854",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-855",
+      "stratum": "oeis_extension",
+      "erdos_number": "855",
+      "oeis": [
+        "A023193"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/855",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-860",
+      "stratum": "oeis_extension",
+      "erdos_number": "860",
+      "oeis": [
+        "A048670",
+        "A058989"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/860",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-89",
+      "stratum": "oeis_extension",
+      "erdos_number": "89",
+      "oeis": [
+        "A186704"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/89",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-90",
+      "stratum": "oeis_extension",
+      "erdos_number": "90",
+      "oeis": [
+        "A186705"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/90",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-91",
+      "stratum": "oeis_extension",
+      "erdos_number": "91",
+      "oeis": [
+        "A186704"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/91",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-928",
+      "stratum": "oeis_extension",
+      "erdos_number": "928",
+      "oeis": [
+        "A006530"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/928",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-935",
+      "stratum": "oeis_extension",
+      "erdos_number": "935",
+      "oeis": [
+        "A057521"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/935",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-936",
+      "stratum": "oeis_extension",
+      "erdos_number": "936",
+      "oeis": [
+        "A146968"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/936",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-941",
+      "stratum": "oeis_extension",
+      "erdos_number": "941",
+      "oeis": [
+        "A056828"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/941",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-969",
+      "stratum": "oeis_extension",
+      "erdos_number": "969",
+      "oeis": [
+        "A013928"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/969",
+      "verifier_kind": "oeis_match",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-980",
+      "stratum": "oeis_extension",
+      "erdos_number": "980",
+      "oeis": [
+        "A098990"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/980",
+      "verifier_kind": "oeis_match",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'oeis_match'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-138",
+      "stratum": "sidon_additive",
+      "erdos_number": "138",
+      "oeis": [
+        "A005346"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/138",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-139",
+      "stratum": "sidon_additive",
+      "erdos_number": "139",
+      "oeis": [
+        "A003002",
+        "A003003",
+        "A003004",
+        "A003005"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/139",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-14",
+      "stratum": "sidon_additive",
+      "erdos_number": "14",
+      "oeis": [
+        "A143824"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/14",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets.",
+      "construction": "sidon_interval",
+      "n": 100,
+      "curation_note": "Curated 2026-06-09 from verified deep-research: A143824 = max Sidon subset of [1,n]; held-out target a(100)=12 / a(500)=26 (proven, OEIS b-file). Verifier sidon_interval; mode calibration."
+    },
+    {
+      "id": "erdos-140",
+      "stratum": "sidon_additive",
+      "erdos_number": "140",
+      "oeis": [
+        "A003002"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/140",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-142",
+      "stratum": "sidon_additive",
+      "erdos_number": "142",
+      "oeis": [
+        "A003002",
+        "A003003",
+        "A003004",
+        "A003005"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/142",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-155",
+      "stratum": "sidon_additive",
+      "erdos_number": "155",
+      "oeis": [
+        "A003022",
+        "A143824",
+        "A227590"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/155",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-169",
+      "stratum": "sidon_additive",
+      "erdos_number": "169",
+      "oeis": [
+        "A005346"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/169",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-200",
+      "stratum": "sidon_additive",
+      "erdos_number": "200",
+      "oeis": [
+        "A005115"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/200",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-201",
+      "stratum": "sidon_additive",
+      "erdos_number": "201",
+      "oeis": [
+        "A003002",
+        "A003003",
+        "A003004",
+        "A003005"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/201",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-219",
+      "stratum": "sidon_additive",
+      "erdos_number": "219",
+      "oeis": [
+        "A005115"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/219",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-3",
+      "stratum": "sidon_additive",
+      "erdos_number": "3",
+      "oeis": [
+        "A003002",
+        "A003003",
+        "A003004",
+        "A003005"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/3",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-30",
+      "stratum": "sidon_additive",
+      "erdos_number": "30",
+      "oeis": [
+        "A003022",
+        "A143824",
+        "A227590"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/30",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-43",
+      "stratum": "sidon_additive",
+      "erdos_number": "43",
+      "oeis": [
+        "A003022",
+        "A143824",
+        "A227590"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/43",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "erdos-530",
+      "stratum": "sidon_additive",
+      "erdos_number": "530",
+      "oeis": [
+        "A143824"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/530",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets.",
+      "construction": "sidon_interval",
+      "n": 500,
+      "curation_note": "Curated 2026-06-09 from verified deep-research: A143824 = max Sidon subset of [1,n]; held-out target a(100)=12 / a(500)=26 (proven, OEIS b-file). Verifier sidon_interval; mode calibration."
+    },
+    {
+      "id": "erdos-861",
+      "stratum": "sidon_additive",
+      "erdos_number": "861",
+      "oeis": [
+        "A003022",
+        "A143824",
+        "A227590"
+      ],
+      "statement_ref": "https://www.erdosproblems.com/861",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Problem reference (number + erdosproblems.com URL + OEIS ids) lifted from the frozen constellation artifact examples/erdos-problems/constellation/erdos-oeis-constellation.v1.json; NO solution value embedded \u2014 only the problem reference and the verifier_kind 'exact_recompute'. Status flag (is_open) is the published erdosproblems.com state at snapshot time; resolved items are a positive-control calibration set, not discovery targets."
+    },
+    {
+      "id": "sidon-A309370-n10",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(10): max Sidon subset of {0,1}^10)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=10 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n11",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(11): max Sidon subset of {0,1}^11)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=11 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n12",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(12): max Sidon subset of {0,1}^12)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=12 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n13",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(13): max Sidon subset of {0,1}^13)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=13 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n14",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(14): max Sidon subset of {0,1}^14)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=14 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n15",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(15): max Sidon subset of {0,1}^15)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=15 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n16",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(16): max Sidon subset of {0,1}^16)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=16 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n17",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(17): max Sidon subset of {0,1}^17)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=17 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n18",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(18): max Sidon subset of {0,1}^18)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=18 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n19",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(19): max Sidon subset of {0,1}^19)",
+      "verifier_kind": "exact_recompute",
+      "is_open": true,
+      "resolved_split_label": "open",
+      "statement_origin_note": "Instance n=19 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n8",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(8): max Sidon subset of {0,1}^8)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=8 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    },
+    {
+      "id": "sidon-A309370-n9",
+      "stratum": "sidon_additive",
+      "erdos_number": null,
+      "oeis": [
+        "A309370"
+      ],
+      "statement_ref": "https://oeis.org/A309370 (a(9): max Sidon subset of {0,1}^9)",
+      "verifier_kind": "exact_recompute",
+      "is_open": false,
+      "resolved_split_label": "resolved",
+      "statement_origin_note": "Instance n=9 of OEIS A309370 (max Sidon subset of {0,1}^n). Problem reference + verifier (scripts/verify_construction.py::verify_sidon) only; the recorded/new bound lives in examples/sidon-sets/discoveries/certificates.json and is the ANSWER KEY held out of this dataset \u2014 a proposer sees only n and the definition. Resolved items (n with a previous_recorded term) are positive controls; the first n with no recorded term is the open frontier."
+    }
+  ],
+  "content_hash": "sha256:9ff2e54a382e910096129cbdfa15e829d3d61ebaa28a9101ecac40794e68660e"
+}

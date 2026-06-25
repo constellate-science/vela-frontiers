@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_adea2a2f9e4ba533",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_41030d44f59eae22"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:50:55.944152+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "BENCHMARK CLAIM (ProteinGym) — ProteinNPT (non-parametric transformer, supervised track) REPORTS gains by attending across labelled neighbours. VERIFICATION STATE: author-reported; SUPERVISED — not comparable to zero-shot numbers; depends on the cross-validation split. NOT re-run here. Open obligation: re-run under the official supervised CV split; never compare against zero-shot rows.",
+        "type": "computational"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.3
+      },
+      "created": "2026-06-10T06:50:55.944113+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": true,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_41030d44f59eae22",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "reviewer:will-blair",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:50:55.944101+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "expert_assertion",
+        "title": "manual finding",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T06:50:55.945284+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_91570d175e6db49c",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

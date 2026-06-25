@@ -1,0 +1,24 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_3905ad2ade89f309",
+  "kind": "finding.noted",
+  "target": {
+    "type": "finding",
+    "id": "vf_03c1319b9c297377"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-10T20:52:19.432210+00:00",
+  "reason": "External corroboration of frontier difficulty: AlphaProof Nexus (DeepMind, arXiv 2605.22763, May 2026) attempted Erdős #1094 (listed in erdos_problems_attempted.txt of google-deepmind/alphaproof-nexus-results@0647711a7118) and did not solve it (9 of 242 attempted Erdős problems solved). Their Lean formalization of the statement lives in google-deepmind/formal-conjectures. Treat as evidence the open obligations here are genuine, not low-hanging.",
+  "before_hash": "sha256:304b37a362ceefe02db3fa421032437fab93f9d6a5444363aafcfb4e01e35b9c",
+  "after_hash": "sha256:6d7a7854cc14d61c1be52647bfd7a5cf5abbb04193156528e2a84dbd46880f2e",
+  "payload": {
+    "annotation_id": "ann_509cd1f0c29575f4",
+    "proposal_id": "vpr_d93511917d52c494",
+    "text": "External corroboration of frontier difficulty: AlphaProof Nexus (DeepMind, arXiv 2605.22763, May 2026) attempted Erdős #1094 (listed in erdos_problems_attempted.txt of google-deepmind/alphaproof-nexus-results@0647711a7118) and did not solve it (9 of 242 attempted Erdős problems solved). Their Lean formalization of the statement lives in google-deepmind/formal-conjectures. Treat as evidence the open obligations here are genuine, not low-hanging."
+  },
+  "caveats": [],
+  "signature": "48cf6c30cd131afbad3726839b9dc4605368d87e5f433951383813c1ddc5319587f09707556bdcce11ddd854fe52eece684d1544c356dda2c4f12e0952dead02"
+}

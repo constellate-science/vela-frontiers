@@ -1,0 +1,133 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_00415b2fefc76558",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_8431860ae06050de"
+  },
+  "actor": {
+    "id": "agent:erdos-spine-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-05-30T00:43:36.632861+00:00",
+  "reason": "Candidate claim vc_8d3c7010373d5e55 imported from artifact packet cap_61973ee16b553d57",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-05-30T00:42:06.826507+00:00",
+      "packet_id": "cap_61973ee16b553d57",
+      "producer": {
+        "id": "agent:erdos-spine-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős Open-Problem spine ingest"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős open problems: canonical status spine"
+    },
+    "candidate_claim_id": "vc_8d3c7010373d5e55",
+    "evidence_artifact_ids": [
+      "va_9bc926d75e4e3881"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős Problem #535 remains OPEN. Statement: Let $r \\geq 3$, and let $f_r(N)$ denote the size of the largest subset of $\\{1,\\ldots,N\\}$ such that no subset of size $r$ has the same pairwise greatest common divisor between all elements. Erdős [Er64] proved that $f_3(N) > N^{c/\\log\\log N}$ for some constant $c > 0$, and conjectured this should also be an upper bound; here we state the conjectural upper bound for all $r \\geq 3$. See also [536]. Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+        "type": "open_question"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.99
+      },
+      "created": "2026-05-30T00:42:06.826507+00:00",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_9bc926d75e4e3881",
+            "artifact_packet_id": "cap_61973ee16b553d57",
+            "candidate_claim_id": "vc_8d3c7010373d5e55"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_8431860ae06050de",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős Open-Problem spine ingest",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-spine-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_61973ee16b553d57 · vc_8d3c7010373d5e55",
+        "url": "https://www.erdosproblems.com/535",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_61973ee16b553d57",
+    "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/ErdosProblems/535.lean",
+    "https://www.erdosproblems.com/535",
+    "packet_artifact:va_9bc926d75e4e3881"
+  ],
+  "status": "applied",
+  "reviewed_by": "reviewer:erdos-db-trust",
+  "reviewed_at": "2026-05-30T01:04:16.324990+00:00",
+  "decision_reason": "Spine status accepted on the authority of the maintained erdosproblems.com canonical database (T. Bloom, T. Tao + community); formal statements cross-checked against google-deepmind/formal-conjectures",
+  "applied_event_id": "vev_fc7e0f2ecd5e784c",
+  "caveats": [
+    "Source adapter output is source/registry metadata, not a scientific conclusion.",
+    "Spine record from the erdosproblems.com community database (teorth/erdosproblems); status reflects last_update 2025-08-31. Results/attempts are a separate literature-extraction layer.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-spine-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_61973ee16b553d57",
+    "started_at": "2026-05-30T00:42:06.826507+00:00",
+    "context": {
+      "artifact_packet_id": "cap_61973ee16b553d57",
+      "producer_name": "Erdős Open-Problem spine ingest",
+      "topic": "Erdős open problems: canonical status spine"
+    }
+  }
+}

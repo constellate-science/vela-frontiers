@@ -1,0 +1,134 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_39714048188c7a63",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_cba5d4d787f1216f"
+  },
+  "actor": {
+    "id": "agent:erdos-deep-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-06-04T00:33:35.370256+00:00",
+  "reason": "Candidate claim vc_5f48f3b849ec647a imported from artifact packet cap_f4e8bcd294c97ba7",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-03T00:00:00Z",
+      "packet_id": "cap_f4e8bcd294c97ba7",
+      "producer": {
+        "id": "agent:erdos-deep-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős deep-ingest (problem anatomy)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    },
+    "candidate_claim_id": "vc_5f48f3b849ec647a",
+    "evidence_artifact_ids": [
+      "va_b43a0cf74f438df6"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #346 (?, AMS 11). STATEMENT: Is it true that for every lacunary, strongly complete sequence `A` that is not complete whenever infinitely many terms are removed from it, `lim A (n + 1) / A n = (1 + √5) / 2`? FORMAL: erdos_346: answer(sorry) ↔ ∀ {A : ℕ → ℕ}, IsLacunary A → IsAddStronglyCompleteNatSeq A → (∀ B : Set ℕ, B ⊆ range A → B.Infinite → ¬ IsAddComplete (range A \\ B)) → Tendsto (fun n => A (n + 1) / (A n : ℝ)) atTop (𝓝 ((1 + √5) / 2)); erdos_346: IsLacunary f; erdos_346: IsAddStronglyCompleteNatSeq f KNOWN/REMARKS: # Erdős Problem 346 *References:* - erdosproblems.com/346 - [Gr64d] Graham, R. L., A property of Fibonacci numbers. Fibonacci Quart. (1964), 1-10. - [ErGr80] Erdős, P. and Graham, R., Old and new problems and results in combinatorial number theory. Monographies de L'Enseignement Mathematique (1980). - | We define a sequence `f` by the formula `f n = n.fib - (- 1) ^ n`. | The sequence `f` is lacuna RELATED: [] OEIS: []",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.95
+      },
+      "created": "2026-06-03T00:00:00Z",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_b43a0cf74f438df6",
+            "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+            "candidate_claim_id": "vc_5f48f3b849ec647a"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_cba5d4d787f1216f",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős deep-ingest (problem anatomy)",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T00:00:00Z",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-deep-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_f4e8bcd294c97ba7 · vc_5f48f3b849ec647a",
+        "url": "https://www.erdosproblems.com/346",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "[ErGr80]",
+    "[Gr64d]",
+    "artifact_packet:cap_f4e8bcd294c97ba7",
+    "https://www.apache.org/licenses/LICENSE-2.0",
+    "https://www.erdosproblems.com/346",
+    "https://www.erdosproblems.com/346)",
+    "packet_artifact:va_b43a0cf74f438df6"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:26:49.968711+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-deep-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_f4e8bcd294c97ba7",
+    "started_at": "2026-06-03T00:00:00Z",
+    "context": {
+      "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+      "producer_name": "Erdős deep-ingest (problem anatomy)",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    }
+  }
+}

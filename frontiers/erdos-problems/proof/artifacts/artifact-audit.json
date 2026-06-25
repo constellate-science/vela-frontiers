@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "command": "artifact-audit",
+  "frontier": "examples/erdos-problems",
+  "artifact_count": 23,
+  "checked_local_blobs": 21,
+  "local_blob_bytes": 8112,
+  "by_kind": {
+    "dataset": 22,
+    "source_file": 1
+  },
+  "by_storage_mode": {
+    "local_blob": 21,
+    "pointer": 1,
+    "remote": 1
+  },
+  "issue_count": 0,
+  "issues": []
+}

@@ -1,0 +1,451 @@
+{
+  "version": 2,
+  "status": "success",
+  "eval": {
+    "task": "canopus/connection-thesis",
+    "experiment_id": "vex_smoke00000000",
+    "scorer": "frozen_verifier (Lean kernel / exact recompute / OEIS match \u2014 NOT an LLM judge)",
+    "arms": [
+      "constellation",
+      "flat_topk",
+      "none",
+      "random_neighbor"
+    ]
+  },
+  "results": {
+    "total_samples": 13,
+    "scores": [
+      {
+        "name": "frozen_verifier",
+        "metric": "verified_solve_rate",
+        "value": 0.07692307692307693
+      }
+    ],
+    "per_arm_edges_used": {
+      "constellation": 11,
+      "flat_topk": 11,
+      "none": 0,
+      "random_neighbor": 0
+    }
+  },
+  "samples": [
+    {
+      "id": "erdos:3::none",
+      "epoch": 1,
+      "input": "erdos:3",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "none",
+        "context_policy": "none",
+        "constellation_edges_used": [],
+        "n_constellation_edges": 0,
+        "tokens": 220,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:3::random_neighbor",
+      "epoch": 2,
+      "input": "erdos:3",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "random_neighbor",
+        "context_policy": "random_neighbor",
+        "constellation_edges_used": [],
+        "n_constellation_edges": 0,
+        "tokens": 723,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:3::flat_topk",
+      "epoch": 3,
+      "input": "erdos:3",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "flat_topk",
+        "context_policy": "flat_topk",
+        "constellation_edges_used": [
+          "erdos:3-erdos:139",
+          "erdos:3-erdos:142",
+          "erdos:3-erdos:201",
+          "erdos:3-erdos:140"
+        ],
+        "n_constellation_edges": 4,
+        "tokens": 766,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:3::constellation",
+      "epoch": 4,
+      "input": "erdos:3",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "constellation",
+        "context_policy": "constellation",
+        "constellation_edges_used": [
+          "erdos:3-erdos:139",
+          "erdos:3-erdos:142",
+          "erdos:3-erdos:201",
+          "erdos:3-erdos:140"
+        ],
+        "n_constellation_edges": 4,
+        "tokens": 1176,
+        "tool_calls": 2
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:5::none",
+      "epoch": 1,
+      "input": "erdos:5",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "none",
+        "context_policy": "none",
+        "constellation_edges_used": [],
+        "n_constellation_edges": 0,
+        "tokens": 183,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:5::random_neighbor",
+      "epoch": 2,
+      "input": "erdos:5",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "random_neighbor",
+        "context_policy": "random_neighbor",
+        "constellation_edges_used": [],
+        "n_constellation_edges": 0,
+        "tokens": 727,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:5::flat_topk",
+      "epoch": 3,
+      "input": "erdos:5",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "flat_topk",
+        "context_policy": "flat_topk",
+        "constellation_edges_used": [
+          "erdos:5-erdos:852",
+          "erdos:5-erdos:853"
+        ],
+        "n_constellation_edges": 2,
+        "tokens": 407,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:5::constellation",
+      "epoch": 4,
+      "input": "erdos:5",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "constellation",
+        "context_policy": "constellation",
+        "constellation_edges_used": [
+          "erdos:5-erdos:852",
+          "erdos:5-erdos:853"
+        ],
+        "n_constellation_edges": 2,
+        "tokens": 646,
+        "tool_calls": 2
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:14::none",
+      "epoch": 1,
+      "input": "erdos:14",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "none",
+        "context_policy": "none",
+        "constellation_edges_used": [],
+        "n_constellation_edges": 0,
+        "tokens": 209,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:14::random_neighbor",
+      "epoch": 2,
+      "input": "erdos:14",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "random_neighbor",
+        "context_policy": "random_neighbor",
+        "constellation_edges_used": [],
+        "n_constellation_edges": 0,
+        "tokens": 743,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:14::flat_topk",
+      "epoch": 3,
+      "input": "erdos:14",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "flat_topk",
+        "context_policy": "flat_topk",
+        "constellation_edges_used": [
+          "erdos:14-erdos:30",
+          "erdos:14-erdos:43",
+          "erdos:14-erdos:155",
+          "erdos:14-erdos:530",
+          "erdos:14-erdos:861"
+        ],
+        "n_constellation_edges": 5,
+        "tokens": 789,
+        "tool_calls": 1
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "erdos:14::constellation",
+      "epoch": 4,
+      "input": "erdos:14",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "I",
+          "answer": "failed",
+          "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+        }
+      },
+      "metadata": {
+        "arm": "constellation",
+        "context_policy": "constellation",
+        "constellation_edges_used": [
+          "erdos:14-erdos:30",
+          "erdos:14-erdos:43",
+          "erdos:14-erdos:155",
+          "erdos:14-erdos:530",
+          "erdos:14-erdos:861"
+        ],
+        "n_constellation_edges": 5,
+        "tokens": 1166,
+        "tool_calls": 2
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "I",
+            "explanation": "exact_recompute[sidon] REJECT: points not binary length-4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "calibration:sidon-n4::constellation",
+      "epoch": 4,
+      "input": "calibration:sidon-n4",
+      "target": "verified-novel solve",
+      "scores": {
+        "frozen_verifier": {
+          "value": "C",
+          "answer": "succeeded",
+          "explanation": "exact_recompute[sidon] PASS: Sidon verified: 4 points, 10 pairwise sums all distinct"
+        }
+      },
+      "metadata": {
+        "arm": "constellation",
+        "context_policy": "constellation",
+        "constellation_edges_used": [],
+        "n_constellation_edges": 0,
+        "tokens": null,
+        "tool_calls": null
+      },
+      "events": [
+        {
+          "event": "score",
+          "score": {
+            "value": "C",
+            "explanation": "exact_recompute[sidon] PASS: Sidon verified: 4 points, 10 pairwise sums all distinct"
+          }
+        }
+      ]
+    }
+  ]
+}

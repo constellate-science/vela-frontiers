@@ -1,0 +1,133 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_183bf46b361af53f",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_b9e7b2d1475382f3"
+  },
+  "actor": {
+    "id": "agent:erdos-spine-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-05-30T00:46:42.885395+00:00",
+  "reason": "Candidate claim vc_d3acac56ca207093 imported from artifact packet cap_61973ee16b553d57",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-05-30T00:42:06.826507+00:00",
+      "packet_id": "cap_61973ee16b553d57",
+      "producer": {
+        "id": "agent:erdos-spine-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős Open-Problem spine ingest"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős open problems: canonical status spine"
+    },
+    "candidate_claim_id": "vc_d3acac56ca207093",
+    "evidence_artifact_ids": [
+      "va_9bc926d75e4e3881"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős Problem #1080 has status 'disproved (lean)'. Statement: Let $G$ be a bipartite graph on $n$ vertices such that one part has $\\lfloor n^{2/3}\\rfloor$ vertices. Is there a constant $c>0$ such that if $G$ has at least $cn$ edges then $G$ must contain a $C_6$? The answer is no, as shown by De Caen and Székely [DeSz92], who in fact show a stronger result. Let $f(n,m)$ be the maximum number of edges of a bipartite graph between $n$ and $m$ vertices which does not contain either a $C_4$ or $C_6$. A positive answer to this question would then imply $f(n,\\lfloor n^{2/3}\\rfloor)\\ll n$. De Caen and Székely prove $n^{10/9}\\gg f(n,\\lfloor n^{2/3}\\rfloor) \\gg n^{58/57+o(1)}$ for $m\\sim n^{2/3}$. They also prove more generally that, for $n^{1/2}\\leq m\\leq n$, $f(n,m) \\ll (nm)^{2/3},$ which was also proved by Faudree and Simonovits. This was formalized in Lean by Alexeev using Aristotle. Topics: graph theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+        "type": "open_question"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.99
+      },
+      "created": "2026-05-30T00:42:06.826507+00:00",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_9bc926d75e4e3881",
+            "artifact_packet_id": "cap_61973ee16b553d57",
+            "candidate_claim_id": "vc_d3acac56ca207093"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_b9e7b2d1475382f3",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős Open-Problem spine ingest",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-spine-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_61973ee16b553d57 · vc_d3acac56ca207093",
+        "url": "https://www.erdosproblems.com/1080",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_61973ee16b553d57",
+    "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/ErdosProblems/1080.lean",
+    "https://www.erdosproblems.com/1080",
+    "packet_artifact:va_9bc926d75e4e3881"
+  ],
+  "status": "applied",
+  "reviewed_by": "reviewer:erdos-db-trust",
+  "reviewed_at": "2026-05-30T01:04:16.329436+00:00",
+  "decision_reason": "Spine status accepted on the authority of the maintained erdosproblems.com canonical database (T. Bloom, T. Tao + community); formal statements cross-checked against google-deepmind/formal-conjectures",
+  "applied_event_id": "vev_ea5d673551d218ee",
+  "caveats": [
+    "Source adapter output is source/registry metadata, not a scientific conclusion.",
+    "Spine record from the erdosproblems.com community database (teorth/erdosproblems); status reflects last_update 2025-12-28. Results/attempts are a separate literature-extraction layer.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-spine-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_61973ee16b553d57",
+    "started_at": "2026-05-30T00:42:06.826507+00:00",
+    "context": {
+      "artifact_packet_id": "cap_61973ee16b553d57",
+      "producer_name": "Erdős Open-Problem spine ingest",
+      "topic": "Erdős open problems: canonical status spine"
+    }
+  }
+}

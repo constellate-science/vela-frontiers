@@ -1,0 +1,23 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_e05af5e0aef5cf63",
+  "kind": "statement.registered",
+  "target": {
+    "type": "finding",
+    "id": "vf_0048a13ac8707d73"
+  },
+  "actor": {
+    "id": "agent:claude-proxy",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-10T23:48:33.333379+00:00",
+  "reason": "statement priority registration",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "informal_ref": "erdosproblems.com (obligation vf_0d4ac181db98ceaa)",
+    "statement_hash": "2103b82b912cf1bfa9035aeba7405732843203a7660d759674712ed0ffc79e1b"
+  },
+  "caveats": [],
+  "signature": "d76218c68355376be7654bd388223582df8e2f9a79d0183456b1aae82185e1a599de3303133dc81f3428a18eb9f3a79e7ab496006ffedc409d5523a74ec90507"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "vf_88e9c72c825c6e93",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdos distinct distances problem (1946 conjecture, essentially solved by Guth-Katz 2010): n points in the plane determine at least Omega(n / log n) distinct pairwise distances, matching Erdos's lattice-construction upper bound up to log factors.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Planar point sets and distinct pairwise distances; resolved via the polynomial method up to logarithmic factors.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.95,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "Guth, Katz 2015, Annals of Mathematics",
+    "authors": [
+      {
+        "name": "agent:vela-curation-bot",
+        "orcid": null
+      }
+    ],
+    "year": 2015,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-10T19:27:57.531242+00:00",
+      "extractor_version": "vela/0.110.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-10T19:27:57.531258+00:00",
+  "updated": null
+}

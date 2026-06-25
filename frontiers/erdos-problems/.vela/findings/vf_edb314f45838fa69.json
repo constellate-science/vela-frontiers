@@ -1,0 +1,74 @@
+{
+  "id": "vf_edb314f45838fa69",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #198 has status 'disproved (lean)'. Statement: The answer is no; Erdős and Graham report this was proved by Baumgartner, presumably referring to the paper [Ba75], which does not state this exactly, but the following simple construction is implicit in [Ba75]. Let $P_1,P_2,\\ldots$ be an enumeration of all countably many infinite arithmetic progressions. We choose $a_1$ to be the minimal element of $P_1\\cap \\mathbb{N}$, and in general choose $a_n$ to be an element of $P_n\\cap \\mathbb{N}$ such that $a_n>2a_{n-1}$. By construction $A=\\{a_1 < a_2 < \\cdots\\}$ contains at least one element from every infinite arithmetic progression, and is a lacunary set, so is certainly Sidon. AlphaProof has found the following explicit construction: $A = \\{ (n+1)!+n : n\\geq 0\\}$. This is a Sidon set, and intersects every arithmetic progression, since for any $a,d\\in \\mathbb{N}$, $(a+d+1)!+(a+d)\\in A$, and $d$ divides $(a+d+1)!+d$. This was formalized in Lean by Alexeev using Aristotle. Topics: additive combinatorics, sidon sets, arithmetic progressions. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_cb7973c232de2315"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/198",
+    "title": "cap_61973ee16b553d57 · vc_cb7973c232de2315",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

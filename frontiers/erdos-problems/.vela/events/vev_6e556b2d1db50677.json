@@ -1,0 +1,66 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_6e556b2d1db50677",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_c149836c3a67059e"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-05-10T21:24:22.191069+00:00",
+  "reason": "EGZ n=2 proven by parity pigeonhole; sha256:58dec20d... pinned in lean/README.md cross-reference. Verifies with lake build Vela.EGZ on Mathlib v4.29.1.",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:58dec20d4f8c474d222009c9d3b7cae2ef010bfac48fd5c2ad7c9c8d894428ec",
+      "created": "2026-05-10T21:24:22.189533+00:00",
+      "id": "va_c149836c3a67059e",
+      "kind": "source_file",
+      "license": "Apache-2.0 OR MIT",
+      "locator": "lean/Vela/EGZ.lean",
+      "media_type": "text/x-lean",
+      "metadata": {
+        "carina_kind": "proof_script",
+        "carina_proof_id": "vpf_f8e682ef7af06e88",
+        "carina_proof_target_finding": "vf_e9e8b34f2a6a7b1d",
+        "carina_proof_tool": "lean4",
+        "carina_proof_tool_version": "4.29.1"
+      },
+      "name": "Theorem 8 (Erdős-Ginzburg-Ziv, n=2 case)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "Apache-2.0 OR MIT",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "code_repository",
+        "title": "Proof script for vf_e9e8b34f2a6a7b1d (lean4 4.29.1)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 3361,
+      "storage_mode": "pointer",
+      "target_findings": [
+        "vf_e9e8b34f2a6a7b1d"
+      ]
+    },
+    "proposal_id": "vpr_c39d9ea2140020b4"
+  },
+  "caveats": []
+}

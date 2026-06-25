@@ -1,0 +1,64 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_5996323c2a38ebf8",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_621e1180b305e908"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-17T06:47:24.276636+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:a824eefe3b1b008d8e1458cf1e9ac89a1964403781f060c7efc9f15d969808b7",
+      "created": "2026-06-17T06:47:23.049237+00:00",
+      "id": "va_621e1180b305e908",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/a824eefe3b1b008d8e1458cf1e9ac89a1964403781f060c7efc9f15d969808b7",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::binom_exception_enum",
+        "witness_file": "erdos1094-exception-enum-k40.witness.json",
+        "witness_kind": "binom_exception_enum"
+      },
+      "name": "Frozen-verifier witness: erdos1094-exception-enum-k40 (binom_exception_enum)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos1094-exception-enum-k40 (binom_exception_enum)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 390,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_2d4edfce58578092"
+      ]
+    },
+    "proposal_id": "vpr_0a488faf5535d717"
+  },
+  "caveats": []
+}

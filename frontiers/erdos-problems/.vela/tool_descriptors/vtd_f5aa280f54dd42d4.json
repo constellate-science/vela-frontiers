@@ -1,0 +1,41 @@
+{
+  "calling_convention": "local_python",
+  "descriptor_id": "vtd_f5aa280f54dd42d4",
+  "input_schema": {
+    "properties": {
+      "set": {
+        "items": {
+          "type": "integer"
+        },
+        "type": "array"
+      }
+    },
+    "required": [
+      "set"
+    ],
+    "type": "object"
+  },
+  "output_schema": {
+    "properties": {
+      "conflict": {
+        "items": {
+          "type": "integer"
+        },
+        "type": [
+          "array",
+          "null"
+        ]
+      },
+      "is_sidon": {
+        "type": "boolean"
+      }
+    },
+    "type": "object"
+  },
+  "provider": "github:vela-science/vela:real_bench_erdos",
+  "schema": "vela.tool_descriptor.v0.1",
+  "signature": "f77891e7a0bf843eb5846ce4990c0632fd4aebd74ceef7996e8ba4814ecc8dda5c3254ec349d3bbbf49e2d9e2b306ac9caf1303700318cb56b782ba16b0ca307",
+  "signer_pubkey_hex": "4cda22411c3b687ea3bd8e676fea4d8b7cc3036dda9592dabf3671b4ad4e74e6",
+  "tool_name": "sidon-verifier",
+  "tool_version": "0.1.0"
+}

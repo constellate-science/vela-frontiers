@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_5e8ed70fed6facc5",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_ca5f5454af30e3a4"
+  },
+  "actor": {
+    "id": "agent:vela-foundry-lean",
+    "type": "agent"
+  },
+  "created_at": "2026-06-21T19:24:25.826157+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #18: 6 is a practical number (Erdos18.practicalH_six). Kernel-clean Lean proof — axioms {propext, Classical.choice, Quot.sound}, no sorryAx — via le_antisymm. Produced by the vela prover-in-the-loop foundry; verified by the Lean kernel.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 1.0
+      },
+      "created": "2026-06-21T19:24:25.826113+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_ca5f5454af30e3a4",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-foundry-lean",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-21T19:24:25.826099+00:00",
+          "extractor_version": "vela/0.700.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "vela foundry (prover-in-the-loop), formal-conjectures @ a1c9543",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-22T14:21:31.544848+00:00",
+  "decision_reason": "accepted via review",
+  "applied_event_id": "vev_084604b698abb622",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

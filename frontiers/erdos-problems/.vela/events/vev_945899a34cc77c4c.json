@@ -1,0 +1,64 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_945899a34cc77c4c",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_c740201c27ff353d"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-17T06:45:35.414706+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:c233b3bd4cdca656fb5334301cea114fbf2b6634978215ee904143624b3331ab",
+      "created": "2026-06-17T06:45:34.169130+00:00",
+      "id": "va_c740201c27ff353d",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/c233b3bd4cdca656fb5334301cea114fbf2b6634978215ee904143624b3331ab",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::interval_product",
+        "witness_file": "erdos1056-k06.witness.json",
+        "witness_kind": "interval_product"
+      },
+      "name": "Frozen-verifier witness: erdos1056-k06 (interval_product)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos1056-k06 (interval_product)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 122,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_ae08f178d51bb99e"
+      ]
+    },
+    "proposal_id": "vpr_87a20cc24f1fbaa8"
+  },
+  "caveats": []
+}

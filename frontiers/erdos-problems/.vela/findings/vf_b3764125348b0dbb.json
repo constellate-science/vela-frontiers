@@ -1,0 +1,74 @@
+{
+  "id": "vf_b3764125348b0dbb",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #442 has been DISPROVED (a counterexample is known). Statement: Let $\\operatorname{Log} x := \\max\\{\\log x, 1\\}$, $\\operatorname{Log}_2x = \\operatorname{Log} (\\operatorname{Log} x)$, and $\\operatorname{Log}_3x = \\operatorname{Log}(\\operatorname{Log}(\\operatorname{Log} x)).$ Is it true that if $A\\subseteq\\mathbb{N}$ is such that $$ \\frac{1}{\\operatorname{Log}_2 x} \\sum_{n\\in A: n\\leq x} \\frac{1}{n}\\to\\infty $$ then $$ \\left(\\sum_{n\\in A: n\\leq x} \\frac{1}{n}\\right)^2 \\sum_{n, m \\in A: n < m \\leq x} \\frac{1}{\\operatorname{lcm}(n, m)}\\to\\infty $$ as $x\\to\\infty$? Tao [Ta24b] has shown this is false. [Ta24b] Tao, T., _Dense sets of natural numbers with unusually large least common multiples_. arXiv:2407.04226 (2024). Note: the informal and formal statements follow the solution paper https://arxiv.org/pdf/2407.04226 Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_e18a1401889f4ca1"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/442",
+    "title": "cap_61973ee16b553d57 · vc_e18a1401889f4ca1",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

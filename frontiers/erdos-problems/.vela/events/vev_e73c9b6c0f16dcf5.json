@@ -1,0 +1,23 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_e73c9b6c0f16dcf5",
+  "kind": "statement.registered",
+  "target": {
+    "type": "finding",
+    "id": "vf_0048a13ac8707d73"
+  },
+  "actor": {
+    "id": "agent:claude-proxy",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-10T23:48:48.570272+00:00",
+  "reason": "statement priority registration",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "informal_ref": "scripts/erdos617_encode.py",
+    "statement_hash": "5faa220b968f1f03cc5170be4fd992e0ee85372110d1b749a053c32fa17bd3bb"
+  },
+  "caveats": [],
+  "signature": "be3afdb8db44fe6be743f406298f46fd95b78ea65128a2d57bfdad9705d555464ebfad5835e2cb8717e0f0cda56e3df9b66deb692dd3238ff2f74f3925253807"
+}

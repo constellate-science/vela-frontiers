@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_933b01bcb2066d02",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_e9e8b34f2a6a7b1d"
+  },
+  "actor": {
+    "id": "agent:vela-curation-bot",
+    "type": "human"
+  },
+  "created_at": "2026-05-10T19:27:57.576956+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdos-Ginzburg-Ziv theorem (1961, solved): among any 2n-1 integers, there exist n whose sum is divisible by n. Tight: 2n-2 integers may admit no such subset.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Zero-sum subsequences modulo n; solved by Chevalley-Warning + induction."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.98
+      },
+      "created": "2026-05-10T19:27:57.576917+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_e9e8b34f2a6a7b1d",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-curation-bot",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-10T19:27:57.576903+00:00",
+          "extractor_version": "vela/0.110.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "Erdos, Ginzburg, Ziv 1961, Bull. Research Council Israel",
+        "year": 1961
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-05-10T21:24:11.123913+00:00",
+  "decision_reason": "Theorem 8 (n=2 case) machine-checked in lean/Vela/EGZ.lean; statement matches; general theorem (arbitrary n) deferred to a future Chevalley-Warning-route cycle.",
+  "applied_event_id": "vev_cc67da8a0b095440",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

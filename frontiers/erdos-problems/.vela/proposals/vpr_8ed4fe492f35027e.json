@@ -1,0 +1,140 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_8ed4fe492f35027e",
+  "kind": "artifact.assert",
+  "target": {
+    "type": "artifact",
+    "id": "va_e17775761a64e64e"
+  },
+  "actor": {
+    "id": "agent:erdos-deep-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-06-04T00:33:12.863391+00:00",
+  "reason": "Import artifact va_b43a0cf74f438df6 from artifact packet cap_f4e8bcd294c97ba7",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:b43a0cf74f438df6a29928e3b90f53c2d8c00266d22fdf77cea5b3bfa0d4d1a5",
+      "created": "2026-06-03T00:00:00Z",
+      "id": "va_e17775761a64e64e",
+      "kind": "dataset",
+      "license": "public source locator; no restricted bytes deposited",
+      "locator": "examples/erdos-problems/anatomy/problem-anatomy.v1.json",
+      "media_type": "application/json",
+      "metadata": {
+        "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+        "external_artifact_id": "va_b43a0cf74f438df6",
+        "ingestor": "erdos-deep-ingest",
+        "parent_artifact_ids": [],
+        "producer_agent": "agent:erdos-deep-ingest",
+        "topic": "Erdős problem anatomy — deep ingestion"
+      },
+      "name": "Erdős problem anatomy (deep ingest from formal-conjectures Lean)",
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős deep-ingest (problem anatomy)",
+            "orcid": null
+          }
+        ],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T00:00:00Z",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-deep-ingest",
+          "model_version": null
+        },
+        "journal": null,
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "data_release",
+        "title": "cap_f4e8bcd294c97ba7 · Erdős problem anatomy (deep ingest from formal-conjectures Lean)",
+        "url": "examples/erdos-problems/anatomy/problem-anatomy.v1.json",
+        "year": null
+      },
+      "retracted": false,
+      "source_url": "examples/erdos-problems/anatomy/problem-anatomy.v1.json",
+      "storage_mode": "remote",
+      "target_findings": [
+        "vf_8d82f1053dee6d68",
+        "vf_5b5f67825565cb6a",
+        "vf_9f23df130bea49a4",
+        "vf_8464ba2558ffcbbf",
+        "vf_cb2d2b2a7df67a58",
+        "vf_b96694cffd142e8f",
+        "vf_30c74407b905baff",
+        "vf_b5d811546966485b",
+        "vf_60706b351f64d38d",
+        "vf_c17ac4147567bdba",
+        "vf_2ba1bbf04615d629",
+        "vf_ac5a7fe6c9dc1a27",
+        "vf_94d4a54c3e39321b",
+        "vf_c0e177df398d37d6",
+        "vf_70e2866073427f46",
+        "vf_f9b86e5a4b1f34b2",
+        "vf_4d69400d151712a4",
+        "vf_983ec18ab2e103dc",
+        "vf_1d25e1a2030e9266",
+        "vf_70259b6871e9fca6",
+        "vf_4ec4778341ee9fe4",
+        "vf_cba5d4d787f1216f",
+        "vf_3e0b4a467498c25c",
+        "vf_799589a6a6896332",
+        "vf_7cc3c247984a683b",
+        "vf_7212f641225e4728",
+        "vf_0c6f8b6304e11afa",
+        "vf_b061cd3ee9f0413a",
+        "vf_491cbbe0e9bf42f9",
+        "vf_207b107a0d1d46bd",
+        "vf_29240b56eb76656c",
+        "vf_399edf962ca1650c",
+        "vf_24382d6e55ff5c2e",
+        "vf_6192a17131db4ddd"
+      ]
+    },
+    "artifact_packet": {
+      "created_at": "2026-06-03T00:00:00Z",
+      "packet_id": "cap_f4e8bcd294c97ba7",
+      "producer": {
+        "id": "agent:erdos-deep-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős deep-ingest (problem anatomy)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    },
+    "external_artifact_id": "va_b43a0cf74f438df6",
+    "parent_artifact_ids": []
+  },
+  "source_refs": [
+    "artifact_packet:cap_f4e8bcd294c97ba7",
+    "examples/erdos-problems/anatomy/problem-anatomy.v1.json"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:28:52.627449+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [],
+  "agent_run": {
+    "agent": "agent:erdos-deep-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_f4e8bcd294c97ba7",
+    "started_at": "2026-06-03T00:00:00Z",
+    "context": {
+      "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+      "producer_name": "Erdős deep-ingest (problem anatomy)",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    }
+  }
+}

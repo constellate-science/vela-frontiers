@@ -1,0 +1,74 @@
+{
+  "id": "vf_50d220a3d1efb2eb",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #848 has status 'decidable'. Statement: Is the maximum size of a set $A ⊆ \\{1, \\dots, N\\}$ such that $ab + 1$ is never squarefree (for all $a, b ∈ A$) achieved by taking those $n ≡ 7 \\pmod{25}$? This asks whether `Erdos848 N` holds for all $N$ (formulated using `A ⊆ Finset.range N`). This was solved for all sufficiently large $N$ by Sawhney in this note. In fact, Sawhney proves something slightly stronger, that there exists some constant $c>0$ such that if $\\lvert A\\rvert \\geq (\\frac{1}{25}-c)N$ and $N$ is large then $A$ is contained in either $\\{ n\\equiv 7\\pmod{25}\\}$ or $\\{n\\equiv 18\\pmod{25}\\}$. Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_35f69f55ce2b2cd6"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/848",
+    "title": "cap_61973ee16b553d57 · vc_35f69f55ce2b2cd6",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

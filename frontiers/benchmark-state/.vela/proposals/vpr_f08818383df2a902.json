@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_f08818383df2a902",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_368ec6ffb5747092"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:50:55.839740+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "BENCHMARK CLAIM (MiniF2F) — Draft-Sketch-Prove (DSP) REPORTS improved miniF2F-test pass by drafting an informal proof, sketching a formal skeleton, then closing gaps with an ATP. VERIFICATION STATE: author-reported; pipeline described; depends on the underlying ATP and the autoformalizer, both of which drift. NOT re-run here. Open obligation: reproduce with pinned ATP + LLM versions.",
+        "type": "computational"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.3
+      },
+      "created": "2026-06-10T06:50:55.839703+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": true,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_368ec6ffb5747092",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "reviewer:will-blair",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:50:55.839691+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "expert_assertion",
+        "title": "manual finding",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T06:50:55.840379+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_b070eed5d144e650",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_29b4a3dbaf0c09fd",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_009a49becf7821af"
+  },
+  "actor": {
+    "id": "agent:vela-foundry-lean",
+    "type": "agent"
+  },
+  "created_at": "2026-06-22T14:47:01.302821+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #138: W(1) = 1 (Erdos138.monoAPNumber_two_one). Kernel-clean Lean proof — axioms {propext, Classical.choice, Quot.sound}, no sorryAx — via sInf le_antisymm. Produced by the prover-in-the-loop foundry; verified by the Lean kernel.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 1.0
+      },
+      "created": "2026-06-22T14:47:01.302779+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_009a49becf7821af",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-foundry-lean",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-22T14:47:01.302768+00:00",
+          "extractor_version": "vela/0.700.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "vela foundry (prover-in-the-loop) wave 2, formal-conjectures @ a1c9543",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-22T14:48:30.471773+00:00",
+  "decision_reason": "accepted via review",
+  "applied_event_id": "vev_070e17b1ed6abfaf",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

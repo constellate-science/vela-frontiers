@@ -1,0 +1,98 @@
+{
+  "caveats": [
+    "Signals are derived from frontier state and should be recomputed after edits.",
+    "Candidate gaps, bridges, and tensions require human review.",
+    "A clean quality table is not proof of scientific truth."
+  ],
+  "event_log": {
+    "confidence_updates_projection": 0,
+    "events": 2766,
+    "review_events_projection": 0
+  },
+  "frontier": "Erdős problems frontier",
+  "proof_readiness": {
+    "blockers": 314,
+    "caveats": [
+      "Proof readiness means packet state is reviewable, not scientifically settled."
+    ],
+    "status": "needs_review",
+    "warnings": 79
+  },
+  "proof_state": {
+    "last_event_at_export": "2026-05-30T01:04:16.368389+00:00",
+    "latest_packet": {
+      "event_log_hash": "17ffb7ddcc3dcb44cc35e2f221147fe5c2ee785ba3e4b39ea762facd7803ba46",
+      "generated_at": "2026-05-30T01:36:40.783630+00:00",
+      "packet_manifest_hash": "669f56ecfdd05b77424ace2e6018f91f3293921e193ffddc2d4ad59a5b170926",
+      "snapshot_hash": "adf5cd08914be106b09be94cb69e55449b5195f7c3e9894fc07c7fc288c446c0",
+      "status": "stale"
+    },
+    "stale_reason": "Applied proposal vpr_f84f715cbb66660f after latest proof export"
+  },
+  "proposals": {
+    "accepted": 0,
+    "applied": 1271,
+    "by_kind": {
+      "artifact.assert": 28,
+      "finding.add": 1333,
+      "finding.note": 111,
+      "verifier.attach": 8
+    },
+    "duplicate_ids": [],
+    "invalid_targets": [],
+    "pending_review": 0,
+    "rejected": 209,
+    "total": 1480
+  },
+  "review_queue": {
+    "high_priority": 0,
+    "items": 1256
+  },
+  "schema": "vela.quality-table.v0",
+  "signals": {
+    "by_kind": {
+      "missing_evidence_locator": 39,
+      "missing_evidence_span": 39,
+      "proposal_applied": 1271,
+      "stale_proof_packet": 1,
+      "unsigned_registered_actor": 235
+    },
+    "by_severity": {
+      "error": 235,
+      "info": 1271,
+      "warning": 79
+    },
+    "total": 1585
+  },
+  "stats": {
+    "avg_confidence": 0.981,
+    "categories": {
+      "mechanism": 1,
+      "open_question": 862,
+      "theoretical": 393
+    },
+    "condition_record_count": 1256,
+    "confidence_distribution": {
+      "high_gt_80": 1235,
+      "low_lt_60": 18,
+      "medium_60_80": 3
+    },
+    "confidence_update_count": 0,
+    "contested": 0,
+    "event_count": 2766,
+    "evidence_atom_count": 1256,
+    "findings": 1256,
+    "gaps": 16,
+    "human_reviewed": 6,
+    "link_types": {
+      "depends": 17
+    },
+    "links": 17,
+    "negative_space": 0,
+    "proposal_count": 1480,
+    "replicated": 0,
+    "review_event_count": 1262,
+    "source_count": 1234,
+    "unreplicated": 1256
+  }
+}

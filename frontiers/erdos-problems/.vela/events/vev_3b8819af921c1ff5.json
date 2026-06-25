@@ -1,0 +1,34 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_3b8819af921c1ff5",
+  "kind": "statement.attested",
+  "target": {
+    "type": "finding",
+    "id": "vf_16db6f3dba299e5f"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-10T20:52:30.016626+00:00",
+  "reason": "statement-faithfulness attestation",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "attestation": {
+      "attested_at": "2026-06-10T20:52:29.847804+00:00",
+      "attested_by": "reviewer:will-blair",
+      "formal_ref": "/Users/williamblair/personal/vela/google-deepmind/alphaproof-nexus-results@0647711a7118PNOutputs/ErdosProblems/erdos_152.lean",
+      "formal_statement_hash": "fb9cf6bb4de746f9e520e07ce9fccbddd6cd63eafb674bbe60dd457a827c6e35",
+      "id": "vsa_63ff1fbef301d202",
+      "informal_ref": "erdosproblems.com #152",
+      "note": "Statement matches the problem as posed on erdosproblems.com.",
+      "schema": "vela.statement_attestation.v0.1",
+      "signature": "6a5737aabd982fb3a6fbb2e5236b54de0c7c564d2167c5a2187e340f33f9f0e64275ceea6b653d3be136d910b1e02f4a294a40d3af8a7518db654d5810cac506",
+      "signer_pubkey_hex": "4892f93877e637b5f59af31d9ec6704814842fb278cacb0eb94704baef99455e",
+      "target": "vf_16db6f3dba299e5f",
+      "verdict": "faithful"
+    }
+  },
+  "caveats": []
+}

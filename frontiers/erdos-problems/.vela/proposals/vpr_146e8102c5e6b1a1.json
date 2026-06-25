@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_146e8102c5e6b1a1",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_3f7f35489d6f3981"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:36.854350+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #212 (vf_f308e6cad2131c2d) [related, confidence 0.7]: Both concern point sets in the plane with rational/integral pairwise distances; 213's finite no-3-collinear-no-4-concyclic integral-distance configurations are the structured finite analogue of 212's dense rational-distance set. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #212 (vf_f308e6cad2131c2d) [related, confidence 0.7]: Both concern point sets in the plane with rational/integral pairwise distances; 213's finite no-3-collinear-no-4-concyclic integral-distance configurations are the structured finite analogue of 212's dense rational-distance set. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:26:01.225441+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

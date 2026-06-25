@@ -1,0 +1,213 @@
+{
+  "experiment_id": "vex_smoke00000000",
+  "attempts": [
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "none",
+      "problem_id": "erdos:3",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 220,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:3",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 723,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:3",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 766,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          "erdos:3-erdos:139",
+          "erdos:3-erdos:142",
+          "erdos:3-erdos:201",
+          "erdos:3-erdos:140"
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "constellation",
+      "problem_id": "erdos:3",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 1176,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          "erdos:3-erdos:139",
+          "erdos:3-erdos:142",
+          "erdos:3-erdos:201",
+          "erdos:3-erdos:140"
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "none",
+      "problem_id": "erdos:5",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 183,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:5",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 727,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:5",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 407,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          "erdos:5-erdos:852",
+          "erdos:5-erdos:853"
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "constellation",
+      "problem_id": "erdos:5",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 646,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          "erdos:5-erdos:852",
+          "erdos:5-erdos:853"
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "none",
+      "problem_id": "erdos:14",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 209,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:14",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 743,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:14",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 789,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          "erdos:14-erdos:30",
+          "erdos:14-erdos:43",
+          "erdos:14-erdos:155",
+          "erdos:14-erdos:530",
+          "erdos:14-erdos:861"
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "constellation",
+      "problem_id": "erdos:14",
+      "proposer_model_id": "mock:smoke",
+      "metrics": {
+        "tokens": 1166,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          "erdos:14-erdos:30",
+          "erdos:14-erdos:43",
+          "erdos:14-erdos:155",
+          "erdos:14-erdos:530",
+          "erdos:14-erdos:861"
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "exact_recompute[sidon] REJECT: points not binary length-4"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_smoke00000000",
+      "arm_id": "constellation",
+      "problem_id": "calibration:sidon-n4",
+      "proposer_model_id": "calibration",
+      "metrics": {
+        "constellation_edges_used": []
+      },
+      "outcome": "succeeded",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 4 points, 10 pairwise sums all distinct"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_017ca8e9ad715bbd",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_1b02c9b209dd10a3"
+  },
+  "actor": {
+    "id": "agent:nexus-ingest-2026-06-10",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T18:39:01.593431+00:00",
+  "reason": "External corroboration of frontier difficulty: AlphaProof Nexus (DeepMind, arXiv 2605.22763, May 2026) attempted Erdős #647 (listed in erdos_problems_attempted.txt of google-deepmind/alphaproof-nexus-results@0647711a7118) and did not solve it (9 of 242 attempted Erdős problems solved). Their Lean formalization of the statement lives in google-deepmind/formal-conjectures. Treat as evidence the open obligations here are genuine, not low-hanging.",
+  "payload": {
+    "text": "External corroboration of frontier difficulty: AlphaProof Nexus (DeepMind, arXiv 2605.22763, May 2026) attempted Erdős #647 (listed in erdos_problems_attempted.txt of google-deepmind/alphaproof-nexus-results@0647711a7118) and did not solve it (9 of 242 attempted Erdős problems solved). Their Lean formalization of the statement lives in google-deepmind/formal-conjectures. Treat as evidence the open obligations here are genuine, not low-hanging."
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T20:52:15.859246+00:00",
+  "decision_reason": "External corroboration: Nexus attempted this problem and did not solve it (9/242)",
+  "applied_event_id": "vev_fccdabec3f32076e",
+  "caveats": []
+}

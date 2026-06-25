@@ -1,0 +1,82 @@
+{
+  "id": "vf_1b02c9b209dd10a3",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #647 has status 'verifiable'. Statement: Let $\\tau(n)$ count the number of divisors of $n$. Is there some $n > 24$ such that $$ \\max_{m < n}(m + \\tau(m)) \\leq n + 2? $$ Topics: number theory. Erdős prize: £25. Statement is machine-verified in Lean (formal-conjectures). OEIS: A062249, A087280.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_01fd84c405b62992"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/647",
+    "title": "cap_61973ee16b553d57 · vc_01fd84c405b62992",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "annotations": [
+    {
+      "id": "ann_ab459ff36d888b8a",
+      "text": "External corroboration of frontier difficulty: AlphaProof Nexus (DeepMind, arXiv 2605.22763, May 2026) attempted Erdős #647 (listed in erdos_problems_attempted.txt of google-deepmind/alphaproof-nexus-results@0647711a7118) and did not solve it (9 of 242 attempted Erdős problems solved). Their Lean formalization of the statement lives in google-deepmind/formal-conjectures. Treat as evidence the open obligations here are genuine, not low-hanging.",
+      "author": "reviewer:will-blair",
+      "timestamp": "2026-06-10T20:52:15.859320+00:00"
+    }
+  ],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

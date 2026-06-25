@@ -1,0 +1,74 @@
+{
+  "id": "vf_c15f0626f8a26a96",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #1167 remains OPEN. Statement: **Erdős Problem 1167.** Let $r \\geq 2$ be finite and $\\lambda$ be an infinite cardinal. Let $\\kappa_\\alpha$ be cardinals for all $\\alpha < \\gamma$. Is it true that $$2^\\lambda \\to (\\kappa_\\alpha + 1)_{\\alpha < \\gamma}^{r+1}$$ implies $$\\lambda \\to (\\kappa_\\alpha)_{\\alpha < \\gamma}^r?$$ Here $+$ means cardinal addition, so that $\\kappa_\\alpha + 1 = \\kappa_\\alpha$ if $\\kappa_\\alpha$ is infinite. A problem of Erdős, Hajnal, and Rado. Topics: set theory, probability. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_0178f8a0047e479a"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/1167",
+    "title": "cap_61973ee16b553d57 · vc_0178f8a0047e479a",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

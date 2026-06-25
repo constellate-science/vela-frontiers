@@ -1,0 +1,57 @@
+{
+  "schema": "carina.artifact_packet.v0.1",
+  "packet_id": "cap_f41de5f08328c24e",
+  "producer": {
+    "kind": "agent",
+    "id": "agent:canopus-lean-2026-06-14",
+    "name": "Canopus formal-math prover (Opus 4.8, parallel subagent)"
+  },
+  "topic": "Kernel-verified Lean proof closing an open sorry in Erd\u0151s Problem 829 (formal-conjectures)",
+  "created_at": "2026-06-14T00:00:00.000000+00:00",
+  "artifacts": [
+    {
+      "id": "va_5af1bc8466dbfe23",
+      "kind": "code",
+      "title": "Lean 4 proof of Erdos829.sumRep_cubes_three (3 is not an ordered sum of two cubes), kernel-verified",
+      "locator": "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/829.lean",
+      "content_hash": "5af1bc8466dbfe233fe62fa30a5792b8f41de5f08328c24e8c3a2b225216f87b",
+      "parents": [],
+      "metadata": {
+        "repo": "google-deepmind/formal-conjectures",
+        "file": "FormalConjectures/ErdosProblems/829.lean",
+        "declaration": "Erdos829.sumRep_cubes_three",
+        "toolchain": "leanprover/lean4:v4.27.0",
+        "verifier": "lean4 kernel (lake env lean)",
+        "axioms": "propext, Classical.choice, Quot.sound (no sorryAx)",
+        "method": "sumRep as filtered-antidiagonal cardinality; k \u2264 k^3 bounds rule out 2,3 as cubes; the four pairs (a,b) with a+b=3 each contain a 2 or 3",
+        "exit_code": 0
+      }
+    }
+  ],
+  "candidate_claims": [
+    {
+      "id": "vc_3fe62fa30a5792b8",
+      "assertion": "The Lean 4 theorem `Erdos829.sumRep_cubes_three` is proven and kernel-verified (axioms: propext, Classical.choice, Quot.sound; no sorryAx): the number of ordered representations of 3 as a sum of two perfect cubes is 0, i.e. 3 is not the sum of two cubes. Closes a previously-open `sorry` (category: test) in google-deepmind/formal-conjectures Erd\u0151s Problem 829.",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_5af1bc8466dbfe23"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/829",
+        "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/829.lean"
+      ],
+      "conditions": [
+        "domain:number_theory",
+        "verifier:lean4_kernel",
+        "category:test",
+        "result:no_representation",
+        "open_sorry_closed:true"
+      ],
+      "confidence": 0.99,
+      "caveats": [
+        "A small computational fact (a `test`-category supporting lemma), not the open Erd\u0151s 829 conjecture itself.",
+        "Kernel-verified locally; upstream PR is the external acceptance step and requires the maintainer's action."
+      ]
+    }
+  ]
+}

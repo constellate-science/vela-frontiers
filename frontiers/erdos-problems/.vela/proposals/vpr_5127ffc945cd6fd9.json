@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_5127ffc945cd6fd9",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_8d5ada8b450f91ca"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:10.353367+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #645 (vf_8b85ef50f5aabb8d) [related, confidence 0.65]: 645 (any 2-colouring of N yields a monochromatic 3-term AP) is a special low-length, two-colour instance of the monochromatic-AP guarantee that 138 quantifies via van der Waerden numbers. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #645 (vf_8b85ef50f5aabb8d) [related, confidence 0.65]: 645 (any 2-colouring of N yields a monochromatic 3-term AP) is a special low-length, two-colour instance of the monochromatic-AP guarantee that 138 quantifies via van der Waerden numbers. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:23.604109+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

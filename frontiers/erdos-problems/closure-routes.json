@@ -1,0 +1,320 @@
+{
+  "schema": "vela.closure-routes.v0.1",
+  "frontier": "vfr_37aec80d874a0239",
+  "note": "Curated statements of what WOULD close (or move) each problem, each mapped to the verifier that checks it. Read by the task_packet tool; not a promise of closability. verifier_kind values: frozen vela-verify kinds, 'lean' (math CI), 'python:<script>' (pinned deterministic tier), 'review' (Frontier PR accept).",
+  "problems": {
+    "124": {
+      "closure_types": [
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "witness",
+          "verifier_kind": "review",
+          "note": "reservoir L-syndeticity witness via the pinned checker"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "203": {
+      "closure_types": [
+        {
+          "type": "witness",
+          "verifier_kind": "crt_partial_cover",
+          "note": "a larger CRT partial cover re-checked by the frozen verifier"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "307": {
+      "closure_types": [
+        {
+          "type": "verified_computation",
+          "verifier_kind": "review",
+          "note": "congruence-barrier construction re-check (pinned tier: scripts/requirements-verifiers.txt)"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "319": {
+      "closure_types": [
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "verified_computation",
+          "verifier_kind": "review",
+          "note": "N-smoothness upper-bound counting corroboration (pinned tier: scripts/requirements-verifiers.txt)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "366": {
+      "closure_types": [
+        {
+          "type": "verified_computation",
+          "verifier_kind": "review",
+          "note": "Mordell-curve reduction + Pell witness re-check (pinned tier: scripts/requirements-verifiers.txt)"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "396": {
+      "closure_types": [
+        {
+          "type": "verified_computation",
+          "verifier_kind": "review",
+          "note": "sieve lower-bound certificate re-check (pinned tier: scripts/requirements-verifiers.txt)"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "488": {
+      "closure_types": [
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "witness",
+          "verifier_kind": "review",
+          "note": "a uniform argument is the open piece; per-A exact decisions are banked"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "617": {
+      "closure_types": [
+        {
+          "type": "witness",
+          "verifier_kind": "unsat_cert",
+          "note": "LRAT certificate that no balanced 5-coloring of K_26 exists. The frozen checker now supports RUP and RAT steps (deletion lines still unsupported); symmetry-breaking clauses must be included in the CNF and justified as RAT additions.",
+          "params": {
+            "n": 26,
+            "r": 5
+          }
+        },
+        {
+          "type": "counterexample_witness",
+          "verifier_kind": "balanced_coloring",
+          "note": "A balanced 5-coloring of K_26 itself: every 6-subset sees all 5 colors. Frozen verifier checks all C(26,6)=230,230 subsets directly. SHIPPED in vela-verify (golden: the pentagon 2-coloring of K_5; mutations in corpus/invalid)."
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "647": {
+      "closure_types": [
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        },
+        {
+          "type": "new_channel_reduction",
+          "verifier_kind": "lean",
+          "note": "the prime/forced-divisor channel is PROVABLY exhausted (banked obstruction_map + Erdos647Obstruction.lean) \u2014 only a different channel counts"
+        }
+      ]
+    },
+    "684": {
+      "closure_types": [
+        {
+          "type": "witness",
+          "verifier_kind": "kummer_no_carry",
+          "note": "extended no-carry witness table re-checked by the frozen verifier"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "699": {
+      "closure_types": [
+        {
+          "type": "verified_computation",
+          "verifier_kind": "review",
+          "note": "central-doubling exact reduction re-check (pinned tier: scripts/requirements-verifiers.txt)"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "700": {
+      "closure_types": [
+        {
+          "type": "witness",
+          "verifier_kind": "min_binom_gcd",
+          "note": "extended minimal-gcd case table re-checked by the frozen verifier"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "993": {
+      "closure_types": [
+        {
+          "type": "verified_computation",
+          "verifier_kind": "review",
+          "note": "independence-polynomial unimodality aggregation (pinned tier: scripts/requirements-verifiers.txt)"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "1056": {
+      "closure_types": [
+        {
+          "type": "witness",
+          "verifier_kind": "interval_product",
+          "note": "a new k-record: k consecutive intervals with product 1 mod p, frozen-verified"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "1093": {
+      "closure_types": [
+        {
+          "type": "witness",
+          "verifier_kind": "binom_deficiency",
+          "note": "extended deficiency witness table, frozen-verified"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    },
+    "1094": {
+      "closure_types": [
+        {
+          "type": "witness",
+          "verifier_kind": "binom_exception_enum",
+          "note": "extended exception enumeration, frozen-verified"
+        },
+        {
+          "type": "formal_proof",
+          "verifier_kind": "lean",
+          "note": "Lean patch building clean under the math CI profile (no sorry, no new axioms)"
+        },
+        {
+          "type": "obstruction_report",
+          "verifier_kind": "review",
+          "note": "precise, artifact-backed reason a route cannot work"
+        }
+      ]
+    }
+  }
+}

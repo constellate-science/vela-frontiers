@@ -1,0 +1,74 @@
+{
+  "id": "vf_a566be23717e9a21",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #1051 has status 'proved (lean)'. Statement: Is it true that if $a_0 < a_1 < a_2 < \\cdots$ is a strictly increasing sequence of integers with $\\liminf a_n^{1/2^n} > 1$, then the series $\\sum_{n=0}^\\infty \\frac{1}{a_n \\cdot a_{n+1}}$ is irrational? This was solved in the affirmative by Aletheia [Fe26]. This was extended by Barreto, Kang, Kim, Kovač, and Zhang [BKKKZ26], who essentially give a complete answer: if $\\phi=\\frac{1+\\sqrt{5}}{2}$ is the golden ratio and $1\\leq a_1 < a_2 < \\cdots$ is a monotonically increasing sequence of integers such that $\\limsup a_n^{1/\\phi^{n}}=\\infty$ then $\\sum_{n=1}^\\infty \\frac{1}{a_na_{n+1}}$ is irrational. Conversely, for any $1 < C < \\infty$ there exists a sequence of integers $1\\leq a_1<\\cdots$ such that $\\lim a_n^{1/\\phi^{n}}=C$ where this infinite sum is a rational number. (Further, more general, results are available in [BKKKZ26].) This was formalized in Lean by Baretto. Topics: irrationality. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_f4d6defc70020a0c"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/1051",
+    "title": "cap_61973ee16b553d57 · vc_f4d6defc70020a0c",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

@@ -1,0 +1,667 @@
+{
+  "schema": "carina.artifact_packet.v0.1",
+  "packet_id": "cap_f4e8bcd294c97ba7",
+  "producer": {
+    "kind": "source_adapter",
+    "id": "agent:erdos-deep-ingest",
+    "name": "Erd\u0151s deep-ingest (problem anatomy)"
+  },
+  "topic": "Erd\u0151s problem anatomy \u2014 deep ingestion",
+  "created_at": "2026-06-03T00:00:00Z",
+  "artifacts": [
+    {
+      "id": "va_b43a0cf74f438df6",
+      "kind": "dataset",
+      "title": "Erd\u0151s problem anatomy (deep ingest from formal-conjectures Lean)",
+      "locator": "examples/erdos-problems/anatomy/problem-anatomy.v1.json",
+      "content_hash": "b43a0cf74f438df6a29928e3b90f53c2d8c00266d22fdf77cea5b3bfa0d4d1a5",
+      "parents": [],
+      "metadata": {
+        "ingestor": "erdos-deep-ingest"
+      }
+    }
+  ],
+  "candidate_claims": [
+    {
+      "id": "vc_a38304b82963bd0b",
+      "assertion": "Erd\u0151s #1 (?, AMS 5 11). STATEMENT: A finite set of naturals $A$ is said to be a sum-distinct set for $N \\in \\mathbb{N}$ if $A\\subseteq\\{1, ..., N\\}$ and the sums $\\sum_{a\\in S}a$ are distinct for all $S\\subseteq A$ FORMAL: erdos_1: \u2203 C > (0 : \u211d), \u2200 (N : \u2115) (A : Finset \u2115) (_ : IsSumDistinctSet A N), N \u2260 0 \u2192 C * 2 ^ A.card < N; erdos_1: \u2203 C > (0 : \u211d), \u2200 (N : \u2115) (A : Finset \u2115) (_ : IsSumDistinctSet A N), N \u2260 0 \u2192 C * 2 ^ A.card / A.card < N; erdos_1: \u2203 (o : \u2115 \u2192 \u211d) (_ : o =o[atTop] (1 : \u2115 \u2192 \u211d)), \u2200 (N : \u2115) (A : Finset \u2115) (h KNOWN/REMARKS: # Erd\u0151s Problem 1 *Reference:* erdosproblems.com/1 | If $A\\subseteq\\{1, ..., N\\}$ with $|A| = n$ is such that the subset sums $\\sum_{a\\in S}a$ are distinct for all $S\\subseteq A$ then $$ N \\gg 2 ^ n. $$ | The trivial lower bound is $N \\gg 2^n / n$. RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/1",
+        "[Er56]",
+        "[Er73]",
+        "[ErGr80]",
+        "https://oeis.org/A276661"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_7f34bd08c90dde3b",
+      "assertion": "Erd\u0151s #7 (?, AMS 11). STATEMENT: Is there a covering system all of whose moduli are odd (and greater than 1)? FORMAL: erdos_7: answer(sorry) \u2194 \u2203 (C : StrictCoveringSystem \u2124), \u2200 i, \u00ac C.moduli i \u2264 Ideal.span {2} \u2227 C.moduli i \u2260 \u22a4 KNOWN/REMARKS: # Erd\u0151s Problem 7 *Reference:* erdosproblems.com/7 RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/7",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/7)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_5236c6bdec3aec17",
+      "assertion": "Erd\u0151s #14 (?, AMS 11). STATEMENT: The number of integers in $\\{1,\\ldots,N\\}$ which are not representable in exactly one way as the sum of two elements from $A$ (either because they are not representable at all, or because they are representable in more than one way). FORMAL: erdos_14: answer(sorry) \u2194 \u2200 A, \u2200 \u03b5 > 0, nonUniqueSumCount A \u226b almostSquareRoot \u03b5; erdos_14: answer(sorry) \u2194 \u2203 (A : Set \u2115), IsLittleO atTop (nonUniqueSumCount A) squareRoot KNOWN/REMARKS: # Erd\u0151s Problem 14 *Reference:* erdosproblems.com/14 | Let $A \u2286 \\mathbb{N}$. Let $B \u2286 \\mathbb{N}$ be the set of integers which are representable in exactly one way as the sum of two elements from $A$. Is it true that for all $\\epsilon > 0$ and large $N$, $|\\{1,\\ldots,N\\} \\setminus B| \\gg_\\epsilon N^{1/2 - \\epsilon}$? | Is it possible that $|\\{1,\\ldots,N\\} \\setminus B| = o(N^\\frac{1}{2})$? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/14",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/14)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_d843f08ec6524b30",
+      "assertion": "Erd\u0151s #30 (?, AMS 11). STATEMENT: Let $h(N)$ be the maximum size of a Sidon set in $\\{1, \\dots, N\\}$. FORMAL: erdos_30: answer(sorry) \u2194 \u2200\u1d49 (\u03b5 > 0), (fun N => h N - (N : Real).sqrt) =O[atTop] fun N => (N : \u211d)^(\u03b5 : \u211d) KNOWN/REMARKS: # Erd\u0151s Problem 30 *Reference:* erdosproblems.com/30 | Is it true that, for every $\\varepsilon > 0$, $h(N) = \\sqrt N + O_{\\varespilon}(N^\\varespilon) RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/30",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/30)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_16897a4e40156cb3",
+      "assertion": "Erd\u0151s #39 (?, AMS 11). STATEMENT: Is there an infinite Sidon set $A\\subset \\mathbb{N}$ such that $\\lvert A\\cap \\{1\\ldots,N\\}\\rvert \\gg_\\epsilon N^{1/2-\\epsilon}$ for all $\\varepsilon > 0$? FORMAL: erdos_39: answer(sorry) \u2194 \u2203 (A : Set \u2115), A.Infinite \u2227 IsSidon A \u2227 \u2200\u1d49 (\u03b5 > (0 : \u211d)), (\u00b7 ^ (1 / 2 - \u03b5) : \u2115 \u2192 \u211d) =O[atTop] fun N => (((Set.Icc 1 N) \u2229 A).ncard : \u211d) KNOWN/REMARKS: # Erd\u0151s Problem 39 *Reference:* erdosproblems.com/39 RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/39",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/39)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_63a51011006e8833",
+      "assertion": "Erd\u0151s #41 (?, AMS 11). STATEMENT: For a given set `A`, the n-tuple sums `a\u2081 + ... + a\u2099` are all distinct for `a\u2081, ..., a\u2099` in `A` (aside from the trivial coincidences). FORMAL: erdos_41: Set \u2115) (h_triple : NtupleCondition A 3) (h_infinite : A.Infinite) : Filter.atTop.liminf (fun N => (A \u2229 Icc 1 N).ncard / (N : \u211d)^(1/3 : \u211d)) = 0; erdos_41: Set \u2115) (hA\u2082 : NtupleCondition A 2) (hA : A.Infinite) : Filter.atTop.liminf (fun N => (A \u2229 Icc 1 N).ncard / (N : \u211d).sqrt) = 0 KNOWN/REMARKS: # Erd\u0151s Problem 41 *Reference:* erdosproblems.com/41 | Let `A \u2286 \u2115` be an infinite set such that the triple sums `a + b + c` are all distinct for `a, b, c` in `A` (aside from the trivial coincidences). Is it true that `liminf n \u2192 \u221e |A \u2229 {1, \u2026, N}| / N^(1/3) = 0`? | Erd\u0151s proved the following pairwise version. Let `A \u2286 \u2115` be an infinite set such that the pairwise sums `a + b` are all distinct for `a RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/41",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/41)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_7b7a1a5f9d4086f8",
+      "assertion": "Erd\u0151s #44 (?, AMS 5 11). STATEMENT: The maximum size of a Sidon set in `{1, ..., N}` is less than or equal to `2 * \u221aN`. FORMAL: maxSidonSubsetCard_icc_bound: \u2115) (hN : 1 \u2264 N) : maxSidonSubsetCard (Icc 1 N) \u2264 2 * Real.sqrt N; erdos_44: answer(sorry) \u2194 \u2200\u1d49 (N \u2265 (1 : \u2115)) (A \u2286 Finset.Icc 1 N), IsSidon (A : Set \u2115) \u2192 \u2200\u1d49 (\u03b5 > (0 : \u211d)), \u2203\u1d49 (M > N) (B \u2286 Finset.Icc (N + 1) M), IsSidon (A \u222a B : Set \u2115) \u2227 (1 - \u03b5) * Real.sqrt M \u2264 (A \u222a B).ca KNOWN/REMARKS: # Erd\u0151s Problem 44: Extending Sidon Sets *Reference:* erdosproblems.com/44 | **Erd\u0151s Problem 44:** Let N \u2265 1 and `A \u2286 {1,\u2026,N}` be a Sidon set. Is it true that, for any \u03b5 > 0, there exist M = M(\u03b5) and `B \u2286 {N+1,\u2026,M}` such that `A \u222a B \u2286 {1,\u2026,M}` is a Sidon set of size at least `(1\u2212\u03b5)M^{1/2}`? This problem asks whether any Sidon set can be extended to achieve a density arbitrarily close to the optima RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/44",
+        "https://arxiv.org/pdf/2103.15850",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/44)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_946e2ffa12dab61f",
+      "assertion": "Erd\u0151s #100 (?, AMS 52). STATEMENT: If two distances in A differ, they differ by at least 1. FORMAL: erdos_100: answer(sorry) \u2194 \u2203 C > (0 : \u211d), \u2200\u1da0 n in atTop, \u2200 A : Finset \u211d\u00b2, A.card = n \u2192 DistancesSeparated A \u2192 diam (A : Set \u211d\u00b2) > C * n; erdos_100: \u2200\u1da0 n in atTop, \u2200 A : Finset \u211d\u00b2, A.card = n \u2192 DistancesSeparated A \u2192 diam (A : Set \u211d\u00b2) \u2265 n - 1; erdos_100: \u2203 C > (0 : \u211d), \u2200\u1da0 n in atTop, \u2200 A : Finset \u211d\u00b2, KNOWN/REMARKS: # Erd\u0151s Problem 100 *References:* * erdosproblems.com/100 * Kanold * GuKa15 (2015), 155-190.) * Piepmeyer | Is the diameter of $A$ at least $Cn$ for some constant $C > 0$? | Stronger conjecture: diameter $\\geq n - 1$ for sufficiently large $n$. RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/100",
+        "[GuKa15]",
+        "https://github.com/theaustinhatfield/formal-conjectures/blob/solve-erdos-100-piepmeyer/FormalConjectures/ErdosProblems/100.lean\"]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/100)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_fc68b347b115273e",
+      "assertion": "Erd\u0151s #124 (?, AMS 11). STATEMENT: The set of integers which are the sum of distinct powers `d ^ i` with `i \u2265 k`. FORMAL: erdos124: answer(True) \u2194 \u2200 D : Finset \u2115, (\u2200 d \u2208 D, 3 \u2264 d) \u2192 1 \u2264 \u2211 d \u2208 D, (d - 1 : \u211a)\u207b\u00b9 \u2192 \u2200\u1da0 n in atTop, n \u2208 \u2211 d \u2208 D, sumsOfDistinctPowers d 0; erdos124: answer(sorry) \u2194 \u2200 k \u2260 0, \u2200 D : Finset \u2115, (\u2200 d \u2208 D, 3 \u2264 d) \u2192 1 \u2264 \u2211 d \u2208 D, (d - 1 : \u211a)\u207b\u00b9 \u2192 D.gcd id = 1 \u2192 \u2200\u1da0 n in atTop, n \u2208 \u2211 d \u2208 D, sumsOfDistinctP KNOWN/REMARKS: # Erd\u0151s Problem 124 *References:* - erdosproblems.com/124 - [BEGL96] Burr, S. A. and Erd\u0151s, P. and Graham, R. L. and Li, W. Wen-Ching, Complete sequences of sets of integer powers. Acta Arith. (1996), 133-138. | Let $3 \\le d_1 < d_2 < \\dots < d_r$ be integers such that $$\\sum_{1 \\le i \\le r}\\frac 1{d_i - 1} \\ge 1.$$ Can all sufficiently large integers be written as a sum of the shape $\\sum_i c_ia_ RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/124",
+        "[BEGL96]",
+        "[Er97]",
+        "[Me04]",
+        "https://www.apache.org/licenses/LICENSE-2.0"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_09c46274603deccc",
+      "assertion": "Erd\u0151s #153 (?, AMS 5). STATEMENT: Define $f(n)$ to be the minimum of $\\frac{1}{t}\\sum_{1\\leq i<t}(s_{i+1}-s_i)^2$ as $A$ ranges over all Sidon sets of size $n$, where $A+A=\\{s_1<\\cdots<s_t\\}$. FORMAL: erdos_153: answer(sorry) \u2194 Tendsto f atTop atTop KNOWN/REMARKS: # Erd\u0151s Problem 153 #TODO: Formalize the corresponding conjecture for infinite Sidon sets. *References:* - erdosproblems.com/153 - [ESS94] Erd\u0151s, P. and S\u00e1rk\u00f6zy, A. and S\u00f3s, T., On Sum Sets of Sidon Sets, I. Journal of Number Theory (1994), 329-347. | Let $A$ be a finite Sidon set and $A+A=\\{s_1<\\cdots<s_t\\}$. Is it true that $$\\frac{1}{t}\\sum_{1\\leq i<t}(s_{i+1}-s_i)^2 \\to \\infty$$ as $\\lvert A\\r RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/153",
+        "[ESS94]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/153)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_8f94e98e5606de71",
+      "assertion": "Erd\u0151s #155 (?, AMS 5). STATEMENT: Let $F(N)$ be the size of the largest Sidon subset of $\\{1, \\dots, N\\}$. FORMAL: erdos_155: answer(sorry) \u2194 \u2200 k \u2265 1, \u2200\u1da0 N in atTop, F (N + k) \u2264 F N + 1 KNOWN/REMARKS: # Erd\u0151s Problem 155 *Reference:* erdosproblems.com/155 | Is it true that for every $k \\geq 1$ we have $$ F(N + k) \\leq F(N) + 1 $$ for all sufficiently large $N$? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/155",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/155)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_58717a7c91facae6",
+      "assertion": "Erd\u0151s #158 (?, AMS 5). STATEMENT: A set `A \u2286 \u2115` is said to be a `B\u2082[g]` set if for all `n`, the equation `a + a' = n, a \u2264 a', a, a' \u2208 A` has at most `g` solutions. This is defined in [ESS94]. FORMAL: erdos_158: answer(sorry) \u2194 \u2200 A : Set \u2115, A.Infinite \u2192 B2 2 A \u2192 liminf (fun N : \u2115 => (A \u2229 .Iio N).ncard * (N : \u211d) ^ (- 1 / 2 : \u211d)) atTop = 0; erdos_158: Set \u2115} (hAinf : A.Infinite) (hAsid : IsSidon A) : liminf (fun N \u21a6 ENNReal.ofReal ((A \u2229 .Iio N).ncard * N ^ (- 1 / 2 : \u211d) * log N ^ (1 / 2 : \u211d))) atTo KNOWN/REMARKS: # Erd\u0151s Problem 158 *References:* - erdosproblems.com/158 - [ESS94] Erd\u0151s, P. and S\u00e1rk\u00f6zy, A. and S\u00f3s, T., On Sum Sets of Sidon Sets, I. Journal of Number Theory (1994), 329-347. | A set is `B\u2082[1]` iff it is Sidon. | Let `A` be an infinite `B\u2082[2]` set. Must `liminf |A \u2229 {1, ..., N}| * N ^ (- 1 / 2) = 0`? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/158",
+        "[ESS94]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/158)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_da72fe234e9d11f8",
+      "assertion": "Erd\u0151s #254 (?, AMS 11). STATEMENT: An integer `n` can be written as a sum of distinct elements of `A`. FORMAL: erdos_254: \u2200 (A : Set \u2115), (Tendsto (fun x : \u2115 \u21a6 (A \u2229 Icc 1 (2 * x)).ncard - (A \u2229 Icc 1 x).ncard) atTop atTop) \u2227 (\u2200 \u03b8 : \u211d, 0 < \u03b8 \u2192 \u03b8 < 1 \u2192 \u00ac Summable (fun n : A \u21a6 distToNearestInt (\u03b8 * (n : \u211d)))) \u2192 \u2200\u1da0 m in atTop, IsSumOfDistinct A m; erdos_254: \u2200 (A : Set \u2115), (Tendsto (fun x : \u2115 \u21a6 (((A \u2229 Icc 1 (2 * x KNOWN/REMARKS: # Erd\u0151s Problem 254 *References:* - erdosproblems.com/254 - [Ca60] Cassels, J. W. S., On the representation of integers as the sums of distinct summands taken from a fixed set. Acta Sci. Math. (Szeged) (1960), 111-124. | Let $A\\subseteq \\mathbb{N}$ be such that $\\lvert A\\cap [1,2x]\\rvert -\\lvert A\\cap [1,x]\\rvert \\to \\infty\\textrm{ as }x\\to \\infty$ and $\\sum_{n\\in A} \\{ \\theta n\\}=\\infty$ for ever RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/254",
+        "[Ca60]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/254)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_68ec7ac2d8c2cfc1",
+      "assertion": "Erd\u0151s #273 (?, AMS 5 11). STATEMENT: Is there a covering system all of whose moduli are of the form $p-1$ for some primes $p \\geq 5$? FORMAL: erdos_273: answer(sorry) \u2194 \u2203 c : StrictCoveringSystem \u2124, \u2200 i, \u2203 (p : \u2115), p.Prime \u2227 5 \u2264 p \u2227 c.moduli i = Ideal.span {\u2191(p - 1)}; erdos_273: answer(True) \u2194 \u2203 c : StrictCoveringSystem \u2115, \u2200 i, \u2203 p, p.Prime \u2227 3 \u2264 p \u2227 c.moduli i = Ideal.span {\u2191(p - 1)} KNOWN/REMARKS: # Erd\u0151s Problem 273 *Reference:* erdosproblems.com/273 | Is there a covering system all of whose moduli are of the form $p-1$ for some primes $p \\geq 3$? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/273",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/273)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_87fdda54cb4400bf",
+      "assertion": "Erd\u0151s #313 (?, AMS 11). STATEMENT: This set contains all solutions `(m, P)` to the Erd\u0151s problem 313. A solution is a pair where `m` is an integer `\u2265 2` and `P` is a non-empty, finite set of distinct prime numbers, such that the sum of the reciprocals of the primes in `P` equals `1 - 1/m`. FORMAL: erdos_313: answer(sorry) \u2194 erdos313Solutions.Infinite; erdos_313: (6, {2, 3}) \u2208 erdos313Solutions; erdos_313: (42, {2, 3, 7}) \u2208 erdos313Solutions KNOWN/REMARKS: # Erd\u0151s Problem 313 *References:* - erdosproblems.com/313 - A54377 (Primary pseudoperfect numbers) | Are there infinitely many pairs `(m, P)` where `m \u2265 2` is an integer and `P` is a set of distinct primes such that the following equation holds: $\\sum_{p \\in P} \\frac{1}{p} = 1 - \\frac{1}{m}$? | An integer `n` is a **primary pseudoperfect number** if it is the denominator `m` in a solution `(m, P)` RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/313",
+        "https://oeis.org/A54377)",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/313)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_e8949a6f75c1367d",
+      "assertion": "Erd\u0151s #321 (?, AMS 11). STATEMENT: Let $R(N)$ be the size of the largest $A\\subseteq\\{1, ..., N\\}$ such that all sums $\\sum_{n\\in S} \\frac{1}{n}$ are distinct for $S\\subseteq A$. FORMAL: erdos_321: \u2115) : R N = answer(sorry); erdos_321: (fun N \u21a6 (R N : \u211d)) =\u0398[atTop] (answer(sorry) : \u2115 \u2192 \u211d); erdos_321: (fun N \u21a6 (R N : \u211d)) =O[atTop] (answer(sorry) : \u2115 \u2192 \u211d) KNOWN/REMARKS: # Erd\u0151s Problem 321 *Reference:* erdosproblems.com/321 | Let $R(N)$ be the size of the largest $A\\subseteq\\{1, ..., N\\}$ such that all sums $\\sum_{n\\in S} \\frac{1}{n}$ are distinct for $S\\subseteq A$. What is $R(N)$? | Formalisation note: it's possible that solution to `erdos_321` needs to be expressed asymptotically. To handle this we include `IsTheta`, `IsBigO` and `IsLittleO` variants below. Si RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/321",
+        "[BlEr75]",
+        "[BlEr76b]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/321)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_f62633edb81f2d2a",
+      "assertion": "Erd\u0151s #324 (?, AMS 11). STATEMENT: Does there exist a polynomial $f(x)\\in\\mathbb{Z}[x]$ such that all the sums $f(a)+f(b)$ with $a < b$ nonnegative integers are distinct? FORMAL: erdos_324: answer(sorry) \u2194 \u2203 f : \u2124[X], {(a, b) : \u2115 \u00d7 \u2115 | a < b}.InjOn fun (a, b) => f.eval (a : \u2124) + f.eval (b : \u2124); erdos_324: {(a, b) : \u2115 \u00d7 \u2115 | a < b}.InjOn fun (a, b) => a ^ 5 + b ^ 5 KNOWN/REMARKS: # Erd\u0151s Problem 324 *Reference:* erdosproblems.com/324 | Probably $f(x) = x^5$ has the property that the sums $f(a)+f(b)$ with $a < b$ nonnegative integers are distinct. RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/324",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/324)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_c33dab4d68213a71",
+      "assertion": "Erd\u0151s #326 (?, AMS 5 11). STATEMENT: Let $A \\subset \\mathbb{N}$ be an additive basis of order 2. Must there exist $B = \\{b_1 < b_2 < \\dots\\} \\subseteq A$ which is also a basis such that $\\lim_{k\\to\\infty} \\frac{b_k}{k^2}$ does not exist? FORMAL: erdos_326: answer(sorry) \u2194 \u2200 (A : Set \u2115), A.IsAddBasisOfOrder 2 \u2192 \u2203 (b : \u2115 \u2192 \u2115), StrictMono b \u2227 \u2200 n, b n \u2208 A \u2227 (Set.range b).IsAddBasis \u2227 \u2200 (x : \u211d), \u00ac Tendsto (fun n \u21a6 (b n : \u211d) / n ^ 2) atTop (\ud835\udcdd x); erdos_326: \u2203 (a : \u2115 \u2192 \u2115) (_ : StrictMono a) (_ : Set.range a |>.IsAddBasisOfOrder 2) (x : \u211d) (_ : 0  KNOWN/REMARKS: # Erd\u0151s Problem 326 *Reference:* erdosproblems.com/326 | Erd\u0151s originally asked whether this was true with `A = B`, but this was disproved by Cassels. RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/326",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/326)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_3040cc774fc09fa1",
+      "assertion": "Erd\u0151s #329 (?, AMS 5 11). STATEMENT: The partial density of a Sidon set `A` up to `N`, normalized by dividing by `\u221aN` instead of `N`. This measures how close the set comes to the optimal density for Sidon sets. FORMAL: erdos_329: sSup {sidonUpperDensity A | (A : Set \u2115) (_ : IsSidon A)} = answer(sorry); erdos_329: \u2203 (A : Set \u2115), IsSidon A \u2227 sidonUpperDensity A \u2265 1/2; erdos_329: \u2203 (A : Set \u2115), IsSidon A \u2227 sidonUpperDensity A = 1 / Real.sqrt 2 KNOWN/REMARKS: # Erd\u0151s Problem 329: Maximum Density of Sidon Sets *Reference:* erdosproblems.com/329 | The upper density of a Sidon set `A`, normalized by `\u221aN`. | **Erd\u0151s Problem 329.** Let `A \u2286 \u2115` be a Sidon set. How large can `lim sup_{N \u2192 \u221e} |A \u2229 {1,\u2026,N}| / N^{1/2}` be? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/329",
+        "[ErTu41]",
+        "[Kr61]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/329)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_e2633566a9d07742",
+      "assertion": "Erd\u0151s #340 (?, AMS 5). STATEMENT: Given a finite Sidon set `A` and a lower bound `m`, `go` finds the smallest number `m' \u2265 m` such that `A \u222a {m'}` is Sidon. If `A` is empty then this returns the value `m`. Note that the lower bound is required to avoid `0` being a contender in some cases. FORMAL: greedySidon_go_singleton_two: (greedySidon.go {1} (by simp [IsSidon]) 2).val = 2; greedySidon_go_pair_three: (greedySidon.go {1, 2} (by simp [IsSidon]) 3).val = 4; greedySidon_zero: greedySidon 0 = 1 KNOWN/REMARKS: # Erd\u0151s Problem 340 *Reference:* erdosproblems.com/340 | Main search loop for generating the greedy Sidon sequence. The return value for step `n` is the finite set of numbers generated so far, a proof that it is Sidon, and the greatest element of the finite set at that point. This is initialised at `{1}`, then `greedySidon.go` is called iteratively using the lower bound `max + 1` to find the next  RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/340",
+        "[ErGr80]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/340)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_d91b66fb777e4a82",
+      "assertion": "Erd\u0151s #342 (?, AMS 5 11 40). STATEMENT: `UniqueUlamSum a n m` means that $m$ has a unique representation as $a(i) + a(j)$ with $i < j < n$. FORMAL: erdos_342: \u2200 a : \u2115 \u2192 \u2115, IsUlamSequence a \u2192 a 0 = 1; erdos_342: \u2200 a : \u2115 \u2192 \u2115, IsUlamSequence a \u2192 a 1 = 2; erdos_342: \u2200 a : \u2115 \u2192 \u2115, IsUlamSequence a \u2192 a 2 = 3 KNOWN/REMARKS: # Erd\u0151s Problem 342 *References:* - erdosproblems.com/342 - Ben Green's Open Problem 7 - OEIS A002858 - [Gu04] Guy, Richard K., *Unsolved problems in number theory* (2004), xviii+437. | `IsUlamSequence a` means that $a$ is the Ulam sequence (OEIS A002858): $a(0) = 1$, $a(1) = 2$, and for each $n \\geq 2$, $a(n)$ is the least integer greater than $a(n-1)$ that has a unique representation as $a(i) +  RELATED: [7] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/342",
+        "[Gu04]",
+        "https://oeis.org/A002858)",
+        "https://people.maths.ox.ac.uk/greenbj/papers/open-problems.pdf#problem.7)",
+        "https://www.apache.org/licenses/LICENSE-2.0"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_5f48f3b849ec647a",
+      "assertion": "Erd\u0151s #346 (?, AMS 11). STATEMENT: Is it true that for every lacunary, strongly complete sequence `A` that is not complete whenever infinitely many terms are removed from it, `lim A (n + 1) / A n = (1 + \u221a5) / 2`? FORMAL: erdos_346: answer(sorry) \u2194 \u2200 {A : \u2115 \u2192 \u2115}, IsLacunary A \u2192 IsAddStronglyCompleteNatSeq A \u2192 (\u2200 B : Set \u2115, B \u2286 range A \u2192 B.Infinite \u2192 \u00ac IsAddComplete (range A \\ B)) \u2192 Tendsto (fun n => A (n + 1) / (A n : \u211d)) atTop (\ud835\udcdd ((1 + \u221a5) / 2)); erdos_346: IsLacunary f; erdos_346: IsAddStronglyCompleteNatSeq f KNOWN/REMARKS: # Erd\u0151s Problem 346 *References:* - erdosproblems.com/346 - [Gr64d] Graham, R. L., A property of Fibonacci numbers. Fibonacci Quart. (1964), 1-10. - [ErGr80] Erd\u0151s, P. and Graham, R., Old and new problems and results in combinatorial number theory. Monographies de L'Enseignement Mathematique (1980). - | We define a sequence `f` by the formula `f n = n.fib - (- 1) ^ n`. | The sequence `f` is lacuna RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/346",
+        "[ErGr80]",
+        "[Gr64d]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/346)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_a66e73cf499c7e69",
+      "assertion": "Erd\u0151s #348 (?, AMS 11). STATEMENT: For what values of $0 \\leq m < n$ is there a complete sequence $A = \\{a_1 \\leq a_2 \\leq \\cdots\\}$ of integers such that 1. $A$ remains complete after removing any $m$ elements, but 2. $A$ is not complete after removing any $n$ elements. FORMAL: erdos_348: { (m, n) | (m) (n) (_ : m < n) (a : \u2115 \u2192 \u2115) (_ : Monotone a) (_ : \u2200 s, s.card = m \u2192 IsAddComplete (Set.range (Function.updateFinset a s 0))) (_ : \u2200 t, t.card = n \u2192 \u00acIsAddComplete (Set.range (Function.updateFinset a t 0))) } = answer(sorry) KNOWN/REMARKS: # Erd\u0151s Problem 348 *Reference:* erdosproblems.com/348 RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/348",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/348)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_9bbdf2a2e7d97861",
+      "assertion": "Erd\u0151s #357 (?, AMS 11). STATEMENT: Let $f(n)$ be the maximal $k$ such that there exist integers $1 \\le a_1 < \\dotsc < a_k \\le n$ such that all sums of the shape $\\sum_{u \\le i \\le v} a_i$ are distinct. FORMAL: erdos_357: (fun n \u21a6 (f n : \u211d)) =o[atTop] (fun n \u21a6 (n : \u211d)); erdos_357: (answer(sorry) : \u2115 \u2192 \u211d) =O[atTop] (fun n \u21a6 (f n : \u211d)); erdos_357: (fun n \u21a6 (f n : \u211d)) =O[atTop] (answer(sorry) : \u2115 \u2192 \u211d) KNOWN/REMARKS: # Erd\u0151s Problem 357 *Reference:* erdosproblems.com/357 | Let $f(n)$ be the maximal $k$ such that there exist integers $1 \\le a_1 < \\dotsc < a_k \\le n$ such that all sums of the shape $\\sum_{u \\le i \\le v} a_i$ are distinct. Is $f(n)=o(n)$? | Formalisation note: the next 5 formalisations are an attempt at capturing the question \"how does $f(n)$ grow?\". In addition to trivial solutions (e.g. setting RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/357",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/357)",
+        "https://www.erdosproblems.com/forum/thread/357."
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_2971997333026035",
+      "assertion": "Erd\u0151s #361 (?, AMS 11). STATEMENT: Let $c > 0$ and $n$ be some large integer. What is the size of the largest set $A \\subseteq \\{1, \\ldots, \\lfloor c n \\rfloor\\}$ such that $n$ is not a sum of a subset of $A$? Does this depend on $n$ in an irregular way? FORMAL: erdos_361: \u211d) (hc : 0 < c) (A : \u2115 \u2192 \u2115) (hA : \u2200 c n, A n = ((Finset.Icc 1 \u230ac * n\u230b\u208a).powerset.filter (fun B \u21a6 n \u2260 \u2211 a \u2208 B, a)).sup Finset.card) : (fun n \u21a6 (A n : \u211d)) =O[atTop] (answer(sorry) : \u2115 \u2192 \u211d); erdos_361: \u211d) (hc : 0 < c) (A : \u2115 \u2192 \u2115) (hA : \u2200 c n, A n = ((Finset.Icc 1 \u230ac * n\u230b\u208a).powerset.filter (f KNOWN/REMARKS: # Erd\u0151s Problem 361 *Reference:* erdosproblems.com/361 RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/361",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/361)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_b3e217eb0f1a7813",
+      "assertion": "Erd\u0151s #364 (?, AMS 11). STATEMENT: There is no consecutive triple of powerful numbers. FORMAL: erdos_364: \u00ac \u2203 (n : \u2115), Powerful n \u2227 Powerful (n + 1) \u2227 Powerful (n + 2); erdos_364: \u2203 (c : \u211d) (h : c > 0), \u2200 (k : \u2115), Nat.nth Powerful (k + 2) - Nat.nth Powerful k > (Nat.nth Powerful k : \u211d) ^ c; erdos_364: \u00ac \u2203 (n : \u2115), Powerful n \u2227 Powerful (n + 1) \u2227 Powerful (n + 2) \u2227 Powerful (n + 3) KNOWN/REMARKS: # Erd\u0151s Problem 364 *Reference:* erdosproblems.com/364 | Erd\u0151s [Er76d] conjectured a stronger statement: if $n_k$ is the $k$th powerful number, then $n_{k+2} - n_k > n_k^c$ for some constant $c > 0$. [Er76d] Erd\u0151s, P., Problems and results on number theoretic properties of consecutive integers and related questions. Proceedings of the Fifth Manitoba Conference on Numerical Mathematics (Univ. Manit RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/364",
+        "[Er76d]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/364)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_6e64fdd99e17a572",
+      "assertion": "Erd\u0151s #366 (?, AMS 11). STATEMENT: Are there any $2$-full $n$ such that $n+1$ is $3$-full? FORMAL: erdos_366: answer(sorry) \u2194 \u2203 n > 0, (2).Full n \u2227 (3).Full (n + 1); exists_three_full_then_two_full: \u2203 n > 0, (3).Full n \u2227 (2).Full (n + 1); erdos_366: answer(sorry) \u2194 {n | (3).Full n \u2227 (2).Full (n + 1)}.Infinite KNOWN/REMARKS: # Erd\u0151s Problem 366 *Reference:* erdosproblems.com/366 | Note that $8$ is $3$-full and $9$ is 2-full. | Are there infinitely many 3-full $n$ such that $n+1$ is 2-full? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/366",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/366)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_d17f08f7bf4c24de",
+      "assertion": "Erd\u0151s #458 (?, AMS 11). STATEMENT: The least common multiple of the integers in the set $\\{1, \\dots, n\\}$. FORMAL: erdos_458: answer(sorry) \u2194 \u2200 k : \u2115, lcm_upto ((k + 1).nth Prime - 1) < k.nth Prime * lcm_upto (k.nth Prime) KNOWN/REMARKS: # Erd\u0151s Problem 458 *Reference:* erdosproblems.com/458 | Let $\\operatorname{lcm}(1, \\dots, n)$ denote the least common multiple of $\\{1, \\dots, n\\}$. Let $p_k$ be the $k$-th prime. Is it true that for all $k \\geq 1$, $\\operatorname{lcm}(1, \\dots, p_{k+1}-1) < p_k \\cdot \\operatorname{lcm}(1, \\dots, p_k)$? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/458",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/458)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_fb4174b397970d12",
+      "assertion": "Erd\u0151s #489 (?, AMS 11). STATEMENT: The set of positive integers not divisible by any element of `A`. FORMAL: erdos_489: answer(sorry) \u2194 \u2200 (A : Set \u2115), (fun x : \u2115 => (((Finset.Icc 1 x).filter (\u00b7 \u2208 A)).card : \u211d)) =o[atTop] (fun x : \u2115 => (x : \u211d).sqrt) \u2192 (sievedSet A).Infinite \u2192 \u2203 L : \u211d, Tendsto (fun x : \u2115 => GapSumSq A x / (x : \u211d)) atTop (\ud835\udcdd L); erdos_489: \u2203 L : \u211d, Tendsto (fun x : \u2115 => GapSumSq {n | \u2203 p, Nat. KNOWN/REMARKS: # Erd\u0151s Problem 489 *Reference:* erdosproblems.com/489 | The squared-gap sum `\u2211_{b_i < x} (b_{i+1} - b_i)\u00b2`, where `b_i` enumerates the positive integers not divisible by any element of `A`. | Let $A\\subseteq \\mathbb{N}$ be a set such that $\\lvert A\\cap [1,x]\\rvert=o(x^{1/2})$. Let $B=\\{ n\\geq 1 : a\\nmid n\\textrm{ for all }a\\in A\\}$. If $B=\\{b_1 < b_2 < \\cdots\\}$ then is it true that $$\\lim_{x \\to RELATED: [145] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/489",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/489)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_e159c47ac2adc891",
+      "assertion": "Erd\u0151s #567 (?, AMS 5). STATEMENT: $Q_3$ is the 3-dimensional hypercube graph (8 vertices, 12 edges). Vertices are 3-bit vectors. Two vertices are adjacent iff they differ in exactly one bit. FORMAL: erdos_567: answer(sorry) \u2194 IsRamseySizeLinear Q3; erdos_567: answer(sorry) \u2194 IsRamseySizeLinear K33; erdos_567: answer(sorry) \u2194 IsRamseySizeLinear H5 KNOWN/REMARKS: # Erd\u0151s Problem 567 Let $G$ be either $Q_3$ or $K_{3,3}$ or $H_5$ (the last formed by adding two vertex-disjoint chords to $C_5$). Is it true that, if $H$ has $m$ edges and no isolated vertices, then $$ \\hat{r}(G,H) \\ll m? $$ In other words, is $G$ Ramsey size linear? A special case of Problem 566. *Reference:* erdosproblems.com/567 [EFRS93] Erd\u0151s, Faudree, Rousseau and Schelp, _Ramsey size linear RELATED: [566] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/567",
+        "[EFRS93]",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/567)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_6d77f8e040516548",
+      "assertion": "Erd\u0151s #853 (?, AMS 11). STATEMENT: Let `r(x)` be the smallest even integer `t` such that `primeGap = t` has no solutions for `n \u2264 x`. FORMAL: erdos_853: atTop.Tendsto r atTop; erdos_853: atTop.Tendsto (fun n \u21a6 r n / Real.log n) atTop KNOWN/REMARKS: # Erd\u0151s Problem 853 *Reference:* erdosproblems.com/853 | Let $d_n = p_{n+1} - p_n$, where $p_n$ is the $n$th prime. Let $r(x)$ be the smallest even integer $t$ such that $d_n = t$ has no solutions for $n \\le x$. Is it true that $r(x) \\to \\infty$? | Let $d_n = p_{n+1} - p_n$, where $p_n$ is the $n$th prime. Let $r(x)$ be the smallest even integer $t$ such that $d_n = t$ has no solutions for $n \\le  RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/853",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/853)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_638125ea8197b167",
+      "assertion": "Erd\u0151s #881 (?, AMS 5 11). STATEMENT: We interpret \"additive basis of order `k`\" as an asymptotic additive basis of order `k`, using the predicate `Set.IsAsymptoticAddBasisOfOrder` from additive combinatorics. A *minimal* additive basis of order `k` is a set `A` such that * `A` is an asymptotic additive basis of order `k`, and * for every infinite subset `B \u2286 A`, the complement `A \\ B` is *not* an asymptotic additive basis of order `k`. FORMAL: erdos_881: answer(sorry) \u2194 \u2200 (k : \u2115) (A : Set \u2115), IsMinimalAsymptoticAddBasisOfOrder k A \u2192 \u2203 (B : Set \u2115), B \u2286 A \u2227 B.Infinite \u2227 (A \\ B).IsAsymptoticAddBasisOfOrder (k + 1) KNOWN/REMARKS: # Erd\u0151s Problem 881 *Reference:* erdosproblems.com/881 | Let `A \u2282 \u2115` be an additive basis of order `k` which is minimal in the sense that if `B \u2282 A` is any infinite set, then `A \\ B` is not a basis of order `k`. Must there exist an infinite `B \u2282 A` such that `A \\ B` is an additive basis of order `k + 1`? RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/881",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://www.erdosproblems.com/881)"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_13988b69f3dd2e6d",
+      "assertion": "Erd\u0151s #885 (?, AMS 11). STATEMENT: For integer $n \\geq 1$ we define the factor difference set of $n$ by $D(n) = \\{|a-b| : n=ab\\}$. FORMAL: erdos_885: answer(sorry) \u2194 \u2200 k \u2265 1, \u2203 Ns : Finset \u2115, (\u2200 n \u2208 Ns, 1 \u2264 n) \u2227 Ns.card = k \u2227 (\u22c2 n \u2208 Ns, factorDifferenceSet n).ncard \u2265 k; erdos_885: \u2203 Ns : Finset \u2115, (\u2200 n \u2208 Ns, 1 \u2264 n) \u2227 Ns.card = 2 \u2227 (\u22c2 n \u2208 Ns, factorDifferenceSet n).ncard \u2265 2; erdos_885: \u2203 Ns : Finset \u2115, (\u2200 n \u2208 Ns, 1 \u2264 n) \u2227 Ns.card = 3 \u2227 KNOWN/REMARKS: # Erd\u0151s Problem 885 *References:* - erdosproblems.com/885 - [ErRo97] Erd\u0151s, P. and Rosenfeld, M., The factor-difference set of integers. (1997) - [Ji99] Jim\u00e9nez-Urroz, J., A note on a conjecture of Erd\u0151s and {R}osenfeld. (1999) - [Br19] Bremner, A., On a problem of Erd\u0151s related to common factor differences. (2019) | Is it true that, for every $k \\geq 1$, there exist integers $N_1 < \\dots < N_k$ s RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/885",
+        "[Br19]",
+        "[ErRo97]",
+        "[Ji99]",
+        "https://www.apache.org/licenses/LICENSE-2.0"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    },
+    {
+      "id": "vc_eea9e6772fcdb02d",
+      "assertion": "Erd\u0151s #1113 (?, AMS 11). STATEMENT: A *covering set* for a positive odd integer $k$ is a finite set of primes $P$ such that every number of the form $k \\cdot 2^n + 1$ is divisible by at least one prime in $P$. FORMAL: erdos_1113: Set.Infinite {k : \u2115 | k.IsSierpinskiNumber}; erdos_1113: answer(sorry) \u2194 \u2203 k, k.IsSierpinskiNumber \u2227 \u00ac HasFinitePrimeCoveringSet k; erdos_1113: \u2200 k, k.IsSierpinskiNumber \u2192 k.IsPerfectPower \u2228 HasFinitePrimeCoveringSet k KNOWN/REMARKS: # Erd\u0151s Problem 1113 *References:* - erdosproblems.com/1113 - [ErGr80] Erd\u0151s, P. and Graham, R. L., Old and New Problems and Results in Combinatorial Number Theory. Monographie de l'Enseignement Math\u00e9matique, No. 28 (1980). - [Si60] Sierpi\u0144ski, W., Elementary Theory of Numbers. Pa\u0144stwowe Wydawnictwo Naukowe, Warsaw (1960). - [FFK08] Filaseta, M., Finch, C., and Kozek, M., On powers associated with RELATED: [] OEIS: []",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_b43a0cf74f438df6"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/1113",
+        "[ErGr80]",
+        "[FFK08]",
+        "[Si60]",
+        "https://www.apache.org/licenses/LICENSE-2.0"
+      ],
+      "conditions": [],
+      "confidence": 0.95,
+      "caveats": [
+        "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1."
+      ]
+    }
+  ],
+  "open_needs": [],
+  "caveats": []
+}

@@ -1,0 +1,852 @@
+[
+  {
+    "id": "vf_2329bdf075e2c6ef",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #617 has status 'falsifiable'. Statement: Let $r\\geq 3$. If the edges of $K_{r^2+1}$ are $r$-coloured then there exist $r+1$ vertices with at least one colour missing on the edges of the induced $K_{r+1}$. In other words, there is no balanced colouring. A conjecture of Erdős and Gyárfás [ErGy99]. Topics: graph theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_7bfd57a7239ef2d1",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 2
+  },
+  {
+    "id": "vf_03c1319b9c297377",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #1094 remains OPEN. Statement: For all $n\\ge 2k$ the least prime factor of $\\binom{n}{k}$ is $\\le\\max(n/k,k)$, with only finitely many exceptions. Topics: number theory, binomial coefficients. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_44e60c4ad8648174",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_1770045250dffbf6",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #700 remains OPEN. Topics: number theory, binomial coefficients. Erdős prize: no. Not yet formalized in Lean. OEIS: A091963, possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_e3d04720383c01c2",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_1b02c9b209dd10a3",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #647 has status 'verifiable'. Statement: Let $\\tau(n)$ count the number of divisors of $n$. Is there some $n > 24$ such that $$ \\max_{m < n}(m + \\tau(m)) \\leq n + 2? $$ Topics: number theory. Erdős prize: £25. Statement is machine-verified in Lean (formal-conjectures). OEIS: A062249, A087280.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_01fd84c405b62992",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_2685ff832f805e02",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #993 has status 'falsifiable'. Topics: graph theory. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_744719c4ea4388f0",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_29c8b747d0aa12af",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #488 has status 'falsifiable'. Statement: Let $A$ be a finite set and $$B=\\{ n \\geq 1 : a\\mid n\\textrm{ for some }a\\in A\\}.$$ Is it true that, for every $m>n\\geq \\max(A)$, $$\\frac{\\lvert B\\cap [1,m]\\rvert }{m}< 2\\frac{\\lvert B\\cap [1,n]\\rvert}{n}?$$ Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_2af409e77728f93f",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_6514a3669c0d3857",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #396 remains OPEN. Statement: Is it true that for every $k$ there exists $n$ such that $$\\prod_{0\\leq i\\leq k}(n-i) \\mid \\binom{2n}{n}?$$ Topics: number theory, binomial coefficients. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: A375077.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_35541146bd6e9f88",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_7a226f29da63b3f3",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #203 remains OPEN. Statement: Is there an integer $m$ with $(m, 6) = 1$ such that none of $2^k \\cdot 3^\\ell \\cdot m + 1$ are prime, for any $k, \\ell \\ge 0$? Topics: primes, covering systems. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_16b24d9378401eb5",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_84e6f2df0ac208e4",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #307 has status 'verifiable'. Statement: Are there two finite set of primes $P$ and $Q$ such that $$ 1 = \\left( \\sum_{p \\in P} \\frac{1}{p} \\right) \\left( \\sum_{q \\in Q} \\frac{1}{q} \\right) $$ ? Asked by Barbeau [Ba76]. [Ba76] Barbeau, E. J., _Computer challenge corner: Problem 477: A brute force program._ Topics: number theory, unit fractions. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_be6e14708dedb6c5",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_8e166486c13046d3",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #124 remains OPEN. Topics: number theory, base representations. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_e476b8cd57922481",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_9ba786be99faffa2",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #1093 remains OPEN. Topics: number theory, binomial coefficients. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_7813bfb56ee9aeb7",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_b02751141ee46bce",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #1056 remains OPEN. Statement: Let $k ≥ 2$. Does there exist a prime $p$ and consecutive intervals $I_0,\\dots,I_k$ such that $\\prod\\limits_{n{\\in}I_i}n \\equiv 1 \\mod n$ for all $1 \\le i \\le k$? Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: A060427.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_e7c83e20336f0b96",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_b48fa7c8511b16c6",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #684 remains OPEN. Topics: number theory, primes, binomial coefficients. Erdős prize: no. Not yet formalized in Lean. OEIS: A392019, possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_f40e421ccc02080c",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_b53818ef62d3672f",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #699 has status 'falsifiable'. Statement: **Erdős Problem 699.** Is it true that for every $1 \\le i < j \\le n / 2$ there exists a prime $p \\ge i$ with $p \\mid \\gcd\\big(\\binom{n}{i}, \\binom{n}{j}\\big)$? Topics: number theory, binomial coefficients. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_f0923e08cba7fd09",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_d3d947902c6331cb",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #319 remains OPEN. Statement: What is the size of the largest $A\\subseteq\\{1, \\dots, N\\}$ such that there is a function $\\delta : A \\to \\{-1, 1\\}$ such that $$ \\sum_{n\\in A} \\frac{\\delta n}{n} = 0 $$ and $$ \\sum_{n\\in A'}\\frac{\\delta n}{n} \\neq 0 $$ for all non-empty $A'\\subsetneq A$. Topics: number theory, unit fractions. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_65c84a0111a60fe2",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_d72bce755ab746a2",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #366 has status 'verifiable'. Statement: Are there any $2$-full $n$ such that $n+1$ is $3$-full? Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: A060355.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_0b6f6f791a2f7f7a",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 1
+  },
+  {
+    "id": "vf_0048a13ac8707d73",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #105 has status 'disproved (lean)'. Topics: geometry. Erdős prize: $50. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_64035aa03d6c335c",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0085928f0ac67d01",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #40 remains OPEN. Statement: For what functions $g(N) → \\infty$ is it true that $$\\lvert A\\cap \\{1,\\ldots,N\\}\\rvert \\gg \\frac{N^{1/2}}{g(N)}$$ implies $\\limsup 1_A\\ast 1_A(n)=\\infty$? Topics: number theory, additive basis. Erdős prize: $500. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_3499c1a8488994e1",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_00cdc486fa764069",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #461 remains OPEN. Topics: number theory, primes. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_55486663626ab285",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_00dc0ceaaa58ab77",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #861 is SOLVED. Topics: number theory, sidon sets. Erdős prize: no. Not yet formalized in Lean. OEIS: A143824, A227590, A003022, A143823.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_acf2dcf381410a15",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_00e14bb157245345",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #71 has been PROVED (Erdős's conjecture holds). Topics: graph theory, cycles. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_2bae9e1b02ec194b",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0106baf19a411342",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #641 has been DISPROVED (a counterexample is known). Topics: graph theory. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_31a76f9c3d337c1e",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_01262901c2f60e1f",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #343 has been PROVED (Erdős's conjecture holds). Topics: number theory, complete sequences. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_67c593750d55a668",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0139666d12dffaf1",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #903 has been PROVED (Erdős's conjecture holds). Topics: combinatorics. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_efa7dee76b6725aa",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_01468af98db2dcec",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #610 has been PROVED (Erdős's conjecture holds). Topics: graph theory. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_d7900aae2f7982ec",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_017fe040a7805919",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #749 remains OPEN. Statement: Let $\\epsilon>0$. Does there exist $A\\subseteq \\mathbb{N}$ such that the lower density of $A+A$ is at least $1-\\epsilon$ and yet $1_A\\ast 1_A(n) \\ll_\\epsilon 1$ for all $n$? Topics: additive combinatorics. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_03fc7652ee0c537d",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0188a388ddc15094",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #802 remains OPEN. Topics: graph theory. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_a9483bfe5546a120",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0196f7cbc35ff04c",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #186 is SOLVED. Topics: additive combinatorics. Erdős prize: no. Not yet formalized in Lean. OEIS: A389784.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_835421397598193d",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_019dee951cce3bf1",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #719 remains OPEN. Topics: graph theory, hypergraphs. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_0ea81b3925b19cfa",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_021aab0b6de8d3cb",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #14 remains OPEN. Topics: number theory, sidon sets, additive combinatorics. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: A143824, possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_9a37c678176b48e4",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_026b6ca358fed4f3",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #795 has been PROVED (Erdős's conjecture holds). Topics: number theory. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_7be9d0b3116d7c0b",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_02868ab3cae92a4c",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #1002 remains OPEN. Statement: For any $0<\\alpha<1$, let $f(\\alpha,n)=\\frac{1}{\\log n}\\sum_{1\\leq k\\leq n}(\\tfrac{1}{2}- \\{ \\alpha k\\})$. Does $f(\\alpha,n)$ have an asymptotic distribution function? In other words, is there a non-decreasing function $g$ such that $g(-\\infty)=0$, $g(\\infty)=1$, and $\\lim_{n\\to \\infty}\\lvert \\{ \\alpha\\in (0,1): f(\\alpha,n)\\leq c\\}\\rvert=g(c)$? Topics: analysis, diophantine approximation. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_5019b2ae298d1cda",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_03626bce7a8762ec",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #224 has status 'proved (lean)'. Topics: geometry. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_e40b70a65c17d93d",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0373423a49fad2cf",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #1044 has status 'solved (lean)'. Topics: analysis. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_16a68d791cd4309b",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_03a9fba560346442",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #440 is SOLVED. Topics: number theory. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_66767a21b4f5b1da",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_040c9e1af984d1cd",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #360 is SOLVED. Topics: number theory. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_1759b89cd7e4ef28",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0470b20ce0614e6a",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #297 is SOLVED. Topics: number theory, unit fractions. Erdős prize: no. Not yet formalized in Lean. OEIS: A092670.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_7368c9d63976faf6",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_04c2ff267458866e",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #30 remains OPEN. Statement: Is it true that, for every $\\varepsilon > 0$, $h(N) = \\sqrt N + O_{\\varespilon}(N^\\varespilon) Topics: number theory, sidon sets, additive combinatorics. Erdős prize: $1000. Statement is machine-verified in Lean (formal-conjectures). OEIS: A143824, A227590, A003022.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_85c29b02ee61e183",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_04c492c383a7fe0f",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #858 is SOLVED. Topics: number theory, primitive sets. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_0ca3ea18a955cf61",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_04e4c16556885139",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #116 has been PROVED (Erdős's conjecture holds). Topics: polynomials, analysis. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_5c35cfe7f1377194",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_053e25a6ea259bf2",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #898 has status 'proved (lean)'. Topics: geometry. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_5e83c90d2a0c669f",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_05646653e3dfc403",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #539 remains OPEN. Statement: Let $h(n)$ be maximal such that, for any set $A\\subseteq \\mathbb{N}$ of size $n$, the set$$\\left\\{ \\frac{a}{(a,b)}: a,b\\in A\\right\\}$$has size at least $h(n)$. Estimate $h(n)$. Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_0fd032ca0aaea23c",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_05d605b86a00e60a",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #517 remains OPEN. Statement: If `f(z) = ∑ aₖzⁿₖ` is an entire function (with `aₖ ≠ 0` for all `k`) such that `nₖ / k → ∞`, is it true that `f` assumes every value infinitely often? Topics: analysis. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_df496e2a26fbbd95",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0603f7eaae023345",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #382 remains OPEN. Topics: number theory. Erdős prize: no. Not yet formalized in Lean. OEIS: A388850.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_7ef16c12a664e9aa",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_063bab00e027b681",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #176 remains OPEN. Topics: additive combinatorics, arithmetic progressions, discrepancy. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_3f3e2b7d3c01ba24",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_064b77c798d85c77",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #1126 has status 'proved (lean)'. Topics: analysis. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_7f7d69829ffcc987",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_0666e94eb74c8d1f",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #321 remains OPEN. Statement: Let $R(N)$ be the size of the largest $A\\subseteq\\{1, ..., N\\}$ such that all sums $\\sum_{n\\in S} \\frac{1}{n}$ are distinct for $S\\subseteq A$. What is $R(N)$? Topics: number theory, unit fractions. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: A384927, A391592.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_1575bccede72fc02",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_06be95639f23308d",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #867 has status 'disproved (lean)'. Topics: additive combinatorics. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_30cbec38c96cf437",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_06d37e001d97c12a",
+    "assertion_type": "open_question",
+    "assertion_text": "Erdős Problem #1110 remains OPEN. Topics: number theory. Erdős prize: no. Not yet formalized in Lean. OEIS: possible.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_597e981db7ba2265",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  },
+  {
+    "id": "vf_07016e0ae3322782",
+    "assertion_type": "theoretical",
+    "assertion_text": "Erdős Problem #1079 is SOLVED. Topics: graph theory, turan number. Erdős prize: no. Not yet formalized in Lean. OEIS: N/A.",
+    "confidence": 0.99,
+    "evidence_type": "computational",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "entities": [],
+    "doi": null,
+    "source_title": "cap_61973ee16b553d57 · vc_bbc2adf45fcd362b",
+    "flags": {
+      "gap": false,
+      "contested": false,
+      "replicated": false
+    },
+    "link_count": 0
+  }
+]

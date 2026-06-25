@@ -1,0 +1,34 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_789565696f60b064",
+  "kind": "statement.attested",
+  "target": {
+    "type": "finding",
+    "id": "vf_caaa525f7259eff1"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-10T20:52:25.080396+00:00",
+  "reason": "statement-faithfulness attestation",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "attestation": {
+      "attested_at": "2026-06-10T20:52:24.917708+00:00",
+      "attested_by": "reviewer:will-blair",
+      "formal_ref": "/Users/williamblair/personal/vela/google-deepmind/alphaproof-nexus-results@0647711a7118PNOutputs/ErdosProblems/erdos_12.parts.i.lean",
+      "formal_statement_hash": "c42238294d8d2d88ec752c5f293486a759b163412929dc4bc67d08702a499a59",
+      "id": "vsa_9c09adbc556e589d",
+      "informal_ref": "erdosproblems.com #12",
+      "note": "Read the Lean statement against the original; quantifier structure and asymptotics match. Two-part proof; this attests part i's statement (part ii shares it).",
+      "schema": "vela.statement_attestation.v0.1",
+      "signature": "dbefa3ba7f05ce7aa686b1d1f3c6f6c943f705b64e0ed5871eaf1e7bb6553d912c4da0442c924e9fcf5534875877f322feb4dca6a39b6965079109c65274280e",
+      "signer_pubkey_hex": "4892f93877e637b5f59af31d9ec6704814842fb278cacb0eb94704baef99455e",
+      "target": "vf_caaa525f7259eff1",
+      "verdict": "faithful"
+    }
+  },
+  "caveats": []
+}

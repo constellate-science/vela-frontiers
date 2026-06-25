@@ -1,0 +1,47 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_c0223473e074151c",
+  "kind": "verifier.attach",
+  "target": {
+    "type": "finding",
+    "id": "vf_da8d51a6cae5ec11"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "created_at": "2026-06-17T06:50:59.044057+00:00",
+  "reason": "backfill frozen verifier re-check",
+  "payload": {
+    "attachment": {
+      "adversarial_probes": [
+        {
+          "kind": "counterexample_search",
+          "result": "survived"
+        }
+      ],
+      "claim_digest": "4a5e42ca16445179",
+      "id": "vva_2b63c05c5f4b9f5b",
+      "independent_of": [],
+      "match_to_claim": {
+        "checker_actor": "vela-verify",
+        "matches": true
+      },
+      "method_integrity": "sound",
+      "note": "frozen verifier re-check: balanced_coloring",
+      "outcome": "passed",
+      "schema": "vela.verifier_attachment.v0.1",
+      "solver_id": "vela-verify",
+      "target": "vf_da8d51a6cae5ec11",
+      "verifier_actor": "vela-verify",
+      "verifier_method": "computational_search"
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-17T14:42:56.692852+00:00",
+  "decision_reason": "maintainer accept: frozen-verifier re-check (vela-verify)",
+  "applied_event_id": "vev_1257b1a0392b19ee",
+  "caveats": []
+}

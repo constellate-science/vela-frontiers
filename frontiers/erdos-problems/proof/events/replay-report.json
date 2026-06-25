@@ -1,0 +1,33 @@
+{
+  "ok": false,
+  "status": "conflict",
+  "event_log": {
+    "count": 2766,
+    "kinds": {
+      "anchor.attached": 1240,
+      "artifact.asserted": 23,
+      "finding.asserted": 1256,
+      "finding.noted": 6,
+      "review.rejected": 209,
+      "statement.attested": 7,
+      "statement.registered": 17,
+      "verifier_attachment.added": 8
+    },
+    "first_timestamp": "2026-05-10T19:27:12.383505+00:00",
+    "last_timestamp": "2026-06-17T14:43:01.476719+00:00",
+    "duplicate_ids": [],
+    "orphan_targets": []
+  },
+  "source_hash": "346f0dcfc1ed4bd4b448674ea6e5410550c316a00c0120f1d5e8a3c3a464a1bb",
+  "event_log_hash": "3e132323a45c38a9284e3a0f2eaad6b4c20526f4e2b32bed0cad9f6584e20075",
+  "replayed_hash": "unavailable",
+  "current_hash": "346f0dcfc1ed4bd4b448674ea6e5410550c316a00c0120f1d5e8a3c3a464a1bb",
+  "conflicts": [
+    "materialized finding vf_03c1319b9c297377 hash does not match last event vev_14d86a0a8f83c856",
+    "materialized finding vf_1b02c9b209dd10a3 hash does not match last event vev_eaab443b043adf00",
+    "materialized finding vf_84e6f2df0ac208e4 hash does not match last event vev_d92064964a46683b",
+    "materialized finding vf_9ba786be99faffa2 hash does not match last event vev_8aff487081c7aa42",
+    "materialized finding vf_b02751141ee46bce hash does not match last event vev_08815bb4e7ee548d",
+    "materialized finding vf_d72bce755ab746a2 hash does not match last event vev_b7c7d804b4d78879"
+  ]
+}

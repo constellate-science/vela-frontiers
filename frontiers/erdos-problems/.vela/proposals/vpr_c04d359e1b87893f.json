@@ -1,0 +1,132 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_c04d359e1b87893f",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_b96694cffd142e8f"
+  },
+  "actor": {
+    "id": "agent:erdos-deep-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-06-04T00:33:19.074201+00:00",
+  "reason": "Candidate claim vc_63a51011006e8833 imported from artifact packet cap_f4e8bcd294c97ba7",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-03T00:00:00Z",
+      "packet_id": "cap_f4e8bcd294c97ba7",
+      "producer": {
+        "id": "agent:erdos-deep-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős deep-ingest (problem anatomy)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    },
+    "candidate_claim_id": "vc_63a51011006e8833",
+    "evidence_artifact_ids": [
+      "va_b43a0cf74f438df6"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #41 (?, AMS 11). STATEMENT: For a given set `A`, the n-tuple sums `a₁ + ... + aₙ` are all distinct for `a₁, ..., aₙ` in `A` (aside from the trivial coincidences). FORMAL: erdos_41: Set ℕ) (h_triple : NtupleCondition A 3) (h_infinite : A.Infinite) : Filter.atTop.liminf (fun N => (A ∩ Icc 1 N).ncard / (N : ℝ)^(1/3 : ℝ)) = 0; erdos_41: Set ℕ) (hA₂ : NtupleCondition A 2) (hA : A.Infinite) : Filter.atTop.liminf (fun N => (A ∩ Icc 1 N).ncard / (N : ℝ).sqrt) = 0 KNOWN/REMARKS: # Erdős Problem 41 *Reference:* erdosproblems.com/41 | Let `A ⊆ ℕ` be an infinite set such that the triple sums `a + b + c` are all distinct for `a, b, c` in `A` (aside from the trivial coincidences). Is it true that `liminf n → ∞ |A ∩ {1, …, N}| / N^(1/3) = 0`? | Erdős proved the following pairwise version. Let `A ⊆ ℕ` be an infinite set such that the pairwise sums `a + b` are all distinct for `a RELATED: [] OEIS: []",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.95
+      },
+      "created": "2026-06-03T00:00:00Z",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_b43a0cf74f438df6",
+            "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+            "candidate_claim_id": "vc_63a51011006e8833"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_b96694cffd142e8f",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős deep-ingest (problem anatomy)",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T00:00:00Z",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-deep-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_f4e8bcd294c97ba7 · vc_63a51011006e8833",
+        "url": "https://www.erdosproblems.com/41",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_f4e8bcd294c97ba7",
+    "https://www.apache.org/licenses/LICENSE-2.0",
+    "https://www.erdosproblems.com/41",
+    "https://www.erdosproblems.com/41)",
+    "packet_artifact:va_b43a0cf74f438df6"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:30:12.306334+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-deep-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_f4e8bcd294c97ba7",
+    "started_at": "2026-06-03T00:00:00Z",
+    "context": {
+      "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+      "producer_name": "Erdős deep-ingest (problem anatomy)",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    }
+  }
+}

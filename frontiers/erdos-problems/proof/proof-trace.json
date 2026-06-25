@@ -1,0 +1,42 @@
+{
+  "trace_version": "0.2.0",
+  "generated_at": "2026-06-17T14:43:12.242583+00:00",
+  "source": "Erdős problems frontier",
+  "source_hash": "1cea4ba48c046182f941166cd02c44fc50d76bd6c1d18fcaa381ccd397098ffe",
+  "snapshot_hash": "346f0dcfc1ed4bd4b448674ea6e5410550c316a00c0120f1d5e8a3c3a464a1bb",
+  "event_log_hash": "3e132323a45c38a9284e3a0f2eaad6b4c20526f4e2b32bed0cad9f6584e20075",
+  "proposal_state_hash": "59b17fd8bafb2509bf75f7fc6590ce7b4dd73076d3b32e9d2e460d39d4c5d51e",
+  "replay_status": "conflict",
+  "packet_manifest_hash": null,
+  "schema_version": "0.10.0",
+  "checked_artifacts": [
+    "manifest.json",
+    "packet.lock.json",
+    "proof-trace.json",
+    "ro-crate-metadata.jsonld",
+    "findings/full.json",
+    "artifacts/artifacts.json",
+    "artifacts/artifact-audit.json",
+    "artifacts/blob-map.json",
+    "sources/source-registry.json",
+    "research-traces/research-traces.json",
+    "research-traces/verifier-attachments.json",
+    "evidence/evidence-atoms.json",
+    "evidence/source-evidence-map.json",
+    "conditions/condition-records.json",
+    "events/events.json",
+    "events/replay-report.json",
+    "proposals/proposals.json",
+    "reviews/review-events.json",
+    "reviews/confidence-updates.json",
+    "check-summary.json"
+  ],
+  "caveats": [
+    "Candidate contradictions, gaps, and bridges require human review.",
+    "Evidence ranking is heuristic: meta-analysis > RCT > cohort > case-control > case-report > in-vitro.",
+    "PubMed prior-art checks are rough signals, not proof of novelty.",
+    "Observer policy output is weighted reranking, not definitive disagreement.",
+    "Retraction impact is simulated over declared dependency links."
+  ],
+  "status": "ok"
+}

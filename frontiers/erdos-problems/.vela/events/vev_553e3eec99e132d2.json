@@ -1,0 +1,24 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_553e3eec99e132d2",
+  "kind": "review.rejected",
+  "target": {
+    "type": "proposal",
+    "id": "vpr_952f1f1fc323ca41"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-15T16:29:02.715573+00:00",
+  "reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "legacy_backfill": true,
+    "proposal_id": "vpr_952f1f1fc323ca41",
+    "proposal_kind": "finding.note",
+    "verdict": "rejected"
+  },
+  "caveats": []
+}

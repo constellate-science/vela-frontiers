@@ -1,0 +1,66 @@
+{
+  "id": "vf_b0f3acbe2c674497",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdos-Straus conjecture (1948, open): for every integer n >= 2, the equation 4/n = 1/x + 1/y + 1/z has a solution in positive integers x, y, z. Verified computationally for n up to 10^17.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Egyptian-fraction representations of 4/n. Open in general; computationally verified for very large bounded n.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.5,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "Erdos, Straus 1948 conjecture",
+    "authors": [
+      {
+        "name": "agent:vela-curation-bot",
+        "orcid": null
+      }
+    ],
+    "year": 1948,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-10T19:27:57.623942+00:00",
+      "extractor_version": "vela/0.110.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-10T19:27:57.623955+00:00",
+  "updated": null
+}

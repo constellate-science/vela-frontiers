@@ -1,0 +1,38 @@
+{
+  "schema": "vela.experiment.v0.1",
+  "experiment_id": "vex_aa2c639988ecd9fa",
+  "title": "Erdős/cheap-verifier connection thesis: does graph-structured context lift verified-novel solving?",
+  "held_out_set_hash": "sha256:9ff2e54a382e910096129cbdfa15e829d3d61ebaa28a9101ecac40794e68660e",
+  "arms": [
+    {
+      "id": "A",
+      "context_policy": "none"
+    },
+    {
+      "id": "B",
+      "context_policy": "random_neighbor"
+    },
+    {
+      "id": "C",
+      "context_policy": "flat_topk"
+    },
+    {
+      "id": "D",
+      "context_policy": "constellation"
+    }
+  ],
+  "proposer_model_id": "claude-opus-4-8",
+  "proposer_cutoff": "2026-01",
+  "budget_tokens": 200000,
+  "budget_tool_calls": 40,
+  "primary_analysis": "mcnemar (paired, verified-novel solve)",
+  "secondary_analysis": "wilcoxon (ordinal partial-progress)",
+  "power_target": 25,
+  "blind_alias_map_hash": "sha256:37cc81fba26016a5750f481568262a224136923f465d2ee46a8052247ced3169",
+  "decision_rule": "Confirm the connection thesis iff arm D (constellation) > A and > B and > C on verifier-gated novel-solve AND on partial-progress; else falsify/bound it.",
+  "registered_at": "2026-06-03T00:00:00Z",
+  "registrar_actor": "reviewer:will",
+  "status": "preregistered",
+  "signature": "e2280f5c75ca34b467a378fb095771f526db75f8cf3d5ed5fc6f66a31d648d31e1b23b87821ca175ca05b55d4a7f35b039f4c0da9b78e922d93667da2ab58d0e",
+  "signer_pubkey_hex": "197f6b23e16c8532c6abc838facd5ea789be0c76b2920334039bfa8b3d368d61"
+}

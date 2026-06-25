@@ -1,0 +1,74 @@
+{
+  "id": "vf_41030d44f59eae22",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "BENCHMARK CLAIM (ProteinGym) — ProteinNPT (non-parametric transformer, supervised track) REPORTS gains by attending across labelled neighbours. VERIFICATION STATE: author-reported; SUPERVISED — not comparable to zero-shot numbers; depends on the cross-validation split. NOT re-run here. Open obligation: re-run under the official supervised CV split; never compare against zero-shot rows.",
+    "type": "computational",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.3,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "expert_assertion",
+    "doi": null,
+    "title": "manual finding",
+    "authors": [
+      {
+        "name": "reviewer:will-blair",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-06-10T06:50:55.944101+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": true,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "annotations": [
+    {
+      "id": "ann_ab3ecb7585481522",
+      "text": "HARDENING (benchmark-state): label_provenance=attested (records-not-reruns; ground truth is an answer key, not a frozen-verifier rederivation), valid_as_of=2026-06-10, model_cutoff=unknown. Under the trust ladder, attested label provenance caps this record below 'verified' until a deterministic rederivation exists.",
+      "author": "reviewer:will-blair",
+      "timestamp": "2026-06-10T23:01:45.061196+00:00"
+    }
+  ],
+  "created": "2026-06-10T06:50:55.944113+00:00",
+  "updated": null
+}

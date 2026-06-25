@@ -1,0 +1,765 @@
+{
+  "analysis": {
+    "experiment_id": "vex_aa2c639988ecd9fa",
+    "mode": "DRY-RUN (mock proposer)",
+    "n_problems": 12,
+    "n_attempts": 48,
+    "verified_solves_per_arm": {
+      "none": 0,
+      "random_neighbor": 0,
+      "flat_topk": 0,
+      "constellation": 0
+    },
+    "mcnemar_D_vs_A": {
+      "D_solve_A_miss": 0,
+      "A_solve_D_miss": 0,
+      "discordant_pairs": 0,
+      "power_target": 25,
+      "powered": false
+    },
+    "decision_rule": "Confirm the connection thesis iff arm D (constellation) > A and > B and > C on verifier-gated novel-solve AND on partial-progress; else falsify/bound it.",
+    "verdict": "no D advantage in this run"
+  },
+  "attempts": [
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:101",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 165,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A006065' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:101",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 667,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A006065' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:101",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 357,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A006065' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:101",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 600,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A006065' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1013",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 179,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1013",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 693,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1013",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 321,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1013",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 519,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1029",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 194,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A059442' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1029",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 709,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A059442' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1029",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 719,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A059442' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1029",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 1105,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A059442' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1030",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 194,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A000791' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1030",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 675,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A000791' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1030",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 717,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A000791' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1030",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 1112,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A000791' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1054",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 187,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A167485' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1054",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 701,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A167485' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1054",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 326,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A167485' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1054",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 523,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A167485' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1083",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 182,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186704' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1083",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 752,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186704' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1083",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 386,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186704' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1083",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 629,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null,
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186704' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1085",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 178,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186705' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1085",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 663,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186705' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1085",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 308,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186705' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1085",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 504,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A186705' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1103",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 181,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1103",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 679,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1103",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 311,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1103",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 509,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1104",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 193,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1104",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 734,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1104",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 321,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1104",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 519,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A292528' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1107",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 187,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A056828' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1107",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 709,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A056828' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1107",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 318,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A056828' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1107",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 515,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A056828' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1109",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 181,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1109",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 744,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1109",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 311,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1109",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 509,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A392164' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "none",
+      "problem_id": "erdos:1142",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 185,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A039669' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "random_neighbor",
+      "problem_id": "erdos:1142",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 705,
+        "tool_calls": 1,
+        "constellation_edges_used": []
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A039669' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "flat_topk",
+      "problem_id": "erdos:1142",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 318,
+        "tool_calls": 1,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A039669' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    },
+    {
+      "schema": "vela.canopus_attempt.v0.1",
+      "experiment_id": "vex_aa2c639988ecd9fa",
+      "arm_id": "constellation",
+      "problem_id": "erdos:1142",
+      "proposer_model_id": "claude-opus-4-8",
+      "metrics": {
+        "tokens": 515,
+        "tool_calls": 2,
+        "constellation_edges_used": [
+          null
+        ]
+      },
+      "outcome": "failed",
+      "verifier_detail": "oeis_match: sequence 'A039669' not in offline fixture (known: ['A003022', 'A276661']); live lookup is a separate refresh-audit"
+    }
+  ]
+}

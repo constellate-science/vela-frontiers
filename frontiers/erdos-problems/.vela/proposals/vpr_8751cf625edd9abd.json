@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_8751cf625edd9abd",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_7a226f29da63b3f3"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:30.583209+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #7 (vf_6e126f3f5046840d) [shares_technique, confidence 0.75]: Both are resolved by constructing covering systems of congruences; 203 needs a covering of the exponents (k,l) of 2^k·3^l·m+1, exactly the covering-system machinery that 7 studies in the odd-modulus case. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #7 (vf_6e126f3f5046840d) [shares_technique, confidence 0.75]: Both are resolved by constructing covering systems of congruences; 203 needs a covering of the exponents (k,l) of 2^k·3^l·m+1, exactly the covering-system machinery that 7 studies in the odd-modulus case. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:28:46.722736+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

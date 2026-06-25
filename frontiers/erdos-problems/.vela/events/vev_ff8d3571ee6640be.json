@@ -1,0 +1,23 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_ff8d3571ee6640be",
+  "kind": "finding.reviewed",
+  "target": {
+    "type": "finding",
+    "id": "vf_ae08f178d51bb99e"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-19T17:22:29.325208+00:00",
+  "reason": "Kernel-certified the banked cut-equality certificates for k=2,3,4 against the canonical Lean target Vela.Erdos1056.erdos1056IntervalTarget (axiom-clean: propext/Classical.choice/Quot.sound), plus a general antitone lemma target(k+1)->target(k). Witnesses: lean/Vela/Ablation/Erdos1056Witnesses.lean + Erdos1056Monotone.lean. Lifts existence-for-small-k from Rust-verifier-checked to Lean-kernel-checked; the general forall-k remains open.",
+  "before_hash": "sha256:fc45897002ca7fc24900728de5681c4a940a8a3c322b6942ecddb38bc44b8554",
+  "after_hash": "sha256:216f834f90f42909c1c3b71964a25bf1d3ccb1456bff402e489db4038c572e93",
+  "payload": {
+    "proposal_id": "vpr_be1dddd3c8bd85d0",
+    "status": "accepted"
+  },
+  "caveats": [],
+  "signature": "f281adb55adfdb1940770e261925a975f97f6eefabe0689dd4b1ca5da74a61037ae333370532f3276c97e86851b34563c66565764d0b020e15956871316d360b"
+}

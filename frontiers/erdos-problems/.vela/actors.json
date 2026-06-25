@@ -1,0 +1,14 @@
+[
+  {
+    "id": "reviewer:vela-curation-bot",
+    "public_key": "3180ef7332895cbe08e90f5aa2b25994a146d60432ec4c1a20fcd2d097d28283",
+    "algorithm": "ed25519",
+    "created_at": "2026-05-10T19:27:12.374380+00:00"
+  },
+  {
+    "id": "reviewer:will-blair",
+    "public_key": "4892f93877e637b5f59af31d9ec6704814842fb278cacb0eb94704baef99455e",
+    "algorithm": "ed25519",
+    "created_at": "2026-06-10T06:16:09.606284+00:00"
+  }
+]

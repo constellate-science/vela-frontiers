@@ -1,0 +1,66 @@
+{
+  "id": "vf_009a49becf7821af",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős #138: W(1) = 1 (Erdos138.monoAPNumber_two_one). Kernel-clean Lean proof — axioms {propext, Classical.choice, Quot.sound}, no sorryAx — via sInf le_antisymm. Produced by the prover-in-the-loop foundry; verified by the Lean kernel.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 1.0,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "title": "vela foundry (prover-in-the-loop) wave 2, formal-conjectures @ a1c9543",
+    "authors": [
+      {
+        "name": "agent:vela-foundry-lean",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-06-22T14:47:01.302768+00:00",
+      "extractor_version": "vela/0.700.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-06-22T14:47:01.302779+00:00",
+  "updated": null
+}

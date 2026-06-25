@@ -1,0 +1,58 @@
+{
+  "schema": "carina.artifact_packet.v0.1",
+  "packet_id": "cap_34c4f0e25c5b7011",
+  "producer": {
+    "kind": "agent",
+    "id": "agent:canopus-lean-2026-06-14",
+    "name": "Canopus formal-math prover (Opus 4.8)"
+  },
+  "topic": "Kernel-verified Lean proof closing an open sorry in Erd\u0151s Problem 1150 (formal-conjectures)",
+  "created_at": "2026-06-14T00:00:00.000000+00:00",
+  "artifacts": [
+    {
+      "id": "va_115101bafeb9da86",
+      "kind": "code",
+      "title": "Lean 4 proof of erdos_1150.variants.parseval_lower_bound (Parseval lower bound for \u00b11 polynomials), kernel-verified",
+      "locator": "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/1150.lean",
+      "content_hash": "115101bafeb9da868e5b83b719f1b2be34c4f0e25c5b70112f0a3916694b068a",
+      "parents": [],
+      "metadata": {
+        "repo": "google-deepmind/formal-conjectures",
+        "file": "FormalConjectures/ErdosProblems/1150.lean",
+        "declaration": "Erdos1150.erdos_1150.variants.parseval_lower_bound",
+        "toolchain": "leanprover/lean4:v4.27.0",
+        "verifier": "lean4 kernel (lake env lean)",
+        "axioms": "propext, Classical.choice, Quot.sound (no sorryAx)",
+        "method": "discrete Parseval via orthogonality of the (n+1)-th roots of unity: mean of |P|^2 over the roots = sum |a_k|^2 = n+1, so the max (hence the sup over the circle) is >= sqrt(n+1)",
+        "proof_lines": 126,
+        "exit_code": 0
+      }
+    }
+  ],
+  "candidate_claims": [
+    {
+      "id": "vc_8e5b83b719f1b2be",
+      "assertion": "The Lean 4 theorem `erdos_1150.variants.parseval_lower_bound` is proven and kernel-verified (axioms: propext, Classical.choice, Quot.sound; no sorryAx): for every polynomial P over \u2102 of degree n whose coefficients (indices 0..n) all lie in {-1, 1}, the supremum of |P(z)| over the unit circle |z| = 1 is at least \u221a(n+1). This closes a previously-open `sorry` (category: textbook) attached to Erd\u0151s Problem 1150 in google-deepmind/formal-conjectures.",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_115101bafeb9da86"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/1150",
+        "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/1150.lean"
+      ],
+      "conditions": [
+        "domain:complex_analysis",
+        "verifier:lean4_kernel",
+        "category:textbook",
+        "result:lower_bound_sqrt_n_plus_1",
+        "open_sorry_closed:true"
+      ],
+      "confidence": 0.99,
+      "caveats": [
+        "This is the textbook Parseval lower-bound variant, not the open Erd\u0151s 1150 conjecture itself (the (1+c)\u221an improvement remains open).",
+        "Kernel-verified locally on lean4 v4.27.0 with no sorryAx; upstream PR to formal-conjectures is the external acceptance step and requires the maintainer's action."
+      ]
+    }
+  ]
+}

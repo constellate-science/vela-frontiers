@@ -1,0 +1,64 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_276901a840c944fa",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_e8cbd54f9841bbf2"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-17T06:47:42.143306+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:bd59b83445c718c9d0c2be5cc1105cde4c74eade7cbcff5541e82d7e40bf4a5d",
+      "created": "2026-06-17T06:47:40.882540+00:00",
+      "id": "va_e8cbd54f9841bbf2",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/bd59b83445c718c9d0c2be5cc1105cde4c74eade7cbcff5541e82d7e40bf4a5d",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::balanced_coloring",
+        "witness_file": "erdos617-balanced-k5-r2.witness.json",
+        "witness_kind": "balanced_coloring"
+      },
+      "name": "Frozen-verifier witness: erdos617-balanced-k5-r2 (balanced_coloring)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos617-balanced-k5-r2 (balanced_coloring)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 191,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_da8d51a6cae5ec11"
+      ]
+    },
+    "proposal_id": "vpr_22c6088fb3e051ae"
+  },
+  "caveats": []
+}
