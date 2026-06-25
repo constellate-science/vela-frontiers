@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "status": "ok",
+  "event_log": {
+    "count": 97,
+    "kinds": {
+      "anchor.attached": 1,
+      "artifact.asserted": 21,
+      "evidence_atom.locator_repaired": 3,
+      "finding.asserted": 40,
+      "finding.retracted": 1,
+      "finding.reviewed": 1,
+      "finding.span_repaired": 3,
+      "review.rejected": 9,
+      "verifier_attachment.added": 18
+    },
+    "first_timestamp": "2026-05-09T19:20:20.719771+00:00",
+    "last_timestamp": "2026-06-17T14:43:05.459637+00:00",
+    "duplicate_ids": [],
+    "orphan_targets": []
+  },
+  "source_hash": "4dc46fe8ca9bec56b8e46f73c2f99c3c0398830f4c48a0ce5eabab2b8713b8a7",
+  "event_log_hash": "4a138f1f2e16af8d24926c9b0a84869872e173533adb8501c93bd4a6db6d71dc",
+  "replayed_hash": "4dc46fe8ca9bec56b8e46f73c2f99c3c0398830f4c48a0ce5eabab2b8713b8a7",
+  "current_hash": "4dc46fe8ca9bec56b8e46f73c2f99c3c0398830f4c48a0ce5eabab2b8713b8a7",
+  "conflicts": []
+}

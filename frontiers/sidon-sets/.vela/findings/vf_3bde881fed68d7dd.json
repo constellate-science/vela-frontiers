@@ -1,0 +1,67 @@
+{
+  "id": "vf_3bde881fed68d7dd",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "The h-squared-dissociated set construction needed for the polynomial bound has diameter polynomial in k, replacing geometric components in the original construction.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.4,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "title": "ChatGPT-5.5-Pro session, 2026-05-08, ~2 hours guided",
+    "authors": [
+      {
+        "name": "agent:research-bot-2026-05-09",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-09T19:20:35.222684+00:00",
+      "extractor_version": "vela/0.75.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": true,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false,
+    "review_state": "needs_revision"
+  },
+  "links": [],
+  "created": "2026-05-09T19:20:35.223077+00:00",
+  "updated": null
+}

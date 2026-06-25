@@ -1,0 +1,23 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_7ee899925db8eb4b",
+  "kind": "finding.asserted",
+  "target": {
+    "type": "finding",
+    "id": "vf_d018b0dfe8574a33"
+  },
+  "actor": {
+    "id": "agent:research-bot-2026-05-09",
+    "type": "human"
+  },
+  "timestamp": "2026-05-09T22:52:52.428950+00:00",
+  "reason": "Manual finding added to frontier state",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:f640b1ba25688366c391f47f98597bc9248cf934c58af1ba457b09987bae7333",
+  "payload": {
+    "proposal_id": "vpr_7ff6228e76041a1d"
+  },
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

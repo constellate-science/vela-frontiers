@@ -1,0 +1,27 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_cd9ae7eca77fcd54",
+  "kind": "finding.asserted",
+  "target": {
+    "type": "finding",
+    "id": "vf_c9ab5970cdbcb6af"
+  },
+  "actor": {
+    "id": "reviewer:will",
+    "type": "human"
+  },
+  "timestamp": "2026-06-03T22:41:09.705899+00:00",
+  "reason": "Candidate claim vc_5aab0a22f7cdebf1 imported from artifact packet cap_087198a92d1e30a2",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:a708274655f8a27358f44779420ef69073003f3036de00f1c9275b47c51de06d",
+  "payload": {
+    "proposal_id": "vpr_1879d8894dd07e64"
+  },
+  "caveats": [
+    "Improved LOWER BOUND (a verified large Sidon set), NOT a proven maximum; true a(10) may be larger.",
+    "VERIFIED valid by verify_construction.verify_sidon (66 points, 2211 pairwise sums distinct), 3 independent checkers.",
+    "Not an accepted OEIS edit until a maintainer reviews; submit as a comment update + witness link (the n=16..22 path).",
+    "Reviewer acceptance required before this becomes canonical frontier state.",
+    "Agent output is source material until reviewer acceptance."
+  ]
+}

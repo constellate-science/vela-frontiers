@@ -1,0 +1,91 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_2d6cbeca13b7a1c4",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_bfafae73e6095459"
+  },
+  "actor": {
+    "id": "agent:vela-curation-bot",
+    "type": "human"
+  },
+  "created_at": "2026-05-10T17:04:55.432428+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Tao 2007 higher-order Fourier analysis program: Gowers U^s norms admit an inverse theorem characterizing functions with non-negligible U^s norm as correlating with degree-s nilsequences. The U^3 case is the load-bearing first step beyond classical Fourier analysis.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Bounded functions on cyclic groups Z/NZ; Gowers norms U^s for s >= 2; nilsequence correlation as inverse characterization."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.9
+      },
+      "created": "2026-05-10T17:04:55.432386+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_bfafae73e6095459",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-curation-bot",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-10T17:04:55.432375+00:00",
+          "extractor_version": "vela/0.107.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "Tao 2007 higher-order Fourier analysis",
+        "year": 2007
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:solo-maintainer",
+  "reviewed_at": "2026-05-20T07:25:38.283675+00:00",
+  "decision_reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

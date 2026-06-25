@@ -1,0 +1,98 @@
+{
+  "caveats": [
+    "Signals are derived from frontier state and should be recomputed after edits.",
+    "Candidate gaps, bridges, and tensions require human review.",
+    "A clean quality table is not proof of scientific truth."
+  ],
+  "event_log": {
+    "confidence_updates_projection": 0,
+    "events": 97,
+    "review_events_projection": 0
+  },
+  "frontier": "Additive combinatorics: Sidon sets and N(h,k) bounds",
+  "proof_readiness": {
+    "blockers": 77,
+    "caveats": [
+      "Proof readiness means packet state is reviewable, not scientifically settled."
+    ],
+    "status": "needs_review",
+    "warnings": 73
+  },
+  "proof_state": {
+    "last_event_at_export": "2026-06-17T00:14:24.554204+00:00",
+    "latest_packet": {
+      "event_log_hash": "855686921ca152ae25679c784a2b2e95a48f14d5d3a1ca952393e9c82cea8133",
+      "generated_at": "2026-06-17T10:51:15.113349+00:00",
+      "packet_manifest_hash": "1575141e8fcc9c6ab2354bc5228ac536eb39494ebbbdaa8f2016d7c40f3e3181",
+      "snapshot_hash": "185f17ba8a8d01e1fe6f119bb773e26c08a7a48da0fdefa4a2ba0d0e121f5ac3",
+      "status": "stale"
+    },
+    "stale_reason": "Applied proposal vpr_85301ad179e821b3 after latest proof export"
+  },
+  "proposals": {
+    "accepted": 0,
+    "applied": 66,
+    "by_kind": {
+      "artifact.assert": 1,
+      "evidence_atom.locator_repair": 3,
+      "finding.add": 48,
+      "finding.retract": 1,
+      "finding.review": 1,
+      "finding.span_repair": 3,
+      "verifier.attach": 18
+    },
+    "duplicate_ids": [],
+    "invalid_targets": [],
+    "pending_review": 0,
+    "rejected": 9,
+    "total": 75
+  },
+  "review_queue": {
+    "high_priority": 0,
+    "items": 40
+  },
+  "schema": "vela.quality-table.v0",
+  "signals": {
+    "by_kind": {
+      "missing_evidence_locator": 36,
+      "missing_evidence_span": 36,
+      "proposal_applied": 66,
+      "stale_proof_packet": 1,
+      "unsigned_registered_actor": 4
+    },
+    "by_severity": {
+      "error": 4,
+      "info": 66,
+      "warning": 73
+    },
+    "total": 143
+  },
+  "stats": {
+    "avg_confidence": 0.905,
+    "categories": {
+      "computational": 18,
+      "theoretical": 22
+    },
+    "condition_record_count": 40,
+    "confidence_distribution": {
+      "high_gt_80": 38,
+      "low_lt_60": 2,
+      "medium_60_80": 0
+    },
+    "confidence_update_count": 0,
+    "contested": 1,
+    "event_count": 97,
+    "evidence_atom_count": 40,
+    "findings": 40,
+    "gaps": 0,
+    "human_reviewed": 2,
+    "link_types": {},
+    "links": 0,
+    "negative_space": 0,
+    "proposal_count": 75,
+    "replicated": 0,
+    "review_event_count": 42,
+    "source_count": 40,
+    "unreplicated": 40
+  }
+}

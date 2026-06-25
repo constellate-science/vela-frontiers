@@ -1,0 +1,66 @@
+{
+  "id": "vf_f58c1d68daec29c3",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Lindstrom's upper bound for Sidon-set size in {1,...,N} is sqrt(N) + N^{1/4} + 1, tightening the Erdos-Turan bound by a factor of sqrt(2).",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.85,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "Lindstrom 1969",
+    "authors": [
+      {
+        "name": "agent:research-bot-2026-05-09",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-09T22:52:52.265715+00:00",
+      "extractor_version": "vela/0.81.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-09T22:52:52.265730+00:00",
+  "updated": null
+}

@@ -1,0 +1,3539 @@
+[
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_05b3bdc36d3dc682",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_23c0e28001611496"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:15.362391+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:77c72b0ab22361e2084fdbf0688a63199651eab64f512d09635c1b4324e8a602",
+        "created": "2026-06-17T06:35:15.331351+00:00",
+        "id": "va_23c0e28001611496",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/77c72b0ab22361e2084fdbf0688a63199651eab64f512d09635c1b4324e8a602",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a11.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a11 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a11 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 3317,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_92f782f0e1791fad"
+        ]
+      },
+      "proposal_id": "vpr_a4181fe56f941ba5"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_08bb6fa4da8611db",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_51f69f5123255164"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-20T07:25:38.307931+00:00",
+    "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_51f69f5123255164",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_091645f5dfe4d747",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_4b8b2f3759855d6a"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.639098+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "29a2f0343657dd31",
+        "id": "vva_066a91c8a113c0ca",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_4b8b2f3759855d6a",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_9a439efcc0ce8996"
+    },
+    "caveats": [],
+    "signature": "66a55d62d2a9929c93396be7e8c1c6c84732e55d182eadbc8e6992ff1aa60d924cd2afcca75a4b14360b898204164fe75befbece71e9a3236342b120f80b6507"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_0a18f5bfd70cd37c",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_08e1cc9af5a2d43b"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-20T07:25:38.228603+00:00",
+    "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_08e1cc9af5a2d43b",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_0aa1bd97e1fea34d",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_69c0db505746c28e"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.519504+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:3c06304167b3c0973152489f5b3f0017b54fa8d5c0e9f0c26e6e44960246c079",
+    "payload": {
+      "proposal_id": "vpr_432a47d996c5ae1d"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_0b14e9a3b216cf8a",
+    "kind": "anchor.attached",
+    "target": {
+      "type": "finding",
+      "id": "vf_c9ab5970cdbcb6af"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-16T04:01:25.299676+00:00",
+    "reason": "external-catalogue anchor attached",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "anchor_link": {
+        "anchor": {
+          "id": "A309370",
+          "join_policy": "hard_identity",
+          "kind": "sequence",
+          "namespace": "oeis",
+          "role": "lower-bound a(10)"
+        },
+        "attached_at": "2026-06-16T04:01:25.298885+00:00",
+        "attached_by": "reviewer:will-blair",
+        "id": "val_63f5d4a5f76fec53",
+        "schema": "vela.anchor_link.v0.1",
+        "signature": "7b3a5c7cef28fc0d346ec02fe4817de6c69122a4a7e82154a2d54222ca02d119c9ae3edd1ccece9b796f5c9f33d3babede97773a2b5ccf5c19a417316be1390f",
+        "signer_pubkey_hex": "4892f93877e637b5f59af31d9ec6704814842fb278cacb0eb94704baef99455e",
+        "target": "vf_c9ab5970cdbcb6af"
+      }
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_0bb8a3dcb591c02c",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_4c06e32e479e03e4"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:19.871229+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:9507d36a0a00ee9d87ea40c95af31e1e7044ff52464786239e469b9b7180f623",
+        "created": "2026-06-17T06:35:19.837027+00:00",
+        "id": "va_4c06e32e479e03e4",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/9507d36a0a00ee9d87ea40c95af31e1e7044ff52464786239e469b9b7180f623",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a22.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a22 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a22 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 256461,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_0ad9900c3858a900"
+        ]
+      },
+      "proposal_id": "vpr_bd8122fa4aa2b64f"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_151647ca41c94b0f",
+    "kind": "evidence_atom.locator_repaired",
+    "target": {
+      "type": "evidence_atom",
+      "id": "vea_73acfebcd3de1dc6"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T02:55:23.467389+00:00",
+    "reason": "Exact arXiv locator for Bloom-Sisask Roth log-barrier result; records a reviewable source locator without changing the finding assertion.",
+    "before_hash": "sha256:32d1cd022f48bddfa448fd693d1f461a2a11bae13aea4ac1cc660aa393c1125d",
+    "after_hash": "sha256:0d347e1ecc6ca903c366a6d79cfad2c22463d16aa4f1f0e0410b31716ad2e259",
+    "payload": {
+      "locator": "arxiv:2007.03528",
+      "proposal_id": "vpr_5184bd816ed820d8",
+      "source_id": "vs_7d2d5a9a0f13bd38"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_167d1a730d2514fc",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_d619346a962a29ff"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-20T07:25:38.357735+00:00",
+    "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_d619346a962a29ff",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_180fbacfccc8b95c",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_78da2a933cea30e3"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:16.542459+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:e8ce3d7048baa014aaa05a24d49758ad4bfbd2f7947a721945a1a1ce052d9a5e",
+        "created": "2026-06-17T06:35:16.519261+00:00",
+        "id": "va_78da2a933cea30e3",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/e8ce3d7048baa014aaa05a24d49758ad4bfbd2f7947a721945a1a1ce052d9a5e",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a14.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a14 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a14 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 11407,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_e45b382d85f5ebde"
+        ]
+      },
+      "proposal_id": "vpr_ece4865883328d5d"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_19de875705bef7ea",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_ceb6fccc6ced0182"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:16.936380+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:afd534aeb55d4a4bfa0a9d046842d2eb67ec3a17ba75580dc0807ab7d0dd7d42",
+        "created": "2026-06-17T06:35:16.913093+00:00",
+        "id": "va_ceb6fccc6ced0182",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/afd534aeb55d4a4bfa0a9d046842d2eb67ec3a17ba75580dc0807ab7d0dd7d42",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a15.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a15 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a15 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 17207,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_896034224082b173"
+        ]
+      },
+      "proposal_id": "vpr_c887be366cf92fb9"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_1e6cffe8f7c7d6c8",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_5a1d047a8c85953a"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.496454+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:4ba7b09cf606f591fae6939e83f1542db5dd1549e9e1f70e4dad195265636243",
+    "payload": {
+      "proposal_id": "vpr_05864abc06a6a424"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_229035def7f498c0",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_d69f2888e76109a2"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:15.752469+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:23d89ab723b3f8f4ae608c4d7fd69317fddabe6a2d3b4eab636e466760e78ace",
+        "created": "2026-06-17T06:35:15.713811+00:00",
+        "id": "va_d69f2888e76109a2",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/23d89ab723b3f8f4ae608c4d7fd69317fddabe6a2d3b4eab636e466760e78ace",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a12.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a12 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a12 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 5153,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_72f5f06b273261eb"
+        ]
+      },
+      "proposal_id": "vpr_19f4b9cb66d63589"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_22c1fb678f86bdbb",
+    "kind": "finding.reviewed",
+    "target": {
+      "type": "finding",
+      "id": "vf_3bde881fed68d7dd"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T19:20:56.637627+00:00",
+    "reason": "Bound and construction look correct under the Nathanson hypothesis but I want a Lean stub before promoting to accepted-core. The proof step that reduces geometric to polynomial diameter needs an explicit witness.",
+    "before_hash": "sha256:ff6ff7a8645b2a7996871cc60c0502425e118bb03c456c54e1d63e6829a14909",
+    "after_hash": "sha256:8696aff01d4321f0c46762db47a7aa27a312be3d5a89528ad41369b385990a2c",
+    "payload": {
+      "proposal_id": "vpr_6908c4cf64f0f4ba",
+      "status": "needs_revision"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_281bb24ae0443c66",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_aab348416bfdf292"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.198076+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "beba4c4b528aab7d",
+        "id": "vva_bd220af9ba5865c6",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_aab348416bfdf292",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_1cea0804aa8e4b32"
+    },
+    "caveats": [],
+    "signature": "bac630a9de355b11ff1c66ee18e49b4901fe3733f9e2e2033f52005cad46c93c7fd0160069efbfd1fc74693b62aae770699d7e21adbd355b60dff162854f6c00"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_28a323b7d46092a0",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_896034224082b173"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.259296+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "b81a803bbdf22852",
+        "id": "vva_97fda14ee13bb8f4",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_896034224082b173",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_34e42c87aacf1220"
+    },
+    "caveats": [],
+    "signature": "30c4757e9de7400d24ca2bec3612c49af94ddfa4cecb3467a9b7e9ce0248851fc0225289f9e59aaf85c46e34d4bcb875a4e56364d2c4adb13464e08a7cd12e08"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_2d1c52ae40ef2ec7",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_37afa7032e4b3d06"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.283177+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:bbcb81a643ca2bb35ece842365167b85455c5a811d22a0957ae7582da8a60555",
+    "payload": {
+      "proposal_id": "vpr_a7deb3a116a9a51c"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_2eb7b1fd630b1fe0",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_d018b0dfe8574a33"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.428950+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:a043a5969d0129bc6e983fe98bec282dc6b8e219464493f564b0c996a7f5fe46",
+    "payload": {
+      "proposal_id": "vpr_7ff6228e76041a1d"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_305a1e6893cfa5a3",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_400001d3c1444495"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.444467+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "6c84b0a5ab81229b",
+        "id": "vva_c2930646f9fc4536",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_400001d3c1444495",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_7ec73f42c71df600"
+    },
+    "caveats": [],
+    "signature": "5b4821779d42d78df377542fa95b18f10ae04afbb59a9869b9af8beb6630460fee7be61499ab193867a6de61d06613b1d39765463426a6f34231a31a6e220002"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_34883b43241d8c83",
+    "kind": "finding.span_repaired",
+    "target": {
+      "type": "finding",
+      "id": "vf_7273c1823848f6e3"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T02:55:23.439451+00:00",
+    "reason": "Attach source-backed abstract span for the Croot-Lev-Pach Z_4^n bound; does not change the assertion.",
+    "before_hash": "sha256:f2b2072db383574edcd10d853537087f60ed1848fa469e1c8821581c5d76dd8a",
+    "after_hash": "sha256:0d936f12629975ddc7a2a4f168eafa0406fb8c693e8b08b6396417ca912622f5",
+    "payload": {
+      "proposal_id": "vpr_e3d8c0aa1f6869e5",
+      "section": "arXiv abstract",
+      "text": "arXiv:1605.01506 states that for n > 0, any 3-term-progression-free subset of Z_4^n has size below 4^(c n) for c about 0.926."
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_37fde12745314ba6",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_e3df5bb17c7eead9"
+    },
+    "actor": {
+      "id": "reviewer:manual",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T19:21:38.579750+00:00",
+    "reason": "artifact deposit",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:290bfbff96297718b2972c86aadb338e3618fa2e37bc0301933f7dff07f265f8",
+        "created": "2026-05-09T19:21:38.572529+00:00",
+        "id": "va_e3df5bb17c7eead9",
+        "kind": "source_file",
+        "license": "Apache-2.0",
+        "locator": ".vela/artifact-blobs/sha256/290bfbff96297718b2972c86aadb338e3618fa2e37bc0301933f7dff07f265f8",
+        "media_type": "text/x-lean",
+        "metadata": {
+          "carina_kind": "proof_script",
+          "carina_proof_tool": "lean4",
+          "carina_proof_tool_version": "4.7.0"
+        },
+        "name": "Lean 4 stub: h-squared-dissociated polynomial-diameter sketch",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "2026-05-09T19:21:38.572191+00:00",
+            "extractor_version": "0.75.0",
+            "method": "artifact_deposit",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "Apache-2.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "database_record",
+          "title": "Vela Sidon-set example, v0.76.5 (Gowers-shaped)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 3032,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_3bde881fed68d7dd"
+        ]
+      },
+      "proposal_id": "vpr_4b673f5d45beb04e"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_38cc94b521e5d68f",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_c460fec258fe7a42"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:19.419652+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:eb9635a852df0f0b3fb2730f90e8ace250fe261f2543d7ea9a91e84c88c563fa",
+        "created": "2026-06-17T06:35:19.393193+00:00",
+        "id": "va_c460fec258fe7a42",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/eb9635a852df0f0b3fb2730f90e8ace250fe261f2543d7ea9a91e84c88c563fa",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a21.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a21 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a21 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 175211,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_b0c0945bfce712a6"
+        ]
+      },
+      "proposal_id": "vpr_481dddac3df99144"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_3917cf8bdc52dfd0",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_400001d3c1444495"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.693181+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:4db371d3d0e7c834f0b71f4f94085218c320e057be1c06e8d40bd738e09a7342",
+    "payload": {
+      "proposal_id": "vpr_ca0af484ed918df1"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "6d1cc46b508681db325c53c356520c150a20fb3f503419523a97874950a22b5c3df6ddf6a23b8a1d6a49cad43b39a6e6280289fd940e7f497b5dc6d50fc2a504"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_3956d574eccd4a4e",
+    "kind": "evidence_atom.locator_repaired",
+    "target": {
+      "type": "evidence_atom",
+      "id": "vea_a92afe2675590334"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T02:55:23.403124+00:00",
+    "reason": "Exact arXiv locator for Croot-Lev-Pach progression-free Z_4^n result; records a reviewable source locator without changing the finding assertion.",
+    "before_hash": "sha256:99bcde34a7c67ce57e0549ea04e507d941c970f2adf712ecffc6fd027233f535",
+    "after_hash": "sha256:a248a4af6f6a22f7bfaf40c588dcb740ceff4924b22c1996ee4d0a58d19cc5fc",
+    "payload": {
+      "locator": "arxiv:1605.01506",
+      "proposal_id": "vpr_fb457b1d570b79b6",
+      "source_id": "vs_b5e2d12c31e5aff7"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_3b8bca3bf09d4358",
+    "kind": "finding.span_repaired",
+    "target": {
+      "type": "finding",
+      "id": "vf_eee5b19763f3c625"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T02:55:23.553287+00:00",
+    "reason": "Attach source-backed abstract span for the Ellenberg-Gijswijt cap-set result; leaves the numeric constant as methodology context rather than new accepted evidence.",
+    "before_hash": "sha256:bad92b105c46737ffc726160ee12ee77415433c7a33695b52dc154625dfeebc1",
+    "after_hash": "sha256:4021aa2d29c2d2ea255bae74079f79957153a519c44611f6878e78d8a60e483f",
+    "payload": {
+      "proposal_id": "vpr_11afa6e155380c7f",
+      "section": "arXiv abstract",
+      "text": "arXiv:1605.09223 states that the Croot-Lev-Pach method bounds progression-free subsets of F_q^n by c^n with c < q; for q = 3 this is the cap-set problem."
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_3fb034752181ed75",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_44e0fc831ac3e089"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.317112+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:918c5b34c9b0f663d97aa7d9ceb5d3f5981b3b5a5b23bc6370c6edc434776da4",
+    "payload": {
+      "proposal_id": "vpr_74482e3213627d43"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_41e13221ca429b6a",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_06d19986c13130e7"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.804348+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:cb089dc8f391942244ea65720e46b13e84e1887494f1072500e17159ae1b6cff",
+    "payload": {
+      "proposal_id": "vpr_0d8d0786e66836a6"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "03c2925c3d28c1adf594fdc7eb30e5dfb7004cf9a1f9588f5fec115f3ce7a2705cb3fb579b4b1af6e5c7259c3c4c6f89f9f5fefe7503a8b0f244f3571b4a6d04"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_44682f49ec697b30",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_a4c54b1f9ff55bba"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.388760+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:4cf613c3f3690f1ec2f5fdf2cb6d85bc677259af9da8ddc2344f057a720dadd7",
+    "payload": {
+      "proposal_id": "vpr_aa438fc28809dfb1"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_477a0c10b650a1cf",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_bf7707a82c7bb252"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.385017+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:07cc054fbc7176541d17e58154f4585fe0770ab5e2a3970077fbdde2b8a33f9c",
+    "payload": {
+      "proposal_id": "vpr_9cfd459e23ff9ad4"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "ff4cc277e2e418ad099e614c1a22d15bba42249bc2b5b4ea81eb1bf0799f9923d3b19325185b07b45dd8c118ea898e69b7603549716bfbd668e4b2fa2ef0f70c"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_49d1b9096fd11088",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_11e2e2a19e75887d"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.300095+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:09da81ef70aec6d22e340fae2adb6f48cf36a77198a703369af4f5c63b7270a1",
+    "payload": {
+      "proposal_id": "vpr_e8f2d600cbebd03d"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_4a398ea47c356763",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_92f782f0e1791fad"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.841250+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "25502c026ebdfdcc",
+        "id": "vva_1484dc7d2c6de3ff",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_92f782f0e1791fad",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_c6ea3a2f4bfada9c"
+    },
+    "caveats": [],
+    "signature": "77d6dc7a311912d9c0cf912f57c538c8946662d847bb052f034926dbd5f32a02fa70971600591c41004c9b24c693d4f1b405e1f273c3f20134669706678ae80e"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_4b72f36cba6fe4c0",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_49c6b11cca269230"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T10:21:14.835108+00:00",
+    "reason": "Register theorem-level locators for the Sidon v0.358 slice without claiming formal proof.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:6a4b15192dbaf61c514b0fefef80b97127b65249311f37e54bb23334eac7fb1a",
+        "created": "2026-05-21T10:21:14.815377+00:00",
+        "id": "va_49c6b11cca269230",
+        "kind": "source_file",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/6a4b15192dbaf61c514b0fefef80b97127b65249311f37e54bb23334eac7fb1a",
+        "media_type": "application/json",
+        "metadata": {
+          "carina_kind": "theorem_locator_manifest",
+          "formalization_status": "slot_only_not_formalized"
+        },
+        "name": "Sidon theorem locator manifest v0.358",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "2026-05-21T10:21:14.814365+00:00",
+            "extractor_version": "0.337.0",
+            "method": "artifact_deposit",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "database_record",
+          "title": "Sidon theorem locator manifest v0.358",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 2058,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_7273c1823848f6e3",
+          "vf_eee5b19763f3c625",
+          "vf_f16e736879b4b42c"
+        ]
+      },
+      "proposal_id": "vpr_42488ea6005dd490"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_4e070294b44dc839",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_4f5940a76981f17a"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.749902+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:0ef62b48fcee3b492f2d7a2ff778a72e02e83ea75cd77ced3bc8b6c4c233f98f",
+    "payload": {
+      "proposal_id": "vpr_fbbe4d807040632c"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "826cb82703b9ae555d38792229b153c8bee06eaeaf9a41eb35752cc570ff75a32cb73abff1d9c3985141c1898715b59bd3a88c093bc8590aa46854a529e10a06"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_4e3ce4261c891655",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_5efe3f8c894c16e2"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.906030+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "83a2d787603e5c73",
+        "id": "vva_949fe984d7f2d2bf",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_5efe3f8c894c16e2",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_d5748c1af02c13e2"
+    },
+    "caveats": [],
+    "signature": "68cbbf0fe5e54e124b453e34559d977cf873f0de32b3cbfdc810df1c9b4846ea084263aa23558511faa7f784c234a23802285af084eec6b954389c9e44228c0d"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_54723a14cfb91905",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_0a629eaa09e29f6b"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.442358+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:1ea920382b570d40ea134b1d3627c30d31464d960d70e2ff44b819688bc15fa8",
+    "payload": {
+      "proposal_id": "vpr_a8269506e28579aa"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "e0f54f058f067763f8e9319689d95b79712dd2a78d959c9a18e14e2f768dd50b9b996110a7a267d37d0e52b0d6360c9bf4002f10fa22bab85e1455442e04bc03"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_5556d3110ede8413",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_e2252a5f8d8a5049"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.350802+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:6a032517345a87e4d3c1da2db25d375bd2f3d39a7d7f61180d94d4ed8e13e74c",
+    "payload": {
+      "proposal_id": "vpr_3ff7da5280e3bb36"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_55b6a293318f085a",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_fd6b40430a223760"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:17.732291+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:cc8ebd5feaff02f322d22408d8ae360649715d3979988a43bf697acb6e5eb21d",
+        "created": "2026-06-17T06:35:17.707416+00:00",
+        "id": "va_fd6b40430a223760",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/cc8ebd5feaff02f322d22408d8ae360649715d3979988a43bf697acb6e5eb21d",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a17.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a17 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a17 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 37835,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_aab348416bfdf292"
+        ]
+      },
+      "proposal_id": "vpr_662658b4b368b5b9"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_56e08d2c552a5ea3",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_e173d0be6bbcea46"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.773583+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "65d75176c6c513f4",
+        "id": "vva_c4ce9810525dda9b",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_e173d0be6bbcea46",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_b965088659e1c798"
+    },
+    "caveats": [],
+    "signature": "c3089016e5251f8f53c395489841284fb48204b478eeb755db5f1a326e4a73448a3860a422bee60d2869385b239f8f3477023ef14caed6ff5910d17bdb5f300f"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_573fa96549988473",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_fce36cd1f1110899"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:18.988415+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:d66f5fb53742957bcd41fe15f9a6f1e0e802b9e6956676a8adb79f1888afd18a",
+        "created": "2026-06-17T06:35:18.964052+00:00",
+        "id": "va_fce36cd1f1110899",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/d66f5fb53742957bcd41fe15f9a6f1e0e802b9e6956676a8adb79f1888afd18a",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a20.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a20 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a20 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 123419,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_745184f1556eee4b"
+        ]
+      },
+      "proposal_id": "vpr_ec7a823bd377b7e2"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_59b427cd0d0fd5ec",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_e6443b35810cc321"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.473518+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:3b5343fa820239e99460366722472c3e8fe4187dbf33138565ea1544a5c9e4e3",
+    "payload": {
+      "proposal_id": "vpr_582912e658bdcd87"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_59e37336a73e3dc4",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_1f7aa1300e4ddeff"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:14.628484+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:1866dd398b582e974515b123ad4fdcf507d3268fd7a1f1c12d81b5ebd1f1a540",
+        "created": "2026-06-17T06:35:14.601376+00:00",
+        "id": "va_1f7aa1300e4ddeff",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/1866dd398b582e974515b123ad4fdcf507d3268fd7a1f1c12d81b5ebd1f1a540",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a09.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a09 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a09 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 1458,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_0a629eaa09e29f6b"
+        ]
+      },
+      "proposal_id": "vpr_b52e7d401299b115"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_5a5e570b6781367a",
+    "kind": "finding.span_repaired",
+    "target": {
+      "type": "finding",
+      "id": "vf_f16e736879b4b42c"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T02:55:23.494549+00:00",
+    "reason": "Attach source-backed abstract span for the Bloom-Sisask Roth log-barrier result; does not change the assertion.",
+    "before_hash": "sha256:89282d1372707cf4953d2ba095422830222aa3b1187f982b9c9885be61f86de1",
+    "after_hash": "sha256:ada7c11be341deb7a052e8613834664065e59c5d5a9dce620c10976d72a41216",
+    "payload": {
+      "proposal_id": "vpr_206f9fda54ef0d0f",
+      "section": "arXiv abstract",
+      "text": "arXiv:2007.03528 states that if A in {1,...,N} has no non-trivial 3-term arithmetic progressions, then |A| is bounded by N/(log N)^(1+c) for some absolute c > 0."
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_5ab8907f7d2915f6",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_8aa6c35eb4287a8f"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.451083+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:6972869bf511e5f1dd99aff60801a4122467482e4325f9eb680f488459a73bc3",
+    "payload": {
+      "proposal_id": "vpr_db8d9ad870195994"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_5e54fbcfde90e54f",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_7273c1823848f6e3"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.542851+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:f2b2072db383574edcd10d853537087f60ed1848fa469e1c8821581c5d76dd8a",
+    "payload": {
+      "proposal_id": "vpr_a3f3e64fc4888fc0"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_6115324f94d7ef71",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_2d6cbeca13b7a1c4"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-20T07:25:38.283675+00:00",
+    "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_2d6cbeca13b7a1c4",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_691c3733a1be2ffb",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_26b3e76e95e01f3e"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.408515+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:cff17b4b3be97c45407650e759927e3430a280125b810bb4530a8931a76094a2",
+    "payload": {
+      "proposal_id": "vpr_7b2fa965aa1014d3"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_69ef89c6d2c97f4f",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_203f4969695ff256"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.249217+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:3f0ce8dbeccb3aee2ba1ac790bee95b727aa86dc8f9c9b8029de5e961082e247",
+    "payload": {
+      "proposal_id": "vpr_44f9914c5b11193d"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_6bbc0843ae478920",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_72f5f06b273261eb"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.707210+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "e0e0098b7b8441fa",
+        "id": "vva_e34b464c414bb321",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_72f5f06b273261eb",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_a4dc039b187b6d69"
+    },
+    "caveats": [],
+    "signature": "8948af86cd4c61d66e60256db6dcc0df0faf1628076c8711f02d6136016a5fc7049b1ea989a82b931fd8b28f098b0cfe964620611cc508d660c2099be5e20a0f"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_6bce12b619f89e7e",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_f0c5e4bb2b736a6a"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:14.993239+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:8f071c9d65d6343c4c342f15a585c27602ebeac53aac6a1ad9da090227822e8c",
+        "created": "2026-06-17T06:35:14.970387+00:00",
+        "id": "va_f0c5e4bb2b736a6a",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/8f071c9d65d6343c4c342f15a585c27602ebeac53aac6a1ad9da090227822e8c",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a10.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a10 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a10 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 2209,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_bf7707a82c7bb252"
+        ]
+      },
+      "proposal_id": "vpr_5fe5fe1ad11f3015"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_6c4cfd267f4d4453",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_d341190bd42e2b22"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-15T16:33:01.901689+00:00",
+    "reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_d341190bd42e2b22",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_6e0c1d4a1ff1c60d",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_d2fe83ff9b11d76b"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:20.323299+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:9610c181d60f89417634d78c65466e6ab03d83b8b6dcab6682ac6a4925f42bbd",
+        "created": "2026-06-17T06:35:20.295381+00:00",
+        "id": "va_d2fe83ff9b11d76b",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/9610c181d60f89417634d78c65466e6ab03d83b8b6dcab6682ac6a4925f42bbd",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a23.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a23 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a23 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 367810,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_d1e1f73ee682f11b"
+        ]
+      },
+      "proposal_id": "vpr_83863e7766c668a0"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_7255521b2ebe63e5",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_92f782f0e1791fad"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.165860+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:5d89940e9aa68797d88b4f122cee36fd221c1aa1532f7e6daad50e2b88ce68cf",
+    "payload": {
+      "proposal_id": "vpr_365dae3d7e4ce7de"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "b0ac6fc574462e8edd5f61d3ad0cb249789ef87b48a660b10d14724738f20be426403a56025fb2c8f76c1f0717c6cb417e7cef6aba74b3eaceb30fd9d7bfd700"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_75e7617aa749f774",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_339716601909673b"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:18.147586+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:bf4ba20140540ff8f70d2a3f9fd7d14de10e9838a64b05caecca981bce1227f2",
+        "created": "2026-06-17T06:35:18.124076+00:00",
+        "id": "va_339716601909673b",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/bf4ba20140540ff8f70d2a3f9fd7d14de10e9838a64b05caecca981bce1227f2",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a18.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a18 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a18 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 56661,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_4f5940a76981f17a"
+        ]
+      },
+      "proposal_id": "vpr_ea1efe2ae24ea98b"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_77b241e2e4fcf447",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_aab348416bfdf292"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.117391+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:dc0e0aa8873ad411b33a8b8c851a904fbb03c493e5aae16664794425eb87e75a",
+    "payload": {
+      "proposal_id": "vpr_30b74969696b381a"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "c9efc09e2e3bc0fd05801ddbd7069c8f6bfd317c6a6f7bcb9eccd8e0b98c6cff4c2b4443e256af5df0c4a7c0eae5bdc4b6fbe6ed998ae0e0218c4b4e34ef6501"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_7aa0b5918e1daf66",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_9c462305947cb237"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.591753+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:68e40d9565e016a6ea6ee208b5ac50e924ad1000872e31144f35377ef78b66c3",
+    "payload": {
+      "proposal_id": "vpr_d19f48e14e67429d"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_80e9dbd0c90c150d",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_e45b382d85f5ebde"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.121863+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "58f2625247fb9e58",
+        "id": "vva_8b86143f3120108c",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_e45b382d85f5ebde",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_13ce1e48f3c4f4fd"
+    },
+    "caveats": [],
+    "signature": "6d47aa00a549b9cf6d848101841e3289120eb0b8b0c3f4a61e2e272e03db384ef1b37e33609473a80e8002fc5c90cc72a4dbe40b2fcc2bc328de31938a0bf406"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_82306caefdf8aedb",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_eee5b19763f3c625"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.567423+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:bad92b105c46737ffc726160ee12ee77415433c7a33695b52dc154625dfeebc1",
+    "payload": {
+      "proposal_id": "vpr_d56eb9bd0cb6b9fb"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_8778454fffbcdbce",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_5b3a4a293affb22e"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:16.145813+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:e932b5fd2999d29d8c752898f32860149b39f23baf2ed3978ed602600143fdfd",
+        "created": "2026-06-17T06:35:16.121068+00:00",
+        "id": "va_5b3a4a293affb22e",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/e932b5fd2999d29d8c752898f32860149b39f23baf2ed3978ed602600143fdfd",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a13.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a13 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a13 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 7684,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_5efe3f8c894c16e2"
+        ]
+      },
+      "proposal_id": "vpr_1a909c900226cebb"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_8849b70cbc07ebe2",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_b517036c31ba0350"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.620800+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:45e8b816ae0d9e085170a0dffa96c2531774d1d805e646b4827ae172c6bebbc1",
+    "payload": {
+      "proposal_id": "vpr_c0d0ef73cdc21478"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "726902f326b0a3c3209b375c7bddcbd78b5623d9793f9097db8983507ed7c31647d66872b0bc4e8d01d724f04027f115b3b5d8feb353db4f8901adf1e1d63309"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_8b837deb9e282a0a",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_e61a5705717a854f"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:18.558239+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:75b70b928d431136b913c47fce9633bfa2bbf28cc7b45f6364ed9304b17689ac",
+        "created": "2026-06-17T06:35:18.533261+00:00",
+        "id": "va_e61a5705717a854f",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/75b70b928d431136b913c47fce9633bfa2bbf28cc7b45f6364ed9304b17689ac",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a19.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a19 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a19 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 84766,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_e173d0be6bbcea46"
+        ]
+      },
+      "proposal_id": "vpr_e2838d54f73aac9d"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_8cfc1c7c7859dfad",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_5321f01a464826d1"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:13.866241+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:1626f7eaaa8c5df1f6cbe4bd27df4c7fb2e687fc85c93923a38d3888e8da2a94",
+        "created": "2026-06-17T06:35:13.843491+00:00",
+        "id": "va_5321f01a464826d1",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/1626f7eaaa8c5df1f6cbe4bd27df4c7fb2e687fc85c93923a38d3888e8da2a94",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a07.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a07 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a07 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 681,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_400001d3c1444495"
+        ]
+      },
+      "proposal_id": "vpr_440120c1b6b2eb6b"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_90bb4ef00e4d9c4b",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_5efe3f8c894c16e2"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:23.962600+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:475fc313eb13a578f0a6019d6d51e54c94d1c6e85698ef532799f55dcf409cec",
+    "payload": {
+      "proposal_id": "vpr_22db4be1caa94dd4"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "d549797f7a93c7d94848db0957712480a0d3e3df16fe9db0455b7b4f7baae8c19a01264a17a4bd7afd2b898dfdde05bb06ea3fc67322b900fcf9ec5ac2c9f006"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_96a3ee14236bfe3f",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_63f4bcd4f4904a08"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T19:20:20.719771+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:eb552941b1fc0b6eb2358d447a4b3457154c0fe16f844483fd67ba100b0d009c",
+    "payload": {
+      "proposal_id": "vpr_0278b354889109bb"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_9be516b6d864aa48",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_f16e736879b4b42c"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.369878+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:89282d1372707cf4953d2ba095422830222aa3b1187f982b9c9885be61f86de1",
+    "payload": {
+      "proposal_id": "vpr_2436bdba91b28491"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_9d504e2eadbf8dde",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_72f5f06b273261eb"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.215911+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:dfe7d1c1d683d5e194c5c4af21a15133859a68b087dd69a3fe54c5e3af46b0d5",
+    "payload": {
+      "proposal_id": "vpr_6164232eecdf1692"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "dfc50f76d58d725d289a99e6ba9dbc7ba2067c6cfb3dc5fed7e55f09b7ab79106671f663c3b021af4899396c26350e68b11087e9aaa57a505cb1b32b93a71b01"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_9f2d4b52db47d179",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_745184f1556eee4b"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:50.034803+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "34f69d0693dbef10",
+        "id": "vva_cd4448b0006dbfd4",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_745184f1556eee4b",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_eca979cf72add1b3"
+    },
+    "caveats": [],
+    "signature": "d7be8d579538725790450055c0140e294469766c00a19e37dd5f1439c5a36685f97b1a4715e9e1bf14e71dd28a16e41e250d02a075c3fe2bddba779b8dc27809"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_a128b21965c0863f",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_0ad9900c3858a900"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:50.164263+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "0f8b8998caf37a4a",
+        "id": "vva_e3557ff649968861",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_0ad9900c3858a900",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_f178149d3edeb1a0"
+    },
+    "caveats": [],
+    "signature": "3a7b3006c4cbbf9699755f6c6a01ca24541a3d051d2b2e442277c7e4630a0d0e198bf27dadb8b35f63b4be9c4fbf6b8342bb627de51c5dc287ec435ef51a7100"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_a6e78bf7a714b0b6",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_b0c0945bfce712a6"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.382453+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "da1895cac0790245",
+        "id": "vva_6f9560627650cb19",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_b0c0945bfce712a6",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_4a0f347e762b04a7"
+    },
+    "caveats": [],
+    "signature": "463e75b99f1c3b7c6b30a5c1d0e86680145431b6450e76079ecb55cca5ca3087a05f716c2ff5f488c54e58109995c5b6b7d5906dfde1e419bc79d3eed2ea5b03"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_a7d239f89f068d64",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_825b900b32e74b6a"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T10:21:21.998923+00:00",
+    "reason": "Register Lean proof-assistant slots for theorem-level Sidon follow-up; no proof completion is claimed.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:9988da3bc38f86237f876719cc49a45a7ca5f3e2ca9016d9b008b4484a1040e3",
+        "created": "2026-05-21T10:21:21.996402+00:00",
+        "id": "va_825b900b32e74b6a",
+        "kind": "source_file",
+        "license": "Apache-2.0",
+        "locator": ".vela/artifact-blobs/sha256/9988da3bc38f86237f876719cc49a45a7ca5f3e2ca9016d9b008b4484a1040e3",
+        "media_type": "text/x-lean",
+        "metadata": {
+          "carina_kind": "proof_assistant_slot",
+          "carina_proof_tool": "lean4",
+          "formalization_status": "slot_only_not_formalized"
+        },
+        "name": "Sidon Lean theorem slots v0.358",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "2026-05-21T10:21:21.996383+00:00",
+            "extractor_version": "0.337.0",
+            "method": "artifact_deposit",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "Apache-2.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "database_record",
+          "title": "Sidon Lean theorem slots v0.358",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 1933,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_7273c1823848f6e3",
+          "vf_eee5b19763f3c625",
+          "vf_f16e736879b4b42c"
+        ]
+      },
+      "proposal_id": "vpr_28004b2e33b52c15"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_ae12cd5a397c7052",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_745184f1556eee4b"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:23.838033+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:96dbb3990085dd9cbb0792cb7e424c0f2dfd65589a889c64dd775fd96e733fd9",
+    "payload": {
+      "proposal_id": "vpr_0f4c778041109d72"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "5a29a35dc1eb9ece38fb4a4ec7c987c1ab7917918b5906d2e87464a40e02ba2bc54dc9b32f1b0e2eac3757bec4eeb42ff608096829d0f15517ee21669f97de0c"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_b65dc71102632576",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_b2e20c9d3b3f750d"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:20.812770+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:992f42bad74872ebe5ac90f40deaa1c56f2be31914ba9ba1c9ab914f388a85e4",
+        "created": "2026-06-17T06:35:20.778829+00:00",
+        "id": "va_b2e20c9d3b3f750d",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/992f42bad74872ebe5ac90f40deaa1c56f2be31914ba9ba1c9ab914f388a85e4",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a24.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a24 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a24 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 531347,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_06d19986c13130e7"
+        ]
+      },
+      "proposal_id": "vpr_8abf186f3158f345"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_bafff34df7ac6c1c",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_3bde881fed68d7dd"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T19:20:35.233166+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:ff6ff7a8645b2a7996871cc60c0502425e118bb03c456c54e1d63e6829a14909",
+    "payload": {
+      "proposal_id": "vpr_48072f346e09665f"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_bf1484d0263f3d18",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_d1e1f73ee682f11b"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.968606+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "a00d16bf0624f031",
+        "id": "vva_9f819a73a65f184f",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_d1e1f73ee682f11b",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_da6228ae861ada11"
+    },
+    "caveats": [],
+    "signature": "c91898c3a8c2372989f1e66aed622dd50bc0ed167b86d03322b34b8207e9898827fd784e9afe5e9d1506c117d40e32cd240b044ff37cdaa97bfdae4361156e0e"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_c5d0795cab26a22a",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_4f5940a76981f17a"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.506309+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "b820d105c0f8d9c3",
+        "id": "vva_eea0b972990853b2",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_4f5940a76981f17a",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_82af8f2f0006051d"
+    },
+    "caveats": [],
+    "signature": "57f9f47d45dafb235763b23b7f2f0b15f89d4cfafbd62912bb7248de7dd6f89540066312eb11b8b86413dee8ca21111ea27e951da43d75babfed996bbe0bf70c"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_c69adcc670609f4f",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_f58c1d68daec29c3"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.266949+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:a627194fbcb6956adc1eb5a762e6b2a77ca1b42cbf65ae38474418080d41c801",
+    "payload": {
+      "proposal_id": "vpr_e39490231271928a"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_c7ce5d2e81495582",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_68ccf87c8c2cb987"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-20T07:25:38.332081+00:00",
+    "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_68ccf87c8c2cb987",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_c968d256f5b50f3a",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_4b8b2f3759855d6a"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.498587+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:c3100166db0964eae8802bd5fbe74122cb35b9cae22b9bcada7135322c146bbc",
+    "payload": {
+      "proposal_id": "vpr_a890b1d3027d141b"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "8cae21bcff66f194475e5ab51caa00be0fff577a81d5bb8dab5407e0b8b8c5527e2de3c61fc2d2db58bfe59757dadaba75ac6101d6735cfd4f5ae930481b660f"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_d2cd7a944b937b0c",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_0baa77910460c953"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T19:20:29.333841+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:e53b9691b93e1541b9cf63b53f0d85e788e1a3c0c6b628e2b111ecd83795bf6c",
+    "payload": {
+      "proposal_id": "vpr_d4460bfc4377511d"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_d30acf067ad58787",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_c9ab5970cdbcb6af"
+    },
+    "actor": {
+      "id": "reviewer:will",
+      "type": "human"
+    },
+    "timestamp": "2026-06-03T22:41:09.705899+00:00",
+    "reason": "Candidate claim vc_5aab0a22f7cdebf1 imported from artifact packet cap_087198a92d1e30a2",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:e1233eb78b69ec3ffb82d1cfaf1db400a85353771e0579bdfccba0ed570135d7",
+    "payload": {
+      "proposal_id": "vpr_1879d8894dd07e64"
+    },
+    "caveats": [
+      "Improved LOWER BOUND (a verified large Sidon set), NOT a proven maximum; true a(10) may be larger.",
+      "VERIFIED valid by verify_construction.verify_sidon (66 points, 2211 pairwise sums distinct), 3 independent checkers.",
+      "Not an accepted OEIS edit until a maintainer reviews; submit as a comment update + witness link (the n=16..22 path).",
+      "Reviewer acceptance required before this becomes canonical frontier state.",
+      "Agent output is source material until reviewer acceptance."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_d70ed67f70f401ba",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_e173d0be6bbcea46"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.068173+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:9e844d3eb0bf953ac46a0c99ce80d60cc0bec96f9c58fb71afac288d00211efb",
+    "payload": {
+      "proposal_id": "vpr_2bfff2585d24907b"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "af87a448f9a86284ce2b9b701756d9e95d3821adfc0da9d48aa8e76f3d2855bad57bf2e34700dab91f4d95ea6d74da01c1bda055e4ac3e416eca491c4512ba09"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_dcf6b2c8872cd07a",
+    "kind": "evidence_atom.locator_repaired",
+    "target": {
+      "type": "evidence_atom",
+      "id": "vea_94fe872efeb6e477"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-21T02:55:23.522551+00:00",
+    "reason": "Exact arXiv locator for Ellenberg-Gijswijt cap-set result; records a reviewable source locator without changing the finding assertion.",
+    "before_hash": "sha256:0923f508851188555cacb90276f49dd1102d5d0efe2733252c8ba5d02c843bed",
+    "after_hash": "sha256:4478e93f6ada2bdcd6a772fd34fee39e5f7de1790beb98482771e904a3f7e8d3",
+    "payload": {
+      "locator": "arxiv:1605.09223",
+      "proposal_id": "vpr_432fe23d5889f731",
+      "source_id": "vs_3d86039e17bccee8"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_dfad3c4b3025171b",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_0ad9900c3858a900"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.326902+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:ac46999b60edd62a16b01479077f7451d2a1015b3dcf4559f2f73f2e614e9640",
+    "payload": {
+      "proposal_id": "vpr_8e692e4ba87327fb"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "7f10538499736728c28a69352dcaadeb51bf557c76cee36f470582ec13598d0ed9c30a1d726d8c01dcb57800fcac901db23b67e6614bf60d41d5460f8b19b90d"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_e28b508faed257fc",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_7cb85ed4bc6dfffe"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-15T16:33:01.899476+00:00",
+    "reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_7cb85ed4bc6dfffe",
+      "proposal_kind": "artifact.assert",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_e58ebfb07b3b47c0",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_0a629eaa09e29f6b"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:50.100005+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "03e1d21864b1df57",
+        "id": "vva_7de889444ab7eecb",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_0a629eaa09e29f6b",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_f14acb4195031eb7"
+    },
+    "caveats": [],
+    "signature": "3cfe5ed468a6ccc5eebf667bec894d53c5fac99775b1d6787a3eb8734982105b61edcc08ec923306205dc44ed1fe2a93ba19d209bb901966386360b7c020fc0b"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_e6e76ca80fd03567",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_bf7707a82c7bb252"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:50.233673+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "013906fcf3db3052",
+        "id": "vva_6a0a9d9f303c4e87",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_bf7707a82c7bb252",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_ff46a7050b09e581"
+    },
+    "caveats": [],
+    "signature": "e9c279ec7591dd7b229ee92c2d86ba371acc4c01d155d9636fba6201a7a74f8ae4e876a9db7c3efd30f2da3a75a78424c18b65d600ea92a61a1d6f3dc69ef108"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_ec919dc65f5d548a",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_2c472e28d0c49f36"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-20T07:25:38.257708+00:00",
+    "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_2c472e28d0c49f36",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_ee4d960f02a4da2b",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_06d19986c13130e7"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.569914+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "d5798e75299bb785",
+        "id": "vva_314086a42a577d30",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_06d19986c13130e7",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_842fd7c44111b1d6"
+    },
+    "caveats": [],
+    "signature": "7b3fb3a2457788ee8c8b616606a8907e773b900784dca3c9867d51f52fa8550bb83aaf5cc1cbf385537518460a851e6c0aad160c48aec68beb099f54aa68f309"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_f52122b7907eff87",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_411fd07ce6211123"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:17.338653+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:f80962f268c22db318316a4c364c172d9fc1d8bcb346c6651003b0e51b20e539",
+        "created": "2026-06-17T06:35:17.315350+00:00",
+        "id": "va_411fd07ce6211123",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/f80962f268c22db318316a4c364c172d9fc1d8bcb346c6651003b0e51b20e539",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a16.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a16 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a16 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 25349,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_4b8b2f3759855d6a"
+        ]
+      },
+      "proposal_id": "vpr_3116ea193f6fced6"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_f77222f8146cee63",
+    "kind": "artifact.asserted",
+    "target": {
+      "type": "artifact",
+      "id": "va_8c29b182acf2fbc2"
+    },
+    "actor": {
+      "id": "agent:vela-verify",
+      "type": "agent"
+    },
+    "timestamp": "2026-06-17T06:35:14.265838+00:00",
+    "reason": "register canonical frozen-verifier witness for gate backfill",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "artifact": {
+        "access_tier": "public",
+        "content_hash": "sha256:48736d74468b9e190784e767951b945ed6195bb1c3a0f76a0a68f40480dd9e84",
+        "created": "2026-06-17T06:35:14.240834+00:00",
+        "id": "va_8c29b182acf2fbc2",
+        "kind": "dataset",
+        "license": "CC-BY-4.0",
+        "locator": ".vela/artifact-blobs/sha256/48736d74468b9e190784e767951b945ed6195bb1c3a0f76a0a68f40480dd9e84",
+        "media_type": "application/json",
+        "metadata": {
+          "verifier": "vela-verify::sidon",
+          "witness_file": "sidon-a08.witness.json",
+          "witness_kind": "sidon"
+        },
+        "name": "Frozen-verifier witness: sidon-a08 (sidon)",
+        "provenance": {
+          "authors": [],
+          "citation_count": null,
+          "doi": null,
+          "extraction": {
+            "extracted_at": "",
+            "extractor_version": "",
+            "method": "",
+            "model": null,
+            "model_version": null
+          },
+          "journal": null,
+          "license": "CC-BY-4.0",
+          "openalex_id": null,
+          "pmc": null,
+          "pmid": null,
+          "review": null,
+          "source_type": "data_release",
+          "title": "Frozen-verifier witness: sidon-a08 (sidon)",
+          "year": null
+        },
+        "retracted": false,
+        "size_bytes": 953,
+        "storage_mode": "local_blob",
+        "target_findings": [
+          "vf_b517036c31ba0350"
+        ]
+      },
+      "proposal_id": "vpr_47f20d690693c11e"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_f7cc9c2d73a6b222",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_b0c0945bfce712a6"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.012876+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:d4f451ab54e1dafe4e281fd5867fc06245d7ef05e5d181217a25a4712c424b0b",
+    "payload": {
+      "proposal_id": "vpr_27853185c2311dab"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "c76c5507b4e77da9c7ab49dd04dbc51d985b370487eca8e8752802d0ba406aab356324844e4bfaafcdefb1ef6809a0047aa4050395584a028a31b1e181b5ab08"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_f836b4145f851a82",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_e45b382d85f5ebde"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.270199+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:7c9078a060315165edd01ae1ad0d87ec1e6ad3d123490e2e38cd15a35a4f18ce",
+    "payload": {
+      "proposal_id": "vpr_8b22f117c7d9278c"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "10d268752af6f19fd8e2719c9d9549ec0397a80d7af32263cea73bea576ff4ad2a6a45d8d19b6469cbaad4c11cee13bef42fb9e5c08d5031983bde26d53e8a05"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_f88dad768458ddd4",
+    "kind": "review.rejected",
+    "target": {
+      "type": "proposal",
+      "id": "vpr_f51ae4c8da75740a"
+    },
+    "actor": {
+      "id": "reviewer:solo-maintainer",
+      "type": "human"
+    },
+    "timestamp": "2026-05-20T07:25:38.386988+00:00",
+    "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "legacy_backfill": true,
+      "proposal_id": "vpr_f51ae4c8da75740a",
+      "proposal_kind": "finding.add",
+      "verdict": "rejected"
+    },
+    "caveats": []
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_f9c94f94e0959d5a",
+    "kind": "verifier_attachment.added",
+    "target": {
+      "type": "finding",
+      "id": "vf_b517036c31ba0350"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:42:49.320708+00:00",
+    "reason": "backfill frozen verifier re-check",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:null",
+    "payload": {
+      "attachment": {
+        "adversarial_probes": [
+          {
+            "kind": "counterexample_search",
+            "result": "survived"
+          }
+        ],
+        "claim_digest": "26547f119ac10586",
+        "id": "vva_d245a88cfffdee82",
+        "independent_of": [],
+        "match_to_claim": {
+          "checker_actor": "vela-verify",
+          "matches": true
+        },
+        "method_integrity": "sound",
+        "note": "frozen verifier re-check: sidon",
+        "outcome": "passed",
+        "schema": "vela.verifier_attachment.v0.1",
+        "solver_id": "vela-verify",
+        "target": "vf_b517036c31ba0350",
+        "verifier_actor": "vela-verify",
+        "verifier_method": "computational_search"
+      },
+      "proposal_id": "vpr_49868706570dc452"
+    },
+    "caveats": [],
+    "signature": "88c5e7993814ab3afd6ea4459c72f5e626511a7b5842519680d0087d5aab56d71891c587b34612b499bec1f9c7eb3fb68e76d61fa783a7e12663943752b4c904"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_fbadbe719c1840d5",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_d7781ce5f2c7330a"
+    },
+    "actor": {
+      "id": "agent:research-bot-2026-05-09",
+      "type": "human"
+    },
+    "timestamp": "2026-05-09T22:52:52.333564+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:f5314647ed8288b888a15a1aaba48d9b8f33a953ea93ffc2c9059adc589655c3",
+    "payload": {
+      "proposal_id": "vpr_7092498559ec0e3f"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ]
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_fd8b19cb5c0f293c",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_d1e1f73ee682f11b"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:23.910766+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:d6cc64adf0f74458bfc33a17a0cb0079046709191b675861305c970923ef4604",
+    "payload": {
+      "proposal_id": "vpr_1bd4bc1af934b96b"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "957409061628adc6ab882dd8a7f5c1c8fe90ea9160521216f4efaca25c072b0358def74558e1fa263c0c58eb84ea6793bfcfd8eed329d3d1aacfc54484b20d0c"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_ffe1e5ac3a5a6e9a",
+    "kind": "finding.asserted",
+    "target": {
+      "type": "finding",
+      "id": "vf_896034224082b173"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T00:14:24.554204+00:00",
+    "reason": "Manual finding added to frontier state",
+    "before_hash": "sha256:null",
+    "after_hash": "sha256:dd73e1335a538cee0534b68a7491dab7aacd312b6cbf518715511a7be6e90c1e",
+    "payload": {
+      "proposal_id": "vpr_b83d64e24329ffe5"
+    },
+    "caveats": [
+      "Manual findings require evidence review before scientific use."
+    ],
+    "signature": "f8b6d5a46b5e5f2efa847db77712264b1f17c2a26f3962328892201201151cfd26b165750bf2db64448c947bebfe1dcc2ea09114268957acc88b7427bb6fa90a"
+  },
+  {
+    "schema": "vela.event.v0.1",
+    "id": "vev_86401dc23ad22448",
+    "kind": "finding.retracted",
+    "target": {
+      "type": "finding",
+      "id": "vf_c9ab5970cdbcb6af"
+    },
+    "actor": {
+      "id": "reviewer:will-blair",
+      "type": "human"
+    },
+    "timestamp": "2026-06-17T14:43:05.459637+00:00",
+    "reason": "Duplicate of canonical vf_bf7707a82c7bb252 (same claim OEIS A309370 a(10)>=66); its only backing artifact was the retired legacy remote-mode record va_86d1eafa7a5efdd5. The canonical finding is frozen-verifier-backed by sidon-a10.witness.json.",
+    "before_hash": "sha256:e1233eb78b69ec3ffb82d1cfaf1db400a85353771e0579bdfccba0ed570135d7",
+    "after_hash": "sha256:b15c8e397075c8fdb4f7bec654a3673ae11c848ba206efbd0eff03a6b80e95e1",
+    "payload": {
+      "affected": 0,
+      "cascade": [],
+      "proposal_id": "vpr_85301ad179e821b3"
+    },
+    "caveats": [
+      "Retraction impact is simulated over declared dependency links."
+    ],
+    "signature": "1a3c1c4f8e8256a0e44de0d962a531198976c6c15409536fca0885ee6a190ebf8e20cadb90267a00390e384ff0cad11b61d56bffc235728f2774d845a913200b"
+  }
+]

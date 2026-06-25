@@ -1,0 +1,47 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_4a0f347e762b04a7",
+  "kind": "verifier.attach",
+  "target": {
+    "type": "finding",
+    "id": "vf_b0c0945bfce712a6"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "created_at": "2026-06-17T06:37:07.163710+00:00",
+  "reason": "backfill frozen verifier re-check",
+  "payload": {
+    "attachment": {
+      "adversarial_probes": [
+        {
+          "kind": "counterexample_search",
+          "result": "survived"
+        }
+      ],
+      "claim_digest": "da1895cac0790245",
+      "id": "vva_6f9560627650cb19",
+      "independent_of": [],
+      "match_to_claim": {
+        "checker_actor": "vela-verify",
+        "matches": true
+      },
+      "method_integrity": "sound",
+      "note": "frozen verifier re-check: sidon",
+      "outcome": "passed",
+      "schema": "vela.verifier_attachment.v0.1",
+      "solver_id": "vela-verify",
+      "target": "vf_b0c0945bfce712a6",
+      "verifier_actor": "vela-verify",
+      "verifier_method": "computational_search"
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-17T14:42:49.382441+00:00",
+  "decision_reason": "maintainer accept: frozen-verifier re-check (vela-verify)",
+  "applied_event_id": "vev_a6e78bf7a714b0b6",
+  "caveats": []
+}

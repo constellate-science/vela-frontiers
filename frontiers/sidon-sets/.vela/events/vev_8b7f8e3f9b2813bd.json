@@ -1,0 +1,23 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_8b7f8e3f9b2813bd",
+  "kind": "finding.span_repaired",
+  "target": {
+    "type": "finding",
+    "id": "vf_f16e736879b4b42c"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "timestamp": "2026-05-21T02:55:23.494549+00:00",
+  "reason": "Attach source-backed abstract span for the Bloom-Sisask Roth log-barrier result; does not change the assertion.",
+  "before_hash": "sha256:650193d69c69e9fff72d8dd5a67455c9d4a5583c5e1092709552acd20625e869",
+  "after_hash": "sha256:43b4e0a86c81da060173a72c7894aa4d22f047ff5cb562c95cdec98ca56ae76f",
+  "payload": {
+    "proposal_id": "vpr_206f9fda54ef0d0f",
+    "section": "arXiv abstract",
+    "text": "arXiv:2007.03528 states that if A in {1,...,N} has no non-trivial 3-term arithmetic progressions, then |A| is bounded by N/(log N)^(1+c) for some absolute c > 0."
+  },
+  "caveats": []
+}

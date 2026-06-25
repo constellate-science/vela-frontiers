@@ -1,0 +1,40 @@
+{
+  "id": "va_825b900b32e74b6a",
+  "kind": "source_file",
+  "name": "Sidon Lean theorem slots v0.358",
+  "content_hash": "sha256:9988da3bc38f86237f876719cc49a45a7ca5f3e2ca9016d9b008b4484a1040e3",
+  "size_bytes": 1933,
+  "media_type": "text/x-lean",
+  "storage_mode": "local_blob",
+  "locator": ".vela/artifact-blobs/sha256/9988da3bc38f86237f876719cc49a45a7ca5f3e2ca9016d9b008b4484a1040e3",
+  "license": "Apache-2.0",
+  "target_findings": [
+    "vf_7273c1823848f6e3",
+    "vf_eee5b19763f3c625",
+    "vf_f16e736879b4b42c"
+  ],
+  "provenance": {
+    "source_type": "database_record",
+    "doi": null,
+    "title": "Sidon Lean theorem slots v0.358",
+    "authors": [],
+    "year": null,
+    "license": "Apache-2.0",
+    "extraction": {
+      "method": "artifact_deposit",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-21T10:21:21.996383+00:00",
+      "extractor_version": "0.337.0"
+    },
+    "review": null
+  },
+  "metadata": {
+    "carina_kind": "proof_assistant_slot",
+    "carina_proof_tool": "lean4",
+    "formalization_status": "slot_only_not_formalized"
+  },
+  "retracted": false,
+  "access_tier": "public",
+  "created": "2026-05-21T10:21:21.996402+00:00"
+}

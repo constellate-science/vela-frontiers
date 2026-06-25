@@ -1,0 +1,39 @@
+{
+  "id": "va_49c6b11cca269230",
+  "kind": "source_file",
+  "name": "Sidon theorem locator manifest v0.358",
+  "content_hash": "sha256:6a4b15192dbaf61c514b0fefef80b97127b65249311f37e54bb23334eac7fb1a",
+  "size_bytes": 2058,
+  "media_type": "application/json",
+  "storage_mode": "local_blob",
+  "locator": ".vela/artifact-blobs/sha256/6a4b15192dbaf61c514b0fefef80b97127b65249311f37e54bb23334eac7fb1a",
+  "license": "CC-BY-4.0",
+  "target_findings": [
+    "vf_7273c1823848f6e3",
+    "vf_eee5b19763f3c625",
+    "vf_f16e736879b4b42c"
+  ],
+  "provenance": {
+    "source_type": "database_record",
+    "doi": null,
+    "title": "Sidon theorem locator manifest v0.358",
+    "authors": [],
+    "year": null,
+    "license": "CC-BY-4.0",
+    "extraction": {
+      "method": "artifact_deposit",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-21T10:21:14.814365+00:00",
+      "extractor_version": "0.337.0"
+    },
+    "review": null
+  },
+  "metadata": {
+    "carina_kind": "theorem_locator_manifest",
+    "formalization_status": "slot_only_not_formalized"
+  },
+  "retracted": false,
+  "access_tier": "public",
+  "created": "2026-05-21T10:21:14.815377+00:00"
+}

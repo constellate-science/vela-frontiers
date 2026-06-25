@@ -1,0 +1,16 @@
+name: vela-check
+on:
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: vela-check-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  re-derive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ./.github/actions/vela-check
+        with:
+          frontier: frontiers/sidon-sets
+          vela-version: v0.710.0

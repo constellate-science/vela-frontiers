@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_2c472e28d0c49f36",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_3af13d937db0a00b"
+  },
+  "actor": {
+    "id": "agent:vela-curation-bot",
+    "type": "human"
+  },
+  "created_at": "2026-05-10T17:04:14.175862+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Croot-Lev-Pach: progression-free subsets of (Z/4Z)^n have cardinality at most c * 4^(0.926n) via the polynomial method, dramatically improving Behrend-style bounds for cap sets.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Subsets of (Z/4Z)^n free of nontrivial 3-term arithmetic progressions; polynomial method over finite fields."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.95
+      },
+      "created": "2026-05-10T17:04:14.175819+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_3af13d937db0a00b",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-curation-bot",
+            "orcid": null
+          }
+        ],
+        "doi": "10.4007/annals.2017.185.1.7",
+        "extraction": {
+          "extracted_at": "2026-05-10T17:04:14.175806+00:00",
+          "extractor_version": "vela/0.107.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "journal": "Annals of Mathematics",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "Croot-Lev-Pach 2017",
+        "year": 2017
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:solo-maintainer",
+  "reviewed_at": "2026-05-20T07:25:38.257708+00:00",
+  "decision_reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

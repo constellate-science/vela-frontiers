@@ -1,0 +1,26 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_5184bd816ed820d8",
+  "kind": "evidence_atom.locator_repair",
+  "target": {
+    "type": "evidence_atom",
+    "id": "vea_73acfebcd3de1dc6"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "created_at": "2026-05-21T02:55:23.466072+00:00",
+  "reason": "Exact arXiv locator for Bloom-Sisask Roth log-barrier result; records a reviewable source locator without changing the finding assertion.",
+  "payload": {
+    "locator": "arxiv:2007.03528",
+    "source_id": "vs_7d2d5a9a0f13bd38"
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:solo-maintainer",
+  "reviewed_at": "2026-05-21T02:55:23.467376+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_317928cef090689d",
+  "caveats": []
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_c20959410ec459c5",
+  "kind": "finding.span_repaired",
+  "target": {
+    "type": "finding",
+    "id": "vf_eee5b19763f3c625"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "timestamp": "2026-05-21T02:55:23.553287+00:00",
+  "reason": "Attach source-backed abstract span for the Ellenberg-Gijswijt cap-set result; leaves the numeric constant as methodology context rather than new accepted evidence.",
+  "before_hash": "sha256:b2c064c7d226a3b02624a4eff93bd289999f3329a82b1b112a989d65758d1c94",
+  "after_hash": "sha256:adc4859407e654cdf604a70b21b792e713de12c34a3b17e40e5fe8611fa8fe29",
+  "payload": {
+    "proposal_id": "vpr_11afa6e155380c7f",
+    "section": "arXiv abstract",
+    "text": "arXiv:1605.09223 states that the Croot-Lev-Pach method bounds progression-free subsets of F_q^n by c^n with c < q; for q = 3 this is the cap-set problem."
+  },
+  "caveats": []
+}

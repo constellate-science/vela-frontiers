@@ -1,0 +1,1295 @@
+{
+  "protocol": "model-context-protocol",
+  "recommended_loop": [
+    "frontier_stats",
+    "search_findings",
+    "get_finding",
+    "list_gaps",
+    "find_bridges",
+    "check_pubmed",
+    "list_contradictions",
+    "propagate_retraction",
+    "apply_observer"
+  ],
+  "tool_catalog": [
+    {
+      "description": "Return frontier metadata and statistics: finding count, links, confidence distribution, gaps, categories, and review state.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "frontier_stats"
+    },
+    {
+      "description": "Search findings by text content, entity name, entity type, or assertion type. Returns matching findings.",
+      "inputSchema": {
+        "properties": {
+          "assertion_type": {
+            "type": "string"
+          },
+          "entity": {
+            "type": "string"
+          },
+          "entity_type": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "query": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "search_findings"
+    },
+    {
+      "description": "Get a single finding by ID, including evidence, conditions, links, confidence, and provenance.",
+      "inputSchema": {
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "get_finding"
+    },
+    {
+      "description": "v0.17: Return the chronological event log for one finding (asserted, reviewed, caveated, noted, confidence-revised, superseded, retracted). Use this to walk the supersedes chain, audit corrections, or detect that a target has been refined since you last linked to it.",
+      "inputSchema": {
+        "properties": {
+          "id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Event order reflects timestamps as recorded; sort client-side if you need a different ordering."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "get_finding_history"
+    },
+    {
+      "description": "List findings flagged as candidate gap review leads.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Candidate gap rankings are review leads, not guaranteed underexplored areas or experiment targets."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "list_gaps"
+    },
+    {
+      "description": "List contradiction and dispute links between findings.",
+      "inputSchema": {
+        "properties": {},
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Automated contradiction links are candidates for review, not definitive disagreements."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "list_contradictions"
+    },
+    {
+      "description": "Find entities spanning multiple assertion categories, suggesting candidate cross-domain connections.",
+      "inputSchema": {
+        "properties": {
+          "limit": {
+            "type": "integer"
+          },
+          "min_categories": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Candidate bridges require review before being treated as domain knowledge."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "find_bridges"
+    },
+    {
+      "description": "Run a rough PubMed prior-art check for a hypothesis.",
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "PubMed counts are rough prior-art signals, not proof of novelty."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "check_pubmed"
+    },
+    {
+      "description": "Rerank findings under an observer policy such as pharma, academic, regulatory, clinical, or exploration.",
+      "inputSchema": {
+        "properties": {
+          "limit": {
+            "type": "integer"
+          },
+          "policy": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "policy"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Observer policy output is a weighted view, not definitive disagreement."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "apply_observer"
+    },
+    {
+      "description": "Simulate retraction cascade impact over declared dependency/support links.",
+      "inputSchema": {
+        "properties": {
+          "finding_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "finding_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Retraction impact is simulated over declared links only."
+        ],
+        "mutating": false,
+        "permission_level": "Dangerous"
+      },
+      "name": "propagate_retraction"
+    },
+    {
+      "description": "Trace evidence lineage for a finding, including support, dependency, contradiction, and chain strength.",
+      "inputSchema": {
+        "properties": {
+          "depth": {
+            "type": "integer"
+          },
+          "finding_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "finding_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Evidence-chain strength is heuristic and depends on declared links."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "trace_evidence_chain"
+    },
+    {
+      "description": "List the findings that cite or rest on a given finding (its dependents — the inbound side of the link graph). Direct dependents cover every link type pointing at the target; set `transitive` to also return the full causal closure over `depends`/`supports` edges. Read-only navigation; for retraction-cascade impact use `propagate_retraction`.",
+      "inputSchema": {
+        "properties": {
+          "finding_id": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "transitive": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "finding_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Dependents reflect declared links only; absence of a dependent is not proof nothing relies on the finding.",
+          "Transitive closure follows depends/supports edges within this frontier; cross-frontier (vf_…@vfr_…) links are not traversed."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "list_dependents"
+    },
+    {
+      "description": "Return the local graph neighborhood of a finding in one call: the finding itself, what it rests on (outbound depends/supports/derived edges), what rests on it (inbound dependents), sideways relations (extends/improves/generalizes/specializes/supersedes), and its contradictions in both directions. Orientation for agents working across frontiers.",
+      "inputSchema": {
+        "properties": {
+          "finding_id": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "finding_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Neighborhood relations are declared links, not adjudicated truth."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "context"
+    },
+    {
+      "description": "One-call briefing for a single problem: resolve it by problem number (e.g. \"617\") or finding id, and return its statement, verification gate status, open obligations (gap-flagged findings — what is unproven / the current bottleneck / the next step), what it rests on, what depends on it, and staleness (the age of its most recent event). Built so an agent can pick up where the frontier left off without re-reading handoff notes. Read-only.",
+      "inputSchema": {
+        "properties": {
+          "problem": {
+            "description": "Problem number, finding id, or a substring of the statement",
+            "type": "string"
+          }
+        },
+        "required": [
+          "problem"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Obligations and routes are stated work items, not adjudicated truth; the gate status reflects only what has been verified.",
+          "Staleness is the age of the latest event on this finding, not a guarantee the state is current."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "frontier_explore"
+    },
+    {
+      "description": "The agent ENTRY CONTRACT for a problem, in one call: statement, frontier state hashes, gate status, the ALLOWED OUTPUT TYPES (each mapped to the frozen verifier kind that checks it), failed-route memory (banked/exhausted channels — do not re-grind), open targets, the signed attempt ledger, and how to submit. An output is acceptable only if it is one of the allowed types with its verifier passing; strategy prose is not a state transition. Read-only.",
+      "inputSchema": {
+        "properties": {
+          "problem": {
+            "description": "Problem number (e.g. \"617\"), finding id, or a statement substring",
+            "type": "string"
+          }
+        },
+        "required": [
+          "problem"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Closure routes are curated statements of what WOULD close the problem, not promises that it is closable.",
+          "The failed-route rule is absolute: a banked obstruction is only reopened by a new counterexample or proof against the obstruction itself."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "task_packet"
+    },
+    {
+      "description": "Summarize the typed claim-level graph: node/edge counts and the per-kind breakdown over the T7 relation vocabulary (supports/contradicts/depends_on/derived_from/improves/generalizes/specializes/supersedes/extends/replicates). Pass `kind` to also return up to `limit` edges of that relation. Cross-frontier links resolve when served over a merged frontier directory.",
+      "inputSchema": {
+        "properties": {
+          "kind": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Derived view over declared links; edges are candidate relations, not adjudicated truth."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "frontier_graph"
+    },
+    {
+      "description": "List first-class candidate Contradiction objects (`vcx_`) derived from the typed graph, each with a resolution status (defaults to `candidate`) and an honest claim boundary. Distinct from `list_contradictions`, which lists raw contradiction links. Pass `as_of` (an ISO-8601 timestamp) for a bi-temporal query: only contradictions open in the world at that time.",
+      "inputSchema": {
+        "properties": {
+          "as_of": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Candidate contradictions are auto-detected signals pending expert review, not adjudicated truth.",
+          "Even reviewed contradictions record a named reviewer's judgment, not platform-adjudicated truth."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "contradictions"
+    },
+    {
+      "description": "Deep multi-hop traversal from a finding across the typed graph, layered by hop distance — the synthesis counterpart to the single-hop `context` tool. Returns nodes grouped by hop, the edge-kind distribution, and contradictions found in the region. Bound by `max_hops` (default 3, max 8).",
+      "inputSchema": {
+        "properties": {
+          "finding_id": {
+            "type": "string"
+          },
+          "limit_per_hop": {
+            "type": "integer"
+          },
+          "max_hops": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "finding_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Multi-hop relations are declared links, not adjudicated truth."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "deep_trace"
+    },
+    {
+      "description": "The dependency-impact neighborhood of a finding (its \"blast radius\"): what it RESTS ON (upstream support), what RESTS ON IT (downstream — what would weaken if it moved), and the SINGLE POINTS OF FAILURE on its support (the minimal set whose removal collapses it). Resolve by finding id, problem number, or an assertion substring. `impact` selects up|down|both (default both); `kinds` is a comma-separated edge-kind filter (default the dependency kinds: supports, depends_on, derived_from, discharges). Read-only.",
+      "inputSchema": {
+        "properties": {
+          "finding": {
+            "description": "Finding id, problem number, or an assertion substring",
+            "type": "string"
+          },
+          "impact": {
+            "description": "up | down | both (default both)",
+            "type": "string"
+          },
+          "kinds": {
+            "description": "comma-separated edge kinds; default the dependency kinds",
+            "type": "string"
+          }
+        },
+        "required": [
+          "finding"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Impact is STRUCTURAL over declared links: that a result is in the blast radius is not a claim it is wrong.",
+          "Edges are candidate relations, not adjudicated truth."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "blast_radius"
+    },
+    {
+      "description": "Compare findings addressing the same scoped problem against a fixed set of generic properties (assertion_type, confidence, evidence_type, method, model_system, replication, human_data, clinical_trial, flags, year) as a side-by-side table. Scope with `query` (substring on the assertion), `assertion_type`, and/or an `ids` list; with none, compares the whole frontier up to `limit`.",
+      "inputSchema": {
+        "properties": {
+          "assertion_type": {
+            "type": "string"
+          },
+          "ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "limit": {
+            "type": "integer"
+          },
+          "query": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "A structured side-by-side of declared properties, not a ranking or adjudication."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "frontier_compare"
+    },
+    {
+      "description": "Export a finding as a nanopublication in TriG/RDF — the assertion, provenance, and publication-info named graphs of the nanopub.net standard — for interchange with the FAIR / semantic-web science ecosystem.",
+      "inputSchema": {
+        "properties": {
+          "finding_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "finding_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Derived interchange artifact; the canonical finding remains the vf_ object."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "nanopublication"
+    },
+    {
+      "description": "List canonical events from the event log strictly after `cursor` (a `vev_…` id), ordered chronologically. Returns events plus a `next_cursor` for further pagination, or null when the tail is reached. Omit `cursor` to start from the genesis event.",
+      "inputSchema": {
+        "properties": {
+          "cursor": {
+            "type": "string"
+          },
+          "limit": {
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Cursor must reference an event currently in the log; out-of-sync clients should restart from the beginning."
+        ],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "list_events_since"
+    },
+    {
+      "description": "Propose a `finding.review` decision on a finding (status: accepted/approved/contested/needs_revision/rejected). Requires the actor's Ed25519 signature over the canonical proposal preimage. Idempotent: identical logical proposals return the same `vpr_…`.",
+      "inputSchema": {
+        "properties": {
+          "actor_id": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "target_finding_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actor_id",
+          "target_finding_id",
+          "status",
+          "reason",
+          "signature"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "actor_id must be registered in `frontier.actors` via `vela actor add` before writes verify."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "propose_review"
+    },
+    {
+      "description": "Propose attaching a `finding.note` annotation to a finding. Requires a registered actor and signature. Optional structured `provenance` (Phase β, v0.6): `{doi?, pmid?, title?, span?}` with at least one identifier. Stays `pending_review` until accepted.",
+      "inputSchema": {
+        "properties": {
+          "actor_id": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "provenance": {
+            "properties": {
+              "doi": {
+                "type": "string"
+              },
+              "pmid": {
+                "type": "string"
+              },
+              "span": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "target_finding_id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actor_id",
+          "target_finding_id",
+          "text",
+          "reason",
+          "signature"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Notes do not change finding state; they accrete review context."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "propose_note"
+    },
+    {
+      "description": "Propose AND apply a `finding.note` annotation in one signed call. Requires the actor to have `tier=\"auto-notes\"` registered (`vela actor add --tier auto-notes`). Optional structured `provenance` (Phase β). Idempotent: a retry with identical content returns the same `applied_event_id`.",
+      "inputSchema": {
+        "properties": {
+          "actor_id": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "provenance": {
+            "properties": {
+              "doi": {
+                "type": "string"
+              },
+              "pmid": {
+                "type": "string"
+              },
+              "span": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "target_finding_id": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actor_id",
+          "target_finding_id",
+          "text",
+          "reason",
+          "signature"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Requires actor.tier=auto-notes; calls from non-tiered actors are rejected.",
+          "Notes still do not change finding state — they accrete review context."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "propose_and_apply_note"
+    },
+    {
+      "description": "Propose a confidence revision (`finding.confidence_revise`) on a finding. `new_score` must be in [0.0, 1.0]. Requires a registered actor and signature.",
+      "inputSchema": {
+        "properties": {
+          "actor_id": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "new_score": {
+            "type": "number"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "target_finding_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actor_id",
+          "target_finding_id",
+          "new_score",
+          "reason",
+          "signature"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Confidence revisions update score and basis; they do not change scope or evidence."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "propose_revise_confidence"
+    },
+    {
+      "description": "Propose retracting a finding (`finding.retract`). Applying triggers per-dependent `finding.dependency_invalidated` events through the propagation graph. Requires a registered actor and signature.",
+      "inputSchema": {
+        "properties": {
+          "actor_id": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "target_finding_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "actor_id",
+          "target_finding_id",
+          "reason",
+          "signature"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Retraction propagates through declared dependency/support links; review impact before applying."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "propose_retract"
+    },
+    {
+      "description": "Apply a pending proposal as the named reviewer. The reviewer must be registered. Signature is over `{action: \"accept\", proposal_id, reviewer_id, reason, timestamp}` canonicalized. Idempotent: re-applying returns the same `applied_event_id`.",
+      "inputSchema": {
+        "properties": {
+          "proposal_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "reviewer_id": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "proposal_id",
+          "reviewer_id",
+          "reason",
+          "signature"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Accepting an applied proposal returns its existing event_id; no duplicate event is emitted."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "accept_proposal"
+    },
+    {
+      "description": "Reject a pending proposal as the named reviewer. The reviewer must be registered. Signature is over `{action: \"reject\", proposal_id, reviewer_id, reason, timestamp}` canonicalized.",
+      "inputSchema": {
+        "properties": {
+          "proposal_id": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "reviewer_id": {
+            "type": "string"
+          },
+          "signature": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "proposal_id",
+          "reviewer_id",
+          "reason",
+          "signature"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Rejection records the decision but emits no canonical event; rejected proposals stay on the proposal log."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "reject_proposal"
+    },
+    {
+      "description": "v0.206: one-shot agent submission. Signs a vaa_* Agent Attestation envelope + a vsd_* Scientific Diff Pack bundling N proposals, writes both to the frontier's .vela/ tree, and returns the resulting ids. Requires VELA_AGENT_KEY_HEX in the server env.",
+      "inputSchema": {
+        "properties": {
+          "agent_actor": {
+            "description": "Must start with `agent:`.",
+            "type": "string"
+          },
+          "aggregate_kind": {
+            "type": "string"
+          },
+          "finished_at": {
+            "type": "string"
+          },
+          "frontier_path": {
+            "type": "string"
+          },
+          "model_name": {
+            "type": "string"
+          },
+          "model_version": {
+            "type": "string"
+          },
+          "parent_attestation": {
+            "type": "string"
+          },
+          "parent_pack": {
+            "type": "string"
+          },
+          "prompt": {
+            "description": "Hashed server-side; not stored verbatim.",
+            "type": "string"
+          },
+          "proposals": {
+            "items": {
+              "properties": {
+                "kind": {
+                  "type": "string"
+                },
+                "payload": {}
+              },
+              "required": [
+                "kind",
+                "payload"
+              ],
+              "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "started_at": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "tool_calls": {
+            "items": {
+              "properties": {
+                "duration_ms": {
+                  "type": "integer"
+                },
+                "input": {},
+                "output": {},
+                "tool_name": {
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "type": "array"
+          },
+          "total_tokens": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "frontier_path",
+          "agent_actor",
+          "model_name",
+          "model_version",
+          "summary",
+          "aggregate_kind",
+          "proposals"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Refuses to operate without VELA_AGENT_KEY_HEX set; no silent unsigned submissions.",
+          "Writes to .vela/agent_attestations/, .vela/diff_packs/, .vela/agent_proposals/ — does NOT pass through the canonical proposal reducer.",
+          "Resulting pack is reviewer-pending until a reviewer issues a verdict via the local review queue + diff-pack promoter."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "vela_agent_submit_diff_pack"
+    },
+    {
+      "description": "v0.206: write a vtr_* Trajectory with N typed steps to .vela/trajectories/. Trajectories are content-addressed but unsigned; the chain of custody lives in the `deposited_by` actor id.",
+      "inputSchema": {
+        "properties": {
+          "deposited_by": {
+            "type": "string"
+          },
+          "frontier_path": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "steps": {
+            "items": {
+              "properties": {
+                "actor": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "kind": {
+                  "description": "One of the 17 v0.194 step kinds: hypothesis, tried, ruled_out, observed, refined, question, context, data, tool, model, expert, decision, protocol, output, review, risk, outcome.",
+                  "type": "string"
+                },
+                "references": {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [
+                "kind",
+                "description"
+              ],
+              "type": "object"
+            },
+            "minItems": 1,
+            "type": "array"
+          },
+          "target_findings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          }
+        },
+        "required": [
+          "frontier_path",
+          "deposited_by",
+          "steps"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Trajectories are unsigned — they document a search path, not a truth claim."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "vela_agent_open_trajectory"
+    },
+    {
+      "description": "Submit a signed StateProposal to a remote Vela hub over MCP. The agent signs with VELA_AGENT_KEY_HEX (the same canonical bytes the hub verifies) and POSTs to {hub}/entries/{vfr}/proposals. The proposal is authored by the agent's `agent:*` id and lands as pending_review; a human reviewer must accept it through the strict gate before it changes state. Proposes only — never accepts.",
+      "inputSchema": {
+        "properties": {
+          "actor": {
+            "description": "The proposing actor id; must start with `agent:`. Defaults to agent:mcp.",
+            "type": "string"
+          },
+          "hub": {
+            "description": "Hub base URL (or set VELA_HUB env), e.g. https://hub.constellate.science",
+            "type": "string"
+          },
+          "kind": {
+            "description": "Proposal kind, e.g. finding.note, finding.caveat, finding.confidence_revise, finding.retract.",
+            "type": "string"
+          },
+          "payload": {
+            "description": "Kind-specific payload, e.g. {\"text\": \"…\"} for note/caveat, {\"confidence\": 0.5} for confidence_revise, {} for retract."
+          },
+          "reason": {
+            "description": "Why this change — the reviewer reads this.",
+            "type": "string"
+          },
+          "target": {
+            "description": "The vf_ finding id this change targets.",
+            "type": "string"
+          },
+          "vfr": {
+            "description": "The vfr_ frontier id on the hub.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "vfr",
+          "kind",
+          "target",
+          "reason"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [
+          "Refuses to operate without VELA_AGENT_KEY_HEX set; no silent unsigned submissions.",
+          "Proposes only — the hub forces pending_review; a human reviewer accepts through the strict gate. An AI never signs an accept.",
+          "A proposal self-signature binds authorship only; it confers no authority."
+        ],
+        "mutating": true,
+        "permission_level": "Write"
+      },
+      "name": "vela_agent_propose_to_hub"
+    },
+    {
+      "description": "v0.214: counts of every v0.193+ primitive on a frontier. Use as the first call in a multi-turn agent session to see what already exists before submitting new work.",
+      "inputSchema": {
+        "properties": {
+          "frontier_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_frontier_summary"
+    },
+    {
+      "description": "v0.214: fetch a Scientific Diff Pack body by id from a frontier's .vela/diff_packs/.",
+      "inputSchema": {
+        "properties": {
+          "frontier_path": {
+            "type": "string"
+          },
+          "pack_id": {
+            "description": "vsd_<16hex>",
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path",
+          "pack_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_get_pack"
+    },
+    {
+      "description": "v0.214: list every Scientific Diff Pack on a frontier. Set only_pending=true to filter to packs awaiting reviewer verdict.",
+      "inputSchema": {
+        "properties": {
+          "frontier_path": {
+            "type": "string"
+          },
+          "only_pending": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "frontier_path"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_list_packs"
+    },
+    {
+      "description": "v0.214: fetch an Agent Attestation envelope body by id from a frontier's .vela/agent_attestations/.",
+      "inputSchema": {
+        "properties": {
+          "attestation_id": {
+            "description": "vaa_<16hex>",
+            "type": "string"
+          },
+          "frontier_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path",
+          "attestation_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_get_attestation"
+    },
+    {
+      "description": "v0.214: list every Trajectory on a frontier. Returns full bodies including steps.",
+      "inputSchema": {
+        "properties": {
+          "frontier_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_list_trajectories"
+    },
+    {
+      "description": "v0.220: fetch a Tool Descriptor body by id from a frontier's .vela/tool_descriptors/.",
+      "inputSchema": {
+        "properties": {
+          "descriptor_id": {
+            "description": "vtd_<16hex>",
+            "type": "string"
+          },
+          "frontier_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path",
+          "descriptor_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_get_tool_descriptor"
+    },
+    {
+      "description": "v0.220: fetch an Evaluation Record body by id from a frontier's .vela/evaluations/.",
+      "inputSchema": {
+        "properties": {
+          "evaluation_id": {
+            "description": "ver_<16hex>",
+            "type": "string"
+          },
+          "frontier_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path",
+          "evaluation_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_get_evaluation"
+    },
+    {
+      "description": "v0.220: list every Evaluation Record on a frontier. Optionally filter by target Tool Descriptor.",
+      "inputSchema": {
+        "properties": {
+          "frontier_path": {
+            "type": "string"
+          },
+          "target_descriptor_id": {
+            "description": "Optional vtd_<16hex> to filter on",
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_list_evaluations"
+    },
+    {
+      "description": "v0.220: fetch a resolved Verdict Conflict body by id from a frontier's .vela/verdict_conflicts/.",
+      "inputSchema": {
+        "properties": {
+          "conflict_id": {
+            "description": "vdc_<16hex>",
+            "type": "string"
+          },
+          "frontier_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path",
+          "conflict_id"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_get_conflict"
+    },
+    {
+      "description": "v0.220: list every resolved Verdict Conflict on a frontier. Optionally filter by resolution_mode (majority, owner_override, escalation).",
+      "inputSchema": {
+        "properties": {
+          "frontier_path": {
+            "type": "string"
+          },
+          "resolution_mode": {
+            "description": "Optional filter: majority, owner_override, or escalation",
+            "type": "string"
+          }
+        },
+        "required": [
+          "frontier_path"
+        ],
+        "type": "object"
+      },
+      "metadata": {
+        "caveats": [],
+        "mutating": false,
+        "permission_level": "ReadOnly"
+      },
+      "name": "vela_agent_list_conflicts"
+    }
+  ],
+  "notes": [
+    "Candidate contradictions, gaps, and bridges require human review.",
+    "Evidence ranking is heuristic: meta-analysis > RCT > cohort > case-control > case-report > in-vitro.",
+    "PubMed prior-art checks are rough signals, not proof of novelty.",
+    "Observer policy output is weighted reranking, not definitive disagreement.",
+    "Retraction impact is simulated over declared dependency links."
+  ]
+}

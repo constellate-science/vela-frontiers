@@ -1,0 +1,134 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_1879d8894dd07e64",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_c9ab5970cdbcb6af"
+  },
+  "actor": {
+    "id": "agent:canopus-lean-2026-06-03",
+    "type": "agent"
+  },
+  "created_at": "2026-06-03T22:40:25.989342+00:00",
+  "reason": "Candidate claim vc_5aab0a22f7cdebf1 imported from artifact packet cap_087198a92d1e30a2",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-03T12:00:00+00:00",
+      "packet_id": "cap_087198a92d1e30a2",
+      "producer": {
+        "id": "agent:canopus-lean-2026-06-03",
+        "kind": "agent",
+        "name": "Canopus Sidon proposer (Opus 4.8)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "OEIS A309370: improved Sidon lower bound a(10) >= 66"
+    },
+    "candidate_claim_id": "vc_5aab0a22f7cdebf1",
+    "evidence_artifact_ids": [
+      "va_6a358e229f98b723"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "OEIS A309370 a(10) >= 66: a verified Sidon set of 66 distinct binary vectors in {0,1}^10 (componentwise integer addition into {0,1,2}^10; all 2211 pairwise sums a+b (a<=b) distinct), improving the live OEIS public lower bound a(10) >= 63 by +3 and the prior local best 65 by +1. Found by an Opus-4.8 Canopus-loop proposer (no-context arm, local search); re-verified from scratch by verify_construction.verify_sidon (frozen gate). Witness sha256:6a358e229f98b723…",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.99
+      },
+      "created": "2026-06-03T12:00:00+00:00",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_6a358e229f98b723",
+            "artifact_packet_id": "cap_087198a92d1e30a2",
+            "candidate_claim_id": "vc_5aab0a22f7cdebf1"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_c9ab5970cdbcb6af",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Canopus Sidon proposer (Opus 4.8)",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T12:00:00+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:canopus-lean-2026-06-03",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_087198a92d1e30a2 · vc_5aab0a22f7cdebf1",
+        "url": "https://oeis.org/A309370",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_087198a92d1e30a2",
+    "https://oeis.org/A309370",
+    "packet_artifact:va_6a358e229f98b723"
+  ],
+  "status": "applied",
+  "reviewed_by": "reviewer:will",
+  "reviewed_at": "2026-06-03T22:41:09.705840+00:00",
+  "decision_reason": "verify_sidon: 66 pts, 2211 sums distinct; +1 over prior, +3 over OEIS public",
+  "applied_event_id": "vev_cd9ae7eca77fcd54",
+  "caveats": [
+    "Improved LOWER BOUND (a verified large Sidon set), NOT a proven maximum; true a(10) may be larger.",
+    "VERIFIED valid by verify_construction.verify_sidon (66 points, 2211 pairwise sums distinct), 3 independent checkers.",
+    "Not an accepted OEIS edit until a maintainer reviews; submit as a comment update + witness link (the n=16..22 path).",
+    "Reviewer acceptance required before this becomes canonical frontier state.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:canopus-lean-2026-06-03",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_087198a92d1e30a2",
+    "started_at": "2026-06-03T12:00:00+00:00",
+    "context": {
+      "artifact_packet_id": "cap_087198a92d1e30a2",
+      "producer_name": "Canopus Sidon proposer (Opus 4.8)",
+      "topic": "OEIS A309370: improved Sidon lower bound a(10) >= 66"
+    }
+  }
+}

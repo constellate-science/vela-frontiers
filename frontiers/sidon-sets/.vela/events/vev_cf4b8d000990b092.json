@@ -1,0 +1,22 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_cf4b8d000990b092",
+  "kind": "finding.reviewed",
+  "target": {
+    "type": "finding",
+    "id": "vf_3bde881fed68d7dd"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-05-09T19:20:56.637627+00:00",
+  "reason": "Bound and construction look correct under the Nathanson hypothesis but I want a Lean stub before promoting to accepted-core. The proof step that reduces geometric to polynomial diameter needs an explicit witness.",
+  "before_hash": "sha256:5324b3188af094a417f02618feec0adadd9c2fe479d54e6d01c83bb570629c80",
+  "after_hash": "sha256:1bf7a3223dc37ce94db930738f2eb2deacbb79f55d35a926f42b95c63c76b6d5",
+  "payload": {
+    "proposal_id": "vpr_6908c4cf64f0f4ba",
+    "status": "needs_revision"
+  },
+  "caveats": []
+}

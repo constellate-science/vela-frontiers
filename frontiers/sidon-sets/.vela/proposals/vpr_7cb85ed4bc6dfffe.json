@@ -1,0 +1,109 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_7cb85ed4bc6dfffe",
+  "kind": "artifact.assert",
+  "target": {
+    "type": "artifact",
+    "id": "va_39d89c40cc68ad9b"
+  },
+  "actor": {
+    "id": "agent:b3-verifier",
+    "type": "agent"
+  },
+  "created_at": "2026-06-02T21:17:03.984218+00:00",
+  "reason": "Import artifact repro_output_vtask_6db2a995822dfb91 from artifact packet cap_repro_vtask_6db2a995822dfb91",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:4ba92916b8ddffe4c2dbeaf3f16d03c27f383fcb4fc5c2e33f552561663a3385",
+      "created": "2026-06-02T21:17:03.979694+00:00",
+      "id": "va_39d89c40cc68ad9b",
+      "kind": "model_output",
+      "license": "public source locator; no restricted bytes deposited",
+      "locator": "file:///Users/williamblair/personal/vela/examples/sidon-sets/.vela/workspaces/vtask_6db2a995822dfb91/logs/execution.log",
+      "media_type": "application/json",
+      "metadata": {
+        "artifact_packet_id": "cap_repro_vtask_6db2a995822dfb91",
+        "command": "bash /Users/williamblair/personal/vela/examples/sidon-sets/.vela/workspaces/vtask_6db2a995822dfb91/run.sh",
+        "executor": "code-reproduction",
+        "exit_code": 0,
+        "external_artifact_id": "repro_output_vtask_6db2a995822dfb91",
+        "parent_artifact_ids": [],
+        "producer_agent": "agent:b3-verifier",
+        "topic": "Code reproduction of task vtask_6db2a995822dfb91"
+      },
+      "name": "Reproduction output (succeeded)",
+      "provenance": {
+        "authors": [
+          {
+            "name": "Code-reproduction executor",
+            "orcid": null
+          }
+        ],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-02T21:17:03.979694+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:b3-verifier",
+          "model_version": null
+        },
+        "journal": null,
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_repro_vtask_6db2a995822dfb91 · Reproduction output (succeeded)",
+        "url": "file:///Users/williamblair/personal/vela/examples/sidon-sets/.vela/workspaces/vtask_6db2a995822dfb91/logs/execution.log",
+        "year": null
+      },
+      "retracted": false,
+      "source_url": "file:///Users/williamblair/personal/vela/examples/sidon-sets/.vela/workspaces/vtask_6db2a995822dfb91/logs/execution.log",
+      "storage_mode": "remote",
+      "target_findings": [
+        "vf_9f7df545ebd6e8df"
+      ]
+    },
+    "artifact_packet": {
+      "created_at": "2026-06-02T21:17:03.979694+00:00",
+      "packet_id": "cap_repro_vtask_6db2a995822dfb91",
+      "producer": {
+        "id": "agent:b3-verifier",
+        "kind": "agent",
+        "name": "Code-reproduction executor"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Code reproduction of task vtask_6db2a995822dfb91"
+    },
+    "external_artifact_id": "repro_output_vtask_6db2a995822dfb91",
+    "parent_artifact_ids": []
+  },
+  "source_refs": [
+    "artifact_packet:cap_repro_vtask_6db2a995822dfb91",
+    "file:///Users/williamblair/personal/vela/examples/sidon-sets/.vela/workspaces/vtask_6db2a995822dfb91/logs/execution.log"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:33:01.899476+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [],
+  "agent_run": {
+    "agent": "agent:b3-verifier",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_repro_vtask_6db2a995822dfb91",
+    "started_at": "2026-06-02T21:17:03.979694+00:00",
+    "context": {
+      "artifact_packet_id": "cap_repro_vtask_6db2a995822dfb91",
+      "producer_name": "Code-reproduction executor",
+      "topic": "Code reproduction of task vtask_6db2a995822dfb91"
+    }
+  }
+}

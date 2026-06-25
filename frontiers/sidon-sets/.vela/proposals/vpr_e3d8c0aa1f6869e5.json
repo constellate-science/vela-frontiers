@@ -1,0 +1,26 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_e3d8c0aa1f6869e5",
+  "kind": "finding.span_repair",
+  "target": {
+    "type": "finding",
+    "id": "vf_7273c1823848f6e3"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "created_at": "2026-05-21T02:55:23.438001+00:00",
+  "reason": "Attach source-backed abstract span for the Croot-Lev-Pach Z_4^n bound; does not change the assertion.",
+  "payload": {
+    "section": "arXiv abstract",
+    "text": "arXiv:1605.01506 states that for n > 0, any 3-term-progression-free subset of Z_4^n has size below 4^(c n) for c about 0.926."
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:solo-maintainer",
+  "reviewed_at": "2026-05-21T02:55:23.439395+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_6ad7ca2d15839e45",
+  "caveats": []
+}

@@ -12,6 +12,23 @@ signed manifest pointing at a `network_locator`; clients verify the
 manifest signature and then fetch the locator URL to pull the actual
 frontier state. That fetch needs to resolve over plain HTTP.
 
+## Git-backed frontiers (the producer on-ramp)
+
+Some frontiers now live here as **full git-backed directories** under
+`frontiers/<name>/`, with their `.vela/` event log committed (not just a JSON
+manifest). This is the producer on-ramp from ADR 0001: fork this repo, add or
+edit a witness under a frontier, and open a PR. The `vela-check` GitHub Action
+re-derives the frontier from a clean checkout on every PR:
+
+- `vela reproduce` — the frozen verifiers re-run every witness from scratch.
+- `vela check` — the structural / signal gate.
+- hash-parity — the recomputed `event_log_hash` + `snapshot_hash` must equal the
+  committed `vela.lock`, so the working tree IS the signed state.
+
+A reviewer's accept stays a human-key-signed event committed in the PR; the
+Action never signs. The first such frontier is `frontiers/sidon-sets`
+(`vfr_496956067dc5ad79`, the A309370 keystone).
+
 ## What lives here
 
 ```
