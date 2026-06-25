@@ -1,0 +1,74 @@
+{
+  "id": "vf_c9ab5970cdbcb6af",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "OEIS A309370 a(10) >= 66: a verified Sidon set of 66 distinct binary vectors in {0,1}^10 (componentwise integer addition into {0,1,2}^10; all 2211 pairwise sums a+b (a<=b) distinct), improving the live OEIS public lower bound a(10) >= 63 by +3 and the prior local best 65 by +1. Found by an Opus-4.8 Canopus-loop proposer (no-context arm, local search); re-verified from scratch by verify_construction.verify_sidon (frozen gate). Witness sha256:6a358e229f98b723…",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_6a358e229f98b723",
+        "artifact_packet_id": "cap_087198a92d1e30a2",
+        "candidate_claim_id": "vc_5aab0a22f7cdebf1"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://oeis.org/A309370",
+    "title": "cap_087198a92d1e30a2 · vc_5aab0a22f7cdebf1",
+    "authors": [
+      {
+        "name": "Canopus Sidon proposer (Opus 4.8)",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:canopus-lean-2026-06-03",
+      "model_version": null,
+      "extracted_at": "2026-06-03T12:00:00+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": true,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-06-03T12:00:00+00:00",
+  "updated": null
+}

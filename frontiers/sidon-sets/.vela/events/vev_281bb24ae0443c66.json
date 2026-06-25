@@ -1,0 +1,45 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_281bb24ae0443c66",
+  "kind": "verifier_attachment.added",
+  "target": {
+    "type": "finding",
+    "id": "vf_aab348416bfdf292"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-17T14:42:49.198076+00:00",
+  "reason": "backfill frozen verifier re-check",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "attachment": {
+      "adversarial_probes": [
+        {
+          "kind": "counterexample_search",
+          "result": "survived"
+        }
+      ],
+      "claim_digest": "beba4c4b528aab7d",
+      "id": "vva_bd220af9ba5865c6",
+      "independent_of": [],
+      "match_to_claim": {
+        "checker_actor": "vela-verify",
+        "matches": true
+      },
+      "method_integrity": "sound",
+      "note": "frozen verifier re-check: sidon",
+      "outcome": "passed",
+      "schema": "vela.verifier_attachment.v0.1",
+      "solver_id": "vela-verify",
+      "target": "vf_aab348416bfdf292",
+      "verifier_actor": "vela-verify",
+      "verifier_method": "computational_search"
+    },
+    "proposal_id": "vpr_1cea0804aa8e4b32"
+  },
+  "caveats": [],
+  "signature": "bac630a9de355b11ff1c66ee18e49b4901fe3733f9e2e2033f52005cad46c93c7fd0160069efbfd1fc74693b62aae770699d7e21adbd355b60dff162854f6c00"
+}

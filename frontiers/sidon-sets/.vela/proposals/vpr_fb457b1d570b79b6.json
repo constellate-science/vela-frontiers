@@ -1,0 +1,26 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_fb457b1d570b79b6",
+  "kind": "evidence_atom.locator_repair",
+  "target": {
+    "type": "evidence_atom",
+    "id": "vea_a92afe2675590334"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "created_at": "2026-05-21T02:55:23.401163+00:00",
+  "reason": "Exact arXiv locator for Croot-Lev-Pach progression-free Z_4^n result; records a reviewable source locator without changing the finding assertion.",
+  "payload": {
+    "locator": "arxiv:1605.01506",
+    "source_id": "vs_b5e2d12c31e5aff7"
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:solo-maintainer",
+  "reviewed_at": "2026-05-21T02:55:23.402838+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_f8a0436152aee30d",
+  "caveats": []
+}

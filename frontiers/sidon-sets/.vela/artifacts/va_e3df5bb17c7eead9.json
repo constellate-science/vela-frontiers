@@ -1,0 +1,38 @@
+{
+  "id": "va_e3df5bb17c7eead9",
+  "kind": "source_file",
+  "name": "Lean 4 stub: h-squared-dissociated polynomial-diameter sketch",
+  "content_hash": "sha256:290bfbff96297718b2972c86aadb338e3618fa2e37bc0301933f7dff07f265f8",
+  "size_bytes": 3032,
+  "media_type": "text/x-lean",
+  "storage_mode": "local_blob",
+  "locator": ".vela/artifact-blobs/sha256/290bfbff96297718b2972c86aadb338e3618fa2e37bc0301933f7dff07f265f8",
+  "license": "Apache-2.0",
+  "target_findings": [
+    "vf_3bde881fed68d7dd"
+  ],
+  "provenance": {
+    "source_type": "database_record",
+    "doi": null,
+    "title": "Vela Sidon-set example, v0.76.5 (Gowers-shaped)",
+    "authors": [],
+    "year": null,
+    "license": "Apache-2.0",
+    "extraction": {
+      "method": "artifact_deposit",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-09T19:21:38.572191+00:00",
+      "extractor_version": "0.75.0"
+    },
+    "review": null
+  },
+  "metadata": {
+    "carina_kind": "proof_script",
+    "carina_proof_tool": "lean4",
+    "carina_proof_tool_version": "4.7.0"
+  },
+  "retracted": false,
+  "access_tier": "public",
+  "created": "2026-05-09T19:21:38.572529+00:00"
+}

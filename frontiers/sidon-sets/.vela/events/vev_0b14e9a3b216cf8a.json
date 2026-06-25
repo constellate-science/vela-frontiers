@@ -1,0 +1,36 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_0b14e9a3b216cf8a",
+  "kind": "anchor.attached",
+  "target": {
+    "type": "finding",
+    "id": "vf_c9ab5970cdbcb6af"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-16T04:01:25.299676+00:00",
+  "reason": "external-catalogue anchor attached",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "anchor_link": {
+      "anchor": {
+        "id": "A309370",
+        "join_policy": "hard_identity",
+        "kind": "sequence",
+        "namespace": "oeis",
+        "role": "lower-bound a(10)"
+      },
+      "attached_at": "2026-06-16T04:01:25.298885+00:00",
+      "attached_by": "reviewer:will-blair",
+      "id": "val_63f5d4a5f76fec53",
+      "schema": "vela.anchor_link.v0.1",
+      "signature": "7b3a5c7cef28fc0d346ec02fe4817de6c69122a4a7e82154a2d54222ca02d119c9ae3edd1ccece9b796f5c9f33d3babede97773a2b5ccf5c19a417316be1390f",
+      "signer_pubkey_hex": "4892f93877e637b5f59af31d9ec6704814842fb278cacb0eb94704baef99455e",
+      "target": "vf_c9ab5970cdbcb6af"
+    }
+  },
+  "caveats": []
+}

@@ -1,0 +1,128 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_d341190bd42e2b22",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_9f7df545ebd6e8df"
+  },
+  "actor": {
+    "id": "agent:b3-verifier",
+    "type": "agent"
+  },
+  "created_at": "2026-06-02T21:17:04.024330+00:00",
+  "reason": "Candidate claim claim_repro_vtask_6db2a995822dfb91 imported from artifact packet cap_repro_vtask_6db2a995822dfb91",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-02T21:17:03.979694+00:00",
+      "packet_id": "cap_repro_vtask_6db2a995822dfb91",
+      "producer": {
+        "id": "agent:b3-verifier",
+        "kind": "agent",
+        "name": "Code-reproduction executor"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Code reproduction of task vtask_6db2a995822dfb91"
+    },
+    "candidate_claim_id": "claim_repro_vtask_6db2a995822dfb91",
+    "evidence_artifact_ids": [
+      "repro_output_vtask_6db2a995822dfb91"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Automated reproduction of 'Re-verify the B_3 complete-frontier certificates (OEIS A396704): every recorded B_3 set in {0,1}^n is a valid B_3 set of the stated size, a frozen-verifier check of the maximum-size sequence 1, 2, 3, 4, 6, 8, 11.' succeeded (exit code 0).",
+        "type": "methodological"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "entrypoint: bash /Users/williamblair/personal/vela/examples/sidon-sets/.vela/workspaces/vtask_6db2a995822dfb91/run.sh"
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.7
+      },
+      "created": "2026-06-02T21:17:03.979694+00:00",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "repro_output_vtask_6db2a995822dfb91",
+            "artifact_packet_id": "cap_repro_vtask_6db2a995822dfb91",
+            "candidate_claim_id": "claim_repro_vtask_6db2a995822dfb91"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_9f7df545ebd6e8df",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Code-reproduction executor",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-02T21:17:03.979694+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:b3-verifier",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_repro_vtask_6db2a995822dfb91 · claim_repro_vtask_6db2a995822dfb91",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_repro_vtask_6db2a995822dfb91",
+    "packet_artifact:repro_output_vtask_6db2a995822dfb91"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:33:01.901689+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Automated reproduction result; pending reviewer acceptance.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:b3-verifier",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_repro_vtask_6db2a995822dfb91",
+    "started_at": "2026-06-02T21:17:03.979694+00:00",
+    "context": {
+      "artifact_packet_id": "cap_repro_vtask_6db2a995822dfb91",
+      "producer_name": "Code-reproduction executor",
+      "topic": "Code reproduction of task vtask_6db2a995822dfb91"
+    }
+  }
+}

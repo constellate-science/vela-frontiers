@@ -1,0 +1,66 @@
+{
+  "id": "vf_e6443b35810cc321",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Ruzsa covering lemma: if |A+B| <= K|A|, then B is contained in the sumset A - A translated by at most K elements; the engine of small-doubling structure theorems.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.85,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "Ruzsa covering lemma 1999",
+    "authors": [
+      {
+        "name": "agent:research-bot-2026-05-09",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-09T22:52:52.471773+00:00",
+      "extractor_version": "vela/0.81.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-09T22:52:52.471784+00:00",
+  "updated": null
+}

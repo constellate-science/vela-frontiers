@@ -1,0 +1,832 @@
+[
+  {
+    "id": "rq_06d19986c13130e7",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_06d19986c13130e7"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_fa86a0be2cbce973",
+      "sig_missing_evidence_span_06d19986c13130e7",
+      "sig_proposal_applied_vpr_0d8d0786e66836a6",
+      "sig_proposal_applied_vpr_842fd7c44111b1d6"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_0d8d0786e66836a6 changed frontier state.",
+      "Applied proposal vpr_842fd7c44111b1d6 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_0a629eaa09e29f6b",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_0a629eaa09e29f6b"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_e2667a3d1c28817a",
+      "sig_missing_evidence_span_0a629eaa09e29f6b",
+      "sig_proposal_applied_vpr_a8269506e28579aa",
+      "sig_proposal_applied_vpr_f14acb4195031eb7"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_a8269506e28579aa changed frontier state.",
+      "Applied proposal vpr_f14acb4195031eb7 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_0ad9900c3858a900",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_0ad9900c3858a900"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_17c39a6490666e27",
+      "sig_missing_evidence_span_0ad9900c3858a900",
+      "sig_proposal_applied_vpr_8e692e4ba87327fb",
+      "sig_proposal_applied_vpr_f178149d3edeb1a0"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_8e692e4ba87327fb changed frontier state.",
+      "Applied proposal vpr_f178149d3edeb1a0 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_3bde881fed68d7dd",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_3bde881fed68d7dd"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_9a3732d508ed2861",
+      "sig_missing_evidence_span_3bde881fed68d7dd",
+      "sig_proposal_applied_vpr_48072f346e09665f",
+      "sig_proposal_applied_vpr_6908c4cf64f0f4ba"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_48072f346e09665f changed frontier state.",
+      "Applied proposal vpr_6908c4cf64f0f4ba changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_400001d3c1444495",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_400001d3c1444495"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_e809341ca42abd69",
+      "sig_missing_evidence_span_400001d3c1444495",
+      "sig_proposal_applied_vpr_7ec73f42c71df600",
+      "sig_proposal_applied_vpr_ca0af484ed918df1"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_7ec73f42c71df600 changed frontier state.",
+      "Applied proposal vpr_ca0af484ed918df1 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_4b8b2f3759855d6a",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_4b8b2f3759855d6a"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_d18188c175739019",
+      "sig_missing_evidence_span_4b8b2f3759855d6a",
+      "sig_proposal_applied_vpr_9a439efcc0ce8996",
+      "sig_proposal_applied_vpr_a890b1d3027d141b"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_9a439efcc0ce8996 changed frontier state.",
+      "Applied proposal vpr_a890b1d3027d141b changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_4f5940a76981f17a",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_4f5940a76981f17a"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_0b7cf3f3a8550476",
+      "sig_missing_evidence_span_4f5940a76981f17a",
+      "sig_proposal_applied_vpr_82af8f2f0006051d",
+      "sig_proposal_applied_vpr_fbbe4d807040632c"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_82af8f2f0006051d changed frontier state.",
+      "Applied proposal vpr_fbbe4d807040632c changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_5efe3f8c894c16e2",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_5efe3f8c894c16e2"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_4ddafdf6aa424425",
+      "sig_missing_evidence_span_5efe3f8c894c16e2",
+      "sig_proposal_applied_vpr_22db4be1caa94dd4",
+      "sig_proposal_applied_vpr_d5748c1af02c13e2"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_22db4be1caa94dd4 changed frontier state.",
+      "Applied proposal vpr_d5748c1af02c13e2 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_72f5f06b273261eb",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_72f5f06b273261eb"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_c5fa4732de8453bd",
+      "sig_missing_evidence_span_72f5f06b273261eb",
+      "sig_proposal_applied_vpr_6164232eecdf1692",
+      "sig_proposal_applied_vpr_a4dc039b187b6d69"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_6164232eecdf1692 changed frontier state.",
+      "Applied proposal vpr_a4dc039b187b6d69 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_745184f1556eee4b",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_745184f1556eee4b"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_be84a12e6abee3d2",
+      "sig_missing_evidence_span_745184f1556eee4b",
+      "sig_proposal_applied_vpr_0f4c778041109d72",
+      "sig_proposal_applied_vpr_eca979cf72add1b3"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_0f4c778041109d72 changed frontier state.",
+      "Applied proposal vpr_eca979cf72add1b3 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_896034224082b173",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_896034224082b173"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_6ccd134f52b473ee",
+      "sig_missing_evidence_span_896034224082b173",
+      "sig_proposal_applied_vpr_34e42c87aacf1220",
+      "sig_proposal_applied_vpr_b83d64e24329ffe5"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_34e42c87aacf1220 changed frontier state.",
+      "Applied proposal vpr_b83d64e24329ffe5 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_92f782f0e1791fad",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_92f782f0e1791fad"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_88b5969bdc52f29c",
+      "sig_missing_evidence_span_92f782f0e1791fad",
+      "sig_proposal_applied_vpr_365dae3d7e4ce7de",
+      "sig_proposal_applied_vpr_c6ea3a2f4bfada9c"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_365dae3d7e4ce7de changed frontier state.",
+      "Applied proposal vpr_c6ea3a2f4bfada9c changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_aab348416bfdf292",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_aab348416bfdf292"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_4a8e019d3b60b249",
+      "sig_missing_evidence_span_aab348416bfdf292",
+      "sig_proposal_applied_vpr_1cea0804aa8e4b32",
+      "sig_proposal_applied_vpr_30b74969696b381a"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_1cea0804aa8e4b32 changed frontier state.",
+      "Applied proposal vpr_30b74969696b381a changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_b0c0945bfce712a6",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_b0c0945bfce712a6"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_e71f2b05d09cb34a",
+      "sig_missing_evidence_span_b0c0945bfce712a6",
+      "sig_proposal_applied_vpr_27853185c2311dab",
+      "sig_proposal_applied_vpr_4a0f347e762b04a7"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_27853185c2311dab changed frontier state.",
+      "Applied proposal vpr_4a0f347e762b04a7 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_b517036c31ba0350",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_b517036c31ba0350"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_3eae01197e8c4214",
+      "sig_missing_evidence_span_b517036c31ba0350",
+      "sig_proposal_applied_vpr_49868706570dc452",
+      "sig_proposal_applied_vpr_c0d0ef73cdc21478"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_49868706570dc452 changed frontier state.",
+      "Applied proposal vpr_c0d0ef73cdc21478 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_bf7707a82c7bb252",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_bf7707a82c7bb252"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_3cb95fa92b76ef2f",
+      "sig_missing_evidence_span_bf7707a82c7bb252",
+      "sig_proposal_applied_vpr_9cfd459e23ff9ad4",
+      "sig_proposal_applied_vpr_ff46a7050b09e581"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_9cfd459e23ff9ad4 changed frontier state.",
+      "Applied proposal vpr_ff46a7050b09e581 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_d1e1f73ee682f11b",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_d1e1f73ee682f11b"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_9c5b0c4701090721",
+      "sig_missing_evidence_span_d1e1f73ee682f11b",
+      "sig_proposal_applied_vpr_1bd4bc1af934b96b",
+      "sig_proposal_applied_vpr_da6228ae861ada11"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_1bd4bc1af934b96b changed frontier state.",
+      "Applied proposal vpr_da6228ae861ada11 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_e173d0be6bbcea46",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_e173d0be6bbcea46"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_f4fe177560d568b5",
+      "sig_missing_evidence_span_e173d0be6bbcea46",
+      "sig_proposal_applied_vpr_2bfff2585d24907b",
+      "sig_proposal_applied_vpr_b965088659e1c798"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_2bfff2585d24907b changed frontier state.",
+      "Applied proposal vpr_b965088659e1c798 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_e45b382d85f5ebde",
+    "priority": "medium",
+    "priority_score": 175,
+    "target": {
+      "type": "finding",
+      "id": "vf_e45b382d85f5ebde"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_b11d38655f479c1f",
+      "sig_missing_evidence_span_e45b382d85f5ebde",
+      "sig_proposal_applied_vpr_13ce1e48f3c4f4fd",
+      "sig_proposal_applied_vpr_8b22f117c7d9278c"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_13ce1e48f3c4f4fd changed frontier state.",
+      "Applied proposal vpr_8b22f117c7d9278c changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_0baa77910460c953",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_0baa77910460c953"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_ac42cdef8d22e70b",
+      "sig_missing_evidence_span_0baa77910460c953",
+      "sig_proposal_applied_vpr_d4460bfc4377511d"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_d4460bfc4377511d changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_11e2e2a19e75887d",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_11e2e2a19e75887d"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_92db9ae1d5af39f4",
+      "sig_missing_evidence_span_11e2e2a19e75887d",
+      "sig_proposal_applied_vpr_e8f2d600cbebd03d"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_e8f2d600cbebd03d changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_203f4969695ff256",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_203f4969695ff256"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_599d44bc66b0216e",
+      "sig_missing_evidence_span_203f4969695ff256",
+      "sig_proposal_applied_vpr_44f9914c5b11193d"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_44f9914c5b11193d changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_26b3e76e95e01f3e",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_26b3e76e95e01f3e"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_a4c7c632bb7d3d22",
+      "sig_missing_evidence_span_26b3e76e95e01f3e",
+      "sig_proposal_applied_vpr_7b2fa965aa1014d3"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_7b2fa965aa1014d3 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_37afa7032e4b3d06",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_37afa7032e4b3d06"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_6a642400b8e8e7c5",
+      "sig_missing_evidence_span_37afa7032e4b3d06",
+      "sig_proposal_applied_vpr_a7deb3a116a9a51c"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_a7deb3a116a9a51c changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_44e0fc831ac3e089",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_44e0fc831ac3e089"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_f96038a3a7013c00",
+      "sig_missing_evidence_span_44e0fc831ac3e089",
+      "sig_proposal_applied_vpr_74482e3213627d43"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_74482e3213627d43 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_5a1d047a8c85953a",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_5a1d047a8c85953a"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_2ccdfb693083935c",
+      "sig_missing_evidence_span_5a1d047a8c85953a",
+      "sig_proposal_applied_vpr_05864abc06a6a424"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_05864abc06a6a424 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_63f4bcd4f4904a08",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_63f4bcd4f4904a08"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_30334dad5d113f8e",
+      "sig_missing_evidence_span_63f4bcd4f4904a08",
+      "sig_proposal_applied_vpr_0278b354889109bb"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_0278b354889109bb changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_69c0db505746c28e",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_69c0db505746c28e"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_d283bf7016b42b46",
+      "sig_missing_evidence_span_69c0db505746c28e",
+      "sig_proposal_applied_vpr_432a47d996c5ae1d"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_432a47d996c5ae1d changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_8aa6c35eb4287a8f",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_8aa6c35eb4287a8f"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_debafb8077accb00",
+      "sig_missing_evidence_span_8aa6c35eb4287a8f",
+      "sig_proposal_applied_vpr_db8d9ad870195994"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_db8d9ad870195994 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_9c462305947cb237",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_9c462305947cb237"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_b35c4d71d2f85c79",
+      "sig_missing_evidence_span_9c462305947cb237",
+      "sig_proposal_applied_vpr_d19f48e14e67429d"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_d19f48e14e67429d changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_a4c54b1f9ff55bba",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_a4c54b1f9ff55bba"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_3d6fbbc6d03cf374",
+      "sig_missing_evidence_span_a4c54b1f9ff55bba",
+      "sig_proposal_applied_vpr_aa438fc28809dfb1"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_aa438fc28809dfb1 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_d018b0dfe8574a33",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_d018b0dfe8574a33"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_a78382a33d80bfdd",
+      "sig_missing_evidence_span_d018b0dfe8574a33",
+      "sig_proposal_applied_vpr_7ff6228e76041a1d"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_7ff6228e76041a1d changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_d7781ce5f2c7330a",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_d7781ce5f2c7330a"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_b9ff3d8dd467bcc7",
+      "sig_missing_evidence_span_d7781ce5f2c7330a",
+      "sig_proposal_applied_vpr_7092498559ec0e3f"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_7092498559ec0e3f changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_e2252a5f8d8a5049",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_e2252a5f8d8a5049"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_d329d7aab20b623d",
+      "sig_missing_evidence_span_e2252a5f8d8a5049",
+      "sig_proposal_applied_vpr_3ff7da5280e3bb36"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_3ff7da5280e3bb36 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_e6443b35810cc321",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_e6443b35810cc321"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_6bc42453ed3d2626",
+      "sig_missing_evidence_span_e6443b35810cc321",
+      "sig_proposal_applied_vpr_582912e658bdcd87"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_582912e658bdcd87 changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_f58c1d68daec29c3",
+    "priority": "medium",
+    "priority_score": 155,
+    "target": {
+      "type": "finding",
+      "id": "vf_f58c1d68daec29c3"
+    },
+    "signal_ids": [
+      "sig_missing_evidence_locator_vea_f6b6aca975df9d45",
+      "sig_missing_evidence_span_f58c1d68daec29c3",
+      "sig_proposal_applied_vpr_e39490231271928a"
+    ],
+    "reasons": [
+      "Evidence atom lacks a span, table row, page, section, run, or metric locator.",
+      "Finding has no verified evidence span attached.",
+      "Applied proposal vpr_e39490231271928a changed frontier state."
+    ],
+    "recommended_action": "Verify the exact source location or keep this as a weak review lead."
+  },
+  {
+    "id": "rq_7273c1823848f6e3",
+    "priority": "low",
+    "priority_score": 40,
+    "target": {
+      "type": "finding",
+      "id": "vf_7273c1823848f6e3"
+    },
+    "signal_ids": [
+      "sig_proposal_applied_vpr_a3f3e64fc4888fc0",
+      "sig_proposal_applied_vpr_e3d8c0aa1f6869e5"
+    ],
+    "reasons": [
+      "Applied proposal vpr_a3f3e64fc4888fc0 changed frontier state.",
+      "Applied proposal vpr_e3d8c0aa1f6869e5 changed frontier state."
+    ],
+    "recommended_action": "Re-export proof artifacts if this proposal materially changes what reviewers should inspect."
+  },
+  {
+    "id": "rq_c9ab5970cdbcb6af",
+    "priority": "low",
+    "priority_score": 40,
+    "target": {
+      "type": "finding",
+      "id": "vf_c9ab5970cdbcb6af"
+    },
+    "signal_ids": [
+      "sig_proposal_applied_vpr_1879d8894dd07e64",
+      "sig_proposal_applied_vpr_85301ad179e821b3"
+    ],
+    "reasons": [
+      "Applied proposal vpr_1879d8894dd07e64 changed frontier state.",
+      "Applied proposal vpr_85301ad179e821b3 changed frontier state."
+    ],
+    "recommended_action": "Re-export proof artifacts if this proposal materially changes what reviewers should inspect."
+  },
+  {
+    "id": "rq_eee5b19763f3c625",
+    "priority": "low",
+    "priority_score": 40,
+    "target": {
+      "type": "finding",
+      "id": "vf_eee5b19763f3c625"
+    },
+    "signal_ids": [
+      "sig_proposal_applied_vpr_11afa6e155380c7f",
+      "sig_proposal_applied_vpr_d56eb9bd0cb6b9fb"
+    ],
+    "reasons": [
+      "Applied proposal vpr_11afa6e155380c7f changed frontier state.",
+      "Applied proposal vpr_d56eb9bd0cb6b9fb changed frontier state."
+    ],
+    "recommended_action": "Re-export proof artifacts if this proposal materially changes what reviewers should inspect."
+  },
+  {
+    "id": "rq_f16e736879b4b42c",
+    "priority": "low",
+    "priority_score": 40,
+    "target": {
+      "type": "finding",
+      "id": "vf_f16e736879b4b42c"
+    },
+    "signal_ids": [
+      "sig_proposal_applied_vpr_206f9fda54ef0d0f",
+      "sig_proposal_applied_vpr_2436bdba91b28491"
+    ],
+    "reasons": [
+      "Applied proposal vpr_206f9fda54ef0d0f changed frontier state.",
+      "Applied proposal vpr_2436bdba91b28491 changed frontier state."
+    ],
+    "recommended_action": "Re-export proof artifacts if this proposal materially changes what reviewers should inspect."
+  }
+]

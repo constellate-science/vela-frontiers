@@ -1,0 +1,23 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_b5b18b9d31ce2b53",
+  "kind": "evidence_atom.locator_repaired",
+  "target": {
+    "type": "evidence_atom",
+    "id": "vea_94fe872efeb6e477"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "timestamp": "2026-05-21T02:55:23.522551+00:00",
+  "reason": "Exact arXiv locator for Ellenberg-Gijswijt cap-set result; records a reviewable source locator without changing the finding assertion.",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:4478e93f6ada2bdcd6a772fd34fee39e5f7de1790beb98482771e904a3f7e8d3",
+  "payload": {
+    "locator": "arxiv:1605.09223",
+    "proposal_id": "vpr_432fe23d5889f731",
+    "source_id": "vs_3d86039e17bccee8"
+  },
+  "caveats": []
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_9ee209950ed8eca2",
+  "kind": "finding.retracted",
+  "target": {
+    "type": "finding",
+    "id": "vf_c9ab5970cdbcb6af"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-17T14:43:05.459637+00:00",
+  "reason": "Duplicate of canonical vf_bf7707a82c7bb252 (same claim OEIS A309370 a(10)>=66); its only backing artifact was the retired legacy remote-mode record va_86d1eafa7a5efdd5. The canonical finding is frozen-verifier-backed by sidon-a10.witness.json.",
+  "before_hash": "sha256:a708274655f8a27358f44779420ef69073003f3036de00f1c9275b47c51de06d",
+  "after_hash": "sha256:1a8cdde6edfb9c30fabac45f33565af04d10eed255d6d5f435b17b7643a81706",
+  "payload": {
+    "affected": 0,
+    "cascade": [],
+    "proposal_id": "vpr_85301ad179e821b3"
+  },
+  "caveats": [
+    "Retraction impact is simulated over declared dependency links."
+  ],
+  "signature": "f2c1610657b494ebe81c6c2d447699b4f119b0f17367df8cccfa24bde9799473cda97de57eeeb15d71090d8acef19077cafb29e118ba882cbfdd9b1fa429ff0e"
+}

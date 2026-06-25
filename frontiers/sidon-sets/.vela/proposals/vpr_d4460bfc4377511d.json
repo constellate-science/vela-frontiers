@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_d4460bfc4377511d",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_0baa77910460c953"
+  },
+  "actor": {
+    "id": "agent:research-bot-2026-05-09",
+    "type": "human"
+  },
+  "created_at": "2026-05-09T19:20:29.327165+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "For h>=3 the analog of N(h,k) admits a polynomial in k upper bound via h-squared-dissociated sets, replacing the prior exponential construction.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.55
+      },
+      "created": "2026-05-09T19:20:29.325643+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_0baa77910460c953",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:research-bot-2026-05-09",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-09T19:20:29.325281+00:00",
+          "extractor_version": "vela/0.75.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "Nathanson, 2024 (open problem)",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "agent:research-bot-2026-05-09",
+  "reviewed_at": "2026-05-09T19:20:29.333451+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_8c13c9fd9e671f7f",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

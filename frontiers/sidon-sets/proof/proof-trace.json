@@ -1,0 +1,42 @@
+{
+  "trace_version": "0.2.0",
+  "generated_at": "2026-06-17T14:43:12.000805+00:00",
+  "source": "Additive combinatorics: Sidon sets and N(h,k) bounds",
+  "source_hash": "f956f58e7aee6d8159f32da0f29aedfa4e92bee3b4d584c9bd402c04c3c2e6d2",
+  "snapshot_hash": "4dc46fe8ca9bec56b8e46f73c2f99c3c0398830f4c48a0ce5eabab2b8713b8a7",
+  "event_log_hash": "4a138f1f2e16af8d24926c9b0a84869872e173533adb8501c93bd4a6db6d71dc",
+  "proposal_state_hash": "414ced74e1791cc0d72f3f399e7720b02ba1a71738473b34d19b97121a673b00",
+  "replay_status": "ok",
+  "packet_manifest_hash": null,
+  "schema_version": "0.10.0",
+  "checked_artifacts": [
+    "manifest.json",
+    "packet.lock.json",
+    "proof-trace.json",
+    "ro-crate-metadata.jsonld",
+    "findings/full.json",
+    "artifacts/artifacts.json",
+    "artifacts/artifact-audit.json",
+    "artifacts/blob-map.json",
+    "sources/source-registry.json",
+    "research-traces/research-traces.json",
+    "research-traces/verifier-attachments.json",
+    "evidence/evidence-atoms.json",
+    "evidence/source-evidence-map.json",
+    "conditions/condition-records.json",
+    "events/events.json",
+    "events/replay-report.json",
+    "proposals/proposals.json",
+    "reviews/review-events.json",
+    "reviews/confidence-updates.json",
+    "check-summary.json"
+  ],
+  "caveats": [
+    "Candidate contradictions, gaps, and bridges require human review.",
+    "Evidence ranking is heuristic: meta-analysis > RCT > cohort > case-control > case-report > in-vitro.",
+    "PubMed prior-art checks are rough signals, not proof of novelty.",
+    "Observer policy output is weighted reranking, not definitive disagreement.",
+    "Retraction impact is simulated over declared dependency links."
+  ],
+  "status": "ok"
+}

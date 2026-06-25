@@ -1,0 +1,10 @@
+{
+  "latest_packet": {
+    "generated_at": "2026-06-20T14:25:58.647840+00:00",
+    "snapshot_hash": "6239652cd07a34bdf0aaf7a19398b61fea2942db3bde83bcc659489cbe864eb4",
+    "event_log_hash": "71497ccc3c8e7cfb57a6e918544c36c46c746fe1bb4e56d025e5b01e21dce759",
+    "packet_manifest_hash": "977ccb55c3e8db4d0c58a038c03b4e10d625f84799cb3fa4ac2d0442ba749c2c",
+    "status": "current"
+  },
+  "last_event_at_export": "2026-06-17T14:42:49.320708+00:00"
+}

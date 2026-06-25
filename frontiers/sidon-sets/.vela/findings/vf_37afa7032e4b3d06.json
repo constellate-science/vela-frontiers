@@ -1,0 +1,66 @@
+{
+  "id": "vf_37afa7032e4b3d06",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "B_h sets, the h-fold generalization of Sidon sets, have maximum density satisfying |A| <= (h! * N)^{1/h} + O(N^{1/(2h)}) in {1,...,N}.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.85,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "B_h sets, Erdos 1955",
+    "authors": [
+      {
+        "name": "agent:research-bot-2026-05-09",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-09T22:52:52.281901+00:00",
+      "extractor_version": "vela/0.81.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-09T22:52:52.281913+00:00",
+  "updated": null
+}

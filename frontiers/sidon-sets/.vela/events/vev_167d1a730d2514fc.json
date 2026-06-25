@@ -1,0 +1,24 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_167d1a730d2514fc",
+  "kind": "review.rejected",
+  "target": {
+    "type": "proposal",
+    "id": "vpr_d619346a962a29ff"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "timestamp": "2026-05-20T07:25:38.357735+00:00",
+  "reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "legacy_backfill": true,
+    "proposal_id": "vpr_d619346a962a29ff",
+    "proposal_kind": "finding.add",
+    "verdict": "rejected"
+  },
+  "caveats": []
+}

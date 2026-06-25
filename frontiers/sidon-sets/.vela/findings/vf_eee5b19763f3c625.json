@@ -1,0 +1,71 @@
+{
+  "id": "vf_eee5b19763f3c625",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Ellenberg-Gijswijt extend Croot-Lev-Pach to prove a 3-AP-free subset of F_3^n has size at most 2.756^n, settling the cap-set problem up to a constant in the exponent.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "section": "arXiv abstract",
+        "text": "arXiv:1605.09223 states that the Croot-Lev-Pach method bounds progression-free subsets of F_q^n by c^n with c < q; for q = 3 this is the cap-set problem."
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.85,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "Ellenberg-Gijswijt 2017",
+    "authors": [
+      {
+        "name": "agent:research-bot-2026-05-09",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-09T22:52:52.565710+00:00",
+      "extractor_version": "vela/0.81.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-09T22:52:52.565719+00:00",
+  "updated": null
+}

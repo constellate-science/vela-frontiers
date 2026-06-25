@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_f51ae4c8da75740a",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_013da185b81df2b4"
+  },
+  "actor": {
+    "id": "agent:vela-curation-bot",
+    "type": "human"
+  },
+  "created_at": "2026-05-10T17:04:45.708218+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Cilleruelo 2010: B_2[g] sets in {1,...,N} (sets where each integer has at most g representations as a sum of two elements) have cardinality at most sqrt(g*N) + O(N^(1/4)), generalizing the Lindstrom-Erdos-Turan bound from g=1 to g>=2.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "B_2[g] sets in {1,...,N} for g >= 1; upper bound on cardinality scaling as sqrt(g*N)."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.9
+      },
+      "created": "2026-05-10T17:04:45.708175+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_013da185b81df2b4",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-curation-bot",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-10T17:04:45.708162+00:00",
+          "extractor_version": "vela/0.107.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "journal": "Combinatorica",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "Cilleruelo 2010",
+        "year": 2010
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:solo-maintainer",
+  "reviewed_at": "2026-05-20T07:25:38.386988+00:00",
+  "decision_reason": "Unsupported finding.add proposal: no source_refs or evidence spans supplied; reject rather than promote unsourced frontier truth.",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

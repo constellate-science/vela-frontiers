@@ -1,0 +1,65 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_4b72f36cba6fe4c0",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_49c6b11cca269230"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "timestamp": "2026-05-21T10:21:14.835108+00:00",
+  "reason": "Register theorem-level locators for the Sidon v0.358 slice without claiming formal proof.",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:6a4b15192dbaf61c514b0fefef80b97127b65249311f37e54bb23334eac7fb1a",
+      "created": "2026-05-21T10:21:14.815377+00:00",
+      "id": "va_49c6b11cca269230",
+      "kind": "source_file",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/6a4b15192dbaf61c514b0fefef80b97127b65249311f37e54bb23334eac7fb1a",
+      "media_type": "application/json",
+      "metadata": {
+        "carina_kind": "theorem_locator_manifest",
+        "formalization_status": "slot_only_not_formalized"
+      },
+      "name": "Sidon theorem locator manifest v0.358",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-21T10:21:14.814365+00:00",
+          "extractor_version": "0.337.0",
+          "method": "artifact_deposit",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "database_record",
+        "title": "Sidon theorem locator manifest v0.358",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 2058,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_7273c1823848f6e3",
+        "vf_eee5b19763f3c625",
+        "vf_f16e736879b4b42c"
+      ]
+    },
+    "proposal_id": "vpr_42488ea6005dd490"
+  },
+  "caveats": []
+}

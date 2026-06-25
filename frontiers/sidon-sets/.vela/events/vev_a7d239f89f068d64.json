@@ -1,0 +1,66 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_a7d239f89f068d64",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_825b900b32e74b6a"
+  },
+  "actor": {
+    "id": "reviewer:solo-maintainer",
+    "type": "human"
+  },
+  "timestamp": "2026-05-21T10:21:21.998923+00:00",
+  "reason": "Register Lean proof-assistant slots for theorem-level Sidon follow-up; no proof completion is claimed.",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:9988da3bc38f86237f876719cc49a45a7ca5f3e2ca9016d9b008b4484a1040e3",
+      "created": "2026-05-21T10:21:21.996402+00:00",
+      "id": "va_825b900b32e74b6a",
+      "kind": "source_file",
+      "license": "Apache-2.0",
+      "locator": ".vela/artifact-blobs/sha256/9988da3bc38f86237f876719cc49a45a7ca5f3e2ca9016d9b008b4484a1040e3",
+      "media_type": "text/x-lean",
+      "metadata": {
+        "carina_kind": "proof_assistant_slot",
+        "carina_proof_tool": "lean4",
+        "formalization_status": "slot_only_not_formalized"
+      },
+      "name": "Sidon Lean theorem slots v0.358",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-21T10:21:21.996383+00:00",
+          "extractor_version": "0.337.0",
+          "method": "artifact_deposit",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "Apache-2.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "database_record",
+        "title": "Sidon Lean theorem slots v0.358",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 1933,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_7273c1823848f6e3",
+        "vf_eee5b19763f3c625",
+        "vf_f16e736879b4b42c"
+      ]
+    },
+    "proposal_id": "vpr_28004b2e33b52c15"
+  },
+  "caveats": []
+}

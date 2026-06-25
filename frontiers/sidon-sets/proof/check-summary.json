@@ -1,0 +1,112 @@
+{
+  "status": "ok",
+  "generated_at": "2026-06-17T14:43:12.000805+00:00",
+  "checked_artifacts": [
+    "manifest.json",
+    "packet.lock.json",
+    "proof-trace.json",
+    "ro-crate-metadata.jsonld",
+    "findings/full.json",
+    "artifacts/artifacts.json",
+    "artifacts/artifact-audit.json",
+    "artifacts/blob-map.json",
+    "sources/source-registry.json",
+    "research-traces/research-traces.json",
+    "research-traces/verifier-attachments.json",
+    "evidence/evidence-atoms.json",
+    "evidence/source-evidence-map.json",
+    "conditions/condition-records.json",
+    "events/events.json",
+    "events/replay-report.json",
+    "proposals/proposals.json",
+    "reviews/review-events.json",
+    "reviews/confidence-updates.json",
+    "check-summary.json"
+  ],
+  "artifact_audit": {
+    "ok": true,
+    "command": "artifact-audit",
+    "frontier": "examples/sidon-sets",
+    "artifact_count": 21,
+    "checked_local_blobs": 21,
+    "local_blob_bytes": 1715951,
+    "by_kind": {
+      "dataset": 18,
+      "source_file": 3
+    },
+    "by_storage_mode": {
+      "local_blob": 21
+    },
+    "issue_count": 0,
+    "issues": []
+  },
+  "counts": {
+    "findings": 40,
+    "sources": 40,
+    "evidence_atoms": 40,
+    "condition_records": 40,
+    "review_events": 0,
+    "proposals": 75,
+    "gaps": 0,
+    "contested": 1,
+    "bridge_entities": 0,
+    "contradiction_edges": 0
+  },
+  "proposal_summary": {
+    "total": 75,
+    "pending_review": 0,
+    "accepted": 0,
+    "rejected": 9,
+    "applied": 66,
+    "by_kind": {
+      "artifact.assert": 1,
+      "evidence_atom.locator_repair": 3,
+      "finding.add": 48,
+      "finding.retract": 1,
+      "finding.review": 1,
+      "finding.span_repair": 3,
+      "verifier.attach": 18
+    },
+    "duplicate_ids": [],
+    "invalid_targets": []
+  },
+  "proof_state": {
+    "latest_packet": {
+      "generated_at": "2026-06-17T10:51:15.113349+00:00",
+      "snapshot_hash": "185f17ba8a8d01e1fe6f119bb773e26c08a7a48da0fdefa4a2ba0d0e121f5ac3",
+      "event_log_hash": "855686921ca152ae25679c784a2b2e95a48f14d5d3a1ca952393e9c82cea8133",
+      "packet_manifest_hash": "1575141e8fcc9c6ab2354bc5228ac536eb39494ebbbdaa8f2016d7c40f3e3181",
+      "status": "stale"
+    },
+    "last_event_at_export": "2026-06-17T00:14:24.554204+00:00",
+    "stale_reason": "Applied proposal vpr_85301ad179e821b3 after latest proof export"
+  },
+  "source_debt": {
+    "total": 39,
+    "critical": 36,
+    "high": 3,
+    "medium": 0,
+    "review": 0,
+    "missing_locator_rows": 36,
+    "missing_content_hash_rows": 20
+  },
+  "reviewer_sections": {
+    "source_debt": "reviewer/source-debt.json",
+    "research_trace_provenance": "reviewer/research-trace-provenance.json",
+    "score_ledger": "reviewer/score-ledger.json",
+    "correction_returns": "reviewer/correction-returns.json",
+    "frontier_graph": "reviewer/frontier-graph.json",
+    "impact_index": "reviewer/impact-index.json",
+    "guided_tours": "reviewer/guided-tours.json",
+    "frontier_freshness_plan": "reviewer/frontier-freshness-plan.json",
+    "replay_manifest": "reviewer/replay-manifest.json"
+  },
+  "reviewer_replay_manifest": "reviewer/replay-manifest.json",
+  "caveats": [
+    "Candidate contradictions, gaps, and bridges require human review.",
+    "Evidence ranking is heuristic: meta-analysis > RCT > cohort > case-control > case-report > in-vitro.",
+    "PubMed prior-art checks are rough signals, not proof of novelty.",
+    "Observer policy output is weighted reranking, not definitive disagreement.",
+    "Retraction impact is simulated over declared dependency links."
+  ]
+}

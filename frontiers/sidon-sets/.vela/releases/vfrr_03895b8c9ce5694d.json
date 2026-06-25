@@ -1,0 +1,12 @@
+{
+  "schema": "vela.frontier_release.v0.1",
+  "release_id": "vfrr_03895b8c9ce5694d",
+  "frontier_id": "vfr_496956067dc5ad79",
+  "name": "v1.0-oeis-adopted",
+  "notes": "First archived edition: A309370 witnesses a(7)..a(24), OEIS-adopted lower bounds n=8..22 (approved Jun 2026), all witnesses re-checkable via vela reproduce",
+  "owner_epoch": 0,
+  "snapshot_hash": "df3ba69ba4b7931c1214e9d35af168f913a308a5aa156885893dda882e5e8a6d",
+  "event_log_hash": "581d545f25976b0961301c2ef06590933893e63919f6612163dd814be6984e92",
+  "released_at": "2026-06-10T17:06:55.422654+00:00",
+  "doi": "10.5281/zenodo.20709455"
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_a7deb3a116a9a51c",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_37afa7032e4b3d06"
+  },
+  "actor": {
+    "id": "agent:research-bot-2026-05-09",
+    "type": "human"
+  },
+  "created_at": "2026-05-09T22:52:52.281958+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "B_h sets, the h-fold generalization of Sidon sets, have maximum density satisfying |A| <= (h! * N)^{1/h} + O(N^{1/(2h)}) in {1,...,N}.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.85
+      },
+      "created": "2026-05-09T22:52:52.281913+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_37afa7032e4b3d06",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:research-bot-2026-05-09",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-09T22:52:52.281901+00:00",
+          "extractor_version": "vela/0.81.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "B_h sets, Erdos 1955",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "agent:research-bot-2026-05-09",
+  "reviewed_at": "2026-05-09T22:52:52.283136+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_bb6756d553ce04a1",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

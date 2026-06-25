@@ -1,0 +1,64 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_f52122b7907eff87",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_411fd07ce6211123"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-17T06:35:17.338653+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:f80962f268c22db318316a4c364c172d9fc1d8bcb346c6651003b0e51b20e539",
+      "created": "2026-06-17T06:35:17.315350+00:00",
+      "id": "va_411fd07ce6211123",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/f80962f268c22db318316a4c364c172d9fc1d8bcb346c6651003b0e51b20e539",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::sidon",
+        "witness_file": "sidon-a16.witness.json",
+        "witness_kind": "sidon"
+      },
+      "name": "Frozen-verifier witness: sidon-a16 (sidon)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: sidon-a16 (sidon)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 25349,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_4b8b2f3759855d6a"
+      ]
+    },
+    "proposal_id": "vpr_3116ea193f6fced6"
+  },
+  "caveats": []
+}
