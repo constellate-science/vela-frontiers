@@ -1,17 +1,17 @@
 # Frontiers
 
-This directory contains only release-critical sample frontier state.
+Git-backed frontier directories. Each `<name>/` is a full frontier with its
+`.vela/` event log committed, re-derived on every PR by the `vela-check` Action
+(see the root README) — a required status check on `main`.
 
-Tracked artifacts:
+- `sidon-sets/` — Sidon sets / OEIS A309370 (`vfr_496956067dc5ad79`), the
+  keystone math frontier.
 
-- `bbb-alzheimer.json` - canonical BBB/Alzheimer frontier sample for the v0 proof path.
-
-Large generated frontiers are not committed by default. Generate them locally with `vela compile`, validate them with `vela check`, and attach heavyweight samples to releases when they are needed for reproducible demos.
-
-Useful commands:
+To contribute: fork this repo, add or edit a witness under a frontier, and open
+a PR. The frozen verifiers re-derive it from scratch; a reviewer's
+human-key-signed accept lands the change.
 
 ```bash
-vela stats frontiers/bbb-alzheimer.json
-vela check frontiers/bbb-alzheimer.json
-vela proof frontiers/bbb-alzheimer.json --out proof-packet
+vela reproduce frontiers/sidon-sets   # re-verify every witness
+vela check     frontiers/sidon-sets   # structural / signal gate
 ```
