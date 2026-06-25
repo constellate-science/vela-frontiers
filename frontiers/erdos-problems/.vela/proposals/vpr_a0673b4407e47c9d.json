@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_a0673b4407e47c9d",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_021aab0b6de8d3cb"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:20:23.103205+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #30 (vf_04c2ff267458866e) [shares_technique, confidence 0.6]: Both concern the representation function of a Sidon/B_2 set in {1,...,N}; P14's count of non-uniquely-representable integers and P30's max Sidon size both hinge on bounding 1_A*1_A. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #30 (vf_04c2ff267458866e) [shares_technique, confidence 0.6]: Both concern the representation function of a Sidon/B_2 set in {1,...,N}; P14's count of non-uniquely-representable integers and P30's max Sidon size both hinge on bounding 1_A*1_A. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:29:17.142574+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

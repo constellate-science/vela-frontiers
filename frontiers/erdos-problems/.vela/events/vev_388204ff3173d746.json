@@ -1,0 +1,25 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_388204ff3173d746",
+  "kind": "finding.asserted",
+  "target": {
+    "type": "finding",
+    "id": "vf_70f11d3a5426c0fc"
+  },
+  "actor": {
+    "id": "reviewer:erdos-db-trust",
+    "type": "human"
+  },
+  "timestamp": "2026-05-30T01:04:16.335763+00:00",
+  "reason": "Candidate claim vc_af586e21dda465de imported from artifact packet cap_61973ee16b553d57",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:c98bc8931ed29b35c75724448cbbc02a6099edbc1524461b2912a75463588477",
+  "payload": {
+    "proposal_id": "vpr_3c34b636516449f2"
+  },
+  "caveats": [
+    "Source adapter output is source/registry metadata, not a scientific conclusion.",
+    "Spine record from the erdosproblems.com community database (teorth/erdosproblems); status reflects last_update 2025-08-31. Results/attempts are a separate literature-extraction layer.",
+    "Agent output is source material until reviewer acceptance."
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_e2315dc4f4700095",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_5a2c00494580cf86"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:20:34.100853+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #66 (vf_87595279cb9eda1e) [related, confidence 0.6]: Both study the asymptotic behaviour of the representation function 1_A*1_A(n): P28 on its limsup being infinite for cofinite sumsets, P66 on whether 1_A*1_A(n)/log n can tend to a nonzero limit. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #66 (vf_87595279cb9eda1e) [related, confidence 0.6]: Both study the asymptotic behaviour of the representation function 1_A*1_A(n): P28 on its limsup being infinite for cofinite sumsets, P66 on whether 1_A*1_A(n)/log n can tend to a nonzero limit. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:30:50.400888+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

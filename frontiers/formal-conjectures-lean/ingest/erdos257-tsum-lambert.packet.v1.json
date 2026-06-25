@@ -1,0 +1,60 @@
+{
+  "schema": "carina.artifact_packet.v0.1",
+  "packet_id": "cap_beef856ac1c8e4ce",
+  "producer": {
+    "kind": "agent",
+    "id": "agent:canopus-lean-2026-06-14",
+    "name": "Canopus formal-math prover (Opus 4.8, parallel subagent)"
+  },
+  "topic": "Kernel-verified Lean proof closing an UNCLAIMED open sorry in Erd\u0151s Problem 257 (formal-conjectures)",
+  "created_at": "2026-06-14T00:00:00.000000+00:00",
+  "artifacts": [
+    {
+      "id": "va_e76262c0020bf91d",
+      "kind": "code",
+      "title": "Lean 4 proof of Erdos257 tsum_top_eq (Lambert series \u22111/(2^n-1)=\u2211d(n)/2^n), kernel-verified",
+      "locator": "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/257.lean",
+      "content_hash": "e76262c0020bf91dd4db833b655a5bdabeef856ac1c8e4cead11e61a00498104",
+      "parents": [],
+      "metadata": {
+        "repo": "google-deepmind/formal-conjectures",
+        "file": "FormalConjectures/ErdosProblems/257.lean",
+        "declaration": "Erdos257.erdos_257.variants.tsum_top_eq",
+        "toolchain": "leanprover/lean4:v4.27.0",
+        "verifier": "lean4 kernel (lake env lean)",
+        "axioms": "propext, Classical.choice, Quot.sound (no sorryAx)",
+        "method": "instantiate Mathlib tsum_pow_div_one_sub_eq_tsum_sigma at r=1/2,k=0; rewrite (1/2)^n/(1-(1/2)^n)=1/(2^n-1) and sigma0(n)(1/2)^n=d(n)/2^n; bridge \u2115+ to \u2115 (n=0 term vanishes both sides); summability by geometric domination",
+        "proof_lines": 83,
+        "unclaimed": "no open PR/issue, no formal_proof annotation (verified 2026-06-14)",
+        "exit_code": 0
+      }
+    }
+  ],
+  "candidate_claims": [
+    {
+      "id": "vc_d4db833b655a5bda",
+      "assertion": "The Lean 4 theorem `Erdos257.erdos_257.variants.tsum_top_eq` is proven and kernel-verified (axioms: propext, Classical.choice, Quot.sound; no sorryAx): the Lambert-series identity \u2211_{n\u22651} 1/(2^n - 1) = \u2211_{n\u22651} d(n)/2^n, where d(n) is the number of divisors of n. Closes a previously-open, UNCLAIMED `sorry` (category: textbook) in google-deepmind/formal-conjectures Erd\u0151s Problem 257.",
+      "assertion_type": "theoretical",
+      "evidence_artifact_ids": [
+        "va_e76262c0020bf91d"
+      ],
+      "source_refs": [
+        "https://www.erdosproblems.com/257",
+        "github.com/google-deepmind/formal-conjectures/blob/main/FormalConjectures/ErdosProblems/257.lean"
+      ],
+      "conditions": [
+        "domain:analytic_number_theory",
+        "verifier:lean4_kernel",
+        "category:textbook",
+        "result:lambert_series_divisor_identity",
+        "open_sorry_closed:true",
+        "unclaimed_upstream:true"
+      ],
+      "confidence": 0.99,
+      "caveats": [
+        "The textbook Lambert-series identity (a building block of Erd\u0151s 257), not the open Erd\u0151s 257 problem itself (irrationality), which remains sorry.",
+        "Kernel-verified locally; genuinely unclaimed upstream (no open PR/issue/annotation) so this one IS upstream-PR-worthy via the hosted-fork formal_proof route (83 lines > the 50-line inline cap)."
+      ]
+    }
+  ]
+}

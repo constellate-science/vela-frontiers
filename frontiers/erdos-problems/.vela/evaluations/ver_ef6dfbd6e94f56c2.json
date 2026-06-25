@@ -1,0 +1,16 @@
+{
+  "benchmark_id": "erdos:sidon-verifier:v1",
+  "evaluated_at": "2026-05-12T18:00:00Z",
+  "evaluation_kind": "benchmark",
+  "evaluator_actor": "lab:vela_erdos_bench",
+  "evidence_refs": [],
+  "notes": "Sidon-verifier benchmark, 3-case corpus.   powers_of_2_to_64: ok (Sidon);   sidon_5_classic: ok (Sidon);   not_sidon_1_2_3_4: ok (not Sidon)",
+  "outcome": "succeeded",
+  "record_id": "ver_ef6dfbd6e94f56c2",
+  "schema": "vela.evaluation_record.v0.1",
+  "score": 1.0,
+  "signature": "a5107990cf135ceee6df8e65eec88f09dfcd02aab7aacef74533d718abf951ed1289ed651afe3d7320905695ea0c58e1a8d5120b6a6108a68c61fecdf535ac0f",
+  "signer_pubkey_hex": "4cda22411c3b687ea3bd8e676fea4d8b7cc3036dda9592dabf3671b4ad4e74e6",
+  "target_id": "vtd_f5aa280f54dd42d4",
+  "target_kind": "tool_descriptor"
+}

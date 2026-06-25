@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_5685839bea1d2a0a",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_b3b3b5863382d573"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:22:06.997970+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #396 (vf_6514a3669c0d3857) [shares_technique, confidence 0.55]: Both attack the divisor structure of binomial coefficients via prime-power valuations from Kummer's theorem (387: existence of a divisor in (cn,n]; 396: a falling product dividing the central coefficient). -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #396 (vf_6514a3669c0d3857) [shares_technique, confidence 0.55]: Both attack the divisor structure of binomial coefficients via prime-power valuations from Kummer's theorem (387: existence of a divisor in (cn,n]; 396: a falling product dividing the central coefficient). -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:34.007863+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

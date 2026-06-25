@@ -1,0 +1,74 @@
+{
+  "id": "vf_62a45cb98acd1c8d",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #350 has status 'proved (lean)'. Statement: If `A ⊂ ℕ` is a finite set of integers all of whose subset sums are distinct then `∑ n ∈ A, 1/n < 2`. Proved by Ryavec. This was proved by Ryavec, who did not appear to ever publish the proof. Ryavec's proof is reproduced in [BeEr74]. More generally, Ryavec's proof delivers that $\\sum_{n\\in A}\\frac{1}{n}\\leq 2-2^{1-\\lvert A\\rvert},$ with equality if and only if $A=\\{1,2,\\ldots,2^k\\}$. This was formalized in Lean by Alexeev using Aristotle. Topics: number theory, additive combinatorics. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_ceac59080ace29f1"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/350",
+    "title": "cap_61973ee16b553d57 · vc_ceac59080ace29f1",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

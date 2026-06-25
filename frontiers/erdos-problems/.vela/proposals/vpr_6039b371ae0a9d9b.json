@@ -1,0 +1,130 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_6039b371ae0a9d9b",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_0626bf66176bb57e"
+  },
+  "actor": {
+    "id": "agent:canopus-erdos",
+    "type": "agent"
+  },
+  "created_at": "2026-06-04T00:25:33.952986+00:00",
+  "reason": "Candidate claim vc_af3c54dc227d3479 imported from artifact packet cap_3130f5ceb6cfc895",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-03T00:00:00Z",
+      "packet_id": "cap_3130f5ceb6cfc895",
+      "producer": {
+        "id": "agent:canopus-erdos",
+        "kind": "source_adapter",
+        "name": "Canopus Erdős attempt write-back"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős attack — Canopus attempt ledger (compounding state)"
+    },
+    "candidate_claim_id": "vc_af3c54dc227d3479",
+    "evidence_artifact_ids": [
+      "va_248aab775ee6ed55"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #488 [partial_proof/draft]: Whether |B∩[1,m]|/m < 2|B∩[1,n]|/n for B=multiples of a finite set A. Exhaustive+random search over ~16000 families: ZERO counterexamples; worst ratio always single-element A={a} at n=2a-1,m=2a giving — Whether |B∩[1,m]|/m < 2|B∩[1,n]|/n for B=multiples of a finite set A. Exhaustive+random search over ~16000 families: ZERO counterexamples; worst ratio always single-element A={a} at n=2a-1,m=2a giving exactly 2-1/a (sharp, unattained). Single-element subcase proven; general union-of-APs case open (slack arguments fail at the tight constant 2).",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.5
+      },
+      "created": "2026-06-03T00:00:00Z",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_248aab775ee6ed55",
+            "artifact_packet_id": "cap_3130f5ceb6cfc895",
+            "candidate_claim_id": "vc_af3c54dc227d3479"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_0626bf66176bb57e",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Canopus Erdős attempt write-back",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T00:00:00Z",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:canopus-erdos",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_3130f5ceb6cfc895 · vc_af3c54dc227d3479",
+        "url": "https://www.erdosproblems.com/488",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_3130f5ceb6cfc895",
+    "https://www.erdosproblems.com/488",
+    "packet_artifact:va_248aab775ee6ed55"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:44.319981+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Draft attempt records (reductions/transfers/partials); reviewer accepts the verified ones. Not asserted as proven theorems.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:canopus-erdos",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_3130f5ceb6cfc895",
+    "started_at": "2026-06-03T00:00:00Z",
+    "context": {
+      "artifact_packet_id": "cap_3130f5ceb6cfc895",
+      "producer_name": "Canopus Erdős attempt write-back",
+      "topic": "Erdős attack — Canopus attempt ledger (compounding state)"
+    }
+  }
+}

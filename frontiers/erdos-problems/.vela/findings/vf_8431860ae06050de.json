@@ -1,0 +1,74 @@
+{
+  "id": "vf_8431860ae06050de",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #535 remains OPEN. Statement: Let $r \\geq 3$, and let $f_r(N)$ denote the size of the largest subset of $\\{1,\\ldots,N\\}$ such that no subset of size $r$ has the same pairwise greatest common divisor between all elements. Erdős [Er64] proved that $f_3(N) > N^{c/\\log\\log N}$ for some constant $c > 0$, and conjectured this should also be an upper bound; here we state the conjectural upper bound for all $r \\geq 3$. See also [536]. Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_8d3c7010373d5e55"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/535",
+    "title": "cap_61973ee16b553d57 · vc_8d3c7010373d5e55",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

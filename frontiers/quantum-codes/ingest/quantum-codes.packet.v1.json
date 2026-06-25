@@ -1,0 +1,79 @@
+{
+  "schema": "carina.artifact_packet.v0.1",
+  "packet_id": "cap_a1b2c3d4e5f60718",
+  "producer": {
+    "kind": "source_adapter",
+    "id": "adapter:stabilizer-code-verifier",
+    "name": "Stabilizer code frozen verifier"
+  },
+  "topic": "Certified [[n,k,d]] parameters of small stabilizer quantum codes",
+  "created_at": "2026-06-02T23:40:00.000000+00:00",
+  "artifacts": [
+    {
+      "id": "va_qcverify00000001",
+      "kind": "code",
+      "title": "Frozen stabilizer-code verifier and certificate set ([[4,2,2]], [[5,1,3]], [[7,1,3]], [[9,1,3]])",
+      "locator": "projects/quantum-codes/.vela/workspaces/vtask_a1b2c3d4e5f60718/certificates.json",
+      "content_hash": "7134a5134ebfe7229373db39c725690695a2efb9b0408141a110e13793e328cf",
+      "parents": [],
+      "metadata": {
+        "verifier": "verify.py",
+        "method": "exact recomputation of k = n - rank and distance d (lightest logical) over the full Pauli group",
+        "task": "vtask_a1b2c3d4e5f60718",
+        "exit_code": 0
+      }
+    }
+  ],
+  "candidate_claims": [
+    {
+      "id": "vc_qc4220000000001",
+      "assertion": "The [[4,2,2]] code with stabilizers XXXX, ZZZZ encodes 2 logical qubits in 4 physical qubits with distance 2, verified by exact recomputation of k and d.",
+      "assertion_type": "computational",
+      "evidence_artifact_ids": ["va_qcverify00000001"],
+      "source_refs": ["Gottesman 1997", "projects/quantum-codes/.vela/workspaces/vtask_a1b2c3d4e5f60718/verify.py"],
+      "conditions": ["family:detection_code", "n:4", "k:2", "d:2", "verifier:frozen_pauli_enumeration"],
+      "confidence": 0.97,
+      "caveats": ["Parameters recomputed by a frozen brute-force verifier over the full Pauli group; exit 0."]
+    },
+    {
+      "id": "vc_qc5130000000001",
+      "assertion": "The perfect five-qubit code [[5,1,3]] (cyclic stabilizers XZZXI and rotations) encodes 1 logical qubit in 5 physical qubits with distance 3, and is optimal at its length.",
+      "assertion_type": "computational",
+      "evidence_artifact_ids": ["va_qcverify00000001"],
+      "source_refs": ["Laflamme, Miquel, Paz, Zurek 1996", "Bennett et al. 1996"],
+      "conditions": ["family:perfect_code", "n:5", "k:1", "d:3", "optimal:true"],
+      "confidence": 0.97,
+      "caveats": ["Distance recomputed exactly; optimality at n=5 follows the quantum Hamming bound."]
+    },
+    {
+      "id": "vc_qc7130000000001",
+      "assertion": "The Steane code [[7,1,3]] (CSS from the [7,4,3] Hamming code) encodes 1 logical qubit in 7 physical qubits with distance 3, verified from its six stabilizer generators.",
+      "assertion_type": "computational",
+      "evidence_artifact_ids": ["va_qcverify00000001"],
+      "source_refs": ["Steane 1996"],
+      "conditions": ["family:CSS", "n:7", "k:1", "d:3", "base_code:hamming_7_4_3"],
+      "confidence": 0.97,
+      "caveats": ["Parameters recomputed by the frozen verifier; exit 0."]
+    },
+    {
+      "id": "vc_qc9130000000001",
+      "assertion": "The Shor code [[9,1,3]] (concatenated bit- and phase-flip repetition) encodes 1 logical qubit in 9 physical qubits with distance 3, verified from its eight stabilizer generators.",
+      "assertion_type": "computational",
+      "evidence_artifact_ids": ["va_qcverify00000001"],
+      "source_refs": ["Shor 1995"],
+      "conditions": ["family:concatenated", "n:9", "k:1", "d:3"],
+      "confidence": 0.97,
+      "caveats": ["Parameters recomputed by the frozen verifier; exit 0."]
+    },
+    {
+      "id": "vc_qcopen000000001",
+      "assertion": "The largest distance of a single-logical-qubit stabilizer code at length 10, [[10,1,d]], is open within the band d in [3,4]; whether a [[10,1,4]] stabilizer code exists is undetermined here.",
+      "assertion_type": "open_question",
+      "evidence_artifact_ids": ["va_qcverify00000001"],
+      "source_refs": ["codetables.de (Grassl)"],
+      "conditions": ["family:single_logical_qubit", "n:10", "k:1", "d_band:3-4", "status:open"],
+      "confidence": 0.5,
+      "caveats": ["Recorded as an open frontier edge with a known non-tight band; no resolution is claimed."]
+    }
+  ]
+}

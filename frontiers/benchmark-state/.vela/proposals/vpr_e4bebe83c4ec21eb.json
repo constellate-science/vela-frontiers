@@ -1,0 +1,25 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_e4bebe83c4ec21eb",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_03776d6cd3e0801b"
+  },
+  "actor": {
+    "id": "agent:hardening-2026-06-10",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T22:35:35.856977+00:00",
+  "reason": "HARDENING (benchmark-state): label_provenance=attested (records-not-reruns; ground truth is an answer key, not a frozen-verifier rederivation), valid_as_of=2026-06-10, model_cutoff=unknown. Under the trust ladder, attested label provenance caps this record below 'verified' until a deterministic rederivation exists.",
+  "payload": {
+    "text": "HARDENING (benchmark-state): label_provenance=attested (records-not-reruns; ground truth is an answer key, not a frozen-verifier rederivation), valid_as_of=2026-06-10, model_cutoff=unknown. Under the trust ladder, attested label provenance caps this record below 'verified' until a deterministic rederivation exists."
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T23:01:44.987488+00:00",
+  "decision_reason": "Hardening: label provenance is attested (records-not-reruns); caps below verified until a deterministic rederivation exists",
+  "applied_event_id": "vev_cbdb65ce9a0a353a",
+  "caveats": []
+}

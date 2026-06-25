@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_edc38cb972d92315",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_a9a5b1e0dbdc9da4"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:44:26.608297+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "OBLIGATION (Erdos #319). BANKED: the counting step of the upper bound corroborated numerically. OPEN: the full upper bound is not established by the numerics alone.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.5
+      },
+      "created": "2026-06-10T06:44:26.608258+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": true,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_a9a5b1e0dbdc9da4",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "reviewer:will-blair",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:44:26.608244+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "expert_assertion",
+        "title": "manual finding",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T06:44:26.701211+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_cf266a26d72811a0",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

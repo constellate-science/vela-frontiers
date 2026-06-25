@@ -1,0 +1,7 @@
+[project]
+name = "AI-for-science benchmark state"
+frontier_id = "vfr_efc649fd772a1ff1"
+compiled_at = "2026-06-10T06:50:03Z"
+description = ""
+compiler = "vela/0.691.0"
+papers_processed = 0

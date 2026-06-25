@@ -1,0 +1,74 @@
+{
+  "id": "vf_192de23c449c21cb",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #678 has status 'proved (lean)'. Statement: Write $M(n, k)$ be the least common multiple of $\\{n+1, \\dotsc, n+k\\}$. Let $k$ be sufficiently large. Are there infinitely many $m, n$ with $m \\geq n + k$ such that $$ M(n, k) > M(m, k + 1) $$? The answer is yes, as proved in a strong form by Cambie [Ca24]. [Ca24] S. Cambie, Resolution of an Erdős' problem on least common multiples. arXiv:2410.09138 (2024). This was formalized in Lean by Alexeev using Aristotle, conditional on asymptotic estimates for the prime counting function (specifically `pi_alt` from the PNT+ project). See the [formal proof](https://github.com/plby/lean-proofs/blob/main/src/v4.24.0/ErdosProblems/Erdos678.lean). Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_081e2894faca00dc"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/678",
+    "title": "cap_61973ee16b553d57 · vc_081e2894faca00dc",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

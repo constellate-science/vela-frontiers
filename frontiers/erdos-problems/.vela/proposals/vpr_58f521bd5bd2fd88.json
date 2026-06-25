@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_58f521bd5bd2fd88",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_83126944775b9ae4"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:20:26.983123+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #16 (vf_377ba211ef539d40) [related, confidence 0.82]: P16 (odd integers not of form 2^k+p, i.e. prime + one power of 2) and P9 (not prime + two powers of 2) are consecutive cases of the same prime-plus-powers-of-2 representation question. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #16 (vf_377ba211ef539d40) [related, confidence 0.82]: P16 (odd integers not of form 2^k+p, i.e. prime + one power of 2) and P9 (not prime + two powers of 2) are consecutive cases of the same prime-plus-powers-of-2 representation question. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:36.891266+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

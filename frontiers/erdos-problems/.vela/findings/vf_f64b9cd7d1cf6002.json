@@ -1,0 +1,74 @@
+{
+  "id": "vf_f64b9cd7d1cf6002",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #851 has been PROVED (Erdős's conjecture holds). Statement: Let $\\epsilon > 0$. Is there some $r \\ll_\\epsilon 1$ such that the density of integers of the form $2^k+n$, where $k \\geq 0$ and $n$ has at most $r$ prime divisors, is at least $1-\\epsilon$? This was proved affirmatively by Price and GPT-5.2 Pro [Pr26]. Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_957a550339c4ab19"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/851",
+    "title": "cap_61973ee16b553d57 · vc_957a550339c4ab19",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

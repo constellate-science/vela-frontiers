@@ -1,0 +1,133 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_41b7d4a92fab66ec",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_0e89db391781fe60"
+  },
+  "actor": {
+    "id": "agent:erdos-spine-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-05-30T00:44:07.415385+00:00",
+  "reason": "Candidate claim vc_c037e200eba3c525 imported from artifact packet cap_61973ee16b553d57",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-05-30T00:42:06.826507+00:00",
+      "packet_id": "cap_61973ee16b553d57",
+      "producer": {
+        "id": "agent:erdos-spine-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős Open-Problem spine ingest"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős open problems: canonical status spine"
+    },
+    "candidate_claim_id": "vc_c037e200eba3c525",
+    "evidence_artifact_ids": [
+      "va_9bc926d75e4e3881"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős Problem #659 has status 'proved (lean)'. Statement: Is there a set of $n$ points in $\\mathbb{R}^2$ such that every subset of $4$ points determines at least $3$ distances, yet the total number of distinct distances is $\\ll \\frac{n}{\\sqrt{\\log n}}$? There does exist such a set: a suitable truncation of the lattice $\\{(a,b\\sqrt{2}): a,b\\in\\mathbb{Z}\\}$ suffices. This construction appears to have been first considered by Moree and Osburn \\cite{MoOs06}, who proved that it has $\\ll \\frac{n}{\\sqrt{\\log n}}$ many distinct distances. This construction was independently found by [Lund and Sheffer](https://adamsheffer.wordpress.com/2014/07/16/point-sets-with-few-distinct-distances/), who further noted that this configuration contains no squares or equilateral triangles. There are only six possible configurations of $4$ points which determine only $2$ distances (first noted by Erdős and Fishburn [ErFi96]), and five of them contain either a square or an equilateral triangle. The remaining configuration contains four points from a regular pentagon, and Grayzel [Gr26] (using Gemini) has noted in the comments that this configuration can also be ruled out, thus giving a complete solution to this problem. Boris Alexeev provides a formalisation of the reduction, which is conditional on Bernays' theorem (assumed as an axiom in the proof to obtain the $O(n/\\sqrt{\\log n})$ bound). See the [formal proof](https://github.com/plby/lean-proofs/blob/226d5fad7143dcebea2bbb5ec87f18a3a1dcea69/src/v4.24.0/ErdosProblems/Erdos659.lean). Topics: geometry, distances. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+        "type": "open_question"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.99
+      },
+      "created": "2026-05-30T00:42:06.826507+00:00",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_9bc926d75e4e3881",
+            "artifact_packet_id": "cap_61973ee16b553d57",
+            "candidate_claim_id": "vc_c037e200eba3c525"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_0e89db391781fe60",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős Open-Problem spine ingest",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-spine-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_61973ee16b553d57 · vc_c037e200eba3c525",
+        "url": "https://www.erdosproblems.com/659",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_61973ee16b553d57",
+    "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/ErdosProblems/659.lean",
+    "https://www.erdosproblems.com/659",
+    "packet_artifact:va_9bc926d75e4e3881"
+  ],
+  "status": "applied",
+  "reviewed_by": "reviewer:erdos-db-trust",
+  "reviewed_at": "2026-05-30T01:04:16.337078+00:00",
+  "decision_reason": "Spine status accepted on the authority of the maintained erdosproblems.com canonical database (T. Bloom, T. Tao + community); formal statements cross-checked against google-deepmind/formal-conjectures",
+  "applied_event_id": "vev_bb939f88f609beea",
+  "caveats": [
+    "Source adapter output is source/registry metadata, not a scientific conclusion.",
+    "Spine record from the erdosproblems.com community database (teorth/erdosproblems); status reflects last_update 2026-01-14. Results/attempts are a separate literature-extraction layer.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-spine-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_61973ee16b553d57",
+    "started_at": "2026-05-30T00:42:06.826507+00:00",
+    "context": {
+      "artifact_packet_id": "cap_61973ee16b553d57",
+      "producer_name": "Erdős Open-Problem spine ingest",
+      "topic": "Erdős open problems: canonical status spine"
+    }
+  }
+}

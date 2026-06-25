@@ -1,0 +1,64 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_b79eed476b69ef9f",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_4737723e8ed9c608"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-17T06:47:53.513176+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:187d6dc6a71fab7c750ab20b56c9aa47c870342a52504dce9858c5486ff6bd90",
+      "created": "2026-06-17T06:47:52.257923+00:00",
+      "id": "va_4737723e8ed9c608",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/187d6dc6a71fab7c750ab20b56c9aa47c870342a52504dce9858c5486ff6bd90",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::min_binom_gcd",
+        "witness_file": "erdos700-min-binom-gcd.witness.json",
+        "witness_kind": "min_binom_gcd"
+      },
+      "name": "Frozen-verifier witness: erdos700-min-binom-gcd (min_binom_gcd)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos700-min-binom-gcd (min_binom_gcd)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 398,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_2db3437d1512c222"
+      ]
+    },
+    "proposal_id": "vpr_f89f61573fd739a7"
+  },
+  "caveats": []
+}

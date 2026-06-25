@@ -1,0 +1,74 @@
+{
+  "id": "vf_15940eef97d062ea",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #602 remains OPEN. Statement: Does every almost-disjoint family of countably infinite sets whose pairwise intersections all have size ≠ 1 have Property B? Formally: let `α` be any type, let `(A_i)_{i ∈ I}` be a family of countably infinite subsets of `α` such that for all `i ≠ j`, the intersection `A_i ∩ A_j` is finite and `|A_i ∩ A_j| ≠ 1`. Does there exist a 2-colouring `f : α → Fin 2` such that no `A_i` is monochromatic? This is an open question about Property B for almost-disjoint families with a forbidden intersection size of 1. **Note:** This generalises the formulation in which the ground set is `ℕ`. Since every countably infinite set is in bijection with `ℕ`, the two formulations are equivalent, but working over an arbitrary ground type makes the statement apply immediately to, e.g., almost-disjoint families of countable subsets of an uncountable space. Topics: combinatorics, set theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_12af1cc9b921f09c"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/602",
+    "title": "cap_61973ee16b553d57 · vc_12af1cc9b921f09c",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

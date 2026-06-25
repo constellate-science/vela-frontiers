@@ -1,0 +1,113 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_43f1dd52dd1f01a5",
+  "kind": "artifact.assert",
+  "target": {
+    "type": "artifact",
+    "id": "va_7594d15eadf01e55"
+  },
+  "actor": {
+    "id": "agent:erdos-watch",
+    "type": "agent"
+  },
+  "created_at": "2026-06-10T06:02:11.454402+00:00",
+  "reason": "Import artifact va_2adb880b7cdfae86 from artifact packet cap_ae06bacfd4314f91",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:2adb880b7cdfae86e4c8e7c237efcb59185aaf9a744c3278fae991f659eadfc4",
+      "created": "2026-06-10T06:02:11.300082+00:00",
+      "id": "va_7594d15eadf01e55",
+      "kind": "registry_record",
+      "license": "public source locator; no restricted bytes deposited",
+      "locator": "https://doi.org/10.37236/14245",
+      "media_type": "application/json",
+      "metadata": {
+        "artifact_packet_id": "cap_ae06bacfd4314f91",
+        "date": "2026-06-05",
+        "external_artifact_id": "va_2adb880b7cdfae86",
+        "matched_problem": "1",
+        "parent_artifact_ids": [],
+        "producer_agent": "agent:erdos-watch",
+        "query": "number theory additive combinatorics",
+        "source": "openalex",
+        "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+      },
+      "name": "[openalex] Constructions of Macaulay Posets and Macaulay Rings",
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős frontier watcher (continuous engine)",
+            "orcid": null
+          }
+        ],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:02:11.300082+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-watch",
+          "model_version": null
+        },
+        "journal": null,
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "database_record",
+        "title": "cap_ae06bacfd4314f91 · [openalex] Constructions of Macaulay Posets and Macaulay Rings",
+        "url": "https://doi.org/10.37236/14245",
+        "year": null
+      },
+      "retracted": false,
+      "source_url": "https://doi.org/10.37236/14245",
+      "storage_mode": "remote",
+      "target_findings": [
+        "vf_2660f2cb2cc9f021"
+      ]
+    },
+    "artifact_packet": {
+      "created_at": "2026-06-10T06:02:11.300082+00:00",
+      "packet_id": "cap_ae06bacfd4314f91",
+      "producer": {
+        "id": "agent:erdos-watch",
+        "kind": "source_adapter",
+        "name": "Erdős frontier watcher (continuous engine)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+    },
+    "external_artifact_id": "va_2adb880b7cdfae86",
+    "parent_artifact_ids": []
+  },
+  "source_refs": [
+    "artifact_packet:cap_ae06bacfd4314f91",
+    "https://doi.org/10.37236/14245"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:05.071375+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Watcher output is a set of UNVERIFIED review prompts, not scientific conclusions. No claim is auto-accepted; all are PENDING the substrate gate.",
+    "Recency window: works published on/after 2026-05-11. Matched 4 problem(s); skipped 0 already-tracked candidate(s)."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-watch",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_ae06bacfd4314f91",
+    "started_at": "2026-06-10T06:02:11.300082+00:00",
+    "context": {
+      "artifact_packet_id": "cap_ae06bacfd4314f91",
+      "producer_name": "Erdős frontier watcher (continuous engine)",
+      "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+    }
+  }
+}

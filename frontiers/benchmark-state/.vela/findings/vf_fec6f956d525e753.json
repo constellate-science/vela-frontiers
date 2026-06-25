@@ -1,0 +1,74 @@
+{
+  "id": "vf_fec6f956d525e753",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "BENCHMARK CLAIM (MiniF2F) — AlphaProof (DeepMind) solved several IMO-2024 problems formally in Lean; this is sometimes conflated with a miniF2F number. VERIFICATION STATE: the IMO result is a separate, time-bounded competition claim, NOT a miniF2F-test pass rate; no public checkpoint. Open obligation: do not record an AlphaProof miniF2F figure without a cited, pinned evaluation.",
+    "type": "computational",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Manually added finding; requires evidence review before scientific use.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.3,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "expert_assertion",
+    "doi": null,
+    "title": "manual finding",
+    "authors": [
+      {
+        "name": "reviewer:will-blair",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-06-10T06:50:55.862137+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": true,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "annotations": [
+    {
+      "id": "ann_efa0109e17512289",
+      "text": "HARDENING (benchmark-state): label_provenance=attested (records-not-reruns; ground truth is an answer key, not a frozen-verifier rederivation), valid_as_of=2026-06-10, model_cutoff=unknown. Under the trust ladder, attested label provenance caps this record below 'verified' until a deterministic rederivation exists.",
+      "author": "reviewer:will-blair",
+      "timestamp": "2026-06-10T23:01:45.244978+00:00"
+    }
+  ],
+  "created": "2026-06-10T06:50:55.862148+00:00",
+  "updated": null
+}

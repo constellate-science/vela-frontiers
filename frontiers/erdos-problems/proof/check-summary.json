@@ -1,0 +1,111 @@
+{
+  "status": "ok",
+  "generated_at": "2026-06-17T14:43:12.242583+00:00",
+  "checked_artifacts": [
+    "manifest.json",
+    "packet.lock.json",
+    "proof-trace.json",
+    "ro-crate-metadata.jsonld",
+    "findings/full.json",
+    "artifacts/artifacts.json",
+    "artifacts/artifact-audit.json",
+    "artifacts/blob-map.json",
+    "sources/source-registry.json",
+    "research-traces/research-traces.json",
+    "research-traces/verifier-attachments.json",
+    "evidence/evidence-atoms.json",
+    "evidence/source-evidence-map.json",
+    "conditions/condition-records.json",
+    "events/events.json",
+    "events/replay-report.json",
+    "proposals/proposals.json",
+    "reviews/review-events.json",
+    "reviews/confidence-updates.json",
+    "check-summary.json"
+  ],
+  "artifact_audit": {
+    "ok": true,
+    "command": "artifact-audit",
+    "frontier": "examples/erdos-problems",
+    "artifact_count": 23,
+    "checked_local_blobs": 21,
+    "local_blob_bytes": 8112,
+    "by_kind": {
+      "dataset": 22,
+      "source_file": 1
+    },
+    "by_storage_mode": {
+      "local_blob": 21,
+      "pointer": 1,
+      "remote": 1
+    },
+    "issue_count": 0,
+    "issues": []
+  },
+  "counts": {
+    "findings": 1256,
+    "sources": 1234,
+    "evidence_atoms": 1256,
+    "condition_records": 1256,
+    "review_events": 0,
+    "proposals": 1480,
+    "gaps": 16,
+    "contested": 0,
+    "bridge_entities": 0,
+    "contradiction_edges": 0
+  },
+  "proposal_summary": {
+    "total": 1480,
+    "pending_review": 0,
+    "accepted": 0,
+    "rejected": 209,
+    "applied": 1271,
+    "by_kind": {
+      "artifact.assert": 28,
+      "finding.add": 1333,
+      "finding.note": 111,
+      "verifier.attach": 8
+    },
+    "duplicate_ids": [],
+    "invalid_targets": []
+  },
+  "proof_state": {
+    "latest_packet": {
+      "generated_at": "2026-05-30T01:36:40.783630+00:00",
+      "snapshot_hash": "adf5cd08914be106b09be94cb69e55449b5195f7c3e9894fc07c7fc288c446c0",
+      "event_log_hash": "17ffb7ddcc3dcb44cc35e2f221147fe5c2ee785ba3e4b39ea762facd7803ba46",
+      "packet_manifest_hash": "669f56ecfdd05b77424ace2e6018f91f3293921e193ffddc2d4ad59a5b170926",
+      "status": "stale"
+    },
+    "last_event_at_export": "2026-05-30T01:04:16.368389+00:00",
+    "stale_reason": "Applied proposal vpr_f84f715cbb66660f after latest proof export"
+  },
+  "source_debt": {
+    "total": 17,
+    "critical": 17,
+    "high": 0,
+    "medium": 0,
+    "review": 0,
+    "missing_locator_rows": 17,
+    "missing_content_hash_rows": 17
+  },
+  "reviewer_sections": {
+    "source_debt": "reviewer/source-debt.json",
+    "research_trace_provenance": "reviewer/research-trace-provenance.json",
+    "score_ledger": "reviewer/score-ledger.json",
+    "correction_returns": "reviewer/correction-returns.json",
+    "frontier_graph": "reviewer/frontier-graph.json",
+    "impact_index": "reviewer/impact-index.json",
+    "guided_tours": "reviewer/guided-tours.json",
+    "frontier_freshness_plan": "reviewer/frontier-freshness-plan.json",
+    "replay_manifest": "reviewer/replay-manifest.json"
+  },
+  "reviewer_replay_manifest": "reviewer/replay-manifest.json",
+  "caveats": [
+    "Candidate contradictions, gaps, and bridges require human review.",
+    "Evidence ranking is heuristic: meta-analysis > RCT > cohort > case-control > case-report > in-vitro.",
+    "PubMed prior-art checks are rough signals, not proof of novelty.",
+    "Observer policy output is weighted reranking, not definitive disagreement.",
+    "Retraction impact is simulated over declared dependency links."
+  ]
+}

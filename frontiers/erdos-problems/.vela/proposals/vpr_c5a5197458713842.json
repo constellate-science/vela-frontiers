@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_c5a5197458713842",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_359c6e30cd652e65"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:22:03.502978+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #377 (vf_507e61fe107d57bb) [related, confidence 0.78]: Both study which primes divide the central binomial coefficient C(2n,n): 376 asks for n with C(2n,n) coprime to 105 (no prime 3,5,7), 377 sums reciprocals of primes <n not dividing C(2n,n). -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #377 (vf_507e61fe107d57bb) [related, confidence 0.78]: Both study which primes divide the central binomial coefficient C(2n,n): 376 asks for n with C(2n,n) coprime to 105 (no prime 3,5,7), 377 sums reciprocals of primes <n not dividing C(2n,n). -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:30:17.206647+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

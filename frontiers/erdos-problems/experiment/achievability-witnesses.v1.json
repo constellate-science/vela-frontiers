@@ -1,0 +1,74 @@
+{
+  "schema": "canopus.achievability-witnesses.v1",
+  "note": "Held-out witnesses proving each calibration target is ACHIEVABLE (so the threshold is reachable, not impossible). NOT shown to the proposer.",
+  "witnesses": {
+    "sidon:4": {
+      "target": 7,
+      "witness_vectors": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "verified": true,
+      "source": "exhaustive search vs verify_sidon (OEIS A309370 a(4)=7 proven)"
+    },
+    "sidon_interval:100": {
+      "target": 12,
+      "witness": [
+        1,
+        2,
+        4,
+        8,
+        17,
+        28,
+        40,
+        59,
+        69,
+        77,
+        94,
+        99
+      ],
+      "verified": true,
+      "source": "pruned DFS vs verify_sidon_interval (OEIS A143824 a(100)=12 proven)"
+    }
+  }
+}

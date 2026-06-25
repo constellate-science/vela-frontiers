@@ -1,0 +1,74 @@
+{
+  "id": "vf_e693f890fc5a90c7",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #728 has status 'proved (lean)'. Statement: Let $\\varepsilon$ be sufficiently small and $C, C' > 0$. Are there integers $a, b, n$ such that $$a, b > \\varepsilon n\\quad a!\\, b! \\mid n!\\, (a + b - n)!, $$ and $$C \\log n < a + b - n < C' \\log n ?$$ Note that the website currently displays a simpler (trivial) version of this problem because $a + b$ isn't assumed to be in the $n + O(\\log n)$ regime. Barreto and ChatGPT-5.2 have proved that, for any $0 < C_1 < C_2$, there are infinitely many $a, b, n$ with $b = n/2$, $a = n/2 + O(\\log n)$, and $C_1 \\log n < a + b - n < C_2 \\log n$ such that $a! b! \\mid n! (a + b - n)!$ This appears to answer the question in the spirit it was intended. This was formalized in Lean by Alexeev using Aristotle. Topics: number theory, factorials. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_aa03ccf08b02d0d0"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/728",
+    "title": "cap_61973ee16b553d57 · vc_aa03ccf08b02d0d0",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_ae0059d257acead0",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_1a414889053ede48"
+  },
+  "actor": {
+    "id": "agent:erdos-watch",
+    "type": "agent"
+  },
+  "created_at": "2026-06-10T06:02:40.949242+00:00",
+  "reason": "Candidate claim vc_e87d8def6276d1ef imported from artifact packet cap_ae06bacfd4314f91",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-10T06:02:11.300082+00:00",
+      "packet_id": "cap_ae06bacfd4314f91",
+      "producer": {
+        "id": "agent:erdos-watch",
+        "kind": "source_adapter",
+        "name": "Erdős frontier watcher (continuous engine)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+    },
+    "candidate_claim_id": "vc_e87d8def6276d1ef",
+    "evidence_artifact_ids": [
+      "va_6167954448f8b238"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Recent openalex work 'Quantum element-wise transforms' (published 2026-06-04) may bear on Erdős Problem #1.",
+        "type": "open_question"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "erdos_problem=1; source=openalex; matched_query='number theory additive combinatorics'"
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.2
+      },
+      "created": "2026-06-10T06:02:11.300082+00:00",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_6167954448f8b238",
+            "artifact_packet_id": "cap_ae06bacfd4314f91",
+            "candidate_claim_id": "vc_e87d8def6276d1ef"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_1a414889053ede48",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős frontier watcher (continuous engine)",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:02:11.300082+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-watch",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_ae06bacfd4314f91 · vc_e87d8def6276d1ef",
+        "url": "https://openalex.org/W7163777805",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_ae06bacfd4314f91",
+    "https://openalex.org/W7163777805",
+    "https://www.erdosproblems.com/1",
+    "packet_artifact:va_6167954448f8b238"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:29:45.206811+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Watcher output is a set of UNVERIFIED review prompts, not scientific conclusions. No claim is auto-accepted; all are PENDING the substrate gate.",
+    "Recency window: works published on/after 2026-05-11. Matched 4 problem(s); skipped 0 already-tracked candidate(s).",
+    "Candidate surfaced by keyword/tag overlap between recent literature and a tracked Erdős problem. Relevance is UNVERIFIED — this is a review prompt, not a claim that the work resolves or advances #1.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-watch",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_ae06bacfd4314f91",
+    "started_at": "2026-06-10T06:02:11.300082+00:00",
+    "context": {
+      "artifact_packet_id": "cap_ae06bacfd4314f91",
+      "producer_name": "Erdős frontier watcher (continuous engine)",
+      "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+    }
+  }
+}

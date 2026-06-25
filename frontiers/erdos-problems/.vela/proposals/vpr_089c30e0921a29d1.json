@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_089c30e0921a29d1",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_caaa525f7259eff1"
+  },
+  "actor": {
+    "id": "agent:nexus-ingest-2026-06-10",
+    "type": "agent"
+  },
+  "created_at": "2026-06-10T18:37:54.051858+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős Problem #12: machine-found Lean proof published by AlphaProof Nexus (DeepMind, arXiv 2605.22763, May 2026). Independently re-verified locally 2026-06-10: full lake build of google-deepmind/alphaproof-nexus-results@0647711a7118 under their pinned toolchain leanprover/lean4:v4.27.0 succeeded (8062 jobs); static scan clean (no sorry, no native_decide, no custom axioms). Artifacts: erdos_12.parts.i.lean sha256:c42238294d8d2d88; erdos_12.parts.ii.lean sha256:f155135c1e845cb3. AI involvement: machine-generated proof, machine-checked (Lean kernel is the referee); statement faithfulness NOT yet independently attested — see paper section 4 for DeepMind's own expert validation.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.9
+      },
+      "created": "2026-06-10T18:37:54.051771+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_caaa525f7259eff1",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:nexus-ingest-2026-06-10",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T18:37:54.051749+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "preprint",
+        "title": "AlphaProof Nexus results repo (Apache-2.0), arXiv:2605.22763",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T20:52:05.009504+00:00",
+  "decision_reason": "AlphaProof Nexus artifact re-verified locally: full lake build green (8062 jobs, toolchain v4.27.0), static scan clean",
+  "applied_event_id": "vev_e5f59bfca6c331e5",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

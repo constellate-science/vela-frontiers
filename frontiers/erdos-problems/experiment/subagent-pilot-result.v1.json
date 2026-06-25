@@ -1,0 +1,20 @@
+{
+  "schema": "canopus.m7-subagent-pilot.v1",
+  "ran": "2026-06-09",
+  "mode": "REAL — Claude subagents as the proposer (no Anthropic API key / dollar budget)",
+  "pipeline": "scripts/canopus_subagent_run.py export -> workflow (8 proposer subagents) -> ingest through scripts/canopus_stratum_verifiers.py (frozen gate)",
+  "items": 2,
+  "note": "Pilot of the full end-to-end run on the two verified sidon_interval calibration instances. Underpowered (2 items); demonstrates the pipeline + first real capability signal. Held-out targets (12, 26) were NOT shown to the proposers.",
+  "results": {
+    "erdos-14": {"interval": "[1,100]", "held_out_optimum": 12, "arms_solved": ["none","random_neighbor","flat_topk","constellation"], "all_solved": true,
+      "note": "Every arm constructed a valid size-12 (optimal) Sidon set. Methods varied: DFS+pruning, branch-and-bound proving max=12, optimal-Golomb-ruler insight, randomized greedy+local search."},
+    "erdos-530": {"interval": "[1,500]", "held_out_optimum": 26, "best_size_found": 24, "arms_solved": [], "all_solved": false,
+      "note": "No arm reached 26 (best 24 via Singer perfect-difference-set mod 553). A genuinely hard one-shot search; honest failure."}
+  },
+  "analysis": {
+    "testable_solves_per_arm": {"none": 1, "random_neighbor": 1, "flat_topk": 1, "constellation": 1},
+    "mcnemar_D_vs_A": {"discordant_pairs": 0},
+    "verdict": "Pipeline works end-to-end on verified-sound instances; proposer solves the Goldilocks instance and fails the hard one; no arm advantage on 2 items (expected). Powering requires more curated instances."
+  },
+  "soundness_fix_surfaced": "verify_sidon_interval now enforces every element lies in [1,n] (a proposer could otherwise inflate the set with out-of-range integers). All pilot witnesses were in range, so results stand."
+}

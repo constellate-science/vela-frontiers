@@ -1,0 +1,113 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_419840fa5f207d04",
+  "kind": "artifact.assert",
+  "target": {
+    "type": "artifact",
+    "id": "va_5929e73a4bbd4a6d"
+  },
+  "actor": {
+    "id": "agent:erdos-watch",
+    "type": "agent"
+  },
+  "created_at": "2026-06-10T06:02:23.854391+00:00",
+  "reason": "Import artifact va_7a8a90b6fa62a547 from artifact packet cap_ae06bacfd4314f91",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:7a8a90b6fa62a547143a868f9b3a6fbac124247d7a2bbec78fb642ac213c1d00",
+      "created": "2026-06-10T06:02:11.300082+00:00",
+      "id": "va_5929e73a4bbd4a6d",
+      "kind": "registry_record",
+      "license": "public source locator; no restricted bytes deposited",
+      "locator": "https://openalex.org/W7163597731",
+      "media_type": "application/json",
+      "metadata": {
+        "artifact_packet_id": "cap_ae06bacfd4314f91",
+        "date": "2026-06-01",
+        "external_artifact_id": "va_7a8a90b6fa62a547",
+        "matched_problem": "3",
+        "parent_artifact_ids": [],
+        "producer_agent": "agent:erdos-watch",
+        "query": "number theory additive combinatorics arithmetic progressions",
+        "source": "openalex",
+        "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+      },
+      "name": "[openalex] Arithmetic regularity as an alternative to transference",
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős frontier watcher (continuous engine)",
+            "orcid": null
+          }
+        ],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:02:11.300082+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-watch",
+          "model_version": null
+        },
+        "journal": null,
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "database_record",
+        "title": "cap_ae06bacfd4314f91 · [openalex] Arithmetic regularity as an alternative to transference",
+        "url": "https://openalex.org/W7163597731",
+        "year": null
+      },
+      "retracted": false,
+      "source_url": "https://openalex.org/W7163597731",
+      "storage_mode": "remote",
+      "target_findings": [
+        "vf_af24c970b3ed29a1"
+      ]
+    },
+    "artifact_packet": {
+      "created_at": "2026-06-10T06:02:11.300082+00:00",
+      "packet_id": "cap_ae06bacfd4314f91",
+      "producer": {
+        "id": "agent:erdos-watch",
+        "kind": "source_adapter",
+        "name": "Erdős frontier watcher (continuous engine)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+    },
+    "external_artifact_id": "va_7a8a90b6fa62a547",
+    "parent_artifact_ids": []
+  },
+  "source_refs": [
+    "artifact_packet:cap_ae06bacfd4314f91",
+    "https://openalex.org/W7163597731"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:00.641093+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Watcher output is a set of UNVERIFIED review prompts, not scientific conclusions. No claim is auto-accepted; all are PENDING the substrate gate.",
+    "Recency window: works published on/after 2026-05-11. Matched 4 problem(s); skipped 0 already-tracked candidate(s)."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-watch",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_ae06bacfd4314f91",
+    "started_at": "2026-06-10T06:02:11.300082+00:00",
+    "context": {
+      "artifact_packet_id": "cap_ae06bacfd4314f91",
+      "producer_name": "Erdős frontier watcher (continuous engine)",
+      "topic": "New work possibly bearing on tracked Erdős problems (last 30d, since 2026-05-11)"
+    }
+  }
+}

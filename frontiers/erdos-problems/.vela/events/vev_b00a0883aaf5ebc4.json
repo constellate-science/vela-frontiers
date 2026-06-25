@@ -1,0 +1,36 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_b00a0883aaf5ebc4",
+  "kind": "anchor.attached",
+  "target": {
+    "type": "finding",
+    "id": "vf_aff975922c8e0373"
+  },
+  "actor": {
+    "id": "agent:atlas-ingest",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-16T04:17:08.683567+00:00",
+  "reason": "atlas ingest: external-catalogue anchor",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "anchor_link": {
+      "anchor": {
+        "id": "197",
+        "join_policy": "hard_identity",
+        "kind": "problem_entry",
+        "namespace": "erdos",
+        "role": "problem"
+      },
+      "attached_at": "2026-06-16T04:17:08.683385+00:00",
+      "attached_by": "agent:atlas-ingest",
+      "id": "val_32e5bd6a41a757ef",
+      "schema": "vela.anchor_link.v0.1",
+      "signature": "5685d6c58c4df838848d3fe2f80ff713381ede89387a40f4065ca77bdacc667b9879c129aff969bdaaf64b09e19e07c0f3eba82f65b4cbf840183323919c6a03",
+      "signer_pubkey_hex": "00a840f9471902c16369bc6084b1c05d1e967c8a4864dfeb38c51080ad61062d",
+      "target": "vf_aff975922c8e0373"
+    }
+  },
+  "caveats": []
+}

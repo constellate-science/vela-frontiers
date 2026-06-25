@@ -1,0 +1,134 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_52cddd09efb5ac87",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_6192a17131db4ddd"
+  },
+  "actor": {
+    "id": "agent:erdos-deep-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-06-04T00:33:47.490805+00:00",
+  "reason": "Candidate claim vc_eea9e6772fcdb02d imported from artifact packet cap_f4e8bcd294c97ba7",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-03T00:00:00Z",
+      "packet_id": "cap_f4e8bcd294c97ba7",
+      "producer": {
+        "id": "agent:erdos-deep-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős deep-ingest (problem anatomy)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    },
+    "candidate_claim_id": "vc_eea9e6772fcdb02d",
+    "evidence_artifact_ids": [
+      "va_b43a0cf74f438df6"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #1113 (?, AMS 11). STATEMENT: A *covering set* for a positive odd integer $k$ is a finite set of primes $P$ such that every number of the form $k \\cdot 2^n + 1$ is divisible by at least one prime in $P$. FORMAL: erdos_1113: Set.Infinite {k : ℕ | k.IsSierpinskiNumber}; erdos_1113: answer(sorry) ↔ ∃ k, k.IsSierpinskiNumber ∧ ¬ HasFinitePrimeCoveringSet k; erdos_1113: ∀ k, k.IsSierpinskiNumber → k.IsPerfectPower ∨ HasFinitePrimeCoveringSet k KNOWN/REMARKS: # Erdős Problem 1113 *References:* - erdosproblems.com/1113 - [ErGr80] Erdős, P. and Graham, R. L., Old and New Problems and Results in Combinatorial Number Theory. Monographie de l'Enseignement Mathématique, No. 28 (1980). - [Si60] Sierpiński, W., Elementary Theory of Numbers. Państwowe Wydawnictwo Naukowe, Warsaw (1960). - [FFK08] Filaseta, M., Finch, C., and Kozek, M., On powers associated with RELATED: [] OEIS: []",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.95
+      },
+      "created": "2026-06-03T00:00:00Z",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_b43a0cf74f438df6",
+            "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+            "candidate_claim_id": "vc_eea9e6772fcdb02d"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_6192a17131db4ddd",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős deep-ingest (problem anatomy)",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T00:00:00Z",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-deep-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_f4e8bcd294c97ba7 · vc_eea9e6772fcdb02d",
+        "url": "https://www.erdosproblems.com/1113",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "[ErGr80]",
+    "[FFK08]",
+    "[Si60]",
+    "artifact_packet:cap_f4e8bcd294c97ba7",
+    "https://www.apache.org/licenses/LICENSE-2.0",
+    "https://www.erdosproblems.com/1113",
+    "packet_artifact:va_b43a0cf74f438df6"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:29.539880+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-deep-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_f4e8bcd294c97ba7",
+    "started_at": "2026-06-03T00:00:00Z",
+    "context": {
+      "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+      "producer_name": "Erdős deep-ingest (problem anatomy)",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    }
+  }
+}

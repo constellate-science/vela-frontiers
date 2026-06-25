@@ -1,0 +1,64 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_f69de2dc4df84929",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_72d0146b4854c414"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-17T06:47:45.524680+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:868678f82d5c0b180f84371c68e1c1a2d6127388b0e3401b76d7e528ba9ad87d",
+      "created": "2026-06-17T06:47:44.242353+00:00",
+      "id": "va_72d0146b4854c414",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/868678f82d5c0b180f84371c68e1c1a2d6127388b0e3401b76d7e528ba9ad87d",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::kummer_no_carry",
+        "witness_file": "erdos684-kummer-no-carry.witness.json",
+        "witness_kind": "kummer_no_carry"
+      },
+      "name": "Frozen-verifier witness: erdos684-kummer-no-carry (kummer_no_carry)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos684-kummer-no-carry (kummer_no_carry)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 408,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_ba50ac1f1f60aa27"
+      ]
+    },
+    "proposal_id": "vpr_ecf3d69e87c32bed"
+  },
+  "caveats": []
+}

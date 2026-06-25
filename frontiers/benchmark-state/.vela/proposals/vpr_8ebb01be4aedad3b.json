@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_8ebb01be4aedad3b",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_9a454a597ddee070"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:50:55.850727+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "BENCHMARK CLAIM (MiniF2F) — HyperTree Proof Search (HTPS, Lample et al.) REPORTS a miniF2F pass rate via learned best-first proof search. VERIFICATION STATE: author-reported; search budget and version-specific. NOT re-run here. Open obligation: re-run at the stated budget on a pinned split.",
+        "type": "computational"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.3
+      },
+      "created": "2026-06-10T06:50:55.850689+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": true,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_9a454a597ddee070",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "reviewer:will-blair",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T06:50:55.850676+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "expert_assertion",
+        "title": "manual finding",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-10T06:50:55.851472+00:00",
+  "decision_reason": "Applied locally from proposal creation",
+  "applied_event_id": "vev_601646bafe0e6cfc",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

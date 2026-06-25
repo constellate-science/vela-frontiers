@@ -1,0 +1,66 @@
+{
+  "id": "vf_db51f8a305cbaaf0",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdos-Faber-Lovasz conjecture (1972, solved for sufficiently large n in 2021): the chromatic index of the union of n complete graphs of order n that pairwise share at most one vertex is exactly n.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Edge-coloring of pairwise-almost-disjoint complete-graph unions; solved for sufficiently large n in 2021.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.9,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "Kang, Kelly, Kuhn, Methuku, Osthus 2023, Annals of Mathematics",
+    "authors": [
+      {
+        "name": "agent:vela-curation-bot",
+        "orcid": null
+      }
+    ],
+    "year": 2023,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-10T19:27:57.546387+00:00",
+      "extractor_version": "vela/0.110.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-10T19:27:57.546400+00:00",
+  "updated": null
+}

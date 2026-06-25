@@ -1,0 +1,74 @@
+{
+  "id": "vf_4be95d2df14f26a5",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #397 has status 'disproved (lean)'. Statement: Are there only finitely many solutions to $$ \\prod_i \\binom{2m_i}{m_i}=\\prod_j \\binom{2n_j}{n_j} $$ with the $m_i,n_j$ distinct? Somani, using ChatGPT, has given a negative answer. In fact, for any $a\\geq 2$, if $c=8a^2+8a+1$, $\\binom{2a}{a}\\binom{4a+4}{2a+2}\\binom{2c}{c}= \\binom{2a+2}{a+1}\\binom{4a}{2a}\\binom{2c+2}{c+1}.$ Further families of solutions are given in the comments by SharkyKesa. This was earlier asked about in a [MathOverflow] question, in response to which Elkies also gave an alternative construction which produces solutions - at the moment it is not clear whether Elkies' argument gives infinitely many solutions (although Bloom believes that it can). This was formalized in Lean by Wu using Aristotle. Topics: number theory, binomial coefficients. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_14a414673be11d68"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/397",
+    "title": "cap_61973ee16b553d57 · vc_14a414673be11d68",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

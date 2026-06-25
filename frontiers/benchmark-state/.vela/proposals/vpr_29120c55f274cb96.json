@@ -1,0 +1,91 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_29120c55f274cb96",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_b49b4f77856365fe"
+  },
+  "actor": {
+    "id": "agent:firstproof-ingest-2026-06-10",
+    "type": "agent"
+  },
+  "created_at": "2026-06-10T23:13:13.192452+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "First Proof second batch (published 2026-06-10, 1stproof.org): 4 systems (IMProofBench ProofCouncil; UCLA Moonshot harness, Sahai/Tao; OpenAI GPT-5.5 Pro; Princeton Momus, Arora/Fowl) blind-refereed by human mathematicians on 10 unpublished research problems. Topline: 7 problems had at least one submission essentially flawless or needing minor revisions; 2 best-submissions required major revisions; 1 complete failure. Grading is expert review only - no machine verification; referee reports published. Source: 1stproof.org/second-batch.html + assets/docs/report.pdf.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.5
+      },
+      "created": "2026-06-10T23:13:13.190917+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "observational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_b49b4f77856365fe",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:firstproof-ingest-2026-06-10",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T23:13:13.189666+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "preprint",
+        "title": "First Proof Project second batch report (1stproof.org), 2026-06-10",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:33:01.897149+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

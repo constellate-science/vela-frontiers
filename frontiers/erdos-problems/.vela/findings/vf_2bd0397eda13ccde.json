@@ -1,0 +1,66 @@
+{
+  "id": "vf_2bd0397eda13ccde",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Sunflower lemma improvement (Erdos-Ko 1960 conjecture; Alweiss-Lovett-Wu-Zhang 2020 partial resolution): every family of k-element sets of size at least (C log k)^k contains a sunflower of size r, where the bound (k!)^r in the original Erdos-Ko 1960 lemma improves dramatically. Original conjecture open at the C^k bound.",
+    "type": "theoretical",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "theoretical",
+    "model_system": "",
+    "method": "manual state transition",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": []
+  },
+  "conditions": {
+    "text": "Sunflower-free k-uniform set systems; bounds reduced from k! to polylog(k)^k in 2020 but the C^k conjecture remains open.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.85,
+    "basis": "operator-supplied frontier prior; review required",
+    "method": "expert_judgment",
+    "extraction_confidence": 1.0
+  },
+  "provenance": {
+    "source_type": "published_paper",
+    "doi": null,
+    "title": "Alweiss, Lovett, Wu, Zhang 2020, STOC",
+    "authors": [
+      {
+        "name": "agent:vela-curation-bot",
+        "orcid": null
+      }
+    ],
+    "year": 2020,
+    "extraction": {
+      "method": "manual_curation",
+      "model": null,
+      "model_version": null,
+      "extracted_at": "2026-05-10T19:27:57.691379+00:00",
+      "extractor_version": "vela/0.110.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-10T19:27:57.691393+00:00",
+  "updated": null
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_405d622fb901cfa7",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_528467e0c63874c5"
+  },
+  "actor": {
+    "id": "agent:vela-verify",
+    "type": "agent"
+  },
+  "timestamp": "2026-06-17T06:46:34.820443+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:fe0d931504acfd9f612f64dbd1ae2799c60ab4fcaed1cce904673a692da54e61",
+      "created": "2026-06-17T06:46:33.585854+00:00",
+      "id": "va_528467e0c63874c5",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/fe0d931504acfd9f612f64dbd1ae2799c60ab4fcaed1cce904673a692da54e61",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::interval_product",
+        "witness_file": "erdos1056-k12.witness.json",
+        "witness_kind": "interval_product"
+      },
+      "name": "Frozen-verifier witness: erdos1056-k12 (interval_product)",
+      "provenance": {
+        "authors": [],
+        "citation_count": null,
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "journal": null,
+        "license": "CC-BY-4.0",
+        "openalex_id": null,
+        "pmc": null,
+        "pmid": null,
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos1056-k12 (interval_product)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 215,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_ae08f178d51bb99e"
+      ]
+    },
+    "proposal_id": "vpr_6b4f8e0ec3f69570"
+  },
+  "caveats": []
+}

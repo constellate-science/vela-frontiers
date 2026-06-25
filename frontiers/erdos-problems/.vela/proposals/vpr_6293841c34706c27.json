@@ -1,0 +1,132 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_6293841c34706c27",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_cb2d2b2a7df67a58"
+  },
+  "actor": {
+    "id": "agent:erdos-deep-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-06-04T00:33:18.040842+00:00",
+  "reason": "Candidate claim vc_16897a4e40156cb3 imported from artifact packet cap_f4e8bcd294c97ba7",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-06-03T00:00:00Z",
+      "packet_id": "cap_f4e8bcd294c97ba7",
+      "producer": {
+        "id": "agent:erdos-deep-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős deep-ingest (problem anatomy)"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    },
+    "candidate_claim_id": "vc_16897a4e40156cb3",
+    "evidence_artifact_ids": [
+      "va_b43a0cf74f438df6"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős #39 (?, AMS 11). STATEMENT: Is there an infinite Sidon set $A\\subset \\mathbb{N}$ such that $\\lvert A\\cap \\{1\\ldots,N\\}\\rvert \\gg_\\epsilon N^{1/2-\\epsilon}$ for all $\\varepsilon > 0$? FORMAL: erdos_39: answer(sorry) ↔ ∃ (A : Set ℕ), A.Infinite ∧ IsSidon A ∧ ∀ᵉ (ε > (0 : ℝ)), (· ^ (1 / 2 - ε) : ℕ → ℝ) =O[atTop] fun N => (((Set.Icc 1 N) ∩ A).ncard : ℝ) KNOWN/REMARKS: # Erdős Problem 39 *Reference:* erdosproblems.com/39 RELATED: [] OEIS: []",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.95
+      },
+      "created": "2026-06-03T00:00:00Z",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_b43a0cf74f438df6",
+            "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+            "candidate_claim_id": "vc_16897a4e40156cb3"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_cb2d2b2a7df67a58",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős deep-ingest (problem anatomy)",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-03T00:00:00Z",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-deep-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_f4e8bcd294c97ba7 · vc_16897a4e40156cb3",
+        "url": "https://www.erdosproblems.com/39",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_f4e8bcd294c97ba7",
+    "https://www.apache.org/licenses/LICENSE-2.0",
+    "https://www.erdosproblems.com/39",
+    "https://www.erdosproblems.com/39)",
+    "packet_artifact:va_b43a0cf74f438df6"
+  ],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:52.016798+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Anatomy extracted from the formal-conjectures Lean file; deep-ingest v1.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-deep-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_f4e8bcd294c97ba7",
+    "started_at": "2026-06-03T00:00:00Z",
+    "context": {
+      "artifact_packet_id": "cap_f4e8bcd294c97ba7",
+      "producer_name": "Erdős deep-ingest (problem anatomy)",
+      "topic": "Erdős problem anatomy — deep ingestion"
+    }
+  }
+}

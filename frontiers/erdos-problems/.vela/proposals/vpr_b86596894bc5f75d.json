@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_b86596894bc5f75d",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_125d481fdd040806"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:18.642721+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #155 (vf_55921775986ed4e2) [generalizes, confidence 0.8]: B_2[g] sets in 158 generalize Sidon sets (the g=1 case), so the extremal size questions in 158 generalize the largest-Sidon-subset quantity F(N) studied in 155. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #155 (vf_55921775986ed4e2) [generalizes, confidence 0.8]: B_2[g] sets in 158 generalize Sidon sets (the g=1 case), so the extremal size questions in 158 generalize the largest-Sidon-subset quantity F(N) studied in 155. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:30:01.048819+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

@@ -1,0 +1,74 @@
+{
+  "id": "vf_0e89db391781fe60",
+  "version": 1,
+  "previous_version": null,
+  "assertion": {
+    "text": "Erdős Problem #659 has status 'proved (lean)'. Statement: Is there a set of $n$ points in $\\mathbb{R}^2$ such that every subset of $4$ points determines at least $3$ distances, yet the total number of distinct distances is $\\ll \\frac{n}{\\sqrt{\\log n}}$? There does exist such a set: a suitable truncation of the lattice $\\{(a,b\\sqrt{2}): a,b\\in\\mathbb{Z}\\}$ suffices. This construction appears to have been first considered by Moree and Osburn \\cite{MoOs06}, who proved that it has $\\ll \\frac{n}{\\sqrt{\\log n}}$ many distinct distances. This construction was independently found by [Lund and Sheffer](https://adamsheffer.wordpress.com/2014/07/16/point-sets-with-few-distinct-distances/), who further noted that this configuration contains no squares or equilateral triangles. There are only six possible configurations of $4$ points which determine only $2$ distances (first noted by Erdős and Fishburn [ErFi96]), and five of them contain either a square or an equilateral triangle. The remaining configuration contains four points from a regular pentagon, and Grayzel [Gr26] (using Gemini) has noted in the comments that this configuration can also be ruled out, thus giving a complete solution to this problem. Boris Alexeev provides a formalisation of the reduction, which is conditional on Bernays' theorem (assumed as an axiom in the proof to obtain the $O(n/\\sqrt{\\log n})$ bound). See the [formal proof](https://github.com/plby/lean-proofs/blob/226d5fad7143dcebea2bbb5ec87f18a3a1dcea69/src/v4.24.0/ErdosProblems/Erdos659.lean). Topics: geometry, distances. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: possible.",
+    "type": "open_question",
+    "relation": null,
+    "direction": null
+  },
+  "evidence": {
+    "type": "computational",
+    "model_system": "agent artifact packet",
+    "method": "ScienceClaw-shaped artifact packet import",
+    "replicated": false,
+    "replication_count": null,
+    "evidence_spans": [
+      {
+        "artifact_id": "va_9bc926d75e4e3881",
+        "artifact_packet_id": "cap_61973ee16b553d57",
+        "candidate_claim_id": "vc_c037e200eba3c525"
+      }
+    ]
+  },
+  "conditions": {
+    "text": "Agent-imported candidate claim; scope requires review.",
+    "duration": null
+  },
+  "confidence": {
+    "kind": "frontier_epistemic",
+    "score": 0.99,
+    "basis": "agent-imported candidate claim; reviewer acceptance required",
+    "method": "expert_judgment",
+    "extraction_confidence": 0.7
+  },
+  "provenance": {
+    "source_type": "model_output",
+    "doi": null,
+    "url": "https://www.erdosproblems.com/659",
+    "title": "cap_61973ee16b553d57 · vc_c037e200eba3c525",
+    "authors": [
+      {
+        "name": "Erdős Open-Problem spine ingest",
+        "orcid": null
+      }
+    ],
+    "year": null,
+    "publisher": "artifact packet",
+    "extraction": {
+      "method": "artifact_to_state_import",
+      "model": "agent:erdos-spine-ingest",
+      "model_version": null,
+      "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+      "extractor_version": "vela/0.691.0"
+    },
+    "review": {
+      "reviewed": false,
+      "reviewer": null,
+      "reviewed_at": null,
+      "corrections": []
+    }
+  },
+  "flags": {
+    "gap": false,
+    "negative_space": false,
+    "contested": false,
+    "retracted": false,
+    "declining": false,
+    "gravity_well": false
+  },
+  "links": [],
+  "created": "2026-05-30T00:42:06.826507+00:00",
+  "updated": null
+}

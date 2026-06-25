@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_b520f42ac56d6418",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_18e6a86bd3459220"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:39.257899+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #30 (vf_04c2ff267458866e) [shares_technique, confidence 0.7]: Both are extremal problems for the maximum size of an additive-distinctness set in {1,...,N}; 241's B_3 sets and 30's Sidon (B_2) sets are bounded by the same counting/representation-function arguments. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #30 (vf_04c2ff267458866e) [shares_technique, confidence 0.7]: Both are extremal problems for the maximum size of an additive-distinctness set in {1,...,N}; 241's B_3 sets and 30's Sidon (B_2) sets are bounded by the same counting/representation-function arguments. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:29:50.622750+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

@@ -1,0 +1,799 @@
+{
+  "result": {
+    "object": "CanopusRealRunResult",
+    "version": 2,
+    "task": "largest Sidon set in {0,1}^n, four arms, METHOD-ENRICHED context (anatomy)",
+    "proposer": "Opus 4.8 (claude-opus-4-8) via Claude Code agents",
+    "ns": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "n_instances": 6,
+    "per_arm": {
+      "none": {
+        "sizes": [
+          24,
+          32,
+          45,
+          62,
+          87,
+          121
+        ],
+        "mean": 61.83,
+        "max": 121,
+        "n_valid": 6
+      },
+      "random_neighbor": {
+        "sizes": [
+          23,
+          32,
+          44,
+          62,
+          86,
+          122
+        ],
+        "mean": 61.5,
+        "max": 122,
+        "n_valid": 6
+      },
+      "flat_topk": {
+        "sizes": [
+          22,
+          32,
+          45,
+          66,
+          87,
+          124
+        ],
+        "mean": 62.67,
+        "max": 124,
+        "n_valid": 6
+      },
+      "constellation": {
+        "sizes": [
+          23,
+          31,
+          45,
+          62,
+          87,
+          122
+        ],
+        "mean": 61.67,
+        "max": 122,
+        "n_valid": 6
+      }
+    },
+    "by_instance": {
+      "7": {
+        "none": 24,
+        "random_neighbor": 23,
+        "flat_topk": 22,
+        "constellation": 23
+      },
+      "8": {
+        "none": 32,
+        "random_neighbor": 32,
+        "flat_topk": 32,
+        "constellation": 31
+      },
+      "9": {
+        "none": 45,
+        "random_neighbor": 44,
+        "flat_topk": 45,
+        "constellation": 45
+      },
+      "10": {
+        "none": 62,
+        "random_neighbor": 62,
+        "flat_topk": 66,
+        "constellation": 62
+      },
+      "11": {
+        "none": 87,
+        "random_neighbor": 86,
+        "flat_topk": 87,
+        "constellation": 87
+      },
+      "12": {
+        "none": 121,
+        "random_neighbor": 122,
+        "flat_topk": 124,
+        "constellation": 122
+      }
+    },
+    "paired_D_vs_controls": {
+      "none": {
+        "D_wins": 1,
+        "ties": 3,
+        "D_losses": 2,
+        "discordant": 3,
+        "wilcoxon_stat": 2.0,
+        "wilcoxon_p": 1.0,
+        "n_nonzero": 3,
+        "median_delta": 0
+      },
+      "random_neighbor": {
+        "D_wins": 2,
+        "ties": 3,
+        "D_losses": 1,
+        "discordant": 3,
+        "wilcoxon_stat": 2.0,
+        "wilcoxon_p": 1.0,
+        "n_nonzero": 3,
+        "median_delta": 0
+      },
+      "flat_topk": {
+        "D_wins": 1,
+        "ties": 2,
+        "D_losses": 3,
+        "discordant": 4,
+        "wilcoxon_stat": 1.5,
+        "wilcoxon_p": 0.375,
+        "n_nonzero": 4,
+        "median_delta": 0
+      }
+    },
+    "verdict": "no constellation advantage on mean verified size \u2014 control arm(s) match/beat D",
+    "non_claims": [
+      "Verified sizes re-derived by the FROZEN Sidon gate; claimed_size NOT trusted.",
+      "Powered PILOT: 6 n-instances \u00d7 2 seeds; widen N/seeds for a fully powered test.",
+      "Cell score = MAX verified size over seeds (construction task).",
+      "vs the v1 pilot: the graph arms now carry the Sidon neighbors' real METHODS (perfect-difference-set / Singer / sqrt-density) from the anatomy, not just tags \u2014 so a D\u2248A result here bounds the thesis with a FAIR context, not a strawman.",
+      "Contamination caveat: Opus may know small Sidon records; the ARM DIFFERENCE is the signal of interest, and contamination affects all arms equally."
+    ]
+  },
+  "attempts": [
+    {
+      "n": 7,
+      "arm": "none",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 22,
+      "claimed_size": 22,
+      "cell_id": "sidon-n7::none::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 22 points, 253 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 7,
+      "arm": "none",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 24,
+      "claimed_size": 24,
+      "cell_id": "sidon-n7::none::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 24 points, 300 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 7,
+      "arm": "random_neighbor",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 23,
+      "claimed_size": 23,
+      "cell_id": "sidon-n7::random_neighbor::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 23 points, 276 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 7,
+      "arm": "random_neighbor",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 23,
+      "claimed_size": 23,
+      "cell_id": "sidon-n7::random_neighbor::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 23 points, 276 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 7,
+      "arm": "flat_topk",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 22,
+      "claimed_size": 22,
+      "cell_id": "sidon-n7::flat_topk::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 22 points, 253 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 7,
+      "arm": "flat_topk",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 22,
+      "claimed_size": 22,
+      "cell_id": "sidon-n7::flat_topk::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 22 points, 253 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 7,
+      "arm": "constellation",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 23,
+      "claimed_size": 23,
+      "cell_id": "sidon-n7::constellation::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 23 points, 276 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 7,
+      "arm": "constellation",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 23,
+      "claimed_size": 23,
+      "cell_id": "sidon-n7::constellation::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 23 points, 276 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 8,
+      "arm": "none",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 31,
+      "claimed_size": 31,
+      "cell_id": "sidon-n8::none::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 31 points, 496 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 8,
+      "arm": "none",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 32,
+      "claimed_size": 32,
+      "cell_id": "sidon-n8::none::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 32 points, 528 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 8,
+      "arm": "random_neighbor",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 31,
+      "claimed_size": 31,
+      "cell_id": "sidon-n8::random_neighbor::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 31 points, 496 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 8,
+      "arm": "random_neighbor",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 32,
+      "claimed_size": 32,
+      "cell_id": "sidon-n8::random_neighbor::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 32 points, 528 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 8,
+      "arm": "flat_topk",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 31,
+      "claimed_size": 31,
+      "cell_id": "sidon-n8::flat_topk::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 31 points, 496 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 8,
+      "arm": "flat_topk",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 32,
+      "claimed_size": 32,
+      "cell_id": "sidon-n8::flat_topk::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 32 points, 528 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 8,
+      "arm": "constellation",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 31,
+      "claimed_size": 31,
+      "cell_id": "sidon-n8::constellation::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 31 points, 496 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 8,
+      "arm": "constellation",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 31,
+      "claimed_size": 31,
+      "cell_id": "sidon-n8::constellation::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 31 points, 496 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 9,
+      "arm": "none",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 45,
+      "claimed_size": 45,
+      "cell_id": "sidon-n9::none::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 45 points, 1035 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 9,
+      "arm": "none",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 44,
+      "claimed_size": 44,
+      "cell_id": "sidon-n9::none::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 44 points, 990 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 9,
+      "arm": "random_neighbor",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 44,
+      "claimed_size": 44,
+      "cell_id": "sidon-n9::random_neighbor::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 44 points, 990 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 9,
+      "arm": "random_neighbor",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 44,
+      "claimed_size": 44,
+      "cell_id": "sidon-n9::random_neighbor::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 44 points, 990 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 9,
+      "arm": "flat_topk",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 44,
+      "claimed_size": 44,
+      "cell_id": "sidon-n9::flat_topk::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 44 points, 990 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 9,
+      "arm": "flat_topk",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 45,
+      "claimed_size": 45,
+      "cell_id": "sidon-n9::flat_topk::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 45 points, 1035 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 9,
+      "arm": "constellation",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 45,
+      "claimed_size": 45,
+      "cell_id": "sidon-n9::constellation::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 45 points, 1035 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 9,
+      "arm": "constellation",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 44,
+      "claimed_size": 44,
+      "cell_id": "sidon-n9::constellation::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 44 points, 990 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 10,
+      "arm": "none",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 61,
+      "claimed_size": 61,
+      "cell_id": "sidon-n10::none::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 61 points, 1891 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 10,
+      "arm": "none",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 62,
+      "claimed_size": 62,
+      "cell_id": "sidon-n10::none::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 62 points, 1953 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 10,
+      "arm": "random_neighbor",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 62,
+      "claimed_size": 62,
+      "cell_id": "sidon-n10::random_neighbor::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 62 points, 1953 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 10,
+      "arm": "random_neighbor",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 62,
+      "claimed_size": 62,
+      "cell_id": "sidon-n10::random_neighbor::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 62 points, 1953 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 10,
+      "arm": "flat_topk",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 66,
+      "claimed_size": 66,
+      "cell_id": "sidon-n10::flat_topk::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 66 points, 2211 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 10,
+      "arm": "flat_topk",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 61,
+      "claimed_size": 61,
+      "cell_id": "sidon-n10::flat_topk::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 61 points, 1891 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 10,
+      "arm": "constellation",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 62,
+      "claimed_size": 62,
+      "cell_id": "sidon-n10::constellation::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 62 points, 1953 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 10,
+      "arm": "constellation",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 62,
+      "claimed_size": 62,
+      "cell_id": "sidon-n10::constellation::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 62 points, 1953 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 11,
+      "arm": "none",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 86,
+      "claimed_size": 86,
+      "cell_id": "sidon-n11::none::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 86 points, 3741 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 11,
+      "arm": "none",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 87,
+      "claimed_size": 87,
+      "cell_id": "sidon-n11::none::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 87 points, 3828 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 11,
+      "arm": "random_neighbor",
+      "seed": 1,
+      "valid": false,
+      "verified_size": 0,
+      "claimed_size": null,
+      "cell_id": "sidon-n11::random_neighbor::s1",
+      "verifier_detail": "no witness returned",
+      "neighbors_used": []
+    },
+    {
+      "n": 11,
+      "arm": "random_neighbor",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 86,
+      "claimed_size": 86,
+      "cell_id": "sidon-n11::random_neighbor::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 86 points, 3741 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 11,
+      "arm": "flat_topk",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 87,
+      "claimed_size": 87,
+      "cell_id": "sidon-n11::flat_topk::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 87 points, 3828 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 11,
+      "arm": "flat_topk",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 86,
+      "claimed_size": 86,
+      "cell_id": "sidon-n11::flat_topk::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 86 points, 3741 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 11,
+      "arm": "constellation",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 87,
+      "claimed_size": 87,
+      "cell_id": "sidon-n11::constellation::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 87 points, 3828 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 11,
+      "arm": "constellation",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 86,
+      "claimed_size": 86,
+      "cell_id": "sidon-n11::constellation::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 86 points, 3741 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 12,
+      "arm": "none",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 121,
+      "claimed_size": 121,
+      "cell_id": "sidon-n12::none::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 121 points, 7381 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 12,
+      "arm": "none",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 121,
+      "claimed_size": 121,
+      "cell_id": "sidon-n12::none::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 121 points, 7381 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 12,
+      "arm": "random_neighbor",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 122,
+      "claimed_size": 122,
+      "cell_id": "sidon-n12::random_neighbor::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 122 points, 7503 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 12,
+      "arm": "random_neighbor",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 114,
+      "claimed_size": 114,
+      "cell_id": "sidon-n12::random_neighbor::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 114 points, 6555 pairwise sums all distinct",
+      "neighbors_used": []
+    },
+    {
+      "n": 12,
+      "arm": "flat_topk",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 124,
+      "claimed_size": 124,
+      "cell_id": "sidon-n12::flat_topk::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 124 points, 7750 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 12,
+      "arm": "flat_topk",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 121,
+      "claimed_size": 121,
+      "cell_id": "sidon-n12::flat_topk::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 121 points, 7381 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 12,
+      "arm": "constellation",
+      "seed": 1,
+      "valid": true,
+      "verified_size": 122,
+      "claimed_size": 122,
+      "cell_id": "sidon-n12::constellation::s1",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 122 points, 7503 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    },
+    {
+      "n": 12,
+      "arm": "constellation",
+      "seed": 2,
+      "valid": true,
+      "verified_size": 122,
+      "claimed_size": 122,
+      "cell_id": "sidon-n12::constellation::s2",
+      "verifier_detail": "exact_recompute[sidon] PASS: Sidon verified: 122 points, 7503 pairwise sums all distinct",
+      "neighbors_used": [
+        14,
+        30,
+        43,
+        155
+      ]
+    }
+  ]
+}

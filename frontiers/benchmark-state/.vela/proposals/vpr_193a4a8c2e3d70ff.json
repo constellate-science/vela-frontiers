@@ -1,0 +1,91 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_193a4a8c2e3d70ff",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_0bcceeea3e2bc405"
+  },
+  "actor": {
+    "id": "agent:firstproof-ingest-2026-06-10",
+    "type": "agent"
+  },
+  "created_at": "2026-06-10T23:13:13.233403+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "First Proof second batch failure modes (2026-06-10): referees flag citation/literature errors as a notable failure point across systems - AI submissions cite nonexistent or wrong prior work. Independent corroboration that prior-art checking must be mechanical, not model-asserted. Costs are documented per submission (good practice; matches signed cost-attestation). Source: 1stproof.org report.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Manually added finding; requires evidence review before scientific use."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.5
+      },
+      "created": "2026-06-10T23:13:13.233366+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "observational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_0bcceeea3e2bc405",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:firstproof-ingest-2026-06-10",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-06-10T23:13:13.233351+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "preprint",
+        "title": "First Proof Project second batch report (1stproof.org), 2026-06-10",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:33:01.898250+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

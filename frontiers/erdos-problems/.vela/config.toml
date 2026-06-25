@@ -1,0 +1,7 @@
+[project]
+name = "Erdős problems frontier"
+frontier_id = "vfr_37aec80d874a0239"
+compiled_at = "2026-05-10T19:27:12Z"
+description = ""
+compiler = "vela/0.110.0"
+papers_processed = 0

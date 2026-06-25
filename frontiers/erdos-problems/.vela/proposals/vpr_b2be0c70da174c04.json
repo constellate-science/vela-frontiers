@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_b2be0c70da174c04",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_f8fd3ed0562f3ca8"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:52.487407+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #304 (vf_33f5a809ba6ed690) [specializes, confidence 0.6]: Problem 306 asks for Egyptian-type representations of a/b restricted to denominators that are products of two distinct primes, a constrained variant of representing a/b as a sum of unit fractions (304). -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #304 (vf_33f5a809ba6ed690) [specializes, confidence 0.6]: Problem 306 asks for Egyptian-type representations of a/b restricted to denominators that are products of two distinct primes, a constrained variant of representing a/b as a sum of unit fractions (304). -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:29:48.777396+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

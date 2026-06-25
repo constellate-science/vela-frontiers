@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_45897095d08659dc",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_c89f4d7a1f57556e"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:20:24.586620+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #44 (vf_a357c9d8ac3d6b26) [related, confidence 0.88]: P44 states the 2√N upper bound on precisely the extremal Sidon function f(N) that P43 defines. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #44 (vf_a357c9d8ac3d6b26) [related, confidence 0.88]: P44 states the 2√N upper bound on precisely the extremal Sidon function f(N) that P43 defines. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:08.487128+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

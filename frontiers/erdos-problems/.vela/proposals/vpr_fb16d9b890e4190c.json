@@ -1,0 +1,133 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_fb16d9b890e4190c",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_d2ff7983024f73bb"
+  },
+  "actor": {
+    "id": "agent:erdos-spine-ingest",
+    "type": "agent"
+  },
+  "created_at": "2026-05-30T00:42:34.136586+00:00",
+  "reason": "Candidate claim vc_92f4f989ecb889f7 imported from artifact packet cap_61973ee16b553d57",
+  "payload": {
+    "artifact_packet": {
+      "created_at": "2026-05-30T00:42:06.826507+00:00",
+      "packet_id": "cap_61973ee16b553d57",
+      "producer": {
+        "id": "agent:erdos-spine-ingest",
+        "kind": "source_adapter",
+        "name": "Erdős Open-Problem spine ingest"
+      },
+      "schema": "carina.artifact_packet.v0.1",
+      "topic": "Erdős open problems: canonical status spine"
+    },
+    "candidate_claim_id": "vc_92f4f989ecb889f7",
+    "evidence_artifact_ids": [
+      "va_9bc926d75e4e3881"
+    ],
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdős Problem #38 has status 'proved (lean)'. Statement: Does there exist $B \\subset \\mathbb{N}$ which is not an additive basis, but is such that for every set $A \\subseteq \\mathbb{N}$ of Schnirelmann density $\\alpha$ and every $N$ there exists $b \\in B$ such that $$ \\lvert (A \\cup (A+b)) \\cap \\{1, \\ldots, N\\} \\rvert \\geq (\\alpha + f(\\alpha)) N $$ where $f(\\alpha) > 0$ for $0 < \\alpha < 1$? Note: here Erdős seems to use a slightly weaker notion of an additive basis (see [Er56] at the top of page 135). In particular, for this problem, a set is an additive basis of order $k$ if every natural number can be written as a sum of _at most_ $k$ elements of the set, rather than as a sum of _precisely_ $k$ elements. A positive [solution](https://github.com/spicylemonade/erdos-38) was given by GPT 5.5 Pro (prompted by gebyjaff, cleanup by Liam Price); in fact a sparse random set $B$ has this property, with $f(\\alpha)\\gg \\alpha (1-\\alpha)^2$. Topics: number theory. Erdős prize: no. Statement is machine-verified in Lean (formal-conjectures). OEIS: N/A.",
+        "type": "open_question"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Agent-imported candidate claim; scope requires review."
+      },
+      "confidence": {
+        "basis": "agent-imported candidate claim; reviewer acceptance required",
+        "extraction_confidence": 0.7,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.99
+      },
+      "created": "2026-05-30T00:42:06.826507+00:00",
+      "evidence": {
+        "evidence_spans": [
+          {
+            "artifact_id": "va_9bc926d75e4e3881",
+            "artifact_packet_id": "cap_61973ee16b553d57",
+            "candidate_claim_id": "vc_92f4f989ecb889f7"
+          }
+        ],
+        "method": "ScienceClaw-shaped artifact packet import",
+        "model_system": "agent artifact packet",
+        "replicated": false,
+        "replication_count": null,
+        "type": "computational"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_d2ff7983024f73bb",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "Erdős Open-Problem spine ingest",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-30T00:42:06.826507+00:00",
+          "extractor_version": "vela/0.691.0",
+          "method": "artifact_to_state_import",
+          "model": "agent:erdos-spine-ingest",
+          "model_version": null
+        },
+        "publisher": "artifact packet",
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "model_output",
+        "title": "cap_61973ee16b553d57 · vc_92f4f989ecb889f7",
+        "url": "https://www.erdosproblems.com/38",
+        "year": null
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [
+    "artifact_packet:cap_61973ee16b553d57",
+    "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/main/FormalConjectures/ErdosProblems/38.lean",
+    "https://www.erdosproblems.com/38",
+    "packet_artifact:va_9bc926d75e4e3881"
+  ],
+  "status": "applied",
+  "reviewed_by": "reviewer:erdos-db-trust",
+  "reviewed_at": "2026-05-30T01:04:16.373728+00:00",
+  "decision_reason": "Spine status accepted on the authority of the maintained erdosproblems.com canonical database (T. Bloom, T. Tao + community); formal statements cross-checked against google-deepmind/formal-conjectures",
+  "applied_event_id": "vev_6e2cc599945fb754",
+  "caveats": [
+    "Source adapter output is source/registry metadata, not a scientific conclusion.",
+    "Spine record from the erdosproblems.com community database (teorth/erdosproblems); status reflects last_update 2026-05-01. Results/attempts are a separate literature-extraction layer.",
+    "Agent output is source material until reviewer acceptance."
+  ],
+  "agent_run": {
+    "agent": "agent:erdos-spine-ingest",
+    "model": "external-artifact-runtime",
+    "run_id": "cap_61973ee16b553d57",
+    "started_at": "2026-05-30T00:42:06.826507+00:00",
+    "context": {
+      "artifact_packet_id": "cap_61973ee16b553d57",
+      "producer_name": "Erdős Open-Problem spine ingest",
+      "topic": "Erdős open problems: canonical status spine"
+    }
+  }
+}

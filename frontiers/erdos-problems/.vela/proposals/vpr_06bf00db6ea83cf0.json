@@ -1,0 +1,92 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_06bf00db6ea83cf0",
+  "kind": "finding.add",
+  "target": {
+    "type": "finding",
+    "id": "vf_5f91b9804d33b469"
+  },
+  "actor": {
+    "id": "agent:vela-curation-bot",
+    "type": "human"
+  },
+  "created_at": "2026-05-10T19:27:57.674192+00:00",
+  "reason": "Manual finding added to frontier state",
+  "payload": {
+    "finding": {
+      "assertion": {
+        "direction": null,
+        "relation": null,
+        "text": "Erdos minimum-overlap problem (1955, partial bounds known): given a partition of {1,...,2n} into A and B with |A|=|B|=n, the minimum over all partitions of max_k |{(a,b) in A x B : b - a = k}| is between c1*n and c2*n with the constants improved iteratively.",
+        "type": "theoretical"
+      },
+      "conditions": {
+        "duration": null,
+        "text": "Combinatorial discrepancy in partitions of {1,...,2n}. Bounded iteratively but exact value open."
+      },
+      "confidence": {
+        "basis": "operator-supplied frontier prior; review required",
+        "extraction_confidence": 1.0,
+        "kind": "frontier_epistemic",
+        "method": "expert_judgment",
+        "score": 0.6
+      },
+      "created": "2026-05-10T19:27:57.674153+00:00",
+      "evidence": {
+        "evidence_spans": [],
+        "method": "manual state transition",
+        "model_system": "",
+        "replicated": false,
+        "replication_count": null,
+        "type": "theoretical"
+      },
+      "flags": {
+        "contested": false,
+        "declining": false,
+        "gap": false,
+        "gravity_well": false,
+        "negative_space": false,
+        "retracted": false
+      },
+      "id": "vf_5f91b9804d33b469",
+      "links": [],
+      "previous_version": null,
+      "provenance": {
+        "authors": [
+          {
+            "name": "agent:vela-curation-bot",
+            "orcid": null
+          }
+        ],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "2026-05-10T19:27:57.674140+00:00",
+          "extractor_version": "vela/0.110.0",
+          "method": "manual_curation",
+          "model": null,
+          "model_version": null
+        },
+        "review": {
+          "corrections": [],
+          "reviewed": false,
+          "reviewed_at": null,
+          "reviewer": null
+        },
+        "source_type": "published_paper",
+        "title": "Erdos 1955 problem; later improvements by Swinnerton-Dyer 1959 and others",
+        "year": 1955
+      },
+      "updated": null,
+      "version": 1
+    }
+  },
+  "source_refs": [],
+  "status": "applied",
+  "reviewed_by": "reviewer:erdos-db-trust",
+  "reviewed_at": "2026-05-30T01:04:16.326281+00:00",
+  "decision_reason": "Spine status accepted on the authority of the maintained erdosproblems.com canonical database (T. Bloom, T. Tao + community); formal statements cross-checked against google-deepmind/formal-conjectures",
+  "applied_event_id": "vev_7d564cb23fd340e3",
+  "caveats": [
+    "Manual findings require evidence review before scientific use."
+  ]
+}

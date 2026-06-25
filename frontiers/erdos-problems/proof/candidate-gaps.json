@@ -1,0 +1,130 @@
+[
+  {
+    "finding_id": "vf_0bdc86f4d9f9ea18",
+    "assertion": "OBLIGATION (Erdos #124). BANKED: the reservoir criterion verified on the BEGL case {3,4,7}, k=1. OPEN: uniform L-syndeticity across all cases remains open.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_0d4ac181db98ceaa",
+    "assertion": "OBLIGATION (Erdos #203). BANKED: a partial CRT covering certificate (m + 20 prime rows, ~0.7467 density) verified (crt_partial_cover). OPEN: extend to a full cover (the verified rows do not cover all residues).",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_279e997d3b3da2ee",
+    "assertion": "OBLIGATION (Erdos #1093). BANKED: three delta=1 examples beyond ELS93 (k=106/126/129) verified; the density model leans finite. OPEN: prove finiteness of the delta=1 deficiency cases (the density argument is heuristic, not a proof).",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_2d4edfce58578092",
+    "assertion": "OBLIGATION (Erdos #1094). BANKED: the 14 ELS exceptions enumerated provably-complete to k<=40 (binom_exception_enum). OPEN: extend the complete enumeration / prove finiteness of the exception set for all k.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_2db3437d1512c222",
+    "assertion": "OBLIGATION (Erdos #700). BANKED: f(n)=min gcd(n,C(n,k)) recomputed for the cited cases (semiprime and prime-power families). OPEN: characterize f(n) in general beyond the verified families.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_523a610fc3947249",
+    "assertion": "OBLIGATION (Erdos #307). BANKED: the congruence-barrier construction verified. OPEN: the unconditional bound remains open.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_7cb1a5b07207120e",
+    "assertion": "OBLIGATION (Erdos #396). BANKED: the GPT-Pro reduction is banked and re-verified (obstruction map: HONEST, no solve). OPEN: the reduction does not solve #396; the solve remains open.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_7eba52ea8a9bc742",
+    "assertion": "OBLIGATION (Erdos #993). BANKED: the banked unimodality result for the tree/forest case verified (frozen kernel). OPEN: the general Alavi-Erdos unimodality conjecture is open.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_a9a5b1e0dbdc9da4",
+    "assertion": "OBLIGATION (Erdos #319). BANKED: the counting step of the upper bound corroborated numerically. OPEN: the full upper bound is not established by the numerics alone.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_ac4c84ea5e608bb7",
+    "assertion": "OBLIGATION (Erdos #647). BANKED: the prime / forced-divisor channel is provably exhausted (banked obstruction_map + Erdos647Obstruction.lean). OPEN: a different channel is required; the prime channel cannot close it (stop grinding it).",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_ae08f178d51bb99e",
+    "assertion": "OBLIGATION (Erdos #1056). BANKED: explicit cut-equality certificates verified for every k in 2..14 (interval_product witnesses). OPEN: the problem asks for EVERY k; a uniform construction or proof for all k remains open.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_ba50ac1f1f60aa27",
+    "assertion": "OBLIGATION (Erdos #684). BANKED: f(M_K-1) > K verified for K=3..12 via Kummer no-carry (effective, subsequential lower bound). OPEN: promote the subsequential bound to the full claim for all n.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_cd5fe218ed92cc31",
+    "assertion": "OBLIGATION (Erdos #366). BANKED: the unconditional Mordell-curve reduction + Pell correction + the two analytic walls verified. OPEN: the analytic walls block an unconditional bound; closing them is open.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_da8d51a6cae5ec11",
+    "assertion": "OBLIGATION (Erdos #617). BANKED: K25 balanced-coloring construction known; the K26 finite case is the first open case and reduces to a SAT instance. OPEN: produce the LRAT/RAT certificate for the K26 SAT encoding and re-check it with `vela reproduce` (unsat_cert); the symmetry-breaking step needs RAT, beyond the current RUP checker.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_eb741f9becc60879",
+    "assertion": "OBLIGATION (Erdos #699). BANKED: the central-doubling reduction + CRT obstruction verified; the two arms provably do not meet. OPEN: the gap between the arms is the open obstruction.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  },
+  {
+    "finding_id": "vf_ef7066987d658f0e",
+    "assertion": "OBLIGATION (Erdos #488). BANKED: per-fixed-A exact decision certificates (7500+ antichains, zero counterexamples). OPEN: no uniform proof: the per-A certificates do not combine into a statement for all A.",
+    "confidence": 0.5,
+    "conditions": "Manually added finding; requires evidence review before scientific use.",
+    "entities": [],
+    "review_status": "unreviewed"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "schema": "vela.event.v0.1",
+  "id": "vev_8edf8c9b1731b58b",
+  "kind": "artifact.asserted",
+  "target": {
+    "type": "artifact",
+    "id": "va_30eb6536650255b5"
+  },
+  "actor": {
+    "id": "reviewer:will-blair",
+    "type": "human"
+  },
+  "timestamp": "2026-06-24T06:38:35.251401+00:00",
+  "reason": "register canonical frozen-verifier witness for gate backfill",
+  "before_hash": "sha256:null",
+  "after_hash": "sha256:null",
+  "payload": {
+    "artifact": {
+      "access_tier": "public",
+      "content_hash": "sha256:16e6983fc461c33f6ab27acc56d8bf265ce82c7baa850f661b7153e6836ba8b6",
+      "created": "2026-06-24T06:38:35.018114+00:00",
+      "id": "va_30eb6536650255b5",
+      "kind": "dataset",
+      "license": "CC-BY-4.0",
+      "locator": ".vela/artifact-blobs/sha256/16e6983fc461c33f6ab27acc56d8bf265ce82c7baa850f661b7153e6836ba8b6",
+      "media_type": "application/json",
+      "metadata": {
+        "verifier": "vela-verify::distinct_partial_sums",
+        "witness_file": "erdos475-graham-p11.witness.json",
+        "witness_kind": "distinct_partial_sums"
+      },
+      "name": "Frozen-verifier witness: erdos475-graham-p11 (distinct_partial_sums)",
+      "provenance": {
+        "authors": [],
+        "doi": null,
+        "extraction": {
+          "extracted_at": "",
+          "extractor_version": "",
+          "method": "",
+          "model": null,
+          "model_version": null
+        },
+        "license": "CC-BY-4.0",
+        "review": null,
+        "source_type": "data_release",
+        "title": "Frozen-verifier witness: erdos475-graham-p11 (distinct_partial_sums)",
+        "year": null
+      },
+      "retracted": false,
+      "size_bytes": 17991,
+      "storage_mode": "local_blob",
+      "target_findings": [
+        "vf_ff69437d47ca4fb3"
+      ]
+    },
+    "proposal_id": "vpr_eb60d6dbee97ac51"
+  },
+  "caveats": []
+}

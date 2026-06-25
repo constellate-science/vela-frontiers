@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_bf0865814e4c9d95",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_ff17e9912e2bd1f3"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:21:59.920755+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #390 (vf_ddf9a0caad805397) [related, confidence 0.6]: Both concern representing n! as a product of other factors: 373 as a product of smaller factorials and 390 as a product of distinct integers exceeding n, the same multiplicative-decomposition-of-n! theme. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #390 (vf_ddf9a0caad805397) [related, confidence 0.6]: Both concern representing n! as a product of other factors: 373 as a product of smaller factorials and 390 as a product of distinct integers exceeding n, the same multiplicative-decomposition-of-n! theme. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:30:09.200651+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}

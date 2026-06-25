@@ -1,0 +1,24 @@
+{
+  "schema": "vela.proposal.v0.1",
+  "id": "vpr_618905bc6801eeb5",
+  "kind": "finding.note",
+  "target": {
+    "type": "finding",
+    "id": "vf_04c2ff267458866e"
+  },
+  "actor": {
+    "id": "agent:semantic-edge-extractor",
+    "type": "human"
+  },
+  "created_at": "2026-06-10T06:20:21.918476+00:00",
+  "reason": "SEMANTIC-EDGE DRAFT -> Erdos #39 (vf_e78ce45079841e8a) [related, confidence 0.7]: P39 asks for an infinite Sidon set of density N^{1/2-ε}, the infinite analogue of the finite maximal-Sidon-size question in P30, both governed by the √N Sidon bound. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority.",
+  "payload": {
+    "text": "SEMANTIC-EDGE DRAFT -> Erdos #39 (vf_e78ce45079841e8a) [related, confidence 0.7]: P39 asks for an infinite Sidon set of density N^{1/2-ε}, the infinite analogue of the finite maximal-Sidon-size question in P30, both governed by the √N Sidon bound. -- LLM-drafted (20-agent extraction, 2026-06); NOT adjudicated. Accept or reject via `vela proposals accept/reject` under reviewer authority."
+  },
+  "source_refs": [],
+  "status": "rejected",
+  "reviewed_by": "reviewer:will-blair",
+  "reviewed_at": "2026-06-15T16:27:48.896397+00:00",
+  "decision_reason": "Bulk triage 2026-06-15: automated draft (watcher/extractor/ingest), not adjudicated; declining to keep the review gate meaningful. Recoverable from its Carina packet if needed.",
+  "caveats": []
+}
