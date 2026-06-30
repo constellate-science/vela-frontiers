@@ -13,4 +13,4 @@ jobs:
       - uses: ./.github/actions/vela-check
         with:
           frontier: auto
-          vela-version: v0.710.0
+          vela-version: v0.720.0
