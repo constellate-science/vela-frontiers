@@ -8,7 +8,7 @@
   "freshness": "fresh",
   "frontier_hash": "sha256:6239652cd07a34bdf0aaf7a19398b61fea2942db3bde83bcc659489cbe864eb4",
   "frontier_id": "vfr_496956067dc5ad79",
-  "materialized_at": "2026-06-30T06:53:37Z",
+  "materialized_at": "2026-07-01T23:23:22Z",
   "paths": {
     "events_authority": ".vela/events/",
     "events_manifest": "proof/events.manifest.jsonl",
@@ -18,10 +18,10 @@
   },
   "proposal_state_hash": "sha256:c874064a642a3ce7c4aef6add3a6992b2f00088aadd228b59e42fd1fd5525712",
   "reducer": {
-    "digest": "sha256:44318de15163017827db29c0a6c2552d66daa063f5f273832aeb93a0fe5bd850",
+    "digest": "sha256:4a6d0deb2d7d710af74fdf384911abe206356cf36793a353229959696095e63f",
     "name": "vela",
-    "package": "vela@0.720.0",
-    "version": "0.720.0"
+    "package": "vela@0.721.0",
+    "version": "0.721.0"
   },
   "schema": "vela.frontier_repo_proof.v0.1",
   "warning": "Do not edit frontier.json directly. Use Vela commands to propose, accept, reject, materialize, and prove frontier state."

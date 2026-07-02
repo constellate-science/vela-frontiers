@@ -20,5 +20,6 @@
     "proposal_kind": "finding.add",
     "verdict": "rejected"
   },
-  "caveats": []
+  "caveats": [],
+  "signature": "748e488c2138bdeb36d479f8ca77b9704750deed45a0709590120b893ffed476a82d83b7db4f0b43a257270f11927899fc898e888eaf525d0511b17c58949d0d"
 }

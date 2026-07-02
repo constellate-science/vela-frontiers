@@ -20,5 +20,6 @@
   "caveats": [
     "Parameters recomputed by the frozen verifier; exit 0.",
     "Agent output is source material until reviewer acceptance."
-  ]
+  ],
+  "signature": "ed833d5c821bc75d572efe2f5597c7ff898a2c1ed77b825ebcbdfcee096e56181962a0c6576c6231915c46d98c3c85eba248cacf3266d8223cab11b0c5977c05"
 }

@@ -20,5 +20,6 @@
   "caveats": [
     "Distance recomputed exactly; optimality at n=5 follows the quantum Hamming bound.",
     "Agent output is source material until reviewer acceptance."
-  ]
+  ],
+  "signature": "103209da6c1ad1e8da145ea61a3614f0edf353ed7b4ef95fd446e20822a826c357fd0573b8adc5a3866608662d57937c040f6c46a2a8844c20324ec6a817eb00"
 }

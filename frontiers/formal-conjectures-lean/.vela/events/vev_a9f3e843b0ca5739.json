@@ -20,5 +20,6 @@
     "proposal_kind": "artifact.assert",
     "verdict": "rejected"
   },
-  "caveats": []
+  "caveats": [],
+  "signature": "27e12d2b8464370e0482a3e9da467ae963db1e6bcc04763e9bc9ef05f8235d1f435fa0c71b103f9591eb91093514b2a17b4073168f3986830dcf0e4e67ab0404"
 }

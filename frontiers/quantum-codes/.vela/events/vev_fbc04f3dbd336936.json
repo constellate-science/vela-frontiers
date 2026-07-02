@@ -20,5 +20,6 @@
   "caveats": [
     "Parameters recomputed by a frozen brute-force verifier over the full Pauli group; exit 0.",
     "Agent output is source material until reviewer acceptance."
-  ]
+  ],
+  "signature": "cfcf2b7cbf0496c9498ffef22384c2ddfd7a079433927caf0b2240022fe8fc25cf555224e04a0b2f32682b244b45592ac9dd172cf8a7fcc54abcdc51dc8e2f01"
 }

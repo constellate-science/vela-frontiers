@@ -18,9 +18,6 @@
   "provenance": {
     "source_type": "model_output",
     "doi": null,
-    "pmid": null,
-    "pmc": null,
-    "openalex_id": null,
     "url": "projects/quantum-codes/.vela/workspaces/vtask_a1b2c3d4e5f60718/certificates.json",
     "title": "cap_a1b2c3d4e5f60718 · Frozen stabilizer-code verifier and certificate set ([[4,2,2]], [[5,1,3]], [[7,1,3]], [[9,1,3]])",
     "authors": [
@@ -30,7 +27,6 @@
       }
     ],
     "year": null,
-    "journal": null,
     "publisher": "artifact packet",
     "extraction": {
       "method": "artifact_to_state_import",
@@ -44,8 +40,7 @@
       "reviewer": null,
       "reviewed_at": null,
       "corrections": []
-    },
-    "citation_count": null
+    }
   },
   "metadata": {
     "artifact_packet_id": "cap_a1b2c3d4e5f60718",
